@@ -396,13 +396,13 @@ async function handleFiles(fileList, forcedKind) {
   if (!fileList?.length) return;
 
   for (const file of fileList) {
-    if (!/\.xlsx$/i.test(file.name)) {
-      messages.push({ type: "status-err", text: `${file.name}: нужен формат .xlsx` });
+    if (!/\.(xlsx|xls|csv)$/i.test(file.name)) {
+      messages.push({ type: "status-err", text: `${file.name}: нужен .xlsx или .csv` });
       continue;
     }
     try {
       const buf = await file.arrayBuffer();
-      const report = OzonReportParser.parseWorkbookArrayBuffer(buf, file.name, forcedKind);
+      const report = OzonReportParser.parseFileArrayBuffer(buf, file.name, forcedKind);
       const kind = report.meta.report_kind === "competitor" ? "competitor" : "mine";
       const pk = report.meta.period_key;
 

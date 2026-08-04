@@ -89,7 +89,7 @@ function parseSheetRows(rows, fileName, forcedKind) {
   });
 
   if (colByHeader["Заказано, штуки"] == null && colByHeader["Ссылка на товар"] == null) {
-    throw new Error("Не нашёл колонки отчёта Ozon — проверь, что это analytics_report.xlsx");
+    throw new Error("Не нашёл колонки отчёта Ozon — проверь, что это analytics_report (.xlsx / .csv)");
   }
 
   const products = [];
@@ -284,20 +284,75 @@ function alertsFromReport(report) {
   return alerts;
 }
 
-function parseWorkbookArrayBuffer(buf, fileName, forcedKind) {
-  if (typeof XLSX === "undefined") {
-    throw new Error("Библиотека Excel не загрузилась — обнови страницу");
+function fileExt(fileName) {
+  const m = String(fileName || "").match(/\.([^.]+)$/i);
+  return m ? m[1].toLowerCase() : "";
+}
+
+function decodeCsvText(buf) {
+  let text = new TextDecoder("utf-8").decode(buf);
+  if (text.charCodeAt(0) === 0xfeff) text = text.slice(1);
+  return text;
+}
+
+function detectCsvDelimiter(text) {
+  const sample = text.split(/\r?\n/).slice(0, 8).join("\n");
+  const semi = (sample.match(/;/g) || []).length;
+  const comma = (sample.match(/,/g) || []).length;
+  return semi > comma ? ";" : ",";
+}
+
+function rowsFromCsv(buf) {
+  const text = decodeCsvText(buf);
+  const delims = [detectCsvDelimiter(text), ";", ",", "\t"];
+  const tried = new Set();
+  for (const FS of delims) {
+    if (tried.has(FS)) continue;
+    tried.add(FS);
+    try {
+      const wb = XLSX.read(text, { type: "string", FS, raw: false });
+      const ws = wb.Sheets[wb.SheetNames[0]];
+      const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: null });
+      if (rows.length >= 5 && rows.some((r) => r && r.some((c) => String(c || "").includes("Название товара")))) {
+        return rows;
+      }
+    } catch {
+      /* next delimiter */
+    }
   }
-  let wb;
-  try {
-    wb = XLSX.read(buf, { type: "array" });
-  } catch (e) {
-    throw new Error("Не удалось прочитать Excel: " + (e.message || "битый файл"));
-  }
+  throw new Error("Не удалось разобрать CSV — проверь кодировку UTF-8 и разделитель");
+}
+
+function rowsFromXlsx(buf) {
+  const wb = XLSX.read(buf, { type: "array" });
   if (!wb.SheetNames?.length) throw new Error("В файле нет листов");
   const ws = wb.Sheets[wb.SheetNames[0]];
-  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: null });
+  return XLSX.utils.sheet_to_json(ws, { header: 1, defval: null });
+}
+
+function readRowsFromFile(buf, fileName) {
+  const ext = fileExt(fileName);
+  if (ext === "csv") return rowsFromCsv(buf);
+  if (ext === "xlsx" || ext === "xls") return rowsFromXlsx(buf);
+  throw new Error("Формат не поддерживается — нужен .xlsx или .csv");
+}
+
+function parseFileArrayBuffer(buf, fileName, forcedKind) {
+  if (typeof XLSX === "undefined") {
+    throw new Error("Библиотека не загрузилась — обнови страницу");
+  }
+  let rows;
+  try {
+    rows = readRowsFromFile(buf, fileName);
+  } catch (e) {
+    throw new Error(e.message || "Не удалось прочитать файл");
+  }
   return parseSheetRows(rows, fileName, forcedKind);
+}
+
+/** @deprecated alias */
+function parseWorkbookArrayBuffer(buf, fileName, forcedKind) {
+  return parseFileArrayBuffer(buf, fileName, forcedKind);
 }
 
 function indexBySku(products) {
@@ -357,6 +412,7 @@ function buildWeeklyComparison(mineReport, compReport) {
 }
 
 window.OzonReportParser = {
+  parseFileArrayBuffer,
   parseWorkbookArrayBuffer,
   parseSheetRows,
   alertsFromReport,
