@@ -441,13 +441,11 @@ function bindDropZone(zoneId, inputId, kind) {
   const input = document.getElementById(inputId);
   if (!zone || !input) return;
 
-  zone.addEventListener("click", (e) => {
-    if (e.target.tagName !== "BUTTON") input.click();
-  });
   input.addEventListener("change", (e) => {
     handleFiles(e.target.files, kind);
     e.target.value = "";
   });
+
   zone.addEventListener("dragover", (e) => {
     e.preventDefault();
     zone.classList.add("drag");
