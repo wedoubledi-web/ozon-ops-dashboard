@@ -4,456 +4,131 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Ozon Ops — 2026-08-03</title>
+<title>Ozon — сводка 2026-08-03</title>
 <style>
 :root {
-  --bg:#0f1419; --surface:#1a2332; --border:#2d3a4d; --text:#e8edf4; --muted:#8b9cb3;
-  --accent:#4d9fff; --green:#3dd68c; --yellow:#f5c842; --red:#ff6b6b; --radius:12px;
+  --bg:#f4f6f9; --surface:#fff; --border:#d8dee8; --text:#1a2332; --muted:#5c6b80;
+  --accent:#005bff; --green:#0a7a3e; --yellow:#b8860b; --red:#c0392b; --radius:14px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
-.wrap{max-width:1200px;margin:0 auto;padding:16px 16px 48px}
-header{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:16px}
-header h1{font-size:1.5rem;font-weight:800}
-.sub{color:var(--muted);font-size:.9rem;margin-top:4px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:16px 0}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
-.card .lbl{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
-.card .val{font-size:1.4rem;font-weight:800;margin-top:4px}
-.card .delta{font-size:.82rem;margin-top:2px}
-.good{color:var(--green)} .bad{color:var(--red)} .warn{color:var(--yellow)}
-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;margin-bottom:14px}
-section h2{font-size:1.05rem;margin-bottom:12px;font-weight:700}
-.alert{padding:10px 14px;border-radius:8px;margin-bottom:8px;font-size:.92rem;border-left:4px solid var(--border)}
-.alert.bad{background:#2a1a1a;border-color:var(--red)}
-.alert.warn{background:#2a2518;border-color:var(--yellow)}
-.alert.info{background:#1a2530;border-color:var(--accent)}
-.alert.ok{background:#1a2a22;border-color:var(--green)}
-.warn-box{background:#2a2518;border:1px solid var(--yellow);border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:.88rem;color:var(--yellow)}
-table{width:100%;border-collapse:collapse;font-size:.85rem}
-th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--border)}
-th{color:var(--muted);font-weight:600;font-size:.75rem;text-transform:uppercase}
-td.name{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.tab{padding:8px 14px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:.88rem}
-.tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.panel{display:none}.panel.active{display:block}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;font-size:15px}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 40px}
+h1{font-size:1.35rem;font-weight:800}
+h2{font-size:1.05rem;font-weight:700;margin-bottom:10px}
+.sub{color:var(--muted);font-size:.88rem;margin-top:4px}
+.box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+.status{border-width:2px}
+.status.ok{border-color:var(--green)}
+.status.warn{border-color:var(--yellow)}
+.status.bad{border-color:var(--red)}
+.status-title{font-size:1.15rem;font-weight:800}
+.status-sub{color:var(--muted);font-size:.9rem;margin-top:4px}
+.hint{font-size:.82rem;color:var(--muted);margin:-4px 0 12px}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.metric{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.metric .lbl{font-size:.75rem;color:var(--muted)}
+.metric .val{font-size:1.35rem;font-weight:800;margin-top:2px}
+.metric .note{font-size:.78rem;color:var(--muted);margin-top:2px}
+.todo{padding-left:1.2rem}
+.todo li{margin-bottom:8px}
+.todo li:last-child{margin-bottom:0}
+.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:4px}
+th,td{padding:9px 8px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+th{color:var(--muted);font-size:.72rem;font-weight:600;text-transform:none}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px}
+summary{padding:14px 16px;font-weight:700;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';float:right;color:var(--muted);font-weight:400}
+details[open] summary::after{content:'−'}
+.details-body{padding:0 16px 16px;border-top:1px solid var(--border)}
+footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
+@media(max-width:500px){.metrics{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header>
-  <h1>Ozon Ops Dashboard</h1>
-  <div class="sub">Отчёт за 2026-08-03 · обновлено 2026-08-04T16:14:37</div>
-  <div class="warn-box">Реклама из CSV-снапшота — перевыпустите Performance API ключ для live-данных</div>
-  <div class="cards">
-    <div class="card"><div class="lbl">Вчера заказы</div><div class="val">17</div></div>
-    <div class="card"><div class="lbl">7д заказы</div><div class="val">141</div>
-      <div class="delta ">+8% vs пред.7д</div>
+
+<div class="box">
+  <h1>Ozon — сводка</h1>
+  <div class="sub">Данные за 2026-08-03 · обновлено 2026-08-04 16:14</div>
+</div>
+
+<div class="box status bad">
+  <div class="status-title">Нужны действия сегодня</div>
+  <div class="status-sub">Срочных задач: 10</div>
+</div>
+
+<div class="box">
+  <h2>1. Сделать сегодня</h2>
+  <p class="hint">Список для Насти — по порядку, без лишнего.</p>
+  <ol class='todo'><li>Срезать или стоп рекламу — для кошек и собак 140</li><li>Срезать или стоп рекламу — для пожилых собак1</li><li>Срезать или стоп рекламу — для взрослых собак1</li><li>Срезать или стоп рекламу — бреверсы для крупных</li><li>Срезать или стоп рекламу — Multi Vit Puppy</li><li>Срезать или стоп рекламу — для мелких пород</li><li>Срезать или стоп рекламу — гель германия1</li></ol>
+</div>
+
+<div class="box">
+  <h2>2. Цифры за неделю</h2>
+  <p class="hint">На это смотрим каждый день. Сравнение — с прошлыми 7 днями.</p>
+  <div class="metrics">
+    <div class="metric">
+      <div class="lbl">Заказов за 7 дней</div>
+      <div class="val">141</div>
+      <div class="note">+8% к прошлой неделе</div>
     </div>
-    <div class="card"><div class="lbl">7д выручка</div><div class="val">178 640</div></div>
-    <div class="card"><div class="lbl">MTD заказы</div><div class="val">57</div></div>
-    <div class="card"><div class="lbl">Реклама 7д</div><div class="val">53 203₽</div>
-      <div class="delta ">ДРР 43.3%</div>
+    <div class="metric">
+      <div class="lbl">Вчера заказов</div>
+      <div class="val">17</div>
+      <div class="note">один день</div>
     </div>
-    <div class="card"><div class="lbl">PDP 7д</div><div class="val">6 487</div>
-      <div class="delta">конв 2.17%</div>
+    <div class="metric">
+      <div class="lbl">Реклама за 7 дней</div>
+      <div class="val">53 203 ₽</div>
+      <div class="note">ДРР 43.3% — норма до 25%</div>
     </div>
-    <div class="card"><div class="lbl">Алерты</div><div class="val">24</div></div>
+    <div class="metric">
+      <div class="lbl">Конверсия карточки</div>
+      <div class="val">2.2%</div>
+      <div class="note">сколько % просмотров → заказ</div>
+    </div>
   </div>
-</header>
-
-<section>
-  <h2>⚡ Сделать сегодня</h2>
-  <div class="alert bad">ДРР 122% — для кошек и собак 140  27.07 (для кошек и собак 140) расход 4489₽</div><div class="alert bad">ДРР 41% — для пожилых собак1 27.07 (для пожилых собак1) расход 4166₽</div><div class="alert bad">ДРР 350% — для взрослых собак1 27.07 (для взрослых собак1) расход 4363₽</div><div class="alert bad">ДРР 40% — бреверсы для крупных 27.07 (бреверсы для крупных) расход 3365₽</div><div class="alert bad">ДРР 51% — Multi Vit Puppy 27.07 (Multi Vit Puppy) расход 4555₽</div><div class="alert bad">ДРР 138% — для мелких пород 27.07 (для мелких пород) расход 4573₽</div><div class="alert bad">ДРР 490% — гель германия1 27.07 (гель германия1) расход 4925₽</div><div class="alert bad">Мало заказов при расходе: для собак 27.07 — 4641₽ / 0 шт</div><div class="alert bad">ДРР 57% — для кошек и собак 260 1 27.07 (для кошек и собак 260 1) расход 5372₽</div><div class="alert bad">Критически низкая конверсия 0.6%: для взрослых собак1 — править карточку/SEO</div><div class="alert warn">Остаток <14д ADS: для собак — 13 шт, ADS 2.2/д</div><div class="alert warn">Просадка заказов -54%: Витамины для собак для суставов 8in1 Excel Glucosa (глюкозамин 55 шт)</div><div class="alert warn">Просадка заказов -67%: Витамины для пожилых собак от 5 лет 8in1 Excel Mul (для пожилых собак1)</div><div class="alert warn">Конверсия PDP→заказ ↓2.3 п.п.: глюкозамин 55 шт (3.08% vs 5.42%)</div><div class="alert warn">Показы карточки ↓-26%: для собак (308 PDP)</div><div class="alert warn">Показы карточки ↓-34%: для пожилых собак1 (289 PDP)</div><div class="alert warn">Конверсия PDP→заказ ↓1.0 п.п.: для пожилых собак1 (1.04% vs 2.08%)</div><div class="alert warn">Показы карточки ↓-20%: кальций (224 PDP)</div><div class="alert warn">Показы карточки ↓-26%: для кошек и собак 140 (191 PDP)</div><div class="alert warn">Показы карточки ↓-36%: для кошек и собак 260 1 (181 PDP)</div><div class="alert warn">Показы карточки ↓-38%: бреверсы для крупных (176 PDP)</div><div class="alert warn">Показы карточки ↓-56%: для взрослых собак1 (167 PDP)</div><div class="alert info">Забрать возврат: глюкозамин 55 шт — Едет на склад Ozon</div><div class="alert info">Забрать возврат: гель германия1 — Едет на склад Ozon</div>
-</section>
-
-<div class="tabs">
-  <button class="tab active" data-tab="skus">Артикулы</button>
-  <button class="tab" data-tab="conv">Конверсии</button>
-  <button class="tab" data-tab="ads">Реклама</button>
-  <button class="tab" data-tab="supply">Поставки</button>
-  <button class="tab" data-tab="returns">Возвраты</button>
-  <button class="tab" data-tab="dims">Габариты</button>
 </div>
 
-<div id="skus" class="panel active">
-<section style="border:none;padding:0;background:transparent">
+<div class="box">
+  <h2>3. Где проблема</h2>
+  <p class="hint">Артикулы, которые требуют внимания.</p>
+  <table><thead><tr><th>Артикул</th><th>Что не так</th><th>Что делать</th></tr></thead><tbody><tr><td><b>для кошек и собак 140</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>для пожилых собак1</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>для взрослых собак1</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>бреверсы для крупных</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>Multi Vit Puppy</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>для мелких пород</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>гель германия1</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>для кошек и собак 260 1</b></td><td>Реклама дорогая</td><td>Стоп или срез бюджета</td></tr><tr><td><b>для собак</b></td><td>Мало на складе</td><td>План поставки</td></tr><tr><td><b>глюкозамин 55 шт</b></td><td>Просела конверсия</td><td>Карточка и отзывы</td></tr><tr><td><b>кальций</b></td><td>Упали просмотры</td><td>SEO, главное фото, цена</td></tr></tbody></table>
+</div>
+
+<div class="box">
+  <h2>4. Что продаётся</h2>
+  <p class="hint">Топ по заказам за 7 дней.</p>
   <table>
-    <thead><tr>
-      <th>Артикул</th><th>Товар</th><th>FBO</th><th>PDP</th><th>Конв%</th><th>7д шт</th><th>Δ7д</th><th>7д ₽</th><th>Расход</th><th>ДРР</th>
-    </tr></thead>
-    <tbody><tr>
-          <td>шокол</td>
-          <td class="name">Шоколад горький 90% натуральный Беларусь Спартак</td>
-          <td>505</td>
-          <td class="">3 634</td>
-          <td class="">1.29%</td>
-          <td>47</td>
-          <td class="good">+15%</td>
-          <td>50 503</td>
-          <td>4 817</td>
-          <td class="">14%</td>
-        </tr><tr>
-          <td>для собак</td>
-          <td class="name">Добавка против поедания фекалий для собак 8in1 Excel De</td>
-          <td>13</td>
-          <td class="bad">308</td>
-          <td class="">4.87%</td>
-          <td>15</td>
-          <td class="good">+88%</td>
-          <td>17 474</td>
-          <td>4 641</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>гель германия1</td>
-          <td class="name">Clovin Гель для стирки белья универсальный 3,305 л конц</td>
-          <td>27</td>
-          <td class="">183</td>
-          <td class="">7.65%</td>
-          <td>14</td>
-          <td class="good">+367%</td>
-          <td>12 516</td>
-          <td>4 925</td>
-          <td class="bad">490%</td>
-        </tr><tr>
-          <td>глюкозамин 55 шт</td>
-          <td class="name">Витамины для собак для суставов 8in1 Excel Glucosamine </td>
-          <td>37</td>
-          <td class="">390</td>
-          <td class="">3.08%</td>
-          <td>12</td>
-          <td class="bad">-54%</td>
-          <td>23 562</td>
-          <td>3 955</td>
-          <td class="">15%</td>
-        </tr><tr>
-          <td>для мелких пород</td>
-          <td class="name">Витамины для собак мелких пород Excel Multi Vitamin Sma</td>
-          <td>44</td>
-          <td class="">407</td>
-          <td class="">2.46%</td>
-          <td>10</td>
-          <td class="good">+100%</td>
-          <td>15 720</td>
-          <td>4 573</td>
-          <td class="bad">138%</td>
-        </tr><tr>
-          <td>кальций</td>
-          <td class="name">Витамины для щенков и собак кальций calcium 155 таблето</td>
-          <td>87</td>
-          <td class="">224</td>
-          <td class="">4.46%</td>
-          <td>10</td>
-          <td class="bad">-17%</td>
-          <td>13 837</td>
-          <td>3 984</td>
-          <td class="">25%</td>
-        </tr><tr>
-          <td>для кошек и собак 260 1</td>
-          <td class="name">Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Bre</td>
-          <td>52</td>
-          <td class="bad">181</td>
-          <td class="">5.52%</td>
-          <td>10</td>
-          <td class="good">+43%</td>
-          <td>13 585</td>
-          <td>5 372</td>
-          <td class="bad">57%</td>
-        </tr><tr>
-          <td>Multi Vit Puppy</td>
-          <td class="name">Витамины для щенков и растущих собак 8in1 Excel Multi V</td>
-          <td>50</td>
-          <td class="">335</td>
-          <td class="">2.69%</td>
-          <td>9</td>
-          <td class="">0%</td>
-          <td>12 215</td>
-          <td>4 555</td>
-          <td class="bad">51%</td>
-        </tr><tr>
-          <td>бреверсы для крупных</td>
-          <td class="name">Витамины для собак крупных пород 8in1 Excel Brewer's Ye</td>
-          <td>59</td>
-          <td class="bad">176</td>
-          <td class="">4.55%</td>
-          <td>8</td>
-          <td class="good">+33%</td>
-          <td>10 385</td>
-          <td>3 365</td>
-          <td class="bad">40%</td>
-        </tr><tr>
-          <td>для пожилых собак1</td>
-          <td class="name">Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vi</td>
-          <td>88</td>
-          <td class="bad">289</td>
-          <td class="">1.04%</td>
-          <td>3</td>
-          <td class="bad">-67%</td>
-          <td>4 925</td>
-          <td>4 166</td>
-          <td class="bad">41%</td>
-        </tr><tr>
-          <td>для кошек и собак 140</td>
-          <td class="name">Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Bre</td>
-          <td>186</td>
-          <td class="bad">191</td>
-          <td class="">1.05%</td>
-          <td>2</td>
-          <td class="bad">-50%</td>
-          <td>2 191</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>для взрослых собак1</td>
-          <td class="name">Витамины для взрослых собак 8in1 Excel Multi Vit Adult </td>
-          <td>85</td>
-          <td class="bad">167</td>
-          <td class="bad">0.60%</td>
-          <td>1</td>
-          <td class="">0%</td>
-          <td>1 727</td>
-          <td>4 363</td>
-          <td class="bad">350%</td>
-        </tr><tr>
-          <td>меркурий201.7</td>
-          <td class="name">Счетчик электроэнергии однофазный Меркурий 201.7 (5-60А</td>
-          <td>0</td>
-          <td class="">0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>Animonda24</td>
-          <td class="name">Корм Animonda Integra Protect Diabetes Cat (Курица) для</td>
-          <td>0</td>
-          <td class="">0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>sdgasds</td>
-          <td class="name">Кормовая добавка</td>
-          <td>0</td>
-          <td class="">2</td>
-          <td class="bad">0.00%</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>Кофей</td>
-          <td class="name">Dallmayr prodomo кофе натуральный молотый, 500 г</td>
-          <td>0</td>
-          <td class="">0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>лента</td>
-          <td class="name">Лента гидроизоляционная сетчатая КНАУФ - Флэхендихтбанд</td>
-          <td>0</td>
-          <td class="">0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>рвапвпавпав</td>
-          <td class="name">шоколад</td>
-          <td>0</td>
-          <td class="">0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>Кофе</td>
-          <td class="name">Кофе молотый</td>
-          <td>0</td>
-          <td class="">0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td class="">—</td>
-          <td>0</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr></tbody>
+    <thead><tr><th>Артикул</th><th>Заказы</th><th>Просмотры</th><th>Конверсия</th></tr></thead>
+    <tbody><tr><td><b>шокол</b></td><td class='num'>47</td><td class='num'>3 634</td><td class='num'>1.3%</td></tr><tr><td><b>для собак</b></td><td class='num'>15</td><td class='num'>308</td><td class='num'>4.9%</td></tr><tr><td><b>гель германия1</b></td><td class='num'>14</td><td class='num'>183</td><td class='num'>7.7%</td></tr><tr><td><b>глюкозамин 55 шт</b></td><td class='num'>12</td><td class='num'>390</td><td class='num'>3.1%</td></tr><tr><td><b>для мелких пород</b></td><td class='num'>10</td><td class='num'>407</td><td class='num'>2.5%</td></tr><tr><td><b>кальций</b></td><td class='num'>10</td><td class='num'>224</td><td class='num'>4.5%</td></tr><tr><td><b>для кошек и собак 260 1</b></td><td class='num'>10</td><td class='num'>181</td><td class='num'>5.5%</td></tr><tr><td><b>Multi Vit Puppy</b></td><td class='num'>9</td><td class='num'>335</td><td class='num'>2.7%</td></tr></tbody>
   </table>
-</section>
 </div>
 
-<div id="conv" class="panel">
-<section style="border:none;padding:0;background:transparent">
-  <p style="color:var(--muted);font-size:.88rem;margin-bottom:10px">
-    Воронка 7д: поиск → карточка (PDP) → заказ. Δ% — vs пред. период. Источник: ?
-  </p>
-  <table>
-    <thead><tr>
-      <th>Артикул</th><th>Товар</th><th>Поиск</th><th>PDP</th><th>Δ PDP</th>
-      <th>Заказы</th><th>Конв PDP→заказ</th><th>Δ конв п.п.</th>
-    </tr></thead>
-    <tbody><tr><td colspan=8>Нет данных — войди в seller.ozon.ru в Chrome</td></tr></tbody>
-  </table>
-</section>
-</div>
+<details>
+  <summary>Реклама — расход по кампаниям</summary>
+  <div class="details-body">
+    <table>
+      <thead><tr><th>Товар</th><th>Потрачено</th><th>Заказы</th><th>ДРР</th></tr></thead>
+      <tbody><tr><td>для кошек и собак 260 1</td><td class='num'>5 372 ₽</td><td class='num'>7</td><td class='num'>57% ⚠</td></tr><tr><td>гель германия1</td><td class='num'>4 925 ₽</td><td class='num'>1</td><td class='num'>490% ⚠</td></tr><tr><td>шокол</td><td class='num'>4 817 ₽</td><td class='num'>31</td><td class='num'>14%</td></tr><tr><td>для собак</td><td class='num'>4 641 ₽</td><td class='num'>0</td><td class='num'>—</td></tr><tr><td>для мелких пород</td><td class='num'>4 573 ₽</td><td class='num'>2</td><td class='num'>138% ⚠</td></tr><tr><td>Multi Vit Puppy</td><td class='num'>4 555 ₽</td><td class='num'>6</td><td class='num'>51% ⚠</td></tr></tbody>
+    </table>
+  </div>
+</details>
 
-<div id="ads" class="panel">
-<section style="border:none;padding:0;background:transparent">
-  <table>
-    <thead><tr><th>Кампания</th><th>Статус</th><th>Расход</th><th>Показы</th><th>Заказы</th><th>ДРР</th></tr></thead>
-    <tbody><tr>
-          <td>для кошек и собак 260 1 27.07</td>
-          <td>running</td>
-          <td>5 372</td>
-          <td>5 485</td>
-          <td>7</td>
-          <td class="bad">57%</td>
-        </tr><tr>
-          <td>гель германия1 27.07</td>
-          <td>running</td>
-          <td>4 925</td>
-          <td>8 999</td>
-          <td>1</td>
-          <td class="bad">490%</td>
-        </tr><tr>
-          <td>шокол 27.07</td>
-          <td>running</td>
-          <td>4 817</td>
-          <td>29 314</td>
-          <td>31</td>
-          <td class="">14%</td>
-        </tr><tr>
-          <td>для собак 27.07</td>
-          <td>running</td>
-          <td>4 641</td>
-          <td>8 390</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr><tr>
-          <td>для мелких пород 27.07</td>
-          <td>running</td>
-          <td>4 573</td>
-          <td>11 011</td>
-          <td>2</td>
-          <td class="bad">138%</td>
-        </tr><tr>
-          <td>Multi Vit Puppy 27.07</td>
-          <td>running</td>
-          <td>4 555</td>
-          <td>7 695</td>
-          <td>6</td>
-          <td class="bad">51%</td>
-        </tr><tr>
-          <td>для кошек и собак 140  27.07</td>
-          <td>inactive</td>
-          <td>4 489</td>
-          <td>4 447</td>
-          <td>3</td>
-          <td class="bad">122%</td>
-        </tr><tr>
-          <td>для взрослых собак1 27.07</td>
-          <td>running</td>
-          <td>4 363</td>
-          <td>11 474</td>
-          <td>1</td>
-          <td class="bad">350%</td>
-        </tr><tr>
-          <td>для пожилых собак1 27.07</td>
-          <td>running</td>
-          <td>4 166</td>
-          <td>7 461</td>
-          <td>6</td>
-          <td class="bad">41%</td>
-        </tr><tr>
-          <td>кальций 27.07</td>
-          <td>running</td>
-          <td>3 984</td>
-          <td>2 165</td>
-          <td>11</td>
-          <td class="">25%</td>
-        </tr><tr>
-          <td>глюкозамин 55 шт 27.07</td>
-          <td>running</td>
-          <td>3 955</td>
-          <td>3 917</td>
-          <td>14</td>
-          <td class="">15%</td>
-        </tr><tr>
-          <td>бреверсы для крупных 27.07</td>
-          <td>running</td>
-          <td>3 365</td>
-          <td>5 548</td>
-          <td>6</td>
-          <td class="bad">40%</td>
-        </tr><tr>
-          <td>для кошек и собак 140 таб</td>
-          <td>running</td>
-          <td>0</td>
-          <td>3</td>
-          <td>0</td>
-          <td class="">—</td>
-        </tr></tbody>
-  </table>
-</section>
-</div>
+<details>
+  <summary>Поставки и возвраты</summary>
+  <div class="details-body">
+    <p><b>Поставки</b></p>
+    <ul><li><b>116057614-1</b> — В пути</li></ul>
+    <p style="margin-top:12px"><b>Возвраты к забору</b></p>
+    <ul><li><b>глюкозамин 55 шт</b> — забрать</li><li><b>гель германия1</b> — забрать</li></ul>
+  </div>
+</details>
 
-<div id="supply" class="panel">
-<section style="border:none;padding:0;background:transparent">
-  <table>
-    <thead><tr><th>Номер</th><th>Статус</th><th>Склад</th></tr></thead>
-    <tbody><tr><td>116057614-1</td><td>В пути</td><td>—</td></tr></tbody>
-  </table>
-</section>
+<footer>Обновляется каждый день ~07:00 МСК</footer>
 </div>
-
-<div id="returns" class="panel">
-<section style="border:none;padding:0;background:transparent">
-  <table>
-    <thead><tr><th>Артикул</th><th>Статус</th><th>Точка</th></tr></thead>
-    <tbody><tr><td>глюкозамин 55 шт</td><td>Едет на склад Ozon</td><td>УШАКОВО_ХАБ_3PL</td></tr><tr><td>гель германия1</td><td>Едет на склад Ozon</td><td>МО_ИСТРА_2_ХАБ</td></tr></tbody>
-  </table>
-</section>
-</div>
-
-<div id="dims" class="panel">
-<section style="border:none;padding:0;background:transparent">
-  <table>
-    <thead><tr><th>Артикул</th><th>Изменения</th></tr></thead>
-    <tbody><tr><td colspan=2>Без изменений</td></tr></tbody>
-  </table>
-</section>
-</div>
-
-<footer style="text-align:center;color:var(--muted);font-size:.78rem;margin-top:24px;padding:12px">
-  Ozon Ops · обновляется ежедневно ~07:00 МСК ·
-  <a href="https://wedoubledi-web.github.io/ozon-ops-dashboard/" style="color:var(--accent)">wedoubledi-web.github.io/ozon-ops-dashboard</a>
-</footer>
-
-</div>
-<script>
-document.querySelectorAll('.tab').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById(btn.dataset.tab).classList.add('active');
-  });
-});
-</script>
 </body>
 </html>
