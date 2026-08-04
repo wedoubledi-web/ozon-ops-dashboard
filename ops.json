@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T16:23:41",
+  "generated_at": "2026-08-04T16:30:54",
   "report_date": "2026-08-03",
   "metrics_available": [
     "ordered_units",
@@ -356,6 +356,21 @@
         "drr_pct": 10,
         "revenue_dyn_pct": 63,
         "stock_end": 522
+      },
+      "conv_yesterday": {
+        "sku": "4451480169",
+        "offer_id": "шокол",
+        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+        "pdp_views": 675,
+        "search_views": 379,
+        "ordered_units": 6,
+        "pdp_views_delta_pct": 38,
+        "search_views_delta_pct": 22,
+        "orders_delta_pct": 100,
+        "conv_pdp_to_order_pct": 0.89,
+        "conv_search_to_pdp_pct": 178.1,
+        "conv_pdp_to_order_prev_pct": 0.61,
+        "conv_delta_pp": 0.28
       }
     },
     {
@@ -416,6 +431,21 @@
         "drr_pct": 17.5,
         "revenue_dyn_pct": 18,
         "stock_end": 23
+      },
+      "conv_yesterday": {
+        "sku": "3730511760",
+        "offer_id": "для собак",
+        "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+        "pdp_views": 61,
+        "search_views": 111,
+        "ordered_units": 1,
+        "pdp_views_delta_pct": -15,
+        "search_views_delta_pct": 127,
+        "orders_delta_pct": -80,
+        "conv_pdp_to_order_pct": 1.64,
+        "conv_search_to_pdp_pct": 54.95,
+        "conv_pdp_to_order_prev_pct": 6.97,
+        "conv_delta_pp": -5.33
       }
     },
     {
@@ -476,6 +506,21 @@
         "drr_pct": 55.5,
         "revenue_dyn_pct": 39,
         "stock_end": 38
+      },
+      "conv_yesterday": {
+        "sku": "4405568218",
+        "offer_id": "гель германия1",
+        "name": "Clovin Гель для стирки белья универсальный 3,305 л концентрат Der Waschkonig Universal 110 стирок",
+        "pdp_views": 39,
+        "search_views": 98,
+        "ordered_units": 3,
+        "pdp_views_delta_pct": 5,
+        "search_views_delta_pct": 20,
+        "orders_delta_pct": -50,
+        "conv_pdp_to_order_pct": 7.69,
+        "conv_search_to_pdp_pct": 39.8,
+        "conv_pdp_to_order_prev_pct": 16.15,
+        "conv_delta_pp": -8.46
       }
     },
     {
@@ -536,6 +581,21 @@
         "drr_pct": 5,
         "revenue_dyn_pct": 15,
         "stock_end": 43
+      },
+      "conv_yesterday": {
+        "sku": "3726902147",
+        "offer_id": "глюкозамин 55 шт",
+        "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+        "pdp_views": 53,
+        "search_views": 85,
+        "ordered_units": 3,
+        "pdp_views_delta_pct": -22,
+        "search_views_delta_pct": 57,
+        "orders_delta_pct": 50,
+        "conv_pdp_to_order_pct": 5.66,
+        "conv_search_to_pdp_pct": 62.35,
+        "conv_pdp_to_order_prev_pct": 2.94,
+        "conv_delta_pp": 2.72
       }
     },
     {
@@ -596,6 +656,21 @@
         "drr_pct": 26.3,
         "revenue_dyn_pct": -1,
         "stock_end": 47
+      },
+      "conv_yesterday": {
+        "sku": "3726897234",
+        "offer_id": "для мелких пород",
+        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+        "pdp_views": 41,
+        "search_views": 39,
+        "ordered_units": 0,
+        "pdp_views_delta_pct": -25,
+        "search_views_delta_pct": 34,
+        "orders_delta_pct": -100,
+        "conv_pdp_to_order_pct": 0.0,
+        "conv_search_to_pdp_pct": 105.13,
+        "conv_pdp_to_order_prev_pct": 0.0,
+        "conv_delta_pp": 0.0
       }
     },
     {
@@ -656,6 +731,21 @@
         "drr_pct": 11.2,
         "revenue_dyn_pct": 9,
         "stock_end": 91
+      },
+      "conv_yesterday": {
+        "sku": "4658698444",
+        "offer_id": "кальций",
+        "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+        "pdp_views": 20,
+        "search_views": 37,
+        "ordered_units": 0,
+        "pdp_views_delta_pct": -47,
+        "search_views_delta_pct": 32,
+        "orders_delta_pct": -100,
+        "conv_pdp_to_order_pct": 0.0,
+        "conv_search_to_pdp_pct": 54.05,
+        "conv_pdp_to_order_prev_pct": 0.0,
+        "conv_delta_pp": 0.0
       }
     },
     {
@@ -716,6 +806,21 @@
         "drr_pct": 23.7,
         "revenue_dyn_pct": 349,
         "stock_end": 52
+      },
+      "conv_yesterday": {
+        "sku": "4823918365",
+        "offer_id": "для кошек и собак 260 1",
+        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+        "pdp_views": 20,
+        "search_views": 59,
+        "ordered_units": 0,
+        "pdp_views_delta_pct": -17,
+        "search_views_delta_pct": 37,
+        "orders_delta_pct": null,
+        "conv_pdp_to_order_pct": 0.0,
+        "conv_search_to_pdp_pct": 33.9,
+        "conv_pdp_to_order_prev_pct": 0.0,
+        "conv_delta_pp": 0.0
       }
     },
     {
@@ -776,6 +881,21 @@
         "drr_pct": 15.9,
         "revenue_dyn_pct": -1,
         "stock_end": 54
+      },
+      "conv_yesterday": {
+        "sku": "3664742731",
+        "offer_id": "Multi Vit Puppy",
+        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+        "pdp_views": 42,
+        "search_views": 57,
+        "ordered_units": 1,
+        "pdp_views_delta_pct": 45,
+        "search_views_delta_pct": 97,
+        "orders_delta_pct": 0,
+        "conv_pdp_to_order_pct": 2.38,
+        "conv_search_to_pdp_pct": 73.68,
+        "conv_pdp_to_order_prev_pct": 3.45,
+        "conv_delta_pp": -1.07
       }
     },
     {
@@ -836,6 +956,21 @@
         "drr_pct": 33.2,
         "revenue_dyn_pct": -52,
         "stock_end": 67
+      },
+      "conv_yesterday": {
+        "sku": "3726858649",
+        "offer_id": "бреверсы для крупных",
+        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+        "pdp_views": 28,
+        "search_views": 42,
+        "ordered_units": 3,
+        "pdp_views_delta_pct": -20,
+        "search_views_delta_pct": 75,
+        "orders_delta_pct": 50,
+        "conv_pdp_to_order_pct": 10.71,
+        "conv_search_to_pdp_pct": 66.67,
+        "conv_pdp_to_order_prev_pct": 5.71,
+        "conv_delta_pp": 5.0
       }
     },
     {
@@ -896,6 +1031,21 @@
         "drr_pct": 34.4,
         "revenue_dyn_pct": -73,
         "stock_end": 90
+      },
+      "conv_yesterday": {
+        "sku": "3726888167",
+        "offer_id": "для пожилых собак1",
+        "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+        "pdp_views": 61,
+        "search_views": 43,
+        "ordered_units": 0,
+        "pdp_views_delta_pct": 53,
+        "search_views_delta_pct": 65,
+        "orders_delta_pct": -100,
+        "conv_pdp_to_order_pct": 0.0,
+        "conv_search_to_pdp_pct": 141.86,
+        "conv_pdp_to_order_prev_pct": 0.0,
+        "conv_delta_pp": 0.0
       }
     },
     {
@@ -956,6 +1106,21 @@
         "drr_pct": 60,
         "revenue_dyn_pct": 268,
         "stock_end": 187
+      },
+      "conv_yesterday": {
+        "sku": "4823627697",
+        "offer_id": "для кошек и собак 140",
+        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+        "pdp_views": 34,
+        "search_views": 123,
+        "ordered_units": 0,
+        "pdp_views_delta_pct": 42,
+        "search_views_delta_pct": 146,
+        "orders_delta_pct": null,
+        "conv_pdp_to_order_pct": 0.0,
+        "conv_search_to_pdp_pct": 27.64,
+        "conv_pdp_to_order_prev_pct": 0.0,
+        "conv_delta_pp": 0.0
       }
     },
     {
@@ -1016,6 +1181,21 @@
         "drr_pct": 120.5,
         "revenue_dyn_pct": 12,
         "stock_end": 84
+      },
+      "conv_yesterday": {
+        "sku": "3726892929",
+        "offer_id": "для взрослых собак1",
+        "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+        "pdp_views": 27,
+        "search_views": 29,
+        "ordered_units": 0,
+        "pdp_views_delta_pct": 59,
+        "search_views_delta_pct": 32,
+        "orders_delta_pct": null,
+        "conv_pdp_to_order_pct": 0.0,
+        "conv_search_to_pdp_pct": 93.1,
+        "conv_pdp_to_order_prev_pct": 0.0,
+        "conv_delta_pp": 0.0
       }
     },
     {
@@ -1410,11 +1590,7 @@
   "returns_total": 65,
   "dimension_changes": [],
   "conversions": {
-    "source": "distribution_xlsx",
-    "report_file": "analytics_report_2026-08-03_14_05.xlsx",
-    "report_formed_at": "08.03.26",
-    "period_label": "7 дней",
-    "warnings": [],
+    "source": "hybrid",
     "periods": {
       "7d": {
         "from": "",
@@ -1596,17 +1772,433 @@
             "stock_end": 84
           }
         ]
+      },
+      "yesterday": {
+        "from": "2026-08-03",
+        "to": "2026-08-03",
+        "prev_from": "2026-08-02",
+        "prev_to": "2026-08-02",
+        "summary": {
+          "pdp_views": 1101,
+          "search_views": 1102,
+          "ordered_units": 17,
+          "conv_pdp_to_order_pct": 1.54,
+          "conv_search_to_pdp_pct": 99.91,
+          "sku_count": 12
+        },
+        "skus": [
+          {
+            "sku": "4451480169",
+            "offer_id": "шокол",
+            "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+            "pdp_views": 675,
+            "search_views": 379,
+            "ordered_units": 6,
+            "pdp_views_delta_pct": 38,
+            "search_views_delta_pct": 22,
+            "orders_delta_pct": 100,
+            "conv_pdp_to_order_pct": 0.89,
+            "conv_search_to_pdp_pct": 178.1,
+            "conv_pdp_to_order_prev_pct": 0.61,
+            "conv_delta_pp": 0.28
+          },
+          {
+            "sku": "3730511760",
+            "offer_id": "для собак",
+            "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+            "pdp_views": 61,
+            "search_views": 111,
+            "ordered_units": 1,
+            "pdp_views_delta_pct": -15,
+            "search_views_delta_pct": 127,
+            "orders_delta_pct": -80,
+            "conv_pdp_to_order_pct": 1.64,
+            "conv_search_to_pdp_pct": 54.95,
+            "conv_pdp_to_order_prev_pct": 6.97,
+            "conv_delta_pp": -5.33
+          },
+          {
+            "sku": "3726888167",
+            "offer_id": "для пожилых собак1",
+            "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+            "pdp_views": 61,
+            "search_views": 43,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": 53,
+            "search_views_delta_pct": 65,
+            "orders_delta_pct": -100,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 141.86,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          },
+          {
+            "sku": "3726902147",
+            "offer_id": "глюкозамин 55 шт",
+            "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+            "pdp_views": 53,
+            "search_views": 85,
+            "ordered_units": 3,
+            "pdp_views_delta_pct": -22,
+            "search_views_delta_pct": 57,
+            "orders_delta_pct": 50,
+            "conv_pdp_to_order_pct": 5.66,
+            "conv_search_to_pdp_pct": 62.35,
+            "conv_pdp_to_order_prev_pct": 2.94,
+            "conv_delta_pp": 2.72
+          },
+          {
+            "sku": "3664742731",
+            "offer_id": "Multi Vit Puppy",
+            "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+            "pdp_views": 42,
+            "search_views": 57,
+            "ordered_units": 1,
+            "pdp_views_delta_pct": 45,
+            "search_views_delta_pct": 97,
+            "orders_delta_pct": 0,
+            "conv_pdp_to_order_pct": 2.38,
+            "conv_search_to_pdp_pct": 73.68,
+            "conv_pdp_to_order_prev_pct": 3.45,
+            "conv_delta_pp": -1.07
+          },
+          {
+            "sku": "3726897234",
+            "offer_id": "для мелких пород",
+            "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+            "pdp_views": 41,
+            "search_views": 39,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": -25,
+            "search_views_delta_pct": 34,
+            "orders_delta_pct": -100,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 105.13,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          },
+          {
+            "sku": "4405568218",
+            "offer_id": "гель германия1",
+            "name": "Clovin Гель для стирки белья универсальный 3,305 л концентрат Der Waschkonig Universal 110 стирок",
+            "pdp_views": 39,
+            "search_views": 98,
+            "ordered_units": 3,
+            "pdp_views_delta_pct": 5,
+            "search_views_delta_pct": 20,
+            "orders_delta_pct": -50,
+            "conv_pdp_to_order_pct": 7.69,
+            "conv_search_to_pdp_pct": 39.8,
+            "conv_pdp_to_order_prev_pct": 16.15,
+            "conv_delta_pp": -8.46
+          },
+          {
+            "sku": "4823627697",
+            "offer_id": "для кошек и собак 140",
+            "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+            "pdp_views": 34,
+            "search_views": 123,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": 42,
+            "search_views_delta_pct": 146,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 27.64,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          },
+          {
+            "sku": "3726858649",
+            "offer_id": "бреверсы для крупных",
+            "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+            "pdp_views": 28,
+            "search_views": 42,
+            "ordered_units": 3,
+            "pdp_views_delta_pct": -20,
+            "search_views_delta_pct": 75,
+            "orders_delta_pct": 50,
+            "conv_pdp_to_order_pct": 10.71,
+            "conv_search_to_pdp_pct": 66.67,
+            "conv_pdp_to_order_prev_pct": 5.71,
+            "conv_delta_pp": 5.0
+          },
+          {
+            "sku": "3726892929",
+            "offer_id": "для взрослых собак1",
+            "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+            "pdp_views": 27,
+            "search_views": 29,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": 59,
+            "search_views_delta_pct": 32,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 93.1,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          },
+          {
+            "sku": "4658698444",
+            "offer_id": "кальций",
+            "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+            "pdp_views": 20,
+            "search_views": 37,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": -47,
+            "search_views_delta_pct": 32,
+            "orders_delta_pct": -100,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 54.05,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          },
+          {
+            "sku": "4823918365",
+            "offer_id": "для кошек и собак 260 1",
+            "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+            "pdp_views": 20,
+            "search_views": 59,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": -17,
+            "search_views_delta_pct": 37,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 33.9,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          }
+        ]
+      },
+      "mtd": {
+        "from": "2026-08-01",
+        "to": "2026-08-03",
+        "prev_from": "2026-07-01",
+        "prev_to": "2026-07-03",
+        "summary": {
+          "pdp_views": 3086,
+          "search_views": 2530,
+          "ordered_units": 57,
+          "conv_pdp_to_order_pct": 1.85,
+          "conv_search_to_pdp_pct": 121.98,
+          "sku_count": 13
+        },
+        "skus": [
+          {
+            "sku": "4451480169",
+            "offer_id": "шокол",
+            "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+            "pdp_views": 1668,
+            "search_views": 974,
+            "ordered_units": 14,
+            "pdp_views_delta_pct": -66,
+            "search_views_delta_pct": -91,
+            "orders_delta_pct": -64,
+            "conv_pdp_to_order_pct": 0.84,
+            "conv_search_to_pdp_pct": 171.25,
+            "conv_pdp_to_order_prev_pct": 0.79,
+            "conv_delta_pp": 0.05
+          },
+          {
+            "sku": "3726902147",
+            "offer_id": "глюкозамин 55 шт",
+            "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+            "pdp_views": 199,
+            "search_views": 186,
+            "ordered_units": 6,
+            "pdp_views_delta_pct": null,
+            "search_views_delta_pct": null,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 3.02,
+            "conv_search_to_pdp_pct": 106.99,
+            "conv_pdp_to_order_prev_pct": null,
+            "conv_delta_pp": null
+          },
+          {
+            "sku": "3664742731",
+            "offer_id": "Multi Vit Puppy",
+            "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+            "pdp_views": 196,
+            "search_views": 112,
+            "ordered_units": 4,
+            "pdp_views_delta_pct": 40,
+            "search_views_delta_pct": -79,
+            "orders_delta_pct": 100,
+            "conv_pdp_to_order_pct": 2.04,
+            "conv_search_to_pdp_pct": 175.0,
+            "conv_pdp_to_order_prev_pct": 1.43,
+            "conv_delta_pp": 0.61
+          },
+          {
+            "sku": "3726897234",
+            "offer_id": "для мелких пород",
+            "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+            "pdp_views": 191,
+            "search_views": 98,
+            "ordered_units": 3,
+            "pdp_views_delta_pct": -62,
+            "search_views_delta_pct": -89,
+            "orders_delta_pct": -70,
+            "conv_pdp_to_order_pct": 1.57,
+            "conv_search_to_pdp_pct": 194.9,
+            "conv_pdp_to_order_prev_pct": 1.99,
+            "conv_delta_pp": -0.42
+          },
+          {
+            "sku": "3730511760",
+            "offer_id": "для собак",
+            "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+            "pdp_views": 164,
+            "search_views": 201,
+            "ordered_units": 9,
+            "pdp_views_delta_pct": -25,
+            "search_views_delta_pct": -69,
+            "orders_delta_pct": -18,
+            "conv_pdp_to_order_pct": 5.49,
+            "conv_search_to_pdp_pct": 81.59,
+            "conv_pdp_to_order_prev_pct": 5.02,
+            "conv_delta_pp": 0.47
+          },
+          {
+            "sku": "3726888167",
+            "offer_id": "для пожилых собак1",
+            "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+            "pdp_views": 138,
+            "search_views": 98,
+            "ordered_units": 1,
+            "pdp_views_delta_pct": -56,
+            "search_views_delta_pct": -87,
+            "orders_delta_pct": -90,
+            "conv_pdp_to_order_pct": 0.72,
+            "conv_search_to_pdp_pct": 140.82,
+            "conv_pdp_to_order_prev_pct": 3.19,
+            "conv_delta_pp": -2.47
+          },
+          {
+            "sku": "4405568218",
+            "offer_id": "гель германия1",
+            "name": "Clovin Гель для стирки белья универсальный 3,305 л концентрат Der Waschkonig Universal 110 стирок",
+            "pdp_views": 111,
+            "search_views": 232,
+            "ordered_units": 10,
+            "pdp_views_delta_pct": 44,
+            "search_views_delta_pct": -69,
+            "orders_delta_pct": 400,
+            "conv_pdp_to_order_pct": 9.01,
+            "conv_search_to_pdp_pct": 47.84,
+            "conv_pdp_to_order_prev_pct": 2.59,
+            "conv_delta_pp": 6.42
+          },
+          {
+            "sku": "4823627697",
+            "offer_id": "для кошек и собак 140",
+            "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+            "pdp_views": 97,
+            "search_views": 213,
+            "ordered_units": 1,
+            "pdp_views_delta_pct": null,
+            "search_views_delta_pct": null,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 1.03,
+            "conv_search_to_pdp_pct": 45.54,
+            "conv_pdp_to_order_prev_pct": null,
+            "conv_delta_pp": null
+          },
+          {
+            "sku": "4658698444",
+            "offer_id": "кальций",
+            "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+            "pdp_views": 87,
+            "search_views": 95,
+            "ordered_units": 3,
+            "pdp_views_delta_pct": null,
+            "search_views_delta_pct": null,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 3.45,
+            "conv_search_to_pdp_pct": 91.58,
+            "conv_pdp_to_order_prev_pct": null,
+            "conv_delta_pp": null
+          },
+          {
+            "sku": "3726858649",
+            "offer_id": "бреверсы для крупных",
+            "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+            "pdp_views": 84,
+            "search_views": 84,
+            "ordered_units": 6,
+            "pdp_views_delta_pct": -45,
+            "search_views_delta_pct": -83,
+            "orders_delta_pct": 100,
+            "conv_pdp_to_order_pct": 7.14,
+            "conv_search_to_pdp_pct": 100.0,
+            "conv_pdp_to_order_prev_pct": 1.96,
+            "conv_delta_pp": 5.18
+          },
+          {
+            "sku": "4823918365",
+            "offer_id": "для кошек и собак 260 1",
+            "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+            "pdp_views": 84,
+            "search_views": 173,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": null,
+            "search_views_delta_pct": null,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 48.55,
+            "conv_pdp_to_order_prev_pct": null,
+            "conv_delta_pp": null
+          },
+          {
+            "sku": "3726892929",
+            "offer_id": "для взрослых собак1",
+            "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+            "pdp_views": 65,
+            "search_views": 64,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": -68,
+            "search_views_delta_pct": -86,
+            "orders_delta_pct": -100,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": 101.56,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          },
+          {
+            "sku": "4294999661",
+            "offer_id": "sdgasds",
+            "name": "Кормовая добавка",
+            "pdp_views": 2,
+            "search_views": 0,
+            "ordered_units": 0,
+            "pdp_views_delta_pct": 100,
+            "search_views_delta_pct": null,
+            "orders_delta_pct": null,
+            "conv_pdp_to_order_pct": 0.0,
+            "conv_search_to_pdp_pct": null,
+            "conv_pdp_to_order_prev_pct": 0.0,
+            "conv_delta_pp": 0.0
+          }
+        ]
       }
     },
-    "raw": {
+    "warnings": [],
+    "report_files": {
+      "7d": "analytics_report_2026-08-03_14_05.xlsx"
+    },
+    "report_file": "analytics_report_2026-08-03_14_05.xlsx",
+    "period_label": "7d: analytics_report_2026-08-03_14_05.xlsx"
+  },
+  "ozon_reports": {
+    "7d": {
       "meta": {
         "file": "/Users/dmitriy/Desktop/курсор/Распределение/2026 Доклад Видео/analytics_report_2026-08-03_14_05.xlsx",
         "file_name": "analytics_report_2026-08-03_14_05.xlsx",
         "formed_at": "08.03.26",
         "period_label": "7 дней",
         "my_products_only": "Да",
-        "parsed_at": "2026-08-04T16:23:39",
-        "product_count": 12
+        "parsed_at": "2026-08-04T16:30:47",
+        "product_count": 12,
+        "period_key": "7d"
       },
       "summary": {
         "ordered_units": 140,
@@ -1880,8 +2472,9 @@
       "formed_at": "08.03.26",
       "period_label": "7 дней",
       "my_products_only": "Да",
-      "parsed_at": "2026-08-04T16:23:39",
-      "product_count": 12
+      "parsed_at": "2026-08-04T16:30:47",
+      "product_count": 12,
+      "period_key": "7d"
     },
     "summary": {
       "ordered_units": 140,
