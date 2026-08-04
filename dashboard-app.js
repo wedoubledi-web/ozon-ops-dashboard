@@ -263,6 +263,8 @@ function renderDayOverDay(store) {
     if (Number.isFinite(avgDelta)) elConvDelta.textContent = fmtDeltaPp(avgDelta);
   }
 }
+
+function renderComparison(store) {
   const el = document.getElementById("compare-results");
   if (!el) return;
 
@@ -274,11 +276,11 @@ function renderDayOverDay(store) {
     return;
   }
   if (!mine7) {
-    el.innerHTML = "<p class='muted status-warn-inline">Есть отчёт конкурентов — добавь <b>наш отчёт за 7 дней</b> (слот «Наши товары»).</p>";
+    el.innerHTML = "<p class='muted status-warn-inline'>Есть отчёт конкурентов — добавь <b>наш отчёт за 7 дней</b> (слот «Наши товары»).</p>";
     return;
   }
   if (!comp7) {
-    el.innerHTML = "<p class='muted status-warn-inline">Есть наш отчёт — добавь <b>отчёт конкурентов за 7 дней</b> (Аналитика → Товары на Ozon).</p>";
+    el.innerHTML = "<p class='muted status-warn-inline'>Есть наш отчёт — добавь <b>отчёт конкурентов за 7 дней</b> (Аналитика → Товары на Ozon).</p>";
     return;
   }
 
