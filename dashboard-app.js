@@ -389,6 +389,10 @@ function refreshUI(store) {
   renderAllReports(store);
 }
 
+function isReportFile(name) {
+  return /\.(xlsx|xls|csv)$/i.test(name || "");
+}
+
 async function handleFiles(fileList, forcedKind) {
   const store = loadStore();
   const messages = [];
@@ -396,7 +400,7 @@ async function handleFiles(fileList, forcedKind) {
   if (!fileList?.length) return;
 
   for (const file of fileList) {
-    if (!/\.(xlsx|xls|csv)$/i.test(file.name)) {
+    if (!isReportFile(file.name)) {
       messages.push({ type: "status-err", text: `${file.name}: нужен .xlsx или .csv` });
       continue;
     }
