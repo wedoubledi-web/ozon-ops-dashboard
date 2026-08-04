@@ -149,7 +149,120 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-function renderComparison(store) {
+function fmtDeltaPct(n) {
+  if (n == null || Number.isNaN(n)) return "—";
+  const sign = n > 0 ? "+" : "";
+  return `${sign}${Math.round(n)}%`;
+}
+
+function fmtDeltaPp(n) {
+  if (n == null || Number.isNaN(n)) return "—";
+  const sign = n > 0 ? "+" : "";
+  return `${sign}${Number(n).toFixed(1)} п.п.`;
+}
+
+function renderDayOverDay(store) {
+  const el = document.getElementById("day-over-day-results");
+  if (!el) return;
+
+  const opsDaily = window.__OPS_DAILY__ || {};
+  const uploaded = store.mine?.yesterday;
+  const data = OzonReportParser.buildDayOverDayRows(uploaded, opsDaily);
+
+  if (data.source === "none") {
+    el.innerHTML =
+      "<p class='muted'>Загрузи <b>наш отчёт за «Вчера»</b> (What to sell) — покажем, как метрики изменились относительно позавчера. Пока работает авто-сводка ниже после прогона.</p>";
+    return;
+  }
+
+  const s = data.summary || {};
+  const srcNote =
+    data.source === "upload"
+      ? `отчёт · ${escapeHtml(data.file || "")}`
+      : "авто-сводка (charts API)";
+
+  let rows = "";
+  for (const r of data.rows) {
+    const rowCls =
+      r.conv_delta_pp != null && r.conv_delta_pp <= -1
+        ? "row-lose"
+        : r.orders_delta_pct != null && r.orders_delta_pct <= -30
+          ? "row-lose"
+          : r.conv_delta_pp != null && r.conv_delta_pp >= 1
+            ? "row-win"
+            : "";
+    rows += `<tr class="${rowCls}">
+      <td><b>${escapeHtml(r.label)}</b></td>
+      <td class="num">${fmt(r.orders_prev)} → ${fmt(r.orders)}</td>
+      <td class="num">${fmtDeltaPct(r.orders_delta_pct)}</td>
+      <td class="num">${fmt(r.pdp_prev)} → ${fmt(r.pdp)}</td>
+      <td class="num">${fmtDeltaPct(r.pdp_delta_pct)}</td>
+      <td class="num">${fmtPct(r.conv_prev)} → ${fmtPct(r.conv)}</td>
+      <td class="num">${fmtDeltaPp(r.conv_delta_pp)}</td>
+    </tr>`;
+  }
+
+  const drops = data.rows.filter(
+    (r) =>
+      (r.conv_delta_pp != null && r.conv_delta_pp <= -1) ||
+      (r.orders_delta_pct != null && r.orders_delta_pct <= -30) ||
+      (r.pdp_delta_pct != null && r.pdp_delta_pct <= -25)
+  );
+
+  let insight = "";
+  if (drops.length) {
+    insight =
+      "<ul class='alert-list'>" +
+      drops
+        .slice(0, 6)
+        .map((r) => {
+          const parts = [];
+          if (r.orders_delta_pct != null) parts.push(`заказы ${fmtDeltaPct(r.orders_delta_pct)}`);
+          if (r.pdp_delta_pct != null) parts.push(`карточка ${fmtDeltaPct(r.pdp_delta_pct)}`);
+          if (r.conv_delta_pp != null) parts.push(`конв ${fmtDeltaPp(r.conv_delta_pp)}`);
+          return `<li class="warn">${escapeHtml(r.label)}: ${parts.join(", ")}</li>`;
+        })
+        .join("") +
+      "</ul>";
+  } else {
+    insight = "<p class='muted'>Резкой просадки вчера vs позавчera нет.</p>";
+  }
+
+  const prevLabel =
+    data.prev_from && data.prev_to ? `позавчera ${data.prev_from}` : "позавчera";
+
+  el.innerHTML = `
+    <div class="compare-summary metrics">
+      <div class="metric"><div class="lbl">Заказы вчера</div><div class="val">${fmt(s.ordered_units)}</div></div>
+      <div class="metric"><div class="lbl">Просмотры карточки</div><div class="val">${fmt(s.pdp_views)}</div></div>
+      <div class="metric"><div class="lbl">Конверсия вчера</div><div class="val">${fmtPct(s.conv_pdp_to_order_pct)}</div></div>
+      <div class="metric"><div class="lbl">Источник</div><div class="val" style="font-size:1rem">${srcNote}</div></div>
+    </div>
+    <p class="hint">Сравнение: <b>вчера</b> vs <b>${escapeHtml(prevLabel)}</b> · ${escapeHtml(data.period)}</p>
+    <h3 class="mini-h">Просели вчера</h3>
+    ${insight}
+    <h3 class="mini-h">По артикулам</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr>
+          <th>Артикул</th><th>Заказы</th><th>Δ заказы</th><th>Карточка</th><th>Δ карточка</th><th>Конверсия</th><th>Δ конв.</th>
+        </tr></thead>
+        <tbody>${rows || "<tr><td colspan=7 class='muted'>Нет строк</td></tr>"}</tbody>
+      </table>
+    </div>`;
+
+  const elOrders = document.getElementById("live-yesterday-orders");
+  const elConv = document.getElementById("live-yesterday-conv");
+  const elConvDelta = document.getElementById("live-yesterday-conv-delta");
+  if (elOrders && s.ordered_units != null) elOrders.textContent = fmt(s.ordered_units);
+  if (elConv && s.conv_pdp_to_order_pct != null) elConv.textContent = fmtPct(s.conv_pdp_to_order_pct);
+  if (elConvDelta && data.rows.length) {
+    const avgDelta =
+      data.rows.filter((r) => r.conv_delta_pp != null).reduce((a, r) => a + r.conv_delta_pp, 0) /
+      Math.max(1, data.rows.filter((r) => r.conv_delta_pp != null).length);
+    if (Number.isFinite(avgDelta)) elConvDelta.textContent = fmtDeltaPp(avgDelta);
+  }
+}
   const el = document.getElementById("compare-results");
   if (!el) return;
 
@@ -245,6 +358,7 @@ function renderAllReports(store) {
     });
   });
 
+  renderDayOverDay(store);
   renderComparison(store);
   syncOpsMetrics(store);
 }
@@ -296,9 +410,17 @@ async function handleFiles(fileList, forcedKind) {
       store[kind][pk] = report;
 
       const kindRu = kind === "competitor" ? "конкуренты" : "наши";
+      let extra = "";
+      if (kind === "mine" && pk === "yesterday") {
+        extra = " · сравнение с позавчera обновлено";
+      } else if (kind === "mine" && pk !== "yesterday") {
+        extra = " · для сравнения вчера/позавчera нужен период «Вчера»";
+      } else if (kind === "competitor" && pk !== "7d") {
+        extra = " · для сравнения с конкурентами лучше период «7 дней»";
+      }
       messages.push({
         type: "status-ok",
-        text: `✓ ${file.name} → ${kindRu}, ${report.meta.period_label || pk}, ${report.products.length} SKU`,
+        text: `✓ ${file.name} → ${kindRu}, ${report.meta.period_label || pk}, ${report.products.length} SKU${extra}`,
       });
     } catch (e) {
       messages.push({ type: "status-err", text: `✗ ${file.name}: ${e.message || "ошибка чтения"}` });

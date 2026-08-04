@@ -160,7 +160,103 @@ function parseSheetRows(rows, fileName, forcedKind) {
 
   list.sort((a, b) => (b.ordered_units || 0) - (a.ordered_units || 0));
 
-  return { meta, summary, products: list };
+  const report = { meta, summary, products: list };
+  if (meta.period_key === "yesterday") {
+    enrichYesterdayReport(report);
+  }
+  return report;
+}
+
+function prevFromDyn(cur, dynPct) {
+  if (cur == null || dynPct == null || dynPct === -100) return null;
+  const d = 1 + dynPct / 100;
+  if (d === 0) return null;
+  const v = cur / d;
+  return Number.isFinite(v) ? Math.round(v * 100) / 100 : null;
+}
+
+function enrichYesterdayReport(report) {
+  for (const p of report.products) {
+    p.revenue_prev = prevFromDyn(p.revenue_rub, p.revenue_dyn_pct);
+    if (p.revenue_dyn_pct != null) p.revenue_dyn_pct = Number(p.revenue_dyn_pct);
+  }
+  report.meta.compare_label = "вчера vs позавчera";
+}
+
+function mergeSkuWithOps(product, opsSku) {
+  if (!opsSku) return product;
+  const p = { ...product };
+  const o = opsSku;
+  p.offer_id = p.offer_id || o.offer_id || "";
+  p.orders_delta_pct = o.orders_delta_pct ?? p.orders_delta_pct;
+  p.pdp_views_delta_pct = o.pdp_views_delta_pct ?? p.pdp_views_delta_pct;
+  p.search_views_delta_pct = o.search_views_delta_pct ?? p.search_views_delta_pct;
+  p.conv_delta_pp = o.conv_delta_pp ?? p.conv_delta_pp;
+  p.conv_pdp_to_order_prev_pct = o.conv_pdp_to_order_prev_pct ?? p.conv_pdp_to_order_prev_pct;
+  if (o.pdp_views != null) p.views_pdp = o.pdp_views;
+  if (o.search_views != null) p.views_search = o.search_views;
+  if (o.ordered_units != null) p.ordered_units = o.ordered_units;
+  if (o.conv_pdp_to_order_pct != null) p.conv_pdp_to_order_pct = o.conv_pdp_to_order_pct;
+  p.orders_prev = prevFromDyn(p.ordered_units, p.orders_delta_pct);
+  p.pdp_prev = prevFromDyn(p.views_pdp, p.pdp_views_delta_pct);
+  p.search_prev = prevFromDyn(p.views_search, p.search_views_delta_pct);
+  if (p.conv_pdp_to_order_prev_pct == null && p.pdp_prev && p.orders_prev != null) {
+    p.conv_pdp_to_order_prev_pct = Math.round((p.orders_prev / p.pdp_prev) * 10000) / 100;
+  }
+  if (p.conv_delta_pp == null && p.conv_pdp_to_order_pct != null && p.conv_pdp_to_order_prev_pct != null) {
+    p.conv_delta_pp = Math.round((p.conv_pdp_to_order_pct - p.conv_pdp_to_order_prev_pct) * 100) / 100;
+  }
+  return p;
+}
+
+function buildDayOverDayRows(uploadedReport, opsDaily) {
+  const opsBySku = indexBySku(opsDaily?.skus);
+  const sourceProducts = uploadedReport?.products?.length
+    ? uploadedReport.products
+    : (opsDaily?.skus || []).map((o) => ({
+        sku: o.sku,
+        name: o.name,
+        offer_id: o.offer_id,
+        ordered_units: o.ordered_units,
+        views_pdp: o.pdp_views,
+        views_search: o.search_views,
+        conv_pdp_to_order_pct: o.conv_pdp_to_order_pct,
+      }));
+
+  const rows = [];
+  for (const prod of sourceProducts) {
+    const merged = mergeSkuWithOps(prod, opsBySku[String(prod.sku)]);
+    if (!(merged.ordered_units || merged.views_pdp || merged.orders_prev)) continue;
+    rows.push({
+      sku: merged.sku,
+      label: merged.offer_id || merged.name?.slice(0, 32) || merged.sku,
+      orders: merged.ordered_units || 0,
+      orders_prev: merged.orders_prev,
+      orders_delta_pct: merged.orders_delta_pct,
+      pdp: merged.views_pdp || 0,
+      pdp_prev: merged.pdp_prev,
+      pdp_delta_pct: merged.pdp_views_delta_pct,
+      conv: merged.conv_pdp_to_order_pct,
+      conv_prev: merged.conv_pdp_to_order_prev_pct,
+      conv_delta_pp: merged.conv_delta_pp,
+      revenue_dyn_pct: merged.revenue_dyn_pct,
+    });
+  }
+  rows.sort((a, b) => {
+    const ad = a.conv_delta_pp ?? 0;
+    const bd = b.conv_delta_pp ?? 0;
+    if (ad !== bd) return ad - bd;
+    return (a.orders_delta_pct ?? 0) - (b.orders_delta_pct ?? 0);
+  });
+  return {
+    rows,
+    source: uploadedReport ? "upload" : opsDaily?.skus?.length ? "auto" : "none",
+    file: uploadedReport?.meta?.file_name,
+    period: uploadedReport?.meta?.period_label || "Вчера",
+    prev_from: opsDaily?.prev_from,
+    prev_to: opsDaily?.prev_to,
+    summary: uploadedReport?.summary || opsDaily?.summary,
+  };
 }
 
 function alertsFromReport(report) {
@@ -266,5 +362,7 @@ window.OzonReportParser = {
   alertsFromReport,
   periodKeyFromLabel,
   buildWeeklyComparison,
+  buildDayOverDayRows,
   indexBySku,
+  enrichYesterdayReport,
 };
