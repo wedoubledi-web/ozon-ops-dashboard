@@ -37,6 +37,21 @@ table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:4px}
 th,td{padding:9px 8px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
 th{color:var(--muted);font-size:.72rem;font-weight:600;text-transform:none}
 .num{text-align:right;font-variant-numeric:tabular-nums}
+.upload-zone{border:2px dashed var(--border);border-radius:12px;padding:28px 16px;text-align:center;cursor:pointer;background:#f8fafc;transition:border-color .15s,background .15s}
+.upload-zone:hover,.upload-zone.drag{border-color:var(--accent);background:#eef4ff}
+.upload-zone p{margin:6px 0 0;color:var(--muted);font-size:.88rem}
+.upload-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer;font-size:.88rem}
+.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 12px;font-size:.82rem;cursor:pointer}
+.report-card{border:1px solid var(--border);border-radius:12px;padding:16px;margin-top:14px;background:#fafbfc}
+.report-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.report-title{font-weight:800;font-size:1.05rem}
+.mini-h{font-size:.92rem;font-weight:700;margin:16px 0 8px}
+.alert-list{padding-left:1.1rem;font-size:.88rem}
+.alert-list .crit{color:var(--red)}
+.alert-list .warn{color:var(--yellow)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+#upload-status{font-size:.82rem;color:var(--muted);margin-top:8px}
 details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px}
 summary{padding:14px 16px;font-weight:700;cursor:pointer;list-style:none}
 summary::-webkit-details-marker{display:none}
@@ -52,7 +67,23 @@ footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
 
 <div class="box">
   <h1>Ozon — сводка</h1>
-  <div class="sub">Данные за 2026-08-03 · обновлено 2026-08-04 16:30</div>
+  <div class="sub">Данные за 2026-08-03 · обновлено 2026-08-04 16:39</div>
+</div>
+
+<div class="box">
+  <h2>📊 Загрузить отчёт Ozon</h2>
+  <p class="hint">Excel из Аналитика → What to sell. Можно загрузить сразу два файла: «7 дней» и «Вчера». Анализ — прямо здесь, без ожидания.</p>
+  <div id="upload-zone" class="upload-zone">
+    <strong>Перетащи analytics_report.xlsx</strong>
+    <p>или нажми, чтобы выбрать файл</p>
+    <input type="file" id="file-input" accept=".xlsx" multiple hidden>
+  </div>
+  <div class="upload-actions">
+    <button type="button" class="btn" onclick="document.getElementById('file-input').click()">Выбрать файл</button>
+    <button type="button" class="btn-ghost" id="btn-clear-all">Очистить загруженные</button>
+  </div>
+  <div id="upload-status"></div>
+  <div id="upload-results"><p class="muted">Отчёт не загружен — перетащи Excel сюда.</p></div>
 </div>
 
 <div class="box status bad">
@@ -79,11 +110,12 @@ footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
       <div class="lbl">Вчера заказов</div>
       <div class="val">17</div>
       <div class="note">конв 1.5% · charts API</div>
+      <div class="note" id="live-conv-yesterday-note" style="margin-top:4px"></div>
     </div>
     <div class="metric">
       <div class="lbl">Конверсия 7 дней</div>
-      <div class="val">2.3%</div>
-      <div class="note">analytics_report_2026-08-03_14_05.xlsx</div>
+      <div class="val" id="live-conv-7d">2.3%</div>
+      <div class="note" id="live-conv-7d-note">analytics_report_2026-08-03_14_05.xlsx</div>
     </div>
     <div class="metric">
       <div class="lbl">Реклама за 7 дней</div>
@@ -128,7 +160,10 @@ footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
   </div>
 </details>
 
-<footer>Обновляется каждый день ~07:00 МСК</footer>
+<footer>Обновляется каждый день ~07:00 МСК · загрузка отчёта работает офлайн в браузере</footer>
 </div>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<script src="report-parser.js"></script>
+<script src="dashboard-app.js"></script>
 </body>
 </html>

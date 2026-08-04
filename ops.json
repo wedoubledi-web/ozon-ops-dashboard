@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T16:30:54",
+  "generated_at": "2026-08-04T16:39:15",
   "report_date": "2026-08-03",
   "metrics_available": [
     "ordered_units",
@@ -2196,7 +2196,7 @@
         "formed_at": "08.03.26",
         "period_label": "7 дней",
         "my_products_only": "Да",
-        "parsed_at": "2026-08-04T16:30:47",
+        "parsed_at": "2026-08-04T16:39:08",
         "product_count": 12,
         "period_key": "7d"
       },
@@ -2472,7 +2472,7 @@
       "formed_at": "08.03.26",
       "period_label": "7 дней",
       "my_products_only": "Да",
-      "parsed_at": "2026-08-04T16:30:47",
+      "parsed_at": "2026-08-04T16:39:08",
       "product_count": 12,
       "period_key": "7d"
     },
