@@ -398,16 +398,23 @@ function isReportFile(name) {
 async function handleFiles(fileList, forcedKind) {
   const store = loadStore();
   const messages = [];
+  const files = Array.from(fileList || []);
 
-  if (!fileList?.length) return;
+  if (!files.length) {
+    setStatus("Файл не выбран — попробуй ещё раз", "err");
+    return;
+  }
 
-  for (const file of fileList) {
+  for (const file of files) {
     if (!isReportFile(file.name)) {
       messages.push({ type: "status-err", text: `${file.name}: нужен .xlsx или .csv` });
       continue;
     }
     try {
       const buf = await file.arrayBuffer();
+      if (!buf || !buf.byteLength) {
+        throw new Error("Файл пустой или Safari не отдал содержимое — перетащи файл на зону");
+      }
       const report = OzonReportParser.parseFileArrayBuffer(buf, file.name, forcedKind);
       const kind = report.meta.report_kind === "competitor" ? "competitor" : "mine";
       const pk = report.meta.period_key;
@@ -443,9 +450,8 @@ function bindDropZone(zoneId, inputId, kind) {
   const input = document.getElementById(inputId);
   if (!zone || !input) return;
 
-  input.addEventListener("change", (e) => {
-    handleFiles(e.target.files, kind);
-    e.target.value = "";
+  input.addEventListener("change", () => {
+    void pickFiles(input, kind);
   });
 
   zone.addEventListener("dragover", (e) => {
@@ -456,13 +462,50 @@ function bindDropZone(zoneId, inputId, kind) {
   zone.addEventListener("drop", (e) => {
     e.preventDefault();
     zone.classList.remove("drag");
-    handleFiles(e.dataTransfer.files, kind);
+    void ingestFiles(e.dataTransfer?.files, kind);
   });
 }
 
+async function pickFiles(input, kind) {
+  const files = Array.from(input.files || []);
+  input.value = "";
+  await ingestFiles(files, kind);
+}
+
+async function ingestFiles(fileList, kind) {
+  const files = Array.from(fileList || []);
+  if (!files.length) {
+    setStatus("Файл не выбран — нажми зону или перетащи csv/xlsx", "err");
+    return;
+  }
+  setStatus(`Читаю: ${files.map((f) => f.name).join(", ")}…`, "ok");
+  try {
+    await handleFiles(files, kind);
+  } catch (e) {
+    console.error("upload failed", e);
+    setStatus(`Ошибка загрузки: ${e.message || e}`, "err");
+  }
+}
+
 function initUpload() {
+  if (typeof XLSX === "undefined") {
+    setStatus("Не загрузилась библиотека xlsx — отключи блокировщик и обнови страницу", "err");
+    return;
+  }
+  if (!window.OzonReportParser) {
+    setStatus("Не загрузился парсер — обнови страницу (Cmd+Shift+R)", "err");
+    return;
+  }
+
   bindDropZone("upload-zone-mine", "file-input-mine", "mine");
   bindDropZone("upload-zone-comp", "file-input-comp", "competitor");
+
+  document.getElementById("btn-pick-mine")?.addEventListener("click", () => {
+    document.getElementById("file-input-mine")?.click();
+  });
+  document.getElementById("btn-pick-comp")?.addEventListener("click", () => {
+    document.getElementById("file-input-comp")?.click();
+  });
 
   document.getElementById("btn-clear-all")?.addEventListener("click", () => {
     localStorage.removeItem(STORAGE_KEY);

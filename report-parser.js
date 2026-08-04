@@ -48,6 +48,31 @@ function skuFromLink(link) {
   return m ? m[1] : null;
 }
 
+function periodFromFileName(fileName) {
+  const fn = String(fileName || "").toLowerCase();
+  if (/вчera|yesterday|1-?day|1d|1_?dn/.test(fn)) return "Вчера";
+  if (/7d|7-?day|7_?days|7_?dn/.test(fn)) return "7 дней";
+  return null;
+}
+
+function skuFromRow(row, colByHeader, linkCol) {
+  const link = row[linkCol];
+  let sku = skuFromLink(link);
+  if (sku) return sku;
+  if (link && /^\d{8,}$/.test(String(link).trim())) return String(link).trim();
+  for (const hdr of ["SKU", "Ozon SKU", "Ozon ID", "sku", "Артикул"]) {
+    const c = colByHeader[hdr];
+    if (c == null || row[c] == null) continue;
+    const digits = String(row[c]).replace(/\D/g, "");
+    if (digits.length >= 8) return digits;
+  }
+  for (const cell of row) {
+    sku = skuFromLink(cell);
+    if (sku) return sku;
+  }
+  return null;
+}
+
 function findHeaderRowIndex(rows) {
   for (let r = 0; r < Math.min(rows.length, 20); r++) {
     const row = rows[r] || [];
@@ -68,7 +93,7 @@ function detectReportKind(meta, fileName, forcedKind) {
 }
 
 function parseSheetRows(rows, fileName, forcedKind) {
-  if (!rows || rows.length < 5) {
+  if (!rows || rows.length < 2) {
     throw new Error("Файл слишком короткий — это не отчёт Ozon?");
   }
 
@@ -79,6 +104,12 @@ function parseSheetRows(rows, fileName, forcedKind) {
     if (label === "Дата формирования:") meta.formed_at = val != null ? String(val) : null;
     if (label === "Период отчета:") meta.period_label = val != null ? String(val) : null;
     if (label === "Мои товары:") meta.my_products_only = val != null ? String(val) : null;
+  }
+  if (!meta.period_label) {
+    const fromFn = periodFromFileName(fileName);
+    if (fromFn) meta.period_label = fromFn;
+    else if (forcedKind === "competitor") meta.period_label = "7 дней";
+    else if (forcedKind === "mine") meta.period_label = "Вчера";
   }
 
   const headerIdx = findHeaderRowIndex(rows);
@@ -107,7 +138,7 @@ function parseSheetRows(rows, fileName, forcedKind) {
 
     const linkCol = colByHeader["Ссылка на товар"] ?? 1;
     const link = row[linkCol];
-    const sku = skuFromLink(link);
+    const sku = skuFromRow(row, colByHeader, linkCol);
     if (!sku) continue;
 
     const sellerCol = colByHeader["Продавец"];
@@ -302,8 +333,50 @@ function detectCsvDelimiter(text) {
   return semi > comma ? ";" : ",";
 }
 
+function splitCsvLine(line, delim) {
+  const out = [];
+  let cur = "";
+  let inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQ && line[i + 1] === '"') {
+        cur += '"';
+        i++;
+      } else {
+        inQ = !inQ;
+      }
+    } else if (ch === delim && !inQ) {
+      out.push(cur);
+      cur = "";
+    } else {
+      cur += ch;
+    }
+  }
+  out.push(cur);
+  return out.map((s) => s.trim());
+}
+
+function rowsFromCsvManual(text) {
+  const FS = detectCsvDelimiter(text);
+  return text
+    .split(/\r?\n/)
+    .filter((l) => l.length)
+    .map((l) => splitCsvLine(l, FS));
+}
+
+function rowsLookLikeOzon(rows) {
+  return (
+    rows.length >= 2 &&
+    rows.some((r) => r && r.some((c) => String(c || "").includes("Название товара")))
+  );
+}
+
 function rowsFromCsv(buf) {
   const text = decodeCsvText(buf);
+  const manual = rowsFromCsvManual(text);
+  if (rowsLookLikeOzon(manual)) return manual;
+
   const delims = [detectCsvDelimiter(text), ";", ",", "\t"];
   const tried = new Set();
   for (const FS of delims) {
@@ -313,9 +386,7 @@ function rowsFromCsv(buf) {
       const wb = XLSX.read(text, { type: "string", FS, raw: false });
       const ws = wb.Sheets[wb.SheetNames[0]];
       const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: null });
-      if (rows.length >= 5 && rows.some((r) => r && r.some((c) => String(c || "").includes("Название товара")))) {
-        return rows;
-      }
+      if (rowsLookLikeOzon(rows)) return rows;
     } catch {
       /* next delimiter */
     }
