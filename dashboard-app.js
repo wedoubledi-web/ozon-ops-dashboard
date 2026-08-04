@@ -160,6 +160,31 @@ function fmtDeltaPp(n) {
   return `${sign}${Number(n).toFixed(1)} п.п.`;
 }
 
+function pickMineWeekly(store) {
+  return store.mine?.["7d"] || store.mine?.["28d"] || null;
+}
+
+function pickCompWeekly(store) {
+  return store.competitor?.["7d"] || store.competitor?.["28d"] || null;
+}
+
+function weeklyPeriodNote(mineReport) {
+  if (!mineReport) return "";
+  if (mineReport.meta?.period_key === "28d") return " · данные за 28 дней (нет отчёта 7д)";
+  return "";
+}
+
+function focusUploadedReport(kind, pk) {
+  const card = document.querySelector(`.report-card[data-kind="${kind}"][data-period="${pk}"]`);
+  if (card) {
+    card.classList.add("report-card-new");
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+    setTimeout(() => card.classList.remove("report-card-new"), 3500);
+    return;
+  }
+  document.getElementById("upload-results")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function renderDayOverDay(store) {
   const el = document.getElementById("day-over-day-results");
   if (!el) return;
@@ -267,8 +292,9 @@ function renderComparison(store) {
   const el = document.getElementById("compare-results");
   if (!el) return;
 
-  const mine7 = store.mine["7d"];
-  const comp7 = store.competitor["7d"];
+  const mine7 = pickMineWeekly(store);
+  const comp7 = pickCompWeekly(store);
+  const weeklyNote = weeklyPeriodNote(mine7);
 
   if (!mine7 && !comp7) {
     el.innerHTML = "<p class='muted'>Загрузи наш отчёт и отчёт конкурентов за <b>7 дней</b> — здесь появится сравнение по парам SKU.</p>";
@@ -316,7 +342,7 @@ function renderComparison(store) {
       <div class="metric"><div class="lbl">Конкуренты · заказы 7д</div><div class="val">${fmt(cmp.total_comp)}</div></div>
       <div class="metric"><div class="lbl">Наша доля по парам</div><div class="val">${cmp.share_total != null ? cmp.share_total + "%" : "—"}</div></div>
     </div>
-    <p class="hint">Период: ${escapeHtml(cmp.period)} · наш: ${escapeHtml(cmp.mine_file || "")} · конк.: ${escapeHtml(cmp.comp_file || "")}</p>
+    <p class="hint">Период: ${escapeHtml(cmp.period)}${escapeHtml(weeklyNote)} · наш: ${escapeHtml(cmp.mine_file || "")} · конк.: ${escapeHtml(cmp.comp_file || "")}</p>
     <h3 class="mini-h">Где отстаём</h3>
     ${insight}
     <h3 class="mini-h">Все пары SKU</h3>
@@ -368,7 +394,8 @@ function renderAllReports(store) {
 
 function syncOpsMetrics(store) {
   const y = store.mine.yesterday?.summary;
-  const w = store.mine["7d"]?.summary;
+  const w = store.mine["7d"]?.summary || store.mine["28d"]?.summary;
+  const wReport = store.mine["7d"] || store.mine["28d"];
   const el7 = document.getElementById("live-conv-7d");
   const note7 = document.getElementById("live-conv-7d-note");
   const noteY = document.getElementById("live-conv-yesterday-note");
@@ -376,7 +403,7 @@ function syncOpsMetrics(store) {
   if (el7) {
     if (w?.conv_pdp_to_order_pct != null) {
       el7.textContent = fmtPct(w.conv_pdp_to_order_pct);
-      if (note7) note7.textContent = `из отчёта · ${store.mine["7d"].meta.file_name}`;
+      if (note7) note7.textContent = `из отчёта · ${wReport.meta.file_name}${wReport.meta.period_key === "28d" ? " · 28д" : ""}`;
     }
   }
   if (noteY) {
@@ -432,6 +459,8 @@ async function handleFiles(fileList, forcedKind) {
     throw new Error("Парсер не загрузился — обнови страницу (Cmd+Shift+R)");
   }
 
+  const uploaded = [];
+
   for (const file of files) {
     if (!isReportFile(file.name)) {
       messages.push({ type: "status-err", text: `${file.name}: нужен .xlsx или .csv` });
@@ -446,13 +475,23 @@ async function handleFiles(fileList, forcedKind) {
       if (!store[kind]) store[kind] = {};
       store[kind][pk] = report;
 
+      uploaded.push({ kind, pk });
+
       const kindRu = kind === "competitor" ? "конкуренты" : "наши";
       let extra = "";
       if (kind === "mine" && pk === "yesterday") {
-        extra = " · сравнение с позавчera обновлено";
-      } else if (kind === "mine" && pk !== "yesterday") {
-        extra = " · для сравнения вчера/позавчera нужен период «Вчера»";
-      } else if (kind === "competitor" && pk !== "7d") {
+        extra = " · сравнение вчера/позавчera обновлено";
+      } else if (kind === "mine" && pk === "28d") {
+        extra = " · загружен · метрики 28д + блок «Детали» ниже";
+      } else if (kind === "mine" && pk === "7d") {
+        extra = " · можно сравнить с конкурентами";
+      } else if (kind === "mine") {
+        extra = ` · период «${report.meta.period_label || pk}» · см. «Детали»`;
+      } else if (kind === "competitor" && pk === "7d") {
+        extra = " · для сравнения с конкурентами";
+      } else if (kind === "competitor" && pk === "28d") {
+        extra = " · 28д · для сравнения лучше 7д, но данные приняты";
+      } else if (kind === "competitor") {
         extra = " · для сравнения с конкурентами лучше период «7 дней»";
       }
       messages.push({
@@ -467,6 +506,7 @@ async function handleFiles(fileList, forcedKind) {
   saveStore(store);
   refreshUI(store);
   setStatusList(messages);
+  if (uploaded.length) focusUploadedReport(uploaded[uploaded.length - 1].kind, uploaded[uploaded.length - 1].pk);
 }
 
 function onInputPicked(input, kind) {

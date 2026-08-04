@@ -31,6 +31,11 @@ const HEADER_MAP = {
 
 function periodKeyFromLabel(label) {
   if (!label) return "7d";
+  const s = String(label).trim().toLowerCase().replace(/\./g, "");
+  if (/28\s*(дн|ден|day)/.test(s) || /\b28\b/.test(s)) return "28d";
+  if (/7\s*(дн|ден|day)/.test(s)) return "7d";
+  if (/вчera|1\s*дн|1\s*day|yesterday/.test(s)) return "yesterday";
+  if (/сегодня|today/.test(s)) return "today";
   const k = PERIOD_LABEL_MAP[String(label).trim().toLowerCase()];
   return k || "7d";
 }
@@ -51,8 +56,32 @@ function skuFromLink(link) {
 function periodFromFileName(fileName) {
   const fn = String(fileName || "").toLowerCase();
   if (/вчera|yesterday|1-?day|1d|1_?dn/.test(fn)) return "Вчера";
-  if (/7d|7-?day|7_?days|7_?dn/.test(fn)) return "7 дней";
+  if (/28\s*(d|day|days|dn|дн)|28d|28_?days/.test(fn)) return "28 дней";
+  if (/7d|7-?day|7_?days|7_?dn|7\s*дн/.test(fn)) return "7 дней";
   return null;
+}
+
+function parseMetaFromRows(rows) {
+  const meta = {};
+  for (let r = 0; r < Math.min(rows.length, 12); r++) {
+    const row = rows[r] || [];
+    for (let c = 0; c < Math.min(row.length, 3); c++) {
+      const label = normalizeCell(row[c]).replace(/:$/, "");
+      const val = row[c + 1] != null ? normalizeCell(row[c + 1]) : "";
+      const ll = label.toLowerCase();
+      if (ll.startsWith("дата формирования")) meta.formed_at = val || null;
+      if (ll.startsWith("период отч")) meta.period_label = val || null;
+      if (ll.startsWith("мои товары")) meta.my_products_only = val || null;
+    }
+    for (const cell of row) {
+      const s = normalizeCell(cell);
+      const sl = s.toLowerCase();
+      if (/^28\s*(дн|ден|days?)/.test(sl) || sl === "28 дней") meta.period_label = meta.period_label || s;
+      if (/^7\s*(дн|ден|days?)/.test(sl) || sl === "7 дней") meta.period_label = meta.period_label || s;
+      if (sl === "вчера" || /^1\s*дн/.test(sl)) meta.period_label = meta.period_label || s;
+    }
+  }
+  return meta;
 }
 
 function skuFromRow(row, colByHeader, linkCol) {
@@ -97,19 +126,10 @@ function parseSheetRows(rows, fileName, forcedKind) {
     throw new Error("Файл слишком короткий — это не отчёт Ozon?");
   }
 
-  const meta = { file_name: fileName };
-  for (let r = 0; r < Math.min(rows.length, 6); r++) {
-    const label = rows[r]?.[0];
-    const val = rows[r]?.[1];
-    if (label === "Дата формирования:") meta.formed_at = val != null ? String(val) : null;
-    if (label === "Период отчета:") meta.period_label = val != null ? String(val) : null;
-    if (label === "Мои товары:") meta.my_products_only = val != null ? String(val) : null;
-  }
+  const meta = { file_name: fileName, ...parseMetaFromRows(rows) };
   if (!meta.period_label) {
     const fromFn = periodFromFileName(fileName);
     if (fromFn) meta.period_label = fromFn;
-    else if (forcedKind === "competitor") meta.period_label = "7 дней";
-    else if (forcedKind === "mine") meta.period_label = "Вчера";
   }
 
   const headerIdx = findHeaderRowIndex(rows);
