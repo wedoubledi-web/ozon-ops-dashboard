@@ -29,6 +29,33 @@ const HEADER_MAP = {
   "Средняя цена, ₽": "avg_price_rub",
 };
 
+const BESTSELLERS_HEADER_MAP = {
+  "Заказано товаров": "ordered_units",
+  "Заказано на сумму": "revenue_rub",
+  "Динамика продаж, %": "revenue_dyn_pct",
+  Остаток: "stock_end",
+  "Показы всего": "views_total",
+  "Показы в поиске и каталоге": "views_search",
+  "Посещения карточки товара": "views_pdp",
+  "Конверсия из показа в заказ, %": "conv_view_to_order_pct",
+  "Конверсия в корзину из поиска, %": "conv_cart_search_pct",
+  "Конверсия в корзину из карточки, %": "conv_cart_pdp_pct",
+  "ДРР, %": "drr_pct",
+  "Процент выкупа": "buyout_pct",
+  "Упущенная выручка": "missed_sales_rub",
+};
+
+function normalizeCell(v) {
+  return String(v ?? "")
+    .trim()
+    .replace(/^\uFEFF/, "")
+    .replace(/\s+/g, " ");
+}
+
+function cellEq(c, label) {
+  return normalizeCell(c) === label;
+}
+
 function periodKeyFromLabel(label) {
   if (!label) return "7d";
   const s = String(label).trim().toLowerCase().replace(/\./g, "");
@@ -56,6 +83,7 @@ function skuFromLink(link) {
 function periodFromFileName(fileName) {
   const fn = String(fileName || "").toLowerCase();
   if (/вчera|yesterday|1-?day|1d|1_?dn/.test(fn)) return "Вчера";
+  if (/bestsellers|what-to-sell|what_to_sell/.test(fn)) return "28 дней";
   if (/28\s*(d|day|days|dn|дн)|28d|28_?days/.test(fn)) return "28 дней";
   if (/7d|7-?day|7_?days|7_?dn|7\s*дн/.test(fn)) return "7 дней";
   return null;
@@ -102,11 +130,23 @@ function skuFromRow(row, colByHeader, linkCol) {
   return null;
 }
 
-function findHeaderRowIndex(rows) {
+function isBestsellersFormat(rows, fileName) {
+  const fn = (fileName || "").toLowerCase();
+  if (/what-to-sell|bestsellers|what_to_sell/.test(fn)) return true;
+  const h = rows[0] || [];
+  return (
+    h.some((c) => cellEq(c, "Название")) &&
+    h.some((c) => cellEq(c, "Ссылка")) &&
+    !h.some((c) => cellEq(c, "Название товара"))
+  );
+}
+
+function findHeaderRowIndex(rows, fileName) {
+  if (isBestsellersFormat(rows, fileName)) return 0;
   for (let r = 0; r < Math.min(rows.length, 20); r++) {
     const row = rows[r] || [];
-    if (row.some((c) => String(c || "").trim() === "Название товара")) return r;
-    if (row.some((c) => String(c || "").trim() === "Заказано, штуки")) return r;
+    if (row.some((c) => cellEq(c, "Название товара"))) return r;
+    if (row.some((c) => cellEq(c, "Заказано, штуки"))) return r;
   }
   return 4;
 }
@@ -127,28 +167,47 @@ function parseSheetRows(rows, fileName, forcedKind) {
   }
 
   const meta = { file_name: fileName, ...parseMetaFromRows(rows) };
+  const bestsellers = isBestsellersFormat(rows, fileName);
   if (!meta.period_label) {
     const fromFn = periodFromFileName(fileName);
     if (fromFn) meta.period_label = fromFn;
+    else if (bestsellers) meta.period_label = "28 дней";
+  }
+  if (bestsellers) {
+    meta.source_format = "what_to_sell_bestsellers";
+    meta.my_products_only = meta.my_products_only || "Да";
+    const m = String(fileName || "").match(/(\d{4}-\d{2}-\d{2})/);
+    if (m && !meta.formed_at) meta.formed_at = m[1];
   }
 
-  const headerIdx = findHeaderRowIndex(rows);
+  const headerIdx = findHeaderRowIndex(rows, fileName);
   const headerRow = rows[headerIdx] || [];
   const colByHeader = {};
   headerRow.forEach((h, i) => {
-    if (h) colByHeader[String(h).trim()] = i;
+    if (h) colByHeader[normalizeCell(h)] = i;
   });
 
-  if (colByHeader["Заказано, штуки"] == null && colByHeader["Ссылка на товар"] == null) {
-    throw new Error("Не нашёл колонки отчёта Ozon — проверь, что это analytics_report (.xlsx / .csv)");
+  const nameCol = colByHeader["Название товара"] ?? colByHeader["Название"];
+  const linkCol = colByHeader["Ссылка на товар"] ?? colByHeader["Ссылка"];
+  const ordersCol = colByHeader["Заказано, штуки"] ?? colByHeader["Заказано товаров"];
+
+  if (nameCol == null || linkCol == null || ordersCol == null) {
+    throw new Error(
+      bestsellers
+        ? "Не нашёл колонки What to sell (Название / Ссылка / Заказано товаров)"
+        : "Не нашёл колонки отчёта Ozon — нужен analytics_report или what-to-sell csv"
+    );
   }
 
+  const metricMap = bestsellers ? BESTSELLERS_HEADER_MAP : HEADER_MAP;
   const products = [];
   for (let r = headerIdx + 1; r < rows.length; r++) {
     const row = rows[r];
-    if (!row || !row[0]) continue;
-    const name = String(row[0]).trim();
+    if (!row || row.every((c) => !normalizeCell(c))) continue;
+    const name = normalizeCell(row[nameCol]);
     if (
+      !name ||
+      name === "Среднее значение" ||
       name === "Среднее значение по товарам" ||
       name === "Название товара" ||
       name.startsWith("Итого")
@@ -156,7 +215,6 @@ function parseSheetRows(rows, fileName, forcedKind) {
       continue;
     }
 
-    const linkCol = colByHeader["Ссылка на товар"] ?? 1;
     const link = row[linkCol];
     const sku = skuFromRow(row, colByHeader, linkCol);
     if (!sku) continue;
@@ -166,19 +224,28 @@ function parseSheetRows(rows, fileName, forcedKind) {
       sku,
       name,
       link: link ? String(link) : "",
-      seller: sellerCol != null && row[sellerCol] ? String(row[sellerCol]) : "",
+      seller: sellerCol != null && row[sellerCol] ? normalizeCell(row[sellerCol]) : "",
       offer_id: "",
     };
+    const artCol = colByHeader["Артикул"];
     const pair = (window.OzonCompetitorPairs?.SKU_PAIRS || []).find(
       (p) => p.mine === sku || p.comp === sku
     );
     if (pair) item.offer_id = pair.label;
-    for (const [hdr, key] of Object.entries(HEADER_MAP)) {
+    else if (artCol != null && row[artCol]) item.offer_id = normalizeCell(row[artCol]);
+
+    for (const [hdr, key] of Object.entries(metricMap)) {
       const c = colByHeader[hdr];
       if (c != null) item[key] = num(row[c]);
     }
+    if (bestsellers && item.views_pdp == null) {
+      const sessCol = colByHeader["Сессии"];
+      if (sessCol != null) item.views_pdp = num(row[sessCol]);
+    }
     if (item.views_pdp && item.ordered_units) {
       item.conv_pdp_to_order_pct = Math.round((item.ordered_units / item.views_pdp) * 10000) / 100;
+    } else if (item.conv_view_to_order_pct != null && !item.conv_pdp_to_order_pct) {
+      item.conv_pdp_to_order_pct = item.conv_view_to_order_pct;
     }
     products.push(item);
   }
@@ -385,19 +452,18 @@ function rowsFromCsvManual(text) {
     .map((l) => splitCsvLine(l, FS));
 }
 
-function rowsLookLikeOzon(rows) {
-  return (
-    rows.length >= 2 &&
-    rows.some((r) => r && r.some((c) => String(c || "").includes("Название товара")))
-  );
+function rowsLookLikeOzon(rows, fileName) {
+  if (!rows || rows.length < 2) return false;
+  if (isBestsellersFormat(rows, fileName)) return true;
+  return rows.some((r) => r && r.some((c) => cellEq(c, "Название товара")));
 }
 
-function rowsFromCsv(buf) {
+function rowsFromCsv(buf, fileName) {
   const text = decodeCsvText(buf);
   const manual = rowsFromCsvManual(text);
-  if (rowsLookLikeOzon(manual)) return manual;
+  if (rowsLookLikeOzon(manual, fileName)) return manual;
   throw new Error(
-    "CSV не похож на отчёт Ozon — нужны колонки «Название товара» и «Ссылка на товар». Скачай из Аналитика → What to sell"
+    "CSV не похож на отчёт Ozon — нужен analytics_report или what-to-sell bestsellers (.csv)"
   );
 }
 
@@ -410,7 +476,7 @@ function rowsFromXlsx(buf) {
 
 function readRowsFromFile(buf, fileName) {
   const ext = fileExt(fileName);
-  if (ext === "csv") return rowsFromCsv(buf);
+  if (ext === "csv") return rowsFromCsv(buf, fileName);
   if (ext === "xlsx" || ext === "xls") {
     if (typeof XLSX === "undefined") {
       throw new Error("Для xlsx нужна библиотека таблиц — обнови страницу или загрузи csv");
