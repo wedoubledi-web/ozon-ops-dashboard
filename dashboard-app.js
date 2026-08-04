@@ -571,12 +571,16 @@ function initUpload() {
   refreshUI(loadStore());
 
   const notes = [];
+  const parserVer = window.OzonReportParser?.PARSER_VERSION || "старый";
   if (!window.OzonReportParser) notes.push("парсер не загрузился");
+  else if (!window.OzonReportParser.supportsBestsellers) {
+    notes.push(`устаревший парсер (${parserVer}) — Cmd+Shift+R или ?v=${parserVer}`);
+  }
   if (typeof XLSX === "undefined") notes.push("xlsx только через csv (или обнови страницу)");
   if (notes.length) {
     setStatus(`Частично готово: ${notes.join("; ")}. CSV работает.`, "err");
   } else {
-    setStatus("Готов · выбери csv или xlsx в поле «Выбрать файл»", "ok");
+    setStatus(`Готов · парсер ${parserVer} · analytics_report и what-to-sell csv`, "ok");
   }
 
   window.__OZON_UPLOAD_BOOT__ = { ok: true, at: new Date().toISOString() };

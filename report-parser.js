@@ -1,4 +1,6 @@
-/** Парсер отчёта Ozon analytics_report*.xlsx */
+/** Парсер отчёта Ozon: analytics_report + what-to-sell bestsellers csv */
+
+const PARSER_VERSION = "202608041710";
 
 const PERIOD_LABEL_MAP = {
   "7 дней": "7d",
@@ -130,18 +132,27 @@ function skuFromRow(row, colByHeader, linkCol) {
   return null;
 }
 
+function headerRowLooksLikeBestsellers(row) {
+  if (!row?.length) return false;
+  const hasName = row.some((c) => cellEq(c, "Название"));
+  const hasLink = row.some((c) => cellEq(c, "Ссылка") || cellEq(c, "Ссылка на товар"));
+  const hasOrders = row.some((c) => cellEq(c, "Заказано товаров") || cellEq(c, "Заказано, штуки"));
+  return hasName && hasLink && hasOrders && !row.some((c) => cellEq(c, "Название товара"));
+}
+
 function isBestsellersFormat(rows, fileName) {
   const fn = (fileName || "").toLowerCase();
   if (/what-to-sell|bestsellers|what_to_sell/.test(fn)) return true;
-  const h = rows[0] || [];
-  return (
-    h.some((c) => cellEq(c, "Название")) &&
-    h.some((c) => cellEq(c, "Ссылка")) &&
-    !h.some((c) => cellEq(c, "Название товара"))
-  );
+  for (let r = 0; r < Math.min(rows.length, 8); r++) {
+    if (headerRowLooksLikeBestsellers(rows[r])) return true;
+  }
+  return false;
 }
 
 function findHeaderRowIndex(rows, fileName) {
+  for (let r = 0; r < Math.min(rows.length, 8); r++) {
+    if (headerRowLooksLikeBestsellers(rows[r])) return r;
+  }
   if (isBestsellersFormat(rows, fileName)) return 0;
   for (let r = 0; r < Math.min(rows.length, 20); r++) {
     const row = rows[r] || [];
@@ -455,7 +466,11 @@ function rowsFromCsvManual(text) {
 function rowsLookLikeOzon(rows, fileName) {
   if (!rows || rows.length < 2) return false;
   if (isBestsellersFormat(rows, fileName)) return true;
-  return rows.some((r) => r && r.some((c) => cellEq(c, "Название товара")));
+  for (let r = 0; r < Math.min(rows.length, 8); r++) {
+    if (headerRowLooksLikeBestsellers(rows[r])) return true;
+    if (rows[r]?.some((c) => cellEq(c, "Название товара"))) return true;
+  }
+  return false;
 }
 
 function rowsFromCsv(buf, fileName) {
@@ -558,6 +573,8 @@ function buildWeeklyComparison(mineReport, compReport) {
 }
 
 window.OzonReportParser = {
+  PARSER_VERSION,
+  supportsBestsellers: true,
   parseFileArrayBuffer,
   parseWorkbookArrayBuffer,
   parseSheetRows,
