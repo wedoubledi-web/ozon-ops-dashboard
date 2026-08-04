@@ -42,13 +42,12 @@ th{color:var(--muted);font-size:.72rem;font-weight:600;text-transform:none}
 .status-warn-inline{color:var(--yellow)}
 .upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}
 @media(max-width:560px){.upload-grid{grid-template-columns:1fr}}
-.upload-zone{position:relative;display:block;border:2px dashed var(--border);border-radius:12px;padding:20px 12px;text-align:center;cursor:pointer;background:#f8fafc;transition:border-color .15s,background .15s;overflow:hidden}
+.upload-zone{position:relative;display:block;border:2px dashed var(--border);border-radius:12px;padding:16px 12px 10px;text-align:center;background:#f8fafc;transition:border-color .15s,background .15s}
 .upload-zone.comp{background:#fffaf5}
-.upload-zone:hover,.upload-zone.drag{border-color:var(--accent);background:#eef4ff}
+.upload-zone.drag{border-color:var(--accent);background:#eef4ff}
 .upload-zone.comp.drag{background:#fff3e6}
 .upload-zone p{margin:6px 0 0;color:var(--muted);font-size:.82rem}
-.upload-zone-content{position:relative;z-index:1;pointer-events:none}
-.file-input-overlay{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:2;font-size:0}
+.file-input-visible{display:block;width:100%;margin-top:10px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:#fff;font-size:.82rem;cursor:pointer}
 .upload-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 .btn{display:inline-block;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer;font-size:.88rem;text-decoration:none}
 .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 12px;font-size:.82rem;cursor:pointer}
@@ -84,26 +83,20 @@ footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
 
 <div class="box">
   <h2>Загрузить отчёты Ozon</h2>
-  <p class="hint"><b>Наши</b> — период <b>«Вчера»</b>. <b>Конкуренты</b> — <b>«7 дней»</b>. Файлы: xlsx или csv. После выбора появится строка «Читаю…» и зелёная галочка.</p>
+  <p class="hint"><b>Наши</b> — период <b>«Вчера»</b>. <b>Конкуренты</b> — <b>«7 дней»</b>. Нажми <b>«Выбрать файл»</b> в серой зоне (Safari) или перетащи csv/xlsx.</p>
   <div class="upload-grid">
     <div id="upload-zone-mine" class="upload-zone">
-      <input type="file" id="file-input-mine" class="file-input-overlay" multiple accept=".xlsx,.xls,.csv,*/*">
-      <div class="upload-zone-content">
-        <strong>Наши · Вчера</strong>
-        <p>What to sell · нажми или перетащи csv/xlsx</p>
-      </div>
+      <strong>Наши · Вчера</strong>
+      <p>What to sell · период «Вчера»</p>
+      <input type="file" id="file-input-mine" class="file-input-visible" multiple accept=".xlsx,.xls,.csv,*/*">
     </div>
     <div id="upload-zone-comp" class="upload-zone comp">
-      <input type="file" id="file-input-comp" class="file-input-overlay" multiple accept=".xlsx,.xls,.csv,*/*">
-      <div class="upload-zone-content">
-        <strong>Конкуренты · 7 дней</strong>
-        <p>Товары на Ozon · нажми или перетащи</p>
-      </div>
+      <strong>Конкуренты · 7 дней</strong>
+      <p>Товары на Ozon · период «7 дней»</p>
+      <input type="file" id="file-input-comp" class="file-input-visible" multiple accept=".xlsx,.xls,.csv,*/*">
     </div>
   </div>
   <div class="upload-actions">
-    <button type="button" class="btn" id="btn-pick-mine">Наш отчёт</button>
-    <button type="button" class="btn" id="btn-pick-comp">Конкуренты</button>
     <button type="button" class="btn-ghost" id="btn-clear-all">Очистить всё</button>
   </div>
   <div id="upload-status"></div>
@@ -207,9 +200,9 @@ footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
 <footer>Обновляется каждый день ~07:00 МСК · загрузка отчёта работает офлайн в браузере</footer>
 </div>
 <script>window.__OPS_DAILY__ = {"report_date": "2026-08-03", "summary": {"pdp_views": 1101, "search_views": 1102, "ordered_units": 17, "conv_pdp_to_order_pct": 1.54, "conv_search_to_pdp_pct": 99.91, "sku_count": 12}, "prev_from": "2026-08-02", "prev_to": "2026-08-02", "skus": [{"sku": "4451480169", "offer_id": "шокол", "name": "Шоколад горький 90% натуральный Беларусь Спартак", "pdp_views": 675, "search_views": 379, "ordered_units": 6, "pdp_views_delta_pct": 38, "search_views_delta_pct": 22, "orders_delta_pct": 100, "conv_pdp_to_order_pct": 0.89, "conv_search_to_pdp_pct": 178.1, "conv_pdp_to_order_prev_pct": 0.61, "conv_delta_pp": 0.28}, {"sku": "3730511760", "offer_id": "для собак", "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт", "pdp_views": 61, "search_views": 111, "ordered_units": 1, "pdp_views_delta_pct": -15, "search_views_delta_pct": 127, "orders_delta_pct": -80, "conv_pdp_to_order_pct": 1.64, "conv_search_to_pdp_pct": 54.95, "conv_pdp_to_order_prev_pct": 6.97, "conv_delta_pp": -5.33}, {"sku": "3726888167", "offer_id": "для пожилых собак1", "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт", "pdp_views": 61, "search_views": 43, "ordered_units": 0, "pdp_views_delta_pct": 53, "search_views_delta_pct": 65, "orders_delta_pct": -100, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 141.86, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "3726902147", "offer_id": "глюкозамин 55 шт", "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт", "pdp_views": 53, "search_views": 85, "ordered_units": 3, "pdp_views_delta_pct": -22, "search_views_delta_pct": 57, "orders_delta_pct": 50, "conv_pdp_to_order_pct": 5.66, "conv_search_to_pdp_pct": 62.35, "conv_pdp_to_order_prev_pct": 2.94, "conv_delta_pp": 2.72}, {"sku": "3664742731", "offer_id": "Multi Vit Puppy", "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт", "pdp_views": 42, "search_views": 57, "ordered_units": 1, "pdp_views_delta_pct": 45, "search_views_delta_pct": 97, "orders_delta_pct": 0, "conv_pdp_to_order_pct": 2.38, "conv_search_to_pdp_pct": 73.68, "conv_pdp_to_order_prev_pct": 3.45, "conv_delta_pp": -1.07}, {"sku": "3726897234", "offer_id": "для мелких пород", "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт", "pdp_views": 41, "search_views": 39, "ordered_units": 0, "pdp_views_delta_pct": -25, "search_views_delta_pct": 34, "orders_delta_pct": -100, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 105.13, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "4405568218", "offer_id": "гель германия1", "name": "Clovin Гель для стирки белья универсальный 3,305 л концентрат Der Waschkonig Universal 110 стирок", "pdp_views": 39, "search_views": 98, "ordered_units": 3, "pdp_views_delta_pct": 5, "search_views_delta_pct": 20, "orders_delta_pct": -50, "conv_pdp_to_order_pct": 7.69, "conv_search_to_pdp_pct": 39.8, "conv_pdp_to_order_prev_pct": 16.15, "conv_delta_pp": -8.46}, {"sku": "4823627697", "offer_id": "для кошек и собак 140", "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт", "pdp_views": 34, "search_views": 123, "ordered_units": 0, "pdp_views_delta_pct": 42, "search_views_delta_pct": 146, "orders_delta_pct": null, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 27.64, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "3726858649", "offer_id": "бреверсы для крупных", "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт", "pdp_views": 28, "search_views": 42, "ordered_units": 3, "pdp_views_delta_pct": -20, "search_views_delta_pct": 75, "orders_delta_pct": 50, "conv_pdp_to_order_pct": 10.71, "conv_search_to_pdp_pct": 66.67, "conv_pdp_to_order_prev_pct": 5.71, "conv_delta_pp": 5.0}, {"sku": "3726892929", "offer_id": "для взрослых собак1", "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт", "pdp_views": 27, "search_views": 29, "ordered_units": 0, "pdp_views_delta_pct": 59, "search_views_delta_pct": 32, "orders_delta_pct": null, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 93.1, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "4658698444", "offer_id": "кальций", "name": "Витамины для щенков и собак кальций calcium 155 таблеток", "pdp_views": 20, "search_views": 37, "ordered_units": 0, "pdp_views_delta_pct": -47, "search_views_delta_pct": 32, "orders_delta_pct": -100, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 54.05, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "4823918365", "offer_id": "для кошек и собак 260 1", "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт", "pdp_views": 20, "search_views": 59, "ordered_units": 0, "pdp_views_delta_pct": -17, "search_views_delta_pct": 37, "orders_delta_pct": null, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 33.9, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}]};</script>
-<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
-<script src="competitor-pairs.js?v=20260804c"></script>
-<script src="report-parser.js?v=20260804c"></script>
-<script src="dashboard-app.js?v=20260804c"></script>
+<script src="vendor/xlsx.full.min.js?v=20260804d"></script>
+<script src="competitor-pairs.js?v=20260804d"></script>
+<script src="report-parser.js?v=20260804d"></script>
+<script src="dashboard-app.js?v=20260804d"></script>
 </body>
 </html>

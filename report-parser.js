@@ -376,22 +376,9 @@ function rowsFromCsv(buf) {
   const text = decodeCsvText(buf);
   const manual = rowsFromCsvManual(text);
   if (rowsLookLikeOzon(manual)) return manual;
-
-  const delims = [detectCsvDelimiter(text), ";", ",", "\t"];
-  const tried = new Set();
-  for (const FS of delims) {
-    if (tried.has(FS)) continue;
-    tried.add(FS);
-    try {
-      const wb = XLSX.read(text, { type: "string", FS, raw: false });
-      const ws = wb.Sheets[wb.SheetNames[0]];
-      const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: null });
-      if (rowsLookLikeOzon(rows)) return rows;
-    } catch {
-      /* next delimiter */
-    }
-  }
-  throw new Error("Не удалось разобрать CSV — проверь кодировку UTF-8 и разделитель");
+  throw new Error(
+    "CSV не похож на отчёт Ozon — нужны колонки «Название товара» и «Ссылка на товар». Скачай из Аналитика → What to sell"
+  );
 }
 
 function rowsFromXlsx(buf) {
@@ -404,14 +391,16 @@ function rowsFromXlsx(buf) {
 function readRowsFromFile(buf, fileName) {
   const ext = fileExt(fileName);
   if (ext === "csv") return rowsFromCsv(buf);
-  if (ext === "xlsx" || ext === "xls") return rowsFromXlsx(buf);
+  if (ext === "xlsx" || ext === "xls") {
+    if (typeof XLSX === "undefined") {
+      throw new Error("Для xlsx нужна библиотека таблиц — обнови страницу или загрузи csv");
+    }
+    return rowsFromXlsx(buf);
+  }
   throw new Error("Формат не поддерживается — нужен .xlsx или .csv");
 }
 
 function parseFileArrayBuffer(buf, fileName, forcedKind) {
-  if (typeof XLSX === "undefined") {
-    throw new Error("Библиотека не загрузилась — обнови страницу");
-  }
   let rows;
   try {
     rows = readRowsFromFile(buf, fileName);

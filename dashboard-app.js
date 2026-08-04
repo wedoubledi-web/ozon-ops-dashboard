@@ -25,7 +25,6 @@ function emptyStore() {
 function migrateStore(raw) {
   if (!raw) return emptyStore();
   if (raw.mine || raw.competitor) return { mine: raw.mine || {}, competitor: raw.competitor || {} };
-  // старый формат: { "7d": report, "yesterday": report }
   const store = emptyStore();
   for (const [k, v] of Object.entries(raw)) {
     const kind = v?.meta?.report_kind === "competitor" ? "competitor" : "mine";
@@ -333,6 +332,8 @@ function renderComparison(store) {
 
 function renderAllReports(store) {
   const el = document.getElementById("upload-results");
+  if (!el) return;
+
   const blocks = [];
   const order = ["yesterday", "7d", "28d", "today", "mtd"];
 
@@ -388,11 +389,33 @@ function syncOpsMetrics(store) {
 }
 
 function refreshUI(store) {
-  renderAllReports(store);
+  try {
+    renderAllReports(store);
+  } catch (e) {
+    console.error("refreshUI", e);
+    setStatus(`Ошибка отображения: ${e.message || e}`, "err");
+  }
 }
 
 function isReportFile(name) {
   return /\.(xlsx|xls|csv)$/i.test(name || "");
+}
+
+function readFileBuffer(file) {
+  if (file.arrayBuffer) {
+    return file.arrayBuffer().then((buf) => {
+      if (!buf || !buf.byteLength) {
+        throw new Error("Файл пустой — скачай его из iCloud на Mac и попробуй снова");
+      }
+      return buf;
+    });
+  }
+  return new Promise((resolve, reject) => {
+    const fr = new FileReader();
+    fr.onload = () => resolve(fr.result);
+    fr.onerror = () => reject(fr.error || new Error("Safari не прочитал файл"));
+    fr.readAsArrayBuffer(file);
+  });
 }
 
 async function handleFiles(fileList, forcedKind) {
@@ -405,16 +428,17 @@ async function handleFiles(fileList, forcedKind) {
     return;
   }
 
+  if (!window.OzonReportParser) {
+    throw new Error("Парсер не загрузился — обнови страницу (Cmd+Shift+R)");
+  }
+
   for (const file of files) {
     if (!isReportFile(file.name)) {
       messages.push({ type: "status-err", text: `${file.name}: нужен .xlsx или .csv` });
       continue;
     }
     try {
-      const buf = await file.arrayBuffer();
-      if (!buf || !buf.byteLength) {
-        throw new Error("Файл пустой или Safari не отдал содержимое — перетащи файл на зону");
-      }
+      const buf = await readFileBuffer(file);
       const report = OzonReportParser.parseFileArrayBuffer(buf, file.name, forcedKind);
       const kind = report.meta.report_kind === "competitor" ? "competitor" : "mine";
       const pk = report.meta.period_key;
@@ -445,14 +469,24 @@ async function handleFiles(fileList, forcedKind) {
   setStatusList(messages);
 }
 
-function bindDropZone(zoneId, inputId, kind) {
-  const zone = document.getElementById(zoneId);
-  const input = document.getElementById(inputId);
-  if (!zone || !input) return;
-
-  input.addEventListener("change", () => {
-    void pickFiles(input, kind);
+function onInputPicked(input, kind) {
+  const files = Array.from(input.files || []);
+  if (!files.length) return;
+  void ingestFiles(files, kind).finally(() => {
+    input.value = "";
   });
+}
+
+function bindFileInput(input, kind) {
+  if (!input) return;
+  const handler = () => onInputPicked(input, kind);
+  input.addEventListener("change", handler);
+  input.addEventListener("input", handler);
+}
+
+function bindDropZone(zoneId, kind) {
+  const zone = document.getElementById(zoneId);
+  if (!zone) return;
 
   zone.addEventListener("dragover", (e) => {
     e.preventDefault();
@@ -466,16 +500,10 @@ function bindDropZone(zoneId, inputId, kind) {
   });
 }
 
-async function pickFiles(input, kind) {
-  const files = Array.from(input.files || []);
-  input.value = "";
-  await ingestFiles(files, kind);
-}
-
 async function ingestFiles(fileList, kind) {
   const files = Array.from(fileList || []);
   if (!files.length) {
-    setStatus("Файл не выбран — нажми зону или перетащи csv/xlsx", "err");
+    setStatus("Файл не выбран — выбери csv/xlsx в поле ниже", "err");
     return;
   }
   setStatus(`Читаю: ${files.map((f) => f.name).join(", ")}…`, "ok");
@@ -488,24 +516,10 @@ async function ingestFiles(fileList, kind) {
 }
 
 function initUpload() {
-  if (typeof XLSX === "undefined") {
-    setStatus("Не загрузилась библиотека xlsx — отключи блокировщик и обнови страницу", "err");
-    return;
-  }
-  if (!window.OzonReportParser) {
-    setStatus("Не загрузился парсер — обнови страницу (Cmd+Shift+R)", "err");
-    return;
-  }
-
-  bindDropZone("upload-zone-mine", "file-input-mine", "mine");
-  bindDropZone("upload-zone-comp", "file-input-comp", "competitor");
-
-  document.getElementById("btn-pick-mine")?.addEventListener("click", () => {
-    document.getElementById("file-input-mine")?.click();
-  });
-  document.getElementById("btn-pick-comp")?.addEventListener("click", () => {
-    document.getElementById("file-input-comp")?.click();
-  });
+  bindFileInput(document.getElementById("file-input-mine"), "mine");
+  bindFileInput(document.getElementById("file-input-comp"), "competitor");
+  bindDropZone("upload-zone-mine", "mine");
+  bindDropZone("upload-zone-comp", "competitor");
 
   document.getElementById("btn-clear-all")?.addEventListener("click", () => {
     localStorage.removeItem(STORAGE_KEY);
@@ -515,6 +529,37 @@ function initUpload() {
   });
 
   refreshUI(loadStore());
+
+  const notes = [];
+  if (!window.OzonReportParser) notes.push("парсер не загрузился");
+  if (typeof XLSX === "undefined") notes.push("xlsx только через csv (или обнови страницу)");
+  if (notes.length) {
+    setStatus(`Частично готово: ${notes.join("; ")}. CSV работает.`, "err");
+  } else {
+    setStatus("Готов · выбери csv или xlsx в поле «Выбрать файл»", "ok");
+  }
+
+  window.__OZON_UPLOAD_BOOT__ = { ok: true, at: new Date().toISOString() };
 }
 
-document.addEventListener("DOMContentLoaded", initUpload);
+function bootUpload() {
+  try {
+    initUpload();
+  } catch (e) {
+    console.error("initUpload failed", e);
+    setStatus(`Сбой инициализации: ${e.message || e}`, "err");
+  }
+}
+
+window.addEventListener("error", (e) => {
+  const msg = e.message || String(e.error || "unknown");
+  if (/OzonReportParser|dashboard-app|report-parser/i.test(msg) || !window.__OZON_UPLOAD_BOOT__?.ok) {
+    setStatus(`JS ошибка: ${msg}`, "err");
+  }
+});
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", bootUpload);
+} else {
+  bootUpload();
+}
