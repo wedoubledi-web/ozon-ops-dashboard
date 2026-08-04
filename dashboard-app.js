@@ -1,6 +1,7 @@
-/** Загрузка отчётов Ozon на дашборде + отображение метрик */
+/** Загрузка отчётов Ozon + сравнение с конкурентами (7д) */
 
-const STORAGE_KEY = "ozon_uploaded_reports";
+const STORAGE_KEY = "ozon_dashboard_v2";
+const STORAGE_KEY_OLD = "ozon_uploaded_reports";
 
 function fmt(n) {
   if (n == null || n === "") return "—";
@@ -8,7 +9,7 @@ function fmt(n) {
 }
 
 function fmtPct(n) {
-  if (n == null) return "—";
+  if (n == null || Number.isNaN(n)) return "—";
   return `${Number(n).toFixed(1)}%`;
 }
 
@@ -17,23 +18,71 @@ function fmtRub(n) {
   return `${fmt(n)} ₽`;
 }
 
-function loadStoredReports() {
+function emptyStore() {
+  return { mine: {}, competitor: {} };
+}
+
+function migrateStore(raw) {
+  if (!raw) return emptyStore();
+  if (raw.mine || raw.competitor) return { mine: raw.mine || {}, competitor: raw.competitor || {} };
+  // старый формат: { "7d": report, "yesterday": report }
+  const store = emptyStore();
+  for (const [k, v] of Object.entries(raw)) {
+    const kind = v?.meta?.report_kind === "competitor" ? "competitor" : "mine";
+    store[kind][k] = v;
+  }
+  return store;
+}
+
+function loadStore() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-  } catch {
-    return {};
+    const v2 = localStorage.getItem(STORAGE_KEY);
+    if (v2) return migrateStore(JSON.parse(v2));
+    const old = localStorage.getItem(STORAGE_KEY_OLD);
+    if (old) {
+      const migrated = migrateStore(JSON.parse(old));
+      saveStore(migrated);
+      localStorage.removeItem(STORAGE_KEY_OLD);
+      return migrated;
+    }
+  } catch (e) {
+    console.warn("store load error", e);
+  }
+  return emptyStore();
+}
+
+function saveStore(store) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  } catch (e) {
+    setStatus("Не удалось сохранить в браузере — место переполнено?", "err");
   }
 }
 
-function saveStoredReports(reports) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(reports));
+function setStatus(msg, type) {
+  const el = document.getElementById("upload-status");
+  if (!el) return;
+  el.textContent = msg;
+  el.className = type === "err" ? "status-err" : type === "ok" ? "status-ok" : "";
 }
 
-function renderReportBlock(report) {
+function setStatusList(items) {
+  const el = document.getElementById("upload-status");
+  if (!el) return;
+  if (!items.length) {
+    el.textContent = "";
+    el.className = "";
+    return;
+  }
+  el.innerHTML = items.map((i) => `<div class="${i.type}">${i.text}</div>`).join("");
+}
+
+function renderReportBlock(report, kind) {
   const s = report.summary;
   const m = report.meta;
   const alerts = OzonReportParser.alertsFromReport(report);
   const periodLabel = m.period_label || m.period_key;
+  const kindLabel = kind === "competitor" ? "Конкуренты" : "Наши";
 
   let alertHtml = "";
   if (alerts.length) {
@@ -41,56 +90,50 @@ function renderReportBlock(report) {
       "<ul class='alert-list'>" +
       alerts
         .slice(0, 8)
-        .map(
-          (a) =>
-            `<li class="${a.level === "critical" ? "crit" : "warn"}">${a.text}</li>`
-        )
+        .map((a) => `<li class="${a.level === "critical" ? "crit" : "warn"}">${escapeHtml(a.text)}</li>`)
         .join("") +
       "</ul>";
   } else {
-    alertHtml = "<p class='muted'>Критичных проблем по конверсии нет.</p>";
+    alertHtml = "<p class='muted'>Критичных проблем нет.</p>";
   }
 
   let rows = "";
-  for (const p of report.products.slice(0, 20)) {
+  for (const p of report.products.slice(0, 25)) {
     const drrFlag = p.drr_pct != null && p.drr_pct > 25 ? " ⚠" : "";
+    const label = escapeHtml(p.offer_id || p.name.slice(0, 28));
     rows += `<tr>
-      <td><b>${p.offer_id || p.name.slice(0, 28)}</b></td>
+      <td><b>${label}</b>${p.seller ? `<div class="sub">${escapeHtml(p.seller)}</div>` : ""}</td>
       <td class="num">${fmt(p.ordered_units)}</td>
       <td class="num">${fmt(p.views_search)}</td>
       <td class="num">${fmt(p.views_pdp)}</td>
       <td class="num">${fmtPct(p.conv_pdp_to_order_pct)}</td>
       <td class="num">${fmtPct(p.conv_cart_pdp_pct)}</td>
       <td class="num">${p.drr_pct != null ? Math.round(p.drr_pct) + "%" + drrFlag : "—"}</td>
-      <td class="num">${p.revenue_dyn_pct != null ? (p.revenue_dyn_pct > 0 ? "+" : "") + Math.round(p.revenue_dyn_pct) + "%" : "—"}</td>
     </tr>`;
   }
 
   return `
-    <div class="report-card" data-period="${m.period_key}">
+    <div class="report-card" data-kind="${kind}" data-period="${m.period_key}">
       <div class="report-head">
         <div>
-          <div class="report-title">${periodLabel}</div>
-          <div class="sub">${m.file_name} · сформирован ${m.formed_at || "—"}</div>
+          <div class="report-title">${kindLabel} · ${escapeHtml(periodLabel)}</div>
+          <div class="sub">${escapeHtml(m.file_name)} · ${escapeHtml(m.formed_at || "—")}</div>
         </div>
-        <button type="button" class="btn-ghost btn-remove" data-period="${m.period_key}">Убрать</button>
+        <button type="button" class="btn-ghost btn-remove" data-kind="${kind}" data-period="${m.period_key}">Убрать</button>
       </div>
       <div class="metrics">
         <div class="metric"><div class="lbl">Заказы</div><div class="val">${fmt(s.ordered_units)}</div></div>
         <div class="metric"><div class="lbl">Выручка</div><div class="val">${fmtRub(s.revenue_rub)}</div></div>
         <div class="metric"><div class="lbl">Просмотры карточки</div><div class="val">${fmt(s.views_pdp)}</div></div>
-        <div class="metric"><div class="lbl">Конверсия PDP→заказ</div><div class="val">${fmtPct(s.conv_pdp_to_order_pct)}</div></div>
-        <div class="metric"><div class="lbl">Поиск → карточка</div><div class="val">${fmt(s.views_search)}</div><div class="note">${fmtPct(s.conv_search_to_pdp_pct)} переход</div></div>
-        <div class="metric"><div class="lbl">SKU в отчёте</div><div class="val">${s.sku_count}</div></div>
+        <div class="metric"><div class="lbl">Конверсия</div><div class="val">${fmtPct(s.conv_pdp_to_order_pct)}</div></div>
+        <div class="metric"><div class="lbl">SKU</div><div class="val">${s.sku_count}</div></div>
       </div>
-      <h3 class="mini-h">Что поправить</h3>
-      ${alertHtml}
-      <h3 class="mini-h">Все артикулы</h3>
+      ${kind === "mine" ? `<h3 class="mini-h">Что поправить</h3>${alertHtml}` : ""}
+      <h3 class="mini-h">Таблица</h3>
       <div class="table-scroll">
         <table>
           <thead><tr>
-            <th>Артикул</th><th>Заказы</th><th>Поиск</th><th>Карточка</th>
-            <th>Конв.</th><th>Корзина</th><th>ДРР</th><th>Δ оборот</th>
+            <th>Товар</th><th>Заказы</th><th>Поиск</th><th>Карточка</th><th>Конв.</th><th>Корзина</th><th>ДРР</th>
           </tr></thead>
           <tbody>${rows}</tbody>
         </table>
@@ -98,73 +141,187 @@ function renderReportBlock(report) {
     </div>`;
 }
 
-function renderAllReports(reports) {
-  const el = document.getElementById("upload-results");
-  const keys = Object.keys(reports);
-  if (!keys.length) {
-    el.innerHTML = "<p class='muted'>Отчёт не загружен — перетащи Excel сюда или нажми «Выбрать файл».</p>";
-    document.getElementById("upload-status").textContent = "";
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderComparison(store) {
+  const el = document.getElementById("compare-results");
+  if (!el) return;
+
+  const mine7 = store.mine["7d"];
+  const comp7 = store.competitor["7d"];
+
+  if (!mine7 && !comp7) {
+    el.innerHTML = "<p class='muted'>Загрузи наш отчёт и отчёт конкурентов за <b>7 дней</b> — здесь появится сравнение по парам SKU.</p>";
     return;
   }
+  if (!mine7) {
+    el.innerHTML = "<p class='muted status-warn-inline">Есть отчёт конкурентов — добавь <b>наш отчёт за 7 дней</b> (слот «Наши товары»).</p>";
+    return;
+  }
+  if (!comp7) {
+    el.innerHTML = "<p class='muted status-warn-inline">Есть наш отчёт — добавь <b>отчёт конкурентов за 7 дней</b> (Аналитика → Товары на Ozon).</p>";
+    return;
+  }
+
+  const cmp = OzonReportParser.buildWeeklyComparison(mine7, comp7);
+  let rows = "";
+  for (const r of cmp.rows) {
+    const rowCls = r.status === "lose" ? "row-lose" : r.status === "win" ? "row-win" : "";
+    const gapTxt = r.gap > 0 ? `−${fmt(r.gap)}` : r.gap < 0 ? `+${fmt(Math.abs(r.gap))}` : "0";
+    rows += `<tr class="${rowCls}">
+      <td><b>${escapeHtml(r.label)}</b><div class="sub">${escapeHtml(r.who)}</div></td>
+      <td class="num">${fmt(r.our_orders)}</td>
+      <td class="num">${fmt(r.comp_orders)}</td>
+      <td class="num">${gapTxt}</td>
+      <td class="num">${r.share != null ? r.share + "%" : "—"}</td>
+      <td class="num">${fmtPct(r.our_conv)}</td>
+      <td class="num">${fmtPct(r.comp_conv)}</td>
+    </tr>`;
+  }
+
+  const losers = cmp.rows.filter((r) => r.gap > 5).slice(0, 5);
+  let insight = "";
+  if (losers.length) {
+    insight =
+      "<ul class='alert-list'>" +
+      losers.map((r) => `<li class="warn">${escapeHtml(r.label)}: конкурент +${fmt(r.gap)} шт/7д (доля ${r.share}%)</li>`).join("") +
+      "</ul>";
+  } else {
+    insight = "<p class='muted'>По парам SKU критичного отставания нет.</p>";
+  }
+
+  el.innerHTML = `
+    <div class="compare-summary metrics">
+      <div class="metric"><div class="lbl">Мы · заказы 7д</div><div class="val">${fmt(cmp.total_mine)}</div></div>
+      <div class="metric"><div class="lbl">Конкуренты · заказы 7д</div><div class="val">${fmt(cmp.total_comp)}</div></div>
+      <div class="metric"><div class="lbl">Наша доля по парам</div><div class="val">${cmp.share_total != null ? cmp.share_total + "%" : "—"}</div></div>
+    </div>
+    <p class="hint">Период: ${escapeHtml(cmp.period)} · наш: ${escapeHtml(cmp.mine_file || "")} · конк.: ${escapeHtml(cmp.comp_file || "")}</p>
+    <h3 class="mini-h">Где отстаём</h3>
+    ${insight}
+    <h3 class="mini-h">Все пары SKU</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr>
+          <th>Товар</th><th>Мы</th><th>Конк.</th><th>Δ</th><th>Доля</th><th>Конв. мы</th><th>Конв. конк.</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function renderAllReports(store) {
+  const el = document.getElementById("upload-results");
+  const blocks = [];
   const order = ["yesterday", "7d", "28d", "today", "mtd"];
-  keys.sort((a, b) => order.indexOf(a) - order.indexOf(b));
-  el.innerHTML = keys.map((k) => renderReportBlock(reports[k])).join("");
-  document.getElementById("upload-status").textContent =
-    `Загружено периодов: ${keys.map((k) => reports[k].meta.period_label || k).join(", ")}`;
+
+  for (const kind of ["mine", "competitor"]) {
+    const keys = Object.keys(store[kind] || {}).sort(
+      (a, b) => order.indexOf(a) - order.indexOf(b)
+    );
+    for (const k of keys) blocks.push(renderReportBlock(store[kind][k], kind));
+  }
+
+  if (!blocks.length) {
+    el.innerHTML = "<p class='muted'>Отчёты не загружены.</p>";
+  } else {
+    el.innerHTML = blocks.join("");
+  }
 
   el.querySelectorAll(".btn-remove").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const pk = btn.dataset.period;
-      const stored = loadStoredReports();
-      delete stored[pk];
-      saveStoredReports(stored);
-      renderAllReports(stored);
-      syncOpsMetrics(stored);
+      const storeNow = loadStore();
+      const kind = btn.dataset.kind;
+      const period = btn.dataset.period;
+      if (storeNow[kind]) delete storeNow[kind][period];
+      saveStore(storeNow);
+      refreshUI(storeNow);
     });
   });
+
+  renderComparison(store);
+  syncOpsMetrics(store);
 }
 
-function syncOpsMetrics(reports) {
-  const y = reports.yesterday?.summary;
-  const w = reports["7d"]?.summary;
+function syncOpsMetrics(store) {
+  const y = store.mine.yesterday?.summary;
+  const w = store.mine["7d"]?.summary;
   const el7 = document.getElementById("live-conv-7d");
   const note7 = document.getElementById("live-conv-7d-note");
   const noteY = document.getElementById("live-conv-yesterday-note");
-  if (el7 && w?.conv_pdp_to_order_pct != null) {
-    el7.textContent = fmtPct(w.conv_pdp_to_order_pct);
-    if (note7) note7.textContent = `из отчёта · ${reports["7d"].meta.file_name}`;
+
+  if (el7) {
+    if (w?.conv_pdp_to_order_pct != null) {
+      el7.textContent = fmtPct(w.conv_pdp_to_order_pct);
+      if (note7) note7.textContent = `из отчёта · ${store.mine["7d"].meta.file_name}`;
+    }
   }
-  if (noteY && y?.conv_pdp_to_order_pct != null) {
-    noteY.textContent = `конв ${fmtPct(y.conv_pdp_to_order_pct)} · ${reports.yesterday.meta.file_name}`;
-  } else if (noteY && !y) {
-    noteY.textContent = "";
+  if (noteY) {
+    if (y?.conv_pdp_to_order_pct != null) {
+      noteY.textContent = `конв ${fmtPct(y.conv_pdp_to_order_pct)} · ${store.mine.yesterday.meta.file_name}`;
+    } else {
+      noteY.textContent = "";
+    }
   }
 }
 
-async function handleFiles(fileList) {
-  const stored = loadStoredReports();
-  const status = document.getElementById("upload-status");
-  status.textContent = "Читаю файл…";
+function refreshUI(store) {
+  renderAllReports(store);
+}
+
+async function handleFiles(fileList, forcedKind) {
+  const store = loadStore();
+  const messages = [];
+
+  if (!fileList?.length) return;
 
   for (const file of fileList) {
-    if (!file.name.match(/\.xlsx$/i)) continue;
-    const buf = await file.arrayBuffer();
-    const report = OzonReportParser.parseWorkbookArrayBuffer(buf, file.name);
-    stored[report.meta.period_key] = report;
+    if (!/\.xlsx$/i.test(file.name)) {
+      messages.push({ type: "status-err", text: `${file.name}: нужен формат .xlsx` });
+      continue;
+    }
+    try {
+      const buf = await file.arrayBuffer();
+      const report = OzonReportParser.parseWorkbookArrayBuffer(buf, file.name, forcedKind);
+      const kind = report.meta.report_kind === "competitor" ? "competitor" : "mine";
+      const pk = report.meta.period_key;
+
+      if (!store[kind]) store[kind] = {};
+      store[kind][pk] = report;
+
+      const kindRu = kind === "competitor" ? "конкуренты" : "наши";
+      messages.push({
+        type: "status-ok",
+        text: `✓ ${file.name} → ${kindRu}, ${report.meta.period_label || pk}, ${report.products.length} SKU`,
+      });
+    } catch (e) {
+      messages.push({ type: "status-err", text: `✗ ${file.name}: ${e.message || "ошибка чтения"}` });
+    }
   }
 
-  saveStoredReports(stored);
-  renderAllReports(stored);
-  syncOpsMetrics(stored);
+  saveStore(store);
+  refreshUI(store);
+  setStatusList(messages);
 }
 
-function initUpload() {
-  const zone = document.getElementById("upload-zone");
-  const input = document.getElementById("file-input");
+function bindDropZone(zoneId, inputId, kind) {
+  const zone = document.getElementById(zoneId);
+  const input = document.getElementById(inputId);
+  if (!zone || !input) return;
 
-  zone.addEventListener("click", () => input.click());
-  input.addEventListener("change", (e) => handleFiles(e.target.files));
-
+  zone.addEventListener("click", (e) => {
+    if (e.target.tagName !== "BUTTON") input.click();
+  });
+  input.addEventListener("change", (e) => {
+    handleFiles(e.target.files, kind);
+    e.target.value = "";
+  });
   zone.addEventListener("dragover", (e) => {
     e.preventDefault();
     zone.classList.add("drag");
@@ -173,18 +330,22 @@ function initUpload() {
   zone.addEventListener("drop", (e) => {
     e.preventDefault();
     zone.classList.remove("drag");
-    handleFiles(e.dataTransfer.files);
+    handleFiles(e.dataTransfer.files, kind);
   });
+}
+
+function initUpload() {
+  bindDropZone("upload-zone-mine", "file-input-mine", "mine");
+  bindDropZone("upload-zone-comp", "file-input-comp", "competitor");
 
   document.getElementById("btn-clear-all")?.addEventListener("click", () => {
     localStorage.removeItem(STORAGE_KEY);
-    renderAllReports({});
-    syncOpsMetrics({});
+    localStorage.removeItem(STORAGE_KEY_OLD);
+    refreshUI(emptyStore());
+    setStatus("Все загруженные отчёты удалены", "ok");
   });
 
-  const stored = loadStoredReports();
-  renderAllReports(stored);
-  syncOpsMetrics(stored);
+  refreshUI(loadStore());
 }
 
 document.addEventListener("DOMContentLoaded", initUpload);

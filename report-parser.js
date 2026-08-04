@@ -1,4 +1,4 @@
-/** Парсер отчёта Ozon analytics_report*.xlsx — зеркало ozon_analytics_report.py */
+/** Парсер отчёта Ozon analytics_report*.xlsx */
 
 const PERIOD_LABEL_MAP = {
   "7 дней": "7d",
@@ -8,6 +8,7 @@ const PERIOD_LABEL_MAP = {
   "1 дн": "yesterday",
   сегодня: "today",
   "28 дней": "28d",
+  "28 дн": "28d",
 };
 
 const HEADER_MAP = {
@@ -25,6 +26,7 @@ const HEADER_MAP = {
   "Доля выкупа, %": "buyout_pct",
   "Упущенные продажи": "missed_sales_rub",
   "Среднесуточные продажи, штуки": "ads_units",
+  "Средняя цена, ₽": "avg_price_rub",
 };
 
 function periodKeyFromLabel(label) {
@@ -35,7 +37,7 @@ function periodKeyFromLabel(label) {
 
 function num(val) {
   if (val == null || val === "") return null;
-  if (typeof val === "number") return val;
+  if (typeof val === "number" && Number.isFinite(val)) return val;
   const n = parseFloat(String(val).replace(",", ".").replace(/\s/g, ""));
   return Number.isFinite(n) ? n : null;
 }
@@ -46,9 +48,32 @@ function skuFromLink(link) {
   return m ? m[1] : null;
 }
 
-function parseSheetRows(rows, fileName) {
+function findHeaderRowIndex(rows) {
+  for (let r = 0; r < Math.min(rows.length, 20); r++) {
+    const row = rows[r] || [];
+    if (row.some((c) => String(c || "").trim() === "Название товара")) return r;
+    if (row.some((c) => String(c || "").trim() === "Заказано, штуки")) return r;
+  }
+  return 4;
+}
+
+function detectReportKind(meta, fileName, forcedKind) {
+  if (forcedKind) return forcedKind;
+  const fn = (fileName || "").toLowerCase();
+  if (/конкурент|competitor|beltovar|товары на ozon/.test(fn)) return "competitor";
+  const mp = (meta.my_products_only || "").toLowerCase();
+  if (mp === "нет" || mp === "no") return "competitor";
+  if (mp === "да" || mp === "yes") return "mine";
+  return "mine";
+}
+
+function parseSheetRows(rows, fileName, forcedKind) {
+  if (!rows || rows.length < 5) {
+    throw new Error("Файл слишком короткий — это не отчёт Ozon?");
+  }
+
   const meta = { file_name: fileName };
-  for (let r = 0; r < 3; r++) {
+  for (let r = 0; r < Math.min(rows.length, 6); r++) {
     const label = rows[r]?.[0];
     const val = rows[r]?.[1];
     if (label === "Дата формирования:") meta.formed_at = val != null ? String(val) : null;
@@ -56,30 +81,47 @@ function parseSheetRows(rows, fileName) {
     if (label === "Мои товары:") meta.my_products_only = val != null ? String(val) : null;
   }
 
-  const headerRow = rows[4] || [];
+  const headerIdx = findHeaderRowIndex(rows);
+  const headerRow = rows[headerIdx] || [];
   const colByHeader = {};
   headerRow.forEach((h, i) => {
     if (h) colByHeader[String(h).trim()] = i;
   });
 
+  if (colByHeader["Заказано, штуки"] == null && colByHeader["Ссылка на товар"] == null) {
+    throw new Error("Не нашёл колонки отчёта Ozon — проверь, что это analytics_report.xlsx");
+  }
+
   const products = [];
-  for (let r = 5; r < rows.length; r++) {
+  for (let r = headerIdx + 1; r < rows.length; r++) {
     const row = rows[r];
     if (!row || !row[0]) continue;
     const name = String(row[0]).trim();
-    if (name === "Среднее значение по товарам" || name === "Название товара") continue;
+    if (
+      name === "Среднее значение по товарам" ||
+      name === "Название товара" ||
+      name.startsWith("Итого")
+    ) {
+      continue;
+    }
 
     const linkCol = colByHeader["Ссылка на товар"] ?? 1;
     const link = row[linkCol];
     const sku = skuFromLink(link);
     if (!sku) continue;
 
+    const sellerCol = colByHeader["Продавец"];
     const item = {
       sku,
       name,
       link: link ? String(link) : "",
+      seller: sellerCol != null && row[sellerCol] ? String(row[sellerCol]) : "",
       offer_id: "",
     };
+    const pair = (window.OzonCompetitorPairs?.SKU_PAIRS || []).find(
+      (p) => p.mine === sku || p.comp === sku
+    );
+    if (pair) item.offer_id = pair.label;
     for (const [hdr, key] of Object.entries(HEADER_MAP)) {
       const c = colByHeader[hdr];
       if (c != null) item[key] = num(row[c]);
@@ -90,14 +132,20 @@ function parseSheetRows(rows, fileName) {
     products.push(item);
   }
 
+  if (!products.length) {
+    throw new Error("В файле нет строк с товарами — проверь период и фильтры в Ozon");
+  }
+
   const active = products.filter((p) => (p.views_pdp || 0) > 0 || (p.ordered_units || 0) > 0);
+  const list = active.length ? active : products;
+
   const summary = {
-    ordered_units: active.reduce((s, p) => s + (p.ordered_units || 0), 0),
-    revenue_rub: active.reduce((s, p) => s + (p.revenue_rub || 0), 0),
-    views_pdp: active.reduce((s, p) => s + (p.views_pdp || 0), 0),
-    views_search: active.reduce((s, p) => s + (p.views_search || 0), 0),
-    views_total: active.reduce((s, p) => s + (p.views_total || 0), 0),
-    sku_count: active.length,
+    ordered_units: list.reduce((s, p) => s + (p.ordered_units || 0), 0),
+    revenue_rub: list.reduce((s, p) => s + (p.revenue_rub || 0), 0),
+    views_pdp: list.reduce((s, p) => s + (p.views_pdp || 0), 0),
+    views_search: list.reduce((s, p) => s + (p.views_search || 0), 0),
+    views_total: list.reduce((s, p) => s + (p.views_total || 0), 0),
+    sku_count: list.length,
   };
   if (summary.views_pdp) {
     summary.conv_pdp_to_order_pct = Math.round((summary.ordered_units / summary.views_pdp) * 10000) / 100;
@@ -108,10 +156,11 @@ function parseSheetRows(rows, fileName) {
 
   meta.period_key = periodKeyFromLabel(meta.period_label);
   meta.parsed_at = new Date().toISOString();
+  meta.report_kind = detectReportKind(meta, fileName, forcedKind);
 
-  active.sort((a, b) => (b.ordered_units || 0) - (a.ordered_units || 0));
+  list.sort((a, b) => (b.ordered_units || 0) - (a.ordered_units || 0));
 
-  return { meta, summary, products: active };
+  return { meta, summary, products: list };
 }
 
 function alertsFromReport(report) {
@@ -132,9 +181,6 @@ function alertsFromReport(report) {
     if (pk === "7d" && p.revenue_dyn_pct != null && p.revenue_dyn_pct <= -30 && (p.ordered_units || 0) >= 2) {
       alerts.push({ level: "warn", text: `Оборот ↓${Math.abs(Math.round(p.revenue_dyn_pct))}% — ${offer}` });
     }
-    if (pk === "7d" && p.stock_end != null && p.stock_end > 0 && p.stock_end < 20 && (p.ads_units || 0) >= 1) {
-      alerts.push({ level: "warn", text: `Мало на складе (${Math.round(p.stock_end)} шт) — ${offer}` });
-    }
     if (p.conv_pdp_to_order_pct != null && p.conv_pdp_to_order_pct < 1 && (p.views_pdp || 0) >= 200) {
       alerts.push({ level: "critical", text: `Низкая конверсия ${p.conv_pdp_to_order_pct}% — ${offer}` });
     }
@@ -142,11 +188,76 @@ function alertsFromReport(report) {
   return alerts;
 }
 
-function parseWorkbookArrayBuffer(buf, fileName) {
-  const wb = XLSX.read(buf, { type: "array" });
+function parseWorkbookArrayBuffer(buf, fileName, forcedKind) {
+  if (typeof XLSX === "undefined") {
+    throw new Error("Библиотека Excel не загрузилась — обнови страницу");
+  }
+  let wb;
+  try {
+    wb = XLSX.read(buf, { type: "array" });
+  } catch (e) {
+    throw new Error("Не удалось прочитать Excel: " + (e.message || "битый файл"));
+  }
+  if (!wb.SheetNames?.length) throw new Error("В файле нет листов");
   const ws = wb.Sheets[wb.SheetNames[0]];
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: null });
-  return parseSheetRows(rows, fileName);
+  return parseSheetRows(rows, fileName, forcedKind);
+}
+
+function indexBySku(products) {
+  const m = {};
+  for (const p of products || []) m[String(p.sku)] = p;
+  return m;
+}
+
+function buildWeeklyComparison(mineReport, compReport) {
+  const pairs = window.OzonCompetitorPairs?.SKU_PAIRS || [];
+  const mine = indexBySku(mineReport?.products);
+  const comp = indexBySku(compReport?.products);
+
+  const rows = [];
+  let totalMine = 0;
+  let totalComp = 0;
+
+  for (const pair of pairs) {
+    const our = mine[pair.mine];
+    const c = comp[pair.comp];
+    const ourOrders = our?.ordered_units || 0;
+    const compOrders = c?.ordered_units || 0;
+    totalMine += ourOrders;
+    totalComp += compOrders;
+    const gap = compOrders - ourOrders;
+    const total = ourOrders + compOrders;
+    const share = total > 0 ? Math.round((ourOrders / total) * 1000) / 10 : null;
+    rows.push({
+      label: pair.label,
+      who: pair.who,
+      our_sku: pair.mine,
+      comp_sku: pair.comp,
+      our_orders: ourOrders,
+      comp_orders: compOrders,
+      gap,
+      share,
+      our_conv: our?.conv_pdp_to_order_pct,
+      comp_conv: c?.conv_pdp_to_order_pct,
+      our_pdp: our?.views_pdp,
+      comp_pdp: c?.views_pdp,
+      comp_seller: c?.seller || pair.who,
+      status: gap > 5 ? "lose" : gap < -2 ? "win" : "parity",
+    });
+  }
+
+  rows.sort((a, b) => b.gap - a.gap);
+
+  return {
+    rows,
+    total_mine: totalMine,
+    total_comp: totalComp,
+    share_total: totalMine + totalComp > 0 ? Math.round((totalMine / (totalMine + totalComp)) * 1000) / 10 : null,
+    mine_file: mineReport?.meta?.file_name,
+    comp_file: compReport?.meta?.file_name,
+    period: mineReport?.meta?.period_label || "7 дней",
+  };
 }
 
 window.OzonReportParser = {
@@ -154,4 +265,6 @@ window.OzonReportParser = {
   parseSheetRows,
   alertsFromReport,
   periodKeyFromLabel,
+  buildWeeklyComparison,
+  indexBySku,
 };
