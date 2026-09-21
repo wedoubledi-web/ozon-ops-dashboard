@@ -1,209 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Ozon — сводка 2026-08-03</title>
-<style>
-:root {
-  --bg:#f4f6f9; --surface:#fff; --border:#d8dee8; --text:#1a2332; --muted:#5c6b80;
-  --accent:#005bff; --green:#0a7a3e; --yellow:#b8860b; --red:#c0392b; --radius:14px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;font-size:15px}
-.wrap{max-width:720px;margin:0 auto;padding:16px 14px 40px}
-h1{font-size:1.35rem;font-weight:800}
-h2{font-size:1.05rem;font-weight:700;margin-bottom:10px}
-.sub{color:var(--muted);font-size:.88rem;margin-top:4px}
-.box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
-.status{border-width:2px}
-.status.ok{border-color:var(--green)}
-.status.warn{border-color:var(--yellow)}
-.status.bad{border-color:var(--red)}
-.status-title{font-size:1.15rem;font-weight:800}
-.status-sub{color:var(--muted);font-size:.9rem;margin-top:4px}
-.hint{font-size:.82rem;color:var(--muted);margin:-4px 0 12px}
-.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.metric{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:12px 14px}
-.metric .lbl{font-size:.75rem;color:var(--muted)}
-.metric .val{font-size:1.35rem;font-weight:800;margin-top:2px}
-.metric .note{font-size:.78rem;color:var(--muted);margin-top:2px}
-.todo{padding-left:1.2rem}
-.todo li{margin-bottom:8px}
-.todo li:last-child{margin-bottom:0}
-.muted{color:var(--muted)}
-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:4px}
-th,td{padding:9px 8px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
-th{color:var(--muted);font-size:.72rem;font-weight:600;text-transform:none}
-.num{text-align:right;font-variant-numeric:tabular-nums}
-#upload-status .status-ok{color:var(--green);margin-top:4px}
-#upload-status .status-err{color:var(--red);margin-top:4px}
-.status-warn-inline{color:var(--yellow)}
-.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}
-@media(max-width:560px){.upload-grid{grid-template-columns:1fr}}
-.upload-zone{position:relative;display:block;border:2px dashed var(--border);border-radius:12px;padding:16px 12px 10px;text-align:center;background:#f8fafc;transition:border-color .15s,background .15s}
-.upload-zone.comp{background:#fffaf5}
-.upload-zone.drag{border-color:var(--accent);background:#eef4ff}
-.upload-zone.comp.drag{background:#fff3e6}
-.upload-zone p{margin:6px 0 0;color:var(--muted);font-size:.82rem}
-.file-input-visible{display:block;width:100%;margin-top:10px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:#fff;font-size:.82rem;cursor:pointer}
-.upload-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.btn{display:inline-block;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer;font-size:.88rem;text-decoration:none}
-.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 12px;font-size:.82rem;cursor:pointer}
-.report-card{border:1px solid var(--border);border-radius:12px;padding:16px;margin-top:14px;background:#fafbfc}
-.report-card-new{outline:3px solid var(--accent);box-shadow:0 0 0 4px rgba(0,91,255,.15)}
-.report-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
-.report-title{font-weight:800;font-size:1.05rem}
-.mini-h{font-size:.92rem;font-weight:700;margin:16px 0 8px}
-.alert-list{padding-left:1.1rem;font-size:.88rem}
-.alert-list .crit{color:var(--red)}
-.alert-list .warn{color:var(--yellow)}
-.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.row-lose{background:#fff5f5}
-.row-win{background:#f3fbf6}
-.compare-summary{margin-bottom:10px}
-#upload-status{font-size:.82rem;margin-top:8px}
-details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:10px}
-summary{padding:14px 16px;font-weight:700;cursor:pointer;list-style:none}
-summary::-webkit-details-marker{display:none}
-summary::after{content:'+';float:right;color:var(--muted);font-weight:400}
-details[open] summary::after{content:'−'}
-.details-body{padding:0 16px 16px;border-top:1px solid var(--border)}
-footer{text-align:center;color:var(--muted);font-size:.75rem;margin-top:20px}
-@media(max-width:500px){.metrics{grid-template-columns:1fr}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ozon · Чистая прибыль</title>
+  <style>
+    :root{--bg:#f4f6fb;--card:#fff;--ink:#17213a;--muted:#6d7690;--line:#e5e9f2;--blue:#1267ef;--green:#12a575;--red:#e24957;--amber:#e59416;--shadow:0 8px 28px rgba(29,43,76,.07)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:4}.head{max-width:1440px;margin:auto;padding:15px 24px;display:flex;align-items:center;gap:14px}.logo{width:38px;height:38px;border-radius:12px;background:var(--blue);display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px}.title{font-size:19px;font-weight:750}.sub{color:var(--muted);font-size:12px}.updated{margin-left:auto;color:var(--muted);font-size:12px}
+    main{max-width:1440px;margin:auto;padding:22px 24px 50px}.toolbar,.card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.toolbar{padding:14px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:15px}input,button{font:inherit;border:1px solid var(--line);border-radius:9px;background:#fff;padding:8px 11px;color:var(--ink)}button{cursor:pointer}button:hover,.preset.active{border-color:#a9c6fa;background:#edf4ff;color:#075dcc}.dates{display:flex;align-items:center;gap:7px}.quality{margin-left:auto;font-size:12px;border-radius:20px;padding:7px 10px;background:#eaf9f3;color:#087a55}.quality.bad{background:#fff1f2;color:#bc263a}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.kpi{padding:17px;min-height:126px}.kpi-name{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}.kpi-value{font-size:27px;font-weight:780;margin:10px 0 6px;letter-spacing:-.5px}.delta{font-size:12px}.up{color:var(--green)}.down{color:var(--red)}.neutral{color:var(--muted)}
+    .section-grid{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:12px}.panel{padding:18px}.panel h2{font-size:15px;margin:0 0 15px}.chart{height:265px;position:relative}.chart svg{width:100%;height:100%;overflow:visible}.axis{stroke:#e7eaf1;stroke-width:1}.area{fill:url(#grad)}.line{fill:none;stroke:var(--blue);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.zero{stroke:#bdc4d2;stroke-dasharray:4 5}.tick{fill:#8a92a6;font-size:10px}
+    .breakdown{display:grid;gap:14px}.bar-head{display:flex;justify-content:space-between;margin-bottom:5px}.bar-track{height:8px;border-radius:99px;background:#eef1f6;overflow:hidden}.bar-fill{height:100%;border-radius:99px;background:var(--blue)}.bar:nth-child(2) .bar-fill{background:#7849d6}.bar:nth-child(3) .bar-fill{background:#ef8a28}.bar:nth-child(4) .bar-fill{background:#32a989}.bar:nth-child(5) .bar-fill{background:#9aa2b3}
+    .table-card{margin-top:12px;overflow:hidden}.table-head{padding:17px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.table-head h2{font-size:15px;margin:0}.scroll{overflow:auto;max-height:520px}table{width:100%;border-collapse:collapse;min-width:850px}th,td{text-align:right;padding:12px 14px;border-bottom:1px solid #eef0f5;white-space:nowrap}th{position:sticky;top:0;background:#f9fafc;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em;z-index:1}th:first-child,td:first-child{text-align:left}.product{display:flex;gap:10px;align-items:center;max-width:420px}.product img{width:38px;height:38px;border-radius:8px;object-fit:cover;background:#eef1f6}.pname{overflow:hidden;text-overflow:ellipsis}.offer{font-size:11px;color:var(--muted)}.pos{color:var(--green)}.neg{color:var(--red)}
+    .stocks{margin-top:12px}.stock-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.stock{border:1px solid var(--line);border-radius:13px;padding:14px}.stock-top{display:flex;justify-content:space-between;gap:10px}.stock strong{font-size:13px}.badge{font-size:11px;border-radius:20px;padding:3px 7px;background:#fff4df;color:#9c6205;height:max-content}.stock-metric{font-size:25px;font-weight:750;margin:10px 0 4px}.stock small{color:var(--muted)}.empty{padding:35px;text-align:center;color:var(--muted)}
+    details{margin-top:12px}.method{padding:16px 18px}summary{cursor:pointer;font-weight:650}.method-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:13px}.formula{background:#f7f9fc;border-radius:10px;padding:11px}.formula b{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;margin-bottom:4px}
+    .alert{display:none;background:#fff0f2;color:#9c2031;border:1px solid #ffcbd2;border-radius:12px;padding:12px 15px;margin-bottom:12px}.alert.show{display:block}
+    @media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.section-grid{grid-template-columns:1fr}.stock-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){main{padding:14px 10px 35px}.head{padding:11px}.updated{display:none}.grid{grid-template-columns:1fr 1fr;gap:8px}.kpi{min-height:105px;padding:13px}.kpi-value{font-size:21px}.stock-grid{grid-template-columns:1fr}.method-grid{grid-template-columns:1fr}.dates{width:100%}.dates input{width:46%}.quality{margin-left:0}.chart{height:220px}}
+  </style>
 </head>
 <body>
-<div class="wrap">
-
-<div class="box">
-  <h1>Ozon — сводка</h1>
-  <div class="sub">Данные за 2026-08-03 · обновлено 2026-08-04 18:11</div>
-</div>
-
-<div class="box">
-  <h2>Загрузить отчёты Ozon</h2>
-  <p class="hint">Два формата Ozon: <b>analytics_report</b> (xlsx/csv) и <b>what-to-sell bestsellers</b> (csv из кабинета). Периоды: вчера / 7д / 28д.</p>
-  <div class="upload-grid">
-    <div id="upload-zone-mine" class="upload-zone">
-      <strong>Наши товары</strong>
-      <p>What to sell · вчера / 7д / 28д</p>
-      <input type="file" id="file-input-mine" class="file-input-visible" multiple accept=".xlsx,.xls,.csv,*/*">
-    </div>
-    <div id="upload-zone-comp" class="upload-zone comp">
-      <strong>Конкуренты · 7 дней</strong>
-      <p>Товары на Ozon · период «7 дней»</p>
-      <input type="file" id="file-input-comp" class="file-input-visible" multiple accept=".xlsx,.xls,.csv,*/*">
-    </div>
+<header><div class="head"><div class="logo">O</div><div><div class="title">Ozon · Оцифровка</div><div class="sub">Чистая прибыль и поставки по данным Seller API</div></div><div class="updated" id="updated">Загрузка…</div></div></header>
+<main>
+  <div class="alert" id="alert"></div>
+  <div class="toolbar">
+    <div class="dates"><input type="date" id="from"><span>—</span><input type="date" id="to"></div>
+    <button class="preset" data-days="7">7 дней</button><button class="preset" data-days="30">30 дней</button><button class="preset" data-days="mtd">Месяц</button><button class="preset" data-days="all">Всё</button>
+    <div class="quality" id="quality">Проверка данных</div>
   </div>
-  <div class="upload-actions">
-    <button type="button" class="btn-ghost" id="btn-clear-all">Очистить всё</button>
-  </div>
-  <div id="upload-status"></div>
-</div>
-
-<div class="box">
-  <h2>Вчера vs позавчera · наши метрики</h2>
-  <p class="hint">Как изменились заказы, просмотры и конверсия за один день. Обновляется после загрузки отчёта «Вчера» или из авто-сводки.</p>
-  <div id="day-over-day-results"><p class="muted">Загрузи отчёт за «Вчера»…</p></div>
-</div>
-
-<div class="box">
-  <h2>Сравнение 7 дней · мы vs конкуренты</h2>
-  <p class="hint">По парам SKU (beltovar и др.). Обновляется сразу после загрузки обоих отчётов.</p>
-  <div id="compare-results"><p class="muted">Загрузи оба отчёта за 7 дней.</p></div>
-</div>
-
-<div class="box">
-  <h2>Детали загруженных отчётов</h2>
-  <div id="upload-results"><p class="muted">Отчёты не загружены.</p></div>
-</div>
-
-<div class="box status bad">
-  <div class="status-title">Нужны действия сегодня</div>
-  <div class="status-sub">Срочных задач: 4</div>
-</div>
-
-<div class="box">
-  <h2>1. Сделать сегодня</h2>
-  <p class="hint">Список для Насти — по порядку, без лишнего.</p>
-  <ol class='todo'><li>Срезать или стоп рекламу — для собак</li><li>Срезать или стоп рекламу — гель германия1</li><li>Срезать или стоп рекламу — для кошек и собак 140</li><li>Срезать или стоп рекламу — для взрослых собак1</li><li>ДРР 33% (отчёт Ozon 7д) — бреверсы для крупных, расход 3365₽</li><li>ДРР 34% (отчёт Ozon 7д) — для пожилых собак1, расход 4166₽</li><li>Срочно поставка — для собак: остаток на исходе</li></ol>
-</div>
-
-<div class="box">
-  <h2>2. Цифры за неделю</h2>
-  <p class="hint">На это смотрим каждый день. Сравнение — с прошлыми 7 днями.</p>
-  <div class="metrics">
-    <div class="metric">
-      <div class="lbl">Заказов за 7 дней</div>
-      <div class="val">141</div>
-      <div class="note">+8% к прошлой неделе</div>
-    </div>
-    <div class="metric">
-      <div class="lbl">Вчера заказов</div>
-      <div class="val" id="live-yesterday-orders">17</div>
-      <div class="note" id="live-conv-yesterday-note">конв 1.5% · charts API</div>
-    </div>
-    <div class="metric">
-      <div class="lbl">Конверсия вчера</div>
-      <div class="val" id="live-yesterday-conv">1.5%</div>
-      <div class="note" id="live-yesterday-conv-delta">Δ vs позавчera</div>
-    </div>
-    <div class="metric">
-      <div class="lbl">Конверсия 7 дней</div>
-      <div class="val" id="live-conv-7d">2.3%</div>
-      <div class="note" id="live-conv-7d-note">analytics_report_2026-08-03_14_05.xlsx</div>
-    </div>
-    <div class="metric">
-      <div class="lbl">Реклама за 7 дней</div>
-      <div class="val">53 203 ₽</div>
-      <div class="note">ДРР 43.3% — норма до 25%</div>
-    </div>
-  </div>
-</div>
-
-<div class="box">
-  <h2>3. Где проблема</h2>
-  <p class="hint">Артикулы, которые требуют внимания.</p>
-  <table><thead><tr><th>Артикул</th><th>Что не так</th><th>Что делать</th></tr></thead><tbody><tr><td><b>для собак</b></td><td>Расход 4641 ₽, 0 заказов по РК</td><td>Стоп или срез</td></tr><tr><td><b>гель германия1</b></td><td>ДРР 56% (отчёт 7д)</td><td>Срез бюджета / ставки</td></tr><tr><td><b>бреверсы для крупных</b></td><td>ДРР 33% (отчёт 7д)</td><td>Срез бюджета / ставки</td></tr><tr><td><b>для пожилых собак1</b></td><td>ДРР 34% (отчёт 7д)</td><td>Срез бюджета / ставки</td></tr><tr><td><b>для кошек и собак 140</b></td><td>ДРР 60% (отчёт 7д)</td><td>Срез бюджета / ставки</td></tr><tr><td><b>для взрослых собак1</b></td><td>ДРР 120% (отчёт 7д)</td><td>Срез бюджета / ставки</td></tr></tbody></table>
-</div>
-
-<div class="box">
-  <h2>4. Что продаётся</h2>
-  <p class="hint">Топ по заказам за 7 дней.</p>
-  <table>
-    <thead><tr><th>Артикул</th><th>Заказы</th><th>Просмотры</th><th>Конверсия</th></tr></thead>
-    <tbody><tr><td><b>шокол</b></td><td class='num'>47</td><td class='num'>3 046</td><td class='num'>1.7%</td></tr><tr><td><b>для собак</b></td><td class='num'>15</td><td class='num'>307</td><td class='num'>3.3%</td></tr><tr><td><b>гель германия1</b></td><td class='num'>14</td><td class='num'>167</td><td class='num'>2.4%</td></tr><tr><td><b>глюкозамин 55 шт</b></td><td class='num'>12</td><td class='num'>387</td><td class='num'>5.4%</td></tr><tr><td><b>для мелких пород</b></td><td class='num'>10</td><td class='num'>407</td><td class='num'>2.0%</td></tr><tr><td><b>кальций</b></td><td class='num'>10</td><td class='num'>257</td><td class='num'>4.3%</td></tr><tr><td><b>для кошек и собак 260 1</b></td><td class='num'>10</td><td class='num'>282</td><td class='num'>5.0%</td></tr><tr><td><b>Multi Vit Puppy</b></td><td class='num'>9</td><td class='num'>300</td><td class='num'>3.0%</td></tr></tbody>
-  </table>
-</div>
-
-<details>
-  <summary>Реклама — расход по кампаниям</summary>
-  <div class="details-body">
-    <table>
-      <thead><tr><th>Товар</th><th>Потрачено</th><th>Заказы</th><th>ДРР</th></tr></thead>
-      <tbody><tr><td>для кошек и собак 260 1</td><td class='num'>5 372 ₽</td><td class='num'>7</td><td class='num'>57% ⚠</td></tr><tr><td>гель германия1</td><td class='num'>4 925 ₽</td><td class='num'>1</td><td class='num'>490% ⚠</td></tr><tr><td>шокол</td><td class='num'>4 817 ₽</td><td class='num'>31</td><td class='num'>14%</td></tr><tr><td>для собак</td><td class='num'>4 641 ₽</td><td class='num'>0</td><td class='num'>—</td></tr><tr><td>для мелких пород</td><td class='num'>4 573 ₽</td><td class='num'>2</td><td class='num'>138% ⚠</td></tr><tr><td>Multi Vit Puppy</td><td class='num'>4 555 ₽</td><td class='num'>6</td><td class='num'>51% ⚠</td></tr></tbody>
-    </table>
-  </div>
-</details>
-
-<details>
-  <summary>Поставки и возвраты</summary>
-  <div class="details-body">
-    <p><b>Поставки</b></p>
-    <ul><li><b>116057614-1</b> — В пути</li></ul>
-    <p style="margin-top:12px"><b>Возвраты к забору</b></p>
-    <ul><li><b>глюкозамин 55 шт</b> — забрать</li><li><b>гель германия1</b> — забрать</li></ul>
-  </div>
-</details>
-
-<footer>Обновляется каждый день ~07:00 МСК · загрузка отчёта работает офлайн в браузере</footer>
-</div>
-<script>window.__OPS_DAILY__ = {"report_date": "2026-08-03", "summary": {"pdp_views": 1101, "search_views": 1102, "ordered_units": 17, "conv_pdp_to_order_pct": 1.54, "conv_search_to_pdp_pct": 99.91, "sku_count": 12}, "prev_from": "2026-08-02", "prev_to": "2026-08-02", "skus": [{"sku": "4451480169", "offer_id": "шокол", "name": "Шоколад горький 90% натуральный Беларусь Спартак", "pdp_views": 675, "search_views": 379, "ordered_units": 6, "pdp_views_delta_pct": 38, "search_views_delta_pct": 22, "orders_delta_pct": 100, "conv_pdp_to_order_pct": 0.89, "conv_search_to_pdp_pct": 178.1, "conv_pdp_to_order_prev_pct": 0.61, "conv_delta_pp": 0.28}, {"sku": "3730511760", "offer_id": "для собак", "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт", "pdp_views": 61, "search_views": 111, "ordered_units": 1, "pdp_views_delta_pct": -15, "search_views_delta_pct": 127, "orders_delta_pct": -80, "conv_pdp_to_order_pct": 1.64, "conv_search_to_pdp_pct": 54.95, "conv_pdp_to_order_prev_pct": 6.97, "conv_delta_pp": -5.33}, {"sku": "3726888167", "offer_id": "для пожилых собак1", "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт", "pdp_views": 61, "search_views": 43, "ordered_units": 0, "pdp_views_delta_pct": 53, "search_views_delta_pct": 65, "orders_delta_pct": -100, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 141.86, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "3726902147", "offer_id": "глюкозамин 55 шт", "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт", "pdp_views": 53, "search_views": 85, "ordered_units": 3, "pdp_views_delta_pct": -22, "search_views_delta_pct": 57, "orders_delta_pct": 50, "conv_pdp_to_order_pct": 5.66, "conv_search_to_pdp_pct": 62.35, "conv_pdp_to_order_prev_pct": 2.94, "conv_delta_pp": 2.72}, {"sku": "3664742731", "offer_id": "Multi Vit Puppy", "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт", "pdp_views": 42, "search_views": 57, "ordered_units": 1, "pdp_views_delta_pct": 45, "search_views_delta_pct": 97, "orders_delta_pct": 0, "conv_pdp_to_order_pct": 2.38, "conv_search_to_pdp_pct": 73.68, "conv_pdp_to_order_prev_pct": 3.45, "conv_delta_pp": -1.07}, {"sku": "3726897234", "offer_id": "для мелких пород", "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт", "pdp_views": 41, "search_views": 39, "ordered_units": 0, "pdp_views_delta_pct": -25, "search_views_delta_pct": 34, "orders_delta_pct": -100, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 105.13, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "4405568218", "offer_id": "гель германия1", "name": "Clovin Гель для стирки белья универсальный 3,305 л концентрат Der Waschkonig Universal 110 стирок", "pdp_views": 39, "search_views": 98, "ordered_units": 3, "pdp_views_delta_pct": 5, "search_views_delta_pct": 20, "orders_delta_pct": -50, "conv_pdp_to_order_pct": 7.69, "conv_search_to_pdp_pct": 39.8, "conv_pdp_to_order_prev_pct": 16.15, "conv_delta_pp": -8.46}, {"sku": "4823627697", "offer_id": "для кошек и собак 140", "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт", "pdp_views": 34, "search_views": 123, "ordered_units": 0, "pdp_views_delta_pct": 42, "search_views_delta_pct": 146, "orders_delta_pct": null, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 27.64, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "3726858649", "offer_id": "бреверсы для крупных", "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт", "pdp_views": 28, "search_views": 42, "ordered_units": 3, "pdp_views_delta_pct": -20, "search_views_delta_pct": 75, "orders_delta_pct": 50, "conv_pdp_to_order_pct": 10.71, "conv_search_to_pdp_pct": 66.67, "conv_pdp_to_order_prev_pct": 5.71, "conv_delta_pp": 5.0}, {"sku": "3726892929", "offer_id": "для взрослых собак1", "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт", "pdp_views": 27, "search_views": 29, "ordered_units": 0, "pdp_views_delta_pct": 59, "search_views_delta_pct": 32, "orders_delta_pct": null, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 93.1, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "4658698444", "offer_id": "кальций", "name": "Витамины для щенков и собак кальций calcium 155 таблеток", "pdp_views": 20, "search_views": 37, "ordered_units": 0, "pdp_views_delta_pct": -47, "search_views_delta_pct": 32, "orders_delta_pct": -100, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 54.05, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}, {"sku": "4823918365", "offer_id": "для кошек и собак 260 1", "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт", "pdp_views": 20, "search_views": 59, "ordered_units": 0, "pdp_views_delta_pct": -17, "search_views_delta_pct": 37, "orders_delta_pct": null, "conv_pdp_to_order_pct": 0.0, "conv_search_to_pdp_pct": 33.9, "conv_pdp_to_order_prev_pct": 0.0, "conv_delta_pp": 0.0}]};</script>
-<script src="vendor/xlsx.full.min.js?v=202608041710"></script>
-<script src="competitor-pairs.js?v=202608041710"></script>
-<script src="report-parser.js?v=202608041710"></script>
-<script src="dashboard-app.js?v=202608041710"></script>
+  <section class="grid" id="kpis"></section>
+  <section class="section-grid">
+    <div class="card panel"><h2>Чистая прибыль по дням</h2><div class="chart" id="chart"></div></div>
+    <div class="card panel"><h2>Структура расходов</h2><div class="breakdown" id="breakdown"></div></div>
+  </section>
+  <section class="card table-card">
+    <div class="table-head"><h2>Рентабельность товаров</h2><span class="sub" id="skuCount"></span></div>
+    <div class="scroll"><table><thead><tr><th>Товар</th><th>Штук</th><th>Продажи</th><th>Выплата</th><th>Себестоимость</th><th>Прибыль</th><th>Маржа</th></tr></thead><tbody id="skuRows"></tbody></table></div>
+  </section>
+  <section class="card panel stocks"><h2>Куда поставить товар · цель 30 дней</h2><div class="stock-grid" id="stocks"></div></section>
+  <details class="card method"><summary>Как считаются показатели</summary><div class="method-grid" id="formulas"></div></details>
+</main>
+<script>
+const fmt=new Intl.NumberFormat('ru-RU',{maximumFractionDigits:0});const money=v=>v==null?'—':fmt.format(v)+' ₽';const pct=v=>v==null?'—':(v>=0?'+':'')+v.toFixed(2)+'%';
+let DATA=null;
+const $=s=>document.querySelector(s), sum=(rows,key)=>rows.reduce((a,r)=>a+(Number(r[key])||0),0);
+function range(){const a=$('#from').value,b=$('#to').value;return DATA.daily.filter(x=>x.date>=a&&x.date<=b)}
+function aggregate(rows){const sales=sum(rows,'sales'),net=rows.some(x=>x.net==null)?null:sum(rows,'net');return{sales,payout:sum(rows,'payout'),tax:sum(rows,'tax'),cogs:sum(rows,'cogs'),net,units:sum(rows,'units'),commission:sum(rows,'commission'),logistics:sum(rows,'logistics'),ads:sum(rows,'ads'),storage:sum(rows,'storage'),returns:sum(rows,'returns'),other:sum(rows,'other'),margin_pct:net!=null&&sales?net/sales*100:null,avg_price:sum(rows,'units')?sales/sum(rows,'units'):0}}
+function previous(rows){if(!rows.length)return[];const first=new Date(rows[0].date+'T12:00:00'),days=rows.length,end=new Date(first);end.setDate(end.getDate()-1);const start=new Date(end);start.setDate(start.getDate()-days+1);const iso=d=>d.toISOString().slice(0,10);return DATA.daily.filter(x=>x.date>=iso(start)&&x.date<=iso(end))}
+function delta(cur,prev,invert=false){if(prev==null||!isFinite(prev)||prev===0)return'<span class="neutral">нет базы сравнения</span>';const d=(cur-prev)/Math.abs(prev)*100,good=invert?d<=0:d>=0;return`<span class="${good?'up':'down'}">${d>=0?'↑':'↓'} ${Math.abs(d).toFixed(1)}% к пред. периоду</span>`}
+function renderKpis(rows){const c=aggregate(rows),p=aggregate(previous(rows));const cards=[
+ ['Чистая прибыль',money(c.net),c.net==null?'<span class="down">нет себестоимости</span>':delta(c.net,p.net),'net'],
+ ['Маржа',c.margin_pct==null?'—':c.margin_pct.toFixed(2)+'%',delta(c.margin_pct,p.margin_pct),'margin_pct'],
+ ['Продажи',money(c.sales),delta(c.sales,p.sales),'sales'],
+ ['Продано',fmt.format(c.units)+' шт',delta(c.units,p.units),'units'],
+ ['Выплата Ozon',money(c.payout),delta(c.payout,p.payout),'payout'],
+ ['Себестоимость',money(c.cogs),delta(c.cogs,p.cogs,true),'cogs'],
+ ['Логистика',money(Math.abs(c.logistics)),delta(Math.abs(c.logistics),Math.abs(p.logistics),true),'logistics'],
+ ['Реклама / ДРР',money(Math.abs(c.ads))+' · '+(c.sales?Math.abs(c.ads)/c.sales*100:0).toFixed(2)+'%',delta(Math.abs(c.ads),Math.abs(p.ads),true),'ads']
+ ];$('#kpis').innerHTML=cards.map(x=>`<article class="card kpi"><div class="kpi-name">${x[0]}<span>ⓘ</span></div><div class="kpi-value">${x[1]}</div><div class="delta">${x[2]}</div></article>`).join('');return c}
+function renderChart(rows){if(!rows.length){$('#chart').innerHTML='<div class="empty">Нет данных за период</div>';return}const vals=rows.map(x=>x.net||0),W=760,H=230,pad=28,min=Math.min(0,...vals),max=Math.max(0,...vals),span=max-min||1,x=i=>pad+i*(W-pad*2)/Math.max(1,vals.length-1),y=v=>pad+(max-v)*(H-pad*2)/span;const points=vals.map((v,i)=>`${x(i)},${y(v)}`).join(' '),area=`${pad},${y(0)} ${points} ${x(vals.length-1)},${y(0)}`;let grid='';for(let i=0;i<5;i++){const v=min+(max-min)*i/4,yy=y(v);grid+=`<line class="${Math.abs(v)<.01?'zero':'axis'}" x1="${pad}" y1="${yy}" x2="${W-pad}" y2="${yy}"/><text class="tick" x="0" y="${yy+3}">${fmt.format(v)}</text>`}const labels=[0,Math.floor((rows.length-1)/2),rows.length-1].filter((v,i,a)=>a.indexOf(v)===i).map(i=>`<text class="tick" x="${x(i)-14}" y="${H-2}">${rows[i].date.slice(5)}</text>`).join('');$('#chart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><defs><linearGradient id="grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1267ef" stop-opacity=".22"/><stop offset="1" stop-color="#1267ef" stop-opacity=".01"/></linearGradient></defs>${grid}<polygon class="area" points="${area}"/><polyline class="line" points="${points}"/>${labels}</svg>`}
+function renderBreakdown(c){const items=[['Себестоимость',c.cogs],['Комиссия',Math.abs(c.commission)],['Логистика',Math.abs(c.logistics)],['Реклама',Math.abs(c.ads)],['Прочее',Math.abs(c.storage)+Math.abs(c.returns)+Math.abs(c.other)+c.tax]],max=Math.max(...items.map(x=>x[1]),1);$('#breakdown').innerHTML=items.map(x=>`<div class="bar"><div class="bar-head"><span>${x[0]}</span><b>${money(x[1])}</b></div><div class="bar-track"><div class="bar-fill" style="width:${x[1]/max*100}%"></div></div></div>`).join('')}
+function renderSkus(rows){const map={};for(const d of rows)for(const s of d.by_sku||[]){const x=map[s.sku]||(map[s.sku]={...s,units:0,revenue:0,payout:0,cogs:0,net:0,hasNet:true});x.units+=s.units;x.revenue+=s.revenue;x.payout+=s.payout;x.cogs+=s.cogs;if(s.net==null)x.hasNet=false;else x.net+=s.net}const out=Object.values(map).sort((a,b)=>b.revenue-a.revenue);$('#skuCount').textContent=out.length+' SKU';$('#skuRows').innerHTML=out.length?out.map(s=>{const margin=s.hasNet&&s.revenue?s.net/s.revenue*100:null;return`<tr><td><div class="product">${s.image?`<img src="${s.image}" loading="lazy">`:''}<div><div class="pname">${s.name||('SKU '+s.sku)}</div><div class="offer">${s.offer_id||''} · ${s.sku}</div></div></div></td><td>${fmt.format(s.units)}</td><td>${money(s.revenue)}</td><td>${money(s.payout)}</td><td>${money(s.cogs)}</td><td class="${s.net>=0?'pos':'neg'}">${s.hasNet?money(s.net):'—'}</td><td class="${margin>=0?'pos':'neg'}">${margin==null?'—':margin.toFixed(2)+'%'}</td></tr>`}).join(''):'<tr><td colspan="7" class="empty">Нет продаж за период</td></tr>'}
+function renderStocks(){const rows=(DATA.stocks||{}).recommendations||[];$('#stocks').innerHTML=rows.length?rows.slice(0,24).map(x=>`<article class="stock"><div class="stock-top"><strong>${x.offer_id||x.name}</strong><span class="badge">${x.cluster}</span></div><div class="stock-metric">+${fmt.format(x.supply_qty)} шт</div><small>сейчас ${fmt.format(x.stock)} шт · ${x.days_left==null?'нет продаж':x.days_left+' дн'} · спрос ${x.ads.toFixed(1)}/день</small></article>`).join(''):'<div class="empty">Нет дефицитных направлений по данным Ozon</div>'}
+function render(){const rows=range(),c=renderKpis(rows);renderChart(rows);renderBreakdown(c);renderSkus(rows)}
+function setPreset(v){const all=DATA.daily;if(!all.length)return;const end=new Date(all.at(-1).date+'T12:00:00'),first=new Date(all[0].date+'T12:00:00'),start=new Date(end);if(v==='all')start.setTime(first);else if(v==='mtd')start.setDate(1);else start.setDate(start.getDate()-Number(v)+1);if(start<first)start.setTime(first);$('#from').value=start.toISOString().slice(0,10);$('#to').value=end.toISOString().slice(0,10);document.querySelectorAll('.preset').forEach(b=>b.classList.toggle('active',b.dataset.days===v));render()}
+fetch('data.json?'+Date.now()).then(r=>{if(!r.ok)throw Error('data.json '+r.status);return r.json()}).then(d=>{DATA=d;$('#updated').textContent='Обновлено '+new Date(d.generated_at).toLocaleString('ru-RU');const q=d.quality||{},bad=q.status!=='verified';$('#quality').textContent=bad?'⚠ Неполная себестоимость':'✓ Цифры проверены';$('#quality').classList.toggle('bad',bad);if(bad){$('#alert').className='alert show';$('#alert').textContent='Чистая прибыль скрыта: у '+q.missing_cogs.length+' SKU не заполнена себестоимость. Продажи и начисления показаны, но итог не публикуется.'}$('#formulas').innerHTML=Object.entries(d.formula||{}).map(([k,v])=>`<div class="formula"><b>${k}</b>${v}</div>`).join('');renderStocks();setPreset('30')}).catch(e=>{$('#alert').className='alert show';$('#alert').textContent='Не удалось загрузить данные: '+e.message});
+document.querySelectorAll('.preset').forEach(b=>b.onclick=()=>setPreset(b.dataset.days));$('#from').onchange=render;$('#to').onchange=render;
+</script>
 </body>
 </html>
