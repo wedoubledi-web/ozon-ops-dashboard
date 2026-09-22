@@ -70,7 +70,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 4
-      }
+      },
+      "views": 11562,
+      "clicks": 714,
+      "perf_spend": 1432.64,
+      "ctr": 6.18,
+      "cpc": 2.01
     },
     {
       "sku": 4823627697,
@@ -104,7 +109,12 @@
       "posting_statuses": {
         "delivering": 2,
         "delivered": 2
-      }
+      },
+      "views": 2511,
+      "clicks": 60,
+      "perf_spend": 1043.61,
+      "ctr": 2.39,
+      "cpc": 17.39
     },
     {
       "sku": 5516649179,
@@ -138,7 +148,12 @@
       "posting_statuses": {
         "delivered": 2,
         "delivering": 1
-      }
+      },
+      "views": 146,
+      "clicks": 6,
+      "perf_spend": 146.3,
+      "ctr": 4.11,
+      "cpc": 24.38
     },
     {
       "sku": 5516579647,
@@ -171,7 +186,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 1
-      }
+      },
+      "views": 389,
+      "clicks": 20,
+      "perf_spend": 223.14,
+      "ctr": 5.14,
+      "cpc": 11.16
     },
     {
       "sku": 3726892929,
@@ -204,7 +224,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 1
-      }
+      },
+      "views": 93,
+      "clicks": 5,
+      "perf_spend": 112.81,
+      "ctr": 5.38,
+      "cpc": 22.56
     },
     {
       "sku": 5472775507,
@@ -237,7 +262,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 1
-      }
+      },
+      "views": 365,
+      "clicks": 23,
+      "perf_spend": 259.61,
+      "ctr": 6.3,
+      "cpc": 11.29
     },
     {
       "sku": 3664742731,
@@ -389,7 +419,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 0,
+      "clicks": 0,
+      "perf_spend": 0.0,
+      "ctr": null,
+      "cpc": null
     },
     {
       "sku": 3730511760,
@@ -544,5 +579,10 @@
   "orders": 15,
   "order_revenue": 17332.73,
   "cancelled_units": 0,
-  "buyout_pct": 100.0
+  "buyout_pct": 100.0,
+  "views": 15066,
+  "clicks": 828,
+  "perf_spend": 3218.11,
+  "ctr": 5.5,
+  "cpc": 3.89
 }

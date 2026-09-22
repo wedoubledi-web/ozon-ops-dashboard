@@ -65,7 +65,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 3
-      }
+      },
+      "views": 2930,
+      "clicks": 71,
+      "perf_spend": 1065.33,
+      "ctr": 2.42,
+      "cpc": 15.0
     },
     {
       "sku": 4451480169,
@@ -98,7 +103,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 8
-      }
+      },
+      "views": 14371,
+      "clicks": 874,
+      "perf_spend": 1441.43,
+      "ctr": 6.08,
+      "cpc": 1.65
     },
     {
       "sku": 5516649179,
@@ -131,7 +141,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 5
-      }
+      },
+      "views": 474,
+      "clicks": 36,
+      "perf_spend": 556.76,
+      "ctr": 7.59,
+      "cpc": 15.47
     },
     {
       "sku": 3726892929,
@@ -164,7 +179,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 3
-      }
+      },
+      "views": 394,
+      "clicks": 13,
+      "perf_spend": 216.72,
+      "ctr": 3.3,
+      "cpc": 16.67
     },
     {
       "sku": 3726888167,
@@ -226,7 +246,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 0,
+      "clicks": 0,
+      "perf_spend": 0.0,
+      "ctr": null,
+      "cpc": null
     },
     {
       "sku": 4823918365,
@@ -288,7 +313,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 238,
+      "clicks": 25,
+      "perf_spend": 428.86,
+      "ctr": 10.5,
+      "cpc": 17.15
     },
     {
       "sku": 4658698444,
@@ -321,7 +351,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 1
-      }
+      },
+      "views": 211,
+      "clicks": 21,
+      "perf_spend": 386.08,
+      "ctr": 9.95,
+      "cpc": 18.38
     },
     {
       "sku": 3664742731,
@@ -411,7 +446,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 0,
+      "clicks": 0,
+      "perf_spend": 0.0,
+      "ctr": null,
+      "cpc": null
     },
     {
       "sku": 3726902147,
@@ -507,5 +547,10 @@
   "orders": 21,
   "order_revenue": 25320.46,
   "cancelled_units": 0,
-  "buyout_pct": 100.0
+  "buyout_pct": 100.0,
+  "views": 18618,
+  "clicks": 1040,
+  "perf_spend": 4187.83,
+  "ctr": 5.59,
+  "cpc": 4.03
 }

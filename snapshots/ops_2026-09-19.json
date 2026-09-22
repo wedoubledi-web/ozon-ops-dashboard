@@ -66,7 +66,12 @@
       "posting_statuses": {
         "delivering": 5,
         "delivered": 1
-      }
+      },
+      "views": 14776,
+      "clicks": 854,
+      "perf_spend": 1428.22,
+      "ctr": 5.78,
+      "cpc": 1.67
     },
     {
       "sku": 5472775507,
@@ -99,7 +104,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 4
-      }
+      },
+      "views": 1038,
+      "clicks": 42,
+      "perf_spend": 683.1,
+      "ctr": 4.05,
+      "cpc": 16.26
     },
     {
       "sku": 4823627697,
@@ -132,7 +142,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 1
-      }
+      },
+      "views": 3682,
+      "clicks": 71,
+      "perf_spend": 1065.14,
+      "ctr": 1.93,
+      "cpc": 15.0
     },
     {
       "sku": 5516579647,
@@ -167,7 +182,12 @@
         "cancelled": 1,
         "delivering": 3,
         "delivered": 1
-      }
+      },
+      "views": 1256,
+      "clicks": 38,
+      "perf_spend": 654.79,
+      "ctr": 3.03,
+      "cpc": 17.23
     },
     {
       "sku": 5516649179,
@@ -202,7 +222,12 @@
         "delivered": 5,
         "delivering": 1,
         "cancelled": 1
-      }
+      },
+      "views": 623,
+      "clicks": 22,
+      "perf_spend": 314.98,
+      "ctr": 3.53,
+      "cpc": 14.32
     },
     {
       "sku": 3726888167,
@@ -268,7 +293,12 @@
         "delivered": 6,
         "delivering": 2,
         "awaiting_packaging": 1
-      }
+      },
+      "views": 1711,
+      "clicks": 41,
+      "perf_spend": 778.5,
+      "ctr": 2.4,
+      "cpc": 18.99
     },
     {
       "sku": 3726902147,
@@ -302,7 +332,12 @@
       "posting_statuses": {
         "delivering": 3,
         "delivered": 2
-      }
+      },
+      "views": 2074,
+      "clicks": 64,
+      "perf_spend": 1016.62,
+      "ctr": 3.09,
+      "cpc": 15.88
     },
     {
       "sku": 5745079896,
@@ -335,7 +370,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 1
-      }
+      },
+      "views": 814,
+      "clicks": 44,
+      "perf_spend": 377.97,
+      "ctr": 5.41,
+      "cpc": 8.59
     },
     {
       "sku": 3664742731,
@@ -425,7 +465,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 2000,
+      "clicks": 56,
+      "perf_spend": 905.73,
+      "ctr": 2.8,
+      "cpc": 16.17
     },
     {
       "sku": 3726897234,
@@ -580,5 +625,10 @@
   "orders": 39,
   "order_revenue": 52249.54,
   "cancelled_units": 2,
-  "buyout_pct": 94.87
+  "buyout_pct": 94.87,
+  "views": 27974,
+  "clicks": 1232,
+  "perf_spend": 7392.59,
+  "ctr": 4.4,
+  "cpc": 6.0
 }

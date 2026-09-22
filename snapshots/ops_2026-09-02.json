@@ -66,7 +66,12 @@
       "posting_statuses": {
         "delivered": 14,
         "cancelled": 1
-      }
+      },
+      "views": 15730,
+      "clicks": 855,
+      "perf_spend": 1428.88,
+      "ctr": 5.44,
+      "cpc": 1.67
     },
     {
       "sku": 5516579647,
@@ -100,7 +105,12 @@
       "posting_statuses": {
         "delivered": 9,
         "cancelled": 2
-      }
+      },
+      "views": 1148,
+      "clicks": 41,
+      "perf_spend": 542.43,
+      "ctr": 3.57,
+      "cpc": 13.23
     },
     {
       "sku": 5472775507,
@@ -133,7 +143,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 7
-      }
+      },
+      "views": 544,
+      "clicks": 36,
+      "perf_spend": 583.96,
+      "ctr": 6.62,
+      "cpc": 16.22
     },
     {
       "sku": 3726888167,
@@ -198,7 +213,12 @@
       "posting_statuses": {
         "delivered": 12,
         "cancelled": 2
-      }
+      },
+      "views": 2736,
+      "clicks": 62,
+      "perf_spend": 1199.61,
+      "ctr": 2.27,
+      "cpc": 19.35
     },
     {
       "sku": 4823627697,
@@ -231,7 +251,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 16
-      }
+      },
+      "views": 1343,
+      "clicks": 86,
+      "perf_spend": 1041.27,
+      "ctr": 6.4,
+      "cpc": 12.11
     },
     {
       "sku": 3726892929,
@@ -265,7 +290,12 @@
       "posting_statuses": {
         "cancelled": 1,
         "delivered": 6
-      }
+      },
+      "views": 1488,
+      "clicks": 67,
+      "perf_spend": 1082.28,
+      "ctr": 4.5,
+      "cpc": 16.15
     },
     {
       "sku": 5516649179,
@@ -298,7 +328,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 4
-      }
+      },
+      "views": 4411,
+      "clicks": 44,
+      "perf_spend": 568.9,
+      "ctr": 1.0,
+      "cpc": 12.93
     },
     {
       "sku": 3726902147,
@@ -329,7 +364,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 0,
+      "clicks": 0,
+      "perf_spend": 0.0,
+      "ctr": null,
+      "cpc": null
     },
     {
       "sku": 3726897234,
@@ -547,5 +587,10 @@
   "orders": 75,
   "order_revenue": 71074.89,
   "cancelled_units": 6,
-  "buyout_pct": 92.0
+  "buyout_pct": 92.0,
+  "views": 27400,
+  "clicks": 1191,
+  "perf_spend": 6714.1,
+  "ctr": 4.35,
+  "cpc": 5.64
 }

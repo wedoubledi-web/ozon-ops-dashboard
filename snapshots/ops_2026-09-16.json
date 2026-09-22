@@ -72,7 +72,12 @@
         "delivered": 15,
         "delivering": 13,
         "awaiting_packaging": 1
-      }
+      },
+      "views": 12684,
+      "clicks": 747,
+      "perf_spend": 1438.4,
+      "ctr": 5.89,
+      "cpc": 1.93
     },
     {
       "sku": 5516649179,
@@ -106,7 +111,12 @@
       "posting_statuses": {
         "delivered": 2,
         "delivering": 2
-      }
+      },
+      "views": 488,
+      "clicks": 14,
+      "perf_spend": 242.87,
+      "ctr": 2.87,
+      "cpc": 17.35
     },
     {
       "sku": 4823918365,
@@ -170,7 +180,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 1
-      }
+      },
+      "views": 716,
+      "clicks": 34,
+      "perf_spend": 565.3,
+      "ctr": 4.75,
+      "cpc": 16.63
     },
     {
       "sku": 3726902147,
@@ -203,7 +218,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 2
-      }
+      },
+      "views": 1931,
+      "clicks": 68,
+      "perf_spend": 1437.05,
+      "ctr": 3.52,
+      "cpc": 21.13
     },
     {
       "sku": 3726892929,
@@ -234,7 +254,12 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 116,
+      "clicks": 3,
+      "perf_spend": 30.8,
+      "ctr": 2.59,
+      "cpc": 10.27
     },
     {
       "sku": 4823627697,
@@ -268,7 +293,12 @@
       "posting_statuses": {
         "delivering": 3,
         "delivered": 5
-      }
+      },
+      "views": 1835,
+      "clicks": 57,
+      "perf_spend": 1021.13,
+      "ctr": 3.11,
+      "cpc": 17.91
     },
     {
       "sku": 5472775507,
@@ -302,7 +332,12 @@
       "posting_statuses": {
         "delivered": 8,
         "cancelled": 1
-      }
+      },
+      "views": 736,
+      "clicks": 45,
+      "perf_spend": 654.66,
+      "ctr": 6.11,
+      "cpc": 14.55
     },
     {
       "sku": 5745079896,
@@ -574,11 +609,21 @@
       "order_units": 0,
       "cancelled_units": 0,
       "buyout_pct": null,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 5372,
+      "clicks": 16,
+      "perf_spend": 262.17,
+      "ctr": 0.3,
+      "cpc": 16.39
     }
   ],
   "orders": 52,
   "order_revenue": 50100.64,
   "cancelled_units": 1,
-  "buyout_pct": 98.08
+  "buyout_pct": 98.08,
+  "views": 23878,
+  "clicks": 984,
+  "perf_spend": 5687.13,
+  "ctr": 4.12,
+  "cpc": 5.78
 }

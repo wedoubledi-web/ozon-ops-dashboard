@@ -96,7 +96,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 19
-      }
+      },
+      "views": 1274,
+      "clicks": 87,
+      "perf_spend": 993.08,
+      "ctr": 6.83,
+      "cpc": 11.41
     },
     {
       "sku": 4451480169,
@@ -130,7 +135,12 @@
       "posting_statuses": {
         "delivered": 14,
         "cancelled": 3
-      }
+      },
+      "views": 14605,
+      "clicks": 877,
+      "perf_spend": 1433.6,
+      "ctr": 6.0,
+      "cpc": 1.63
     },
     {
       "sku": 4823918365,
@@ -161,7 +171,12 @@
       "order_units": 1,
       "cancelled_units": 0,
       "buyout_pct": 100.0,
-      "posting_statuses": {}
+      "posting_statuses": {},
+      "views": 0,
+      "clicks": 0,
+      "perf_spend": 0.0,
+      "ctr": null,
+      "cpc": null
     },
     {
       "sku": 5516579647,
@@ -195,7 +210,12 @@
       "posting_statuses": {
         "delivered": 11,
         "cancelled": 2
-      }
+      },
+      "views": 1640,
+      "clicks": 38,
+      "perf_spend": 580.65,
+      "ctr": 2.32,
+      "cpc": 15.28
     },
     {
       "sku": 5472775507,
@@ -228,7 +248,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 6
-      }
+      },
+      "views": 699,
+      "clicks": 37,
+      "perf_spend": 531.25,
+      "ctr": 5.29,
+      "cpc": 14.36
     },
     {
       "sku": 3726888167,
@@ -292,7 +317,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 1
-      }
+      },
+      "views": 3340,
+      "clicks": 49,
+      "perf_spend": 610.26,
+      "ctr": 1.47,
+      "cpc": 12.45
     },
     {
       "sku": 4658698444,
@@ -327,7 +357,12 @@
         "delivering": 1,
         "delivered": 6,
         "cancelled": 1
-      }
+      },
+      "views": 2539,
+      "clicks": 62,
+      "perf_spend": 1115.43,
+      "ctr": 2.44,
+      "cpc": 17.99
     },
     {
       "sku": 3726892929,
@@ -360,7 +395,12 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 6
-      }
+      },
+      "views": 1203,
+      "clicks": 52,
+      "perf_spend": 1046.75,
+      "ctr": 4.32,
+      "cpc": 20.13
     },
     {
       "sku": 3664742731,
@@ -571,5 +611,10 @@
   "orders": 68,
   "order_revenue": 61646.22,
   "cancelled_units": 6,
-  "buyout_pct": 91.18
+  "buyout_pct": 91.18,
+  "views": 25300,
+  "clicks": 1202,
+  "perf_spend": 6620.47,
+  "ctr": 4.75,
+  "cpc": 5.51
 }
