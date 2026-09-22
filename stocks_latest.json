@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T18:00:58.457688+00:00",
+  "generated_at": "2026-09-22T23:26:37.640101+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -108,17 +108,17 @@
         {
           "name": "СОФЬИНО_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         },
         {
           "name": "НОГИНСК_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -928,7 +928,27 @@
         {
           "name": "РОСТОВ-НА-ДОНУ_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 9,
+      "supply_qty": 9,
+      "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "cluster": "Санкт-Петербург и СЗО",
+      "stock": 0,
+      "ads": 0.2857142857142857,
+      "warehouses": [
+        {
+          "name": "СПБ_БУГРЫ_РФЦ",
+          "stock": 0,
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1020,26 +1040,6 @@
       "target_stock": 8,
       "supply_qty": 8,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 3726902147,
-      "offer_id": "глюкозамин 55 шт",
-      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "cluster": "Санкт-Петербург и СЗО",
-      "stock": 1,
-      "ads": 0.2857142857142857,
-      "warehouses": [
-        {
-          "name": "СПБ_БУГРЫ_РФЦ",
-          "stock": 1,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 9,
-      "supply_qty": 8,
-      "days_left": 3.5,
       "confidence": "medium"
     },
     {
@@ -1158,7 +1158,7 @@
         {
           "name": "ХАБАРОВСК_2_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1448,7 +1448,7 @@
         {
           "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1488,12 +1488,12 @@
         {
           "name": "КАЗАНЬ_РФЦ_НОВЫЙ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         },
         {
           "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1743,7 +1743,7 @@
         {
           "name": "АДЫГЕЙСК_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1891,8 +1891,8 @@
       "cost_byn": 25.36,
       "stock": 26,
       "ads": 3.4761904761904763,
-      "cost_capitalization": 19205.16,
-      "retail_capitalization": 101232.03,
+      "cost_capitalization": 19216.92,
+      "retail_capitalization": 101294.0,
       "days_left": 7.5
     },
     {
@@ -1907,8 +1907,8 @@
       "cost_byn": 25.36,
       "stock": 25,
       "ads": 3.6363636363636362,
-      "cost_capitalization": 18466.5,
-      "retail_capitalization": 90385.74,
+      "cost_capitalization": 18477.81,
+      "retail_capitalization": 90441.07,
       "days_left": 6.9
     },
     {
@@ -1921,11 +1921,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 18.43,
-      "stock": 15,
+      "stock": 14,
       "ads": 4.625,
-      "cost_capitalization": 8188.95,
-      "retail_capitalization": 43802.32,
-      "days_left": 3.2
+      "cost_capitalization": 7647.7,
+      "retail_capitalization": 40907.19,
+      "days_left": 3.0
     },
     {
       "sku": 5516579647,
@@ -1939,25 +1939,9 @@
       "cost_byn": 25.36,
       "stock": 12,
       "ads": 4.619047619047619,
-      "cost_capitalization": 8863.92,
-      "retail_capitalization": 30035.88,
+      "cost_capitalization": 8869.35,
+      "retail_capitalization": 30054.26,
       "days_left": 2.6
-    },
-    {
-      "sku": 3726902147,
-      "offer_id": "глюкозамин 55 шт",
-      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-f/11145177663.jpg",
-      "price": 145.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 39.1,
-      "stock": 1,
-      "ads": 4.785714285714286,
-      "cost_capitalization": 1120.78,
-      "retail_capitalization": 4032.59,
-      "days_left": 0.2
     },
     {
       "sku": 4451480169,
@@ -1971,8 +1955,8 @@
       "cost_byn": 19.9,
       "stock": 1,
       "ads": 13.035714285714286,
-      "cost_capitalization": 586.81,
-      "retail_capitalization": 3476.37,
+      "cost_capitalization": 587.17,
+      "retail_capitalization": 3478.5,
       "days_left": 0.1
     },
     {
@@ -1987,8 +1971,8 @@
       "cost_byn": 22.26,
       "stock": 1,
       "ads": 3.769230769230769,
-      "cost_capitalization": 652.45,
-      "retail_capitalization": 2781.1,
+      "cost_capitalization": 652.85,
+      "retail_capitalization": 2782.8,
       "days_left": 0.3
     },
     {
@@ -2003,8 +1987,8 @@
       "cost_byn": 31.99,
       "stock": 1,
       "ads": 3.0,
-      "cost_capitalization": 923.05,
-      "retail_capitalization": 3337.32,
+      "cost_capitalization": 923.61,
+      "retail_capitalization": 3339.36,
       "days_left": 0.3
     },
     {
@@ -2051,6 +2035,22 @@
       "cost_byn": 25.36,
       "stock": 0,
       "ads": 1.0,
+      "cost_capitalization": 0.0,
+      "retail_capitalization": 0.0,
+      "days_left": 0.0
+    },
+    {
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-f/11145177663.jpg",
+      "price": 145.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 39.1,
+      "stock": 0,
+      "ads": 4.785714285714286,
       "cost_capitalization": 0.0,
       "retail_capitalization": 0.0,
       "days_left": 0.0
@@ -2121,10 +2121,10 @@
     }
   ],
   "summary": {
-    "stock": 82,
-    "cost_capitalization": 58007.62,
-    "retail_capitalization": 279083.35,
-    "fx_rub_per_byn": 27.810996
+    "stock": 80,
+    "cost_capitalization": 56375.4,
+    "retail_capitalization": 272297.2,
+    "fx_rub_per_byn": 27.828023
   },
   "raw_rows": 141
 }
