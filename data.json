@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T08:11:32.685738+00:00",
+  "generated_at": "2026-09-22T08:56:33.368675+00:00",
   "as_of": "2026-09-21",
   "expected_as_of": "2026-09-21",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -11634,8 +11634,8 @@
           "cancelled_units": 2,
           "buyout_pct": 89.47,
           "posting_statuses": {
-            "delivering": 10,
-            "awaiting_deliver": 7,
+            "delivering": 11,
+            "awaiting_deliver": 6,
             "cancelled": 2
           }
         },
@@ -11880,7 +11880,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-09-22T08:11:32.559301+00:00",
+    "generated_at": "2026-09-22T08:56:33.293912+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
