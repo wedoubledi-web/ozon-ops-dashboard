@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T12:28:07.319782+00:00",
+  "generated_at": "2026-09-22T14:32:18.480147+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -9,8 +9,8 @@
     {
       "order_id": 129236514,
       "order_number": "128789786-1",
-      "state": "IN_TRANSIT",
-      "state_label": "В пути",
+      "state": "ACCEPTANCE_AT_STORAGE_WAREHOUSE",
+      "state_label": "Приёмка на складе Ozon",
       "created_date": "2026-09-17",
       "timeslot_from": "2026-09-20",
       "timeslot_to": "2026-09-20",
@@ -109,7 +109,7 @@
         },
         {
           "supply_id": 2000067014678,
-          "state": "IN_TRANSIT",
+          "state": "ACCEPTANCE_AT_STORAGE_WAREHOUSE",
           "warehouse": "",
           "items": [
             {
@@ -482,7 +482,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 100,
           "eta": "2026-09-20"
         }
@@ -600,7 +600,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 40,
           "eta": "2026-09-20"
         }
@@ -839,7 +839,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 30,
           "eta": "2026-09-20"
         }
@@ -957,7 +957,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 30,
           "eta": "2026-09-20"
         }
@@ -1075,7 +1075,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 45,
           "eta": "2026-09-20"
         }
@@ -1198,7 +1198,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 40,
           "eta": "2026-09-20"
         }
@@ -1321,7 +1321,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 45,
           "eta": "2026-09-20"
         }
@@ -1444,7 +1444,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 40,
           "eta": "2026-09-20"
         }
@@ -1562,7 +1562,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 30,
           "eta": "2026-09-20"
         }
@@ -1680,7 +1680,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 40,
           "eta": "2026-09-20"
         }
@@ -1909,7 +1909,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 30,
           "eta": "2026-09-20"
         }
@@ -1942,7 +1942,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 70,
           "eta": "2026-09-20"
         }
@@ -1975,7 +1975,7 @@
       "inbound_orders": [
         {
           "order_number": "128789786-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 72,
           "eta": "2026-09-20"
         }
