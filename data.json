@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T15:24:43.358890+00:00",
+  "generated_at": "2026-09-22T15:51:58.427761+00:00",
   "as_of": "2026-09-21",
   "expected_as_of": "2026-09-21",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -55116,9 +55116,8 @@
           "cancelled_units": 2,
           "buyout_pct": 89.47,
           "posting_statuses": {
-            "delivering": 16,
-            "cancelled": 2,
-            "awaiting_deliver": 1
+            "delivering": 17,
+            "cancelled": 2
           },
           "views": 1777,
           "clicks": 129,
@@ -55378,7 +55377,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-09-22T15:24:25.598848+00:00",
+    "generated_at": "2026-09-22T15:51:42.617311+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -56177,26 +56176,6 @@
         "confidence": "medium"
       },
       {
-        "sku": 5745079896,
-        "offer_id": "Меркурий201.7 (2026)",
-        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
-        "cluster": "Москва, МО и Дальние регионы",
-        "stock": 0,
-        "ads": 0.3333333333333333,
-        "warehouses": [
-          {
-            "name": "НОГИНСК_РФЦ",
-            "stock": 0,
-            "grade": "COLLECTING_DATA"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 10,
-        "supply_qty": 10,
-        "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
         "sku": 5472775507,
         "offer_id": "для собак фекалии",
         "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
@@ -56274,6 +56253,26 @@
         "target_stock": 9,
         "supply_qty": 9,
         "days_left": 0.0,
+        "confidence": "medium"
+      },
+      {
+        "sku": 5745079896,
+        "offer_id": "Меркурий201.7 (2026)",
+        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
+        "cluster": "Москва, МО и Дальние регионы",
+        "stock": 1,
+        "ads": 0.3333333333333333,
+        "warehouses": [
+          {
+            "name": "НОГИНСК_РФЦ",
+            "stock": 1,
+            "grade": "COLLECTING_DATA"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 10,
+        "supply_qty": 9,
+        "days_left": 3.0,
         "confidence": "medium"
       },
       {
@@ -57371,6 +57370,22 @@
         "days_left": 0.3
       },
       {
+        "sku": 5745079896,
+        "offer_id": "Меркурий201.7 (2026)",
+        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
+        "image": "https://ir.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
+        "price": 120.0,
+        "currency": "BYN",
+        "brand": "Инкотекс",
+        "group": "Электрика",
+        "cost_byn": 31.99,
+        "stock": 1,
+        "ads": 3.0,
+        "cost_capitalization": 923.05,
+        "retail_capitalization": 3337.32,
+        "days_left": 0.3
+      },
+      {
         "sku": 3664742731,
         "offer_id": "Multi Vit Puppy",
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
@@ -57481,34 +57496,18 @@
         "cost_capitalization": 0.0,
         "retail_capitalization": 0.0,
         "days_left": 0.0
-      },
-      {
-        "sku": 5745079896,
-        "offer_id": "Меркурий201.7 (2026)",
-        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
-        "image": "https://ir.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
-        "price": 120.0,
-        "currency": "BYN",
-        "brand": "Инкотекс",
-        "group": "Электрика",
-        "cost_byn": 31.99,
-        "stock": 0,
-        "ads": 3.0,
-        "cost_capitalization": 0.0,
-        "retail_capitalization": 0.0,
-        "days_left": 0.0
       }
     ],
     "summary": {
-      "stock": 82,
-      "cost_capitalization": 58205.36,
-      "retail_capitalization": 279778.62,
+      "stock": 83,
+      "cost_capitalization": 59128.4,
+      "retail_capitalization": 283115.94,
       "fx_rub_per_byn": 27.810996
     },
     "raw_rows": 141
   },
   "supplies": {
-    "generated_at": "2026-09-22T15:24:43.155171+00:00",
+    "generated_at": "2026-09-22T15:51:58.210296+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -58284,9 +58283,9 @@
         "offer_id": "Меркурий201.7 (2026)",
         "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
         "brand": "Инкотекс",
-        "stock": 0,
+        "stock": 1,
         "inbound": 0,
-        "available": 0,
+        "available": 1,
         "order_units_7d": 23,
         "order_units_used": 6,
         "daily_orders": 0.462,
@@ -58387,22 +58386,14 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 7,
-        "ship_qty": 7,
-        "days_on_hand": 0.0,
-        "days_with_inbound": 0.0,
+        "ship_qty": 6,
+        "days_on_hand": 2.2,
+        "days_with_inbound": 2.2,
         "ship_in_days": 0,
         "ship_by": "2026-09-22",
         "status": "now",
         "inbound_orders": [],
         "clusters": [
-          {
-            "cluster": "Санкт-Петербург и СЗО",
-            "stock": 0,
-            "ads": 3.0,
-            "days_left": 0.0,
-            "target_stock": 45,
-            "ship_qty": 3
-          },
           {
             "cluster": "Казань",
             "stock": 0,
@@ -58413,6 +58404,14 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
+            "stock": 1,
+            "ads": 3.0,
+            "days_left": 0.3,
+            "target_stock": 45,
+            "ship_qty": 2
+          },
+          {
+            "cluster": "Санкт-Петербург и СЗО",
             "stock": 0,
             "ads": 3.0,
             "days_left": 0.0,
@@ -60297,22 +60296,22 @@
     ],
     "clusters": [
       {
-        "cluster": "Санкт-Петербург и СЗО",
-        "ship_qty": 15,
-        "skus": 4,
-        "stock": 28
-      },
-      {
         "cluster": "Казань",
         "ship_qty": 14,
         "skus": 4,
         "stock": 19
       },
       {
+        "cluster": "Санкт-Петербург и СЗО",
+        "ship_qty": 14,
+        "skus": 4,
+        "stock": 28
+      },
+      {
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 13,
         "skus": 4,
-        "stock": 35
+        "stock": 36
       },
       {
         "cluster": "Воронеж",
@@ -60403,9 +60402,9 @@
       "inbound_orders": 1,
       "inbound_qty": 612,
       "ship_now_skus": 4,
-      "ship_now_qty": 104,
+      "ship_now_qty": 103,
       "ship_soon_skus": 0,
-      "ship_total_qty": 104,
+      "ship_total_qty": 103,
       "cluster_count": 13,
       "critical_skus": 7,
       "under_cover_skus": 8
