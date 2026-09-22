@@ -64,9 +64,8 @@
       "cancelled_units": 1,
       "buyout_pct": 90.91,
       "posting_statuses": {
-        "delivered": 10,
-        "cancelled": 1,
-        "delivering": 1
+        "delivered": 11,
+        "cancelled": 1
       },
       "views": 16356,
       "clicks": 1006,

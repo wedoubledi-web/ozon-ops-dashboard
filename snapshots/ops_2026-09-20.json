@@ -408,7 +408,7 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivered": 1,
-        "awaiting_deliver": 1
+        "delivering": 1
       }
     },
     {
