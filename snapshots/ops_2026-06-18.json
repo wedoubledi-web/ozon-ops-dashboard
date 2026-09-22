@@ -1,6 +1,6 @@
 {
   "date": "2026-06-18",
-  "status": "incomplete_cogs",
+  "status": "verified",
   "accruals": 66,
   "sales": 27882.0,
   "customer_sales": 19965.79,
@@ -9,9 +9,9 @@
   "seller_coinvestment": 134.39,
   "payout": 15200.41,
   "tax": 1197.95,
-  "cogs": 9415.68,
-  "net": 4586.78,
-  "margin_pct": 16.45,
+  "cogs": 12459.74,
+  "net": 1542.72,
+  "margin_pct": 5.53,
   "units": 19,
   "avg_price": 1467.47,
   "fx_rub_per_byn": 26.226069,
@@ -24,26 +24,7 @@
   "fines": 0.0,
   "returns": 0.0,
   "other": -278.82,
-  "missing_cogs": [
-    {
-      "sku": 3664742731,
-      "units": 3,
-      "offer_id": "Multi Vit Puppy",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "image": "https://ir-3.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
-      "price": 93.0,
-      "currency": "BYN"
-    },
-    {
-      "sku": 3730511760,
-      "units": 3,
-      "offer_id": "для собак",
-      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
-      "image": "https://ir-3.ozone.ru/s3/multimedia-1-b/10053060599.jpg",
-      "price": 94.0,
-      "currency": "BYN"
-    }
-  ],
+  "missing_cogs": [],
   "unknown_types": [
     {
       "type_id": 3,
@@ -126,8 +107,8 @@
       "revenue": 4047.0,
       "customer_revenue": 2864.96,
       "payout": 2188.06,
-      "cogs": 0.0,
-      "net": null,
+      "cogs": 1845.79,
+      "net": 170.37,
       "margin_pct": null,
       "commission": -505.89,
       "acquiring": -33.32,
@@ -185,8 +166,8 @@
       "revenue": 3309.0,
       "customer_revenue": 2418.12,
       "payout": 1761.25,
-      "cogs": 0.0,
-      "net": null,
+      "cogs": 1198.27,
+      "net": 417.89,
       "margin_pct": null,
       "commission": -413.63,
       "acquiring": -41.27,

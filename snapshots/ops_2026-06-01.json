@@ -1,6 +1,6 @@
 {
   "date": "2026-06-01",
-  "status": "incomplete_cogs",
+  "status": "verified",
   "accruals": 56,
   "sales": 25171.0,
   "customer_sales": 17403.72,
@@ -9,9 +9,9 @@
   "seller_coinvestment": 172.31,
   "payout": 16811.14,
   "tax": 1044.22,
-  "cogs": 10977.4,
-  "net": 4789.52,
-  "margin_pct": 19.03,
+  "cogs": 12158.81,
+  "net": 3608.11,
+  "margin_pct": 14.33,
   "units": 17,
   "avg_price": 1480.65,
   "fx_rub_per_byn": 25.857165,
@@ -24,17 +24,7 @@
   "fines": 0.0,
   "returns": 0.0,
   "other": -251.71,
-  "missing_cogs": [
-    {
-      "sku": 3730511760,
-      "units": 3,
-      "offer_id": "для собак",
-      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
-      "image": "https://ir-3.ozone.ru/s3/multimedia-1-b/10053060599.jpg",
-      "price": 94.0,
-      "currency": "BYN"
-    }
-  ],
+  "missing_cogs": [],
   "unknown_types": [
     {
       "type_id": 3,
@@ -90,7 +80,7 @@
       "customer_revenue": 4571.95,
       "payout": 4572.56,
       "cogs": 2747.07,
-      "net": 1551.17,
+      "net": 1551.18,
       "margin_pct": 23.42,
       "commission": -828.01,
       "acquiring": 0.0,
@@ -120,7 +110,7 @@
       "revenue": 6251.0,
       "customer_revenue": 4536.83,
       "payout": 4107.94,
-      "cogs": 4168.18,
+      "cogs": 4168.17,
       "net": -332.44,
       "margin_pct": -5.32,
       "commission": -781.38,
@@ -148,8 +138,8 @@
       "revenue": 3177.0,
       "customer_revenue": 2132.5,
       "payout": 2086.8,
-      "cogs": 0.0,
-      "net": null,
+      "cogs": 1181.41,
+      "net": 777.44,
       "margin_pct": null,
       "commission": -397.13,
       "acquiring": -22.47,

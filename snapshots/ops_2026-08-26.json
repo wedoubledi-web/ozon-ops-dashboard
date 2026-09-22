@@ -1,6 +1,6 @@
 {
   "date": "2026-08-26",
-  "status": "incomplete_cogs",
+  "status": "verified",
   "accruals": 100,
   "sales": 32541.0,
   "customer_sales": 25100.5,
@@ -9,9 +9,9 @@
   "seller_coinvestment": 168.72,
   "payout": 16243.66,
   "tax": 1506.03,
-  "cogs": 15496.14,
-  "net": -758.51,
-  "margin_pct": -2.33,
+  "cogs": 16806.91,
+  "net": -2069.28,
+  "margin_pct": -6.36,
   "units": 28,
   "avg_price": 1162.18,
   "fx_rub_per_byn": 27.936082,
@@ -24,17 +24,7 @@
   "fines": 0.0,
   "returns": 0.0,
   "other": -402.36,
-  "missing_cogs": [
-    {
-      "sku": 3664742731,
-      "units": 2,
-      "offer_id": "Multi Vit Puppy",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "image": "https://ir-3.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
-      "price": 93.0,
-      "currency": "BYN"
-    }
-  ],
+  "missing_cogs": [],
   "unknown_types": [
     {
       "type_id": 3,
@@ -246,8 +236,8 @@
       "revenue": 2768.0,
       "customer_revenue": 1995.54,
       "payout": 1389.29,
-      "cogs": 0.0,
-      "net": null,
+      "cogs": 1310.76,
+      "net": -41.2,
       "margin_pct": null,
       "commission": -346.01,
       "acquiring": 0.0,
