@@ -69,9 +69,9 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivered": 17,
-        "delivering": 11,
-        "awaiting_deliver": 1
+        "delivered": 15,
+        "delivering": 13,
+        "awaiting_packaging": 1
       },
       "views": 12684,
       "clicks": 747,
@@ -291,8 +291,8 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivered": 7,
-        "delivering": 1
+        "delivering": 3,
+        "delivered": 5
       },
       "views": 1835,
       "clicks": 57,
@@ -344,7 +344,7 @@
       "offer_id": "Меркурий201.7 (2026)",
       "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
       "image": "https://ir-3.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
-      "price": 120.0,
+      "price": 100.0,
       "currency": "BYN",
       "brand": "Инкотекс",
       "group": "Электрика",
