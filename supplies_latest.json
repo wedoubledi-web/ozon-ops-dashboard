@@ -1,0 +1,797 @@
+{
+  "generated_at": "2026-09-22T11:50:25.480718+00:00",
+  "method": "Заказы за 7 дн. → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
+  "cover_days": 10,
+  "lead_days": 5,
+  "demand_window_days": 7,
+  "horizon_days": 15,
+  "inbound": [
+    {
+      "order_id": 129236514,
+      "order_number": "128789786-1",
+      "state": "IN_TRANSIT",
+      "state_label": "В пути",
+      "created_date": "2026-09-17",
+      "timeslot_from": "2026-09-20",
+      "timeslot_to": "2026-09-20",
+      "supplies": [
+        {
+          "supply_id": 2000067014677,
+          "state": "IN_TRANSIT",
+          "warehouse": "",
+          "items": [
+            {
+              "sku": 5472775507,
+              "offer_id": "для собак фекалии",
+              "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+              "qty": 9
+            },
+            {
+              "sku": 4823918365,
+              "offer_id": "для кошек и собак 260 1",
+              "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+              "qty": 9
+            },
+            {
+              "sku": 4823627697,
+              "offer_id": "для кошек и собак 140",
+              "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+              "qty": 12
+            },
+            {
+              "sku": 4658698444,
+              "offer_id": "кальций",
+              "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+              "qty": 12
+            },
+            {
+              "sku": 5516649179,
+              "offer_id": "для щенков 8в1",
+              "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+              "qty": 13
+            },
+            {
+              "sku": 5516579647,
+              "offer_id": "для мелких 8в1",
+              "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+              "qty": 13
+            },
+            {
+              "sku": 3726858649,
+              "offer_id": "бреверсы для крупных",
+              "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+              "qty": 10
+            },
+            {
+              "sku": 3726902147,
+              "offer_id": "глюкозамин 55 шт",
+              "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+              "qty": 12
+            },
+            {
+              "sku": 3726888167,
+              "offer_id": "для пожилых собак1",
+              "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+              "qty": 12
+            },
+            {
+              "sku": 3726892929,
+              "offer_id": "для взрослых собак1",
+              "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+              "qty": 8
+            },
+            {
+              "sku": 5803075530,
+              "offer_id": "шоколад элит 4 шт",
+              "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+              "qty": 22
+            },
+            {
+              "sku": 5803370792,
+              "offer_id": "шоколад 70",
+              "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+              "qty": 10
+            },
+            {
+              "sku": 4451480169,
+              "offer_id": "шокол",
+              "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+              "qty": 35
+            },
+            {
+              "sku": 5803370792,
+              "offer_id": "шоколад 70",
+              "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+              "qty": 10
+            }
+          ],
+          "qty": 187
+        },
+        {
+          "supply_id": 2000067014678,
+          "state": "IN_TRANSIT",
+          "warehouse": "",
+          "items": [
+            {
+              "sku": 4451480169,
+              "offer_id": "шокол",
+              "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+              "qty": 5
+            },
+            {
+              "sku": 5803370792,
+              "offer_id": "шоколад 70",
+              "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+              "qty": 40
+            },
+            {
+              "sku": 5803075530,
+              "offer_id": "шоколад элит 4 шт",
+              "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+              "qty": 37
+            },
+            {
+              "sku": 4451480169,
+              "offer_id": "шокол",
+              "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+              "qty": 45
+            },
+            {
+              "sku": 5472775507,
+              "offer_id": "для собак фекалии",
+              "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+              "qty": 14
+            },
+            {
+              "sku": 4823918365,
+              "offer_id": "для кошек и собак 260 1",
+              "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+              "qty": 14
+            },
+            {
+              "sku": 4823627697,
+              "offer_id": "для кошек и собак 140",
+              "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+              "qty": 20
+            },
+            {
+              "sku": 4658698444,
+              "offer_id": "кальций",
+              "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+              "qty": 20
+            },
+            {
+              "sku": 5516649179,
+              "offer_id": "для щенков 8в1",
+              "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+              "qty": 22
+            },
+            {
+              "sku": 5516579647,
+              "offer_id": "для мелких 8в1",
+              "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+              "qty": 22
+            },
+            {
+              "sku": 3726858649,
+              "offer_id": "бреверсы для крупных",
+              "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+              "qty": 15
+            },
+            {
+              "sku": 3726902147,
+              "offer_id": "глюкозамин 55 шт",
+              "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+              "qty": 20
+            },
+            {
+              "sku": 3726888167,
+              "offer_id": "для пожилых собак1",
+              "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+              "qty": 20
+            },
+            {
+              "sku": 3726892929,
+              "offer_id": "для взрослых собак1",
+              "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+              "qty": 15
+            }
+          ],
+          "qty": 309
+        },
+        {
+          "supply_id": 2000067014679,
+          "state": "IN_TRANSIT",
+          "warehouse": "",
+          "items": [
+            {
+              "sku": 5803075530,
+              "offer_id": "шоколад элит 4 шт",
+              "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+              "qty": 11
+            },
+            {
+              "sku": 4451480169,
+              "offer_id": "шокол",
+              "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+              "qty": 15
+            },
+            {
+              "sku": 5803370792,
+              "offer_id": "шоколад 70",
+              "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+              "qty": 12
+            },
+            {
+              "sku": 5472775507,
+              "offer_id": "для собак фекалии",
+              "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+              "qty": 7
+            },
+            {
+              "sku": 4823918365,
+              "offer_id": "для кошек и собак 260 1",
+              "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+              "qty": 7
+            },
+            {
+              "sku": 4823627697,
+              "offer_id": "для кошек и собак 140",
+              "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+              "qty": 8
+            },
+            {
+              "sku": 4658698444,
+              "offer_id": "кальций",
+              "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+              "qty": 8
+            },
+            {
+              "sku": 5516649179,
+              "offer_id": "для щенков 8в1",
+              "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+              "qty": 10
+            },
+            {
+              "sku": 5516579647,
+              "offer_id": "для мелких 8в1",
+              "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+              "qty": 10
+            },
+            {
+              "sku": 3726858649,
+              "offer_id": "бреверсы для крупных",
+              "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+              "qty": 5
+            },
+            {
+              "sku": 3726902147,
+              "offer_id": "глюкозамин 55 шт",
+              "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+              "qty": 8
+            },
+            {
+              "sku": 3726888167,
+              "offer_id": "для пожилых собак1",
+              "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+              "qty": 8
+            },
+            {
+              "sku": 3726892929,
+              "offer_id": "для взрослых собак1",
+              "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+              "qty": 7
+            }
+          ],
+          "qty": 116
+        }
+      ],
+      "items": [
+        {
+          "sku": 4451480169,
+          "offer_id": "шокол",
+          "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+          "qty": 100
+        },
+        {
+          "sku": 5803370792,
+          "offer_id": "шоколад 70",
+          "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+          "qty": 72
+        },
+        {
+          "sku": 5803075530,
+          "offer_id": "шоколад элит 4 шт",
+          "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+          "qty": 70
+        },
+        {
+          "sku": 5516579647,
+          "offer_id": "для мелких 8в1",
+          "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+          "qty": 45
+        },
+        {
+          "sku": 5516649179,
+          "offer_id": "для щенков 8в1",
+          "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+          "qty": 45
+        },
+        {
+          "sku": 3726888167,
+          "offer_id": "для пожилых собак1",
+          "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+          "qty": 40
+        },
+        {
+          "sku": 3726902147,
+          "offer_id": "глюкозамин 55 шт",
+          "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+          "qty": 40
+        },
+        {
+          "sku": 4658698444,
+          "offer_id": "кальций",
+          "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+          "qty": 40
+        },
+        {
+          "sku": 4823627697,
+          "offer_id": "для кошек и собак 140",
+          "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+          "qty": 40
+        },
+        {
+          "sku": 3726858649,
+          "offer_id": "бреверсы для крупных",
+          "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+          "qty": 30
+        },
+        {
+          "sku": 3726892929,
+          "offer_id": "для взрослых собак1",
+          "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+          "qty": 30
+        },
+        {
+          "sku": 4823918365,
+          "offer_id": "для кошек и собак 260 1",
+          "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+          "qty": 30
+        },
+        {
+          "sku": 5472775507,
+          "offer_id": "для собак фекалии",
+          "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+          "qty": 30
+        }
+      ],
+      "qty": 612
+    }
+  ],
+  "plan": [
+    {
+      "sku": 5745079896,
+      "offer_id": "Меркурий201.7 (2026)",
+      "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
+      "brand": "Инкотекс",
+      "stock": 0,
+      "inbound": 0,
+      "available": 0,
+      "order_units_7d": 25,
+      "daily_orders": 3.571,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 54,
+      "ship_qty": 54,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 0.0,
+      "ship_in_days": 0,
+      "ship_by": "2026-09-22",
+      "status": "now",
+      "inbound_orders": []
+    },
+    {
+      "sku": 4451480169,
+      "offer_id": "шокол",
+      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+      "brand": "Спартак",
+      "stock": 1,
+      "inbound": 100,
+      "available": 101,
+      "order_units_7d": 70,
+      "daily_orders": 10.0,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 150,
+      "ship_qty": 49,
+      "days_on_hand": 0.1,
+      "days_with_inbound": 10.1,
+      "ship_in_days": 0,
+      "ship_by": "2026-09-22",
+      "status": "now",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 100,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 5472775507,
+      "offer_id": "для собак фекалии",
+      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+      "brand": "8IN1",
+      "stock": 0,
+      "inbound": 30,
+      "available": 30,
+      "order_units_7d": 34,
+      "daily_orders": 4.857,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 73,
+      "ship_qty": 43,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 6.2,
+      "ship_in_days": 0,
+      "ship_by": "2026-09-22",
+      "status": "now",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 30,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 4823627697,
+      "offer_id": "для кошек и собак 140",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+      "brand": "8IN1",
+      "stock": 0,
+      "inbound": 40,
+      "available": 40,
+      "order_units_7d": 38,
+      "daily_orders": 5.429,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 82,
+      "ship_qty": 42,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 7.4,
+      "ship_in_days": 0,
+      "ship_by": "2026-09-22",
+      "status": "now",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 40,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "brand": "8IN1",
+      "stock": 5,
+      "inbound": 40,
+      "available": 45,
+      "order_units_7d": 36,
+      "daily_orders": 5.143,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 78,
+      "ship_qty": 33,
+      "days_on_hand": 1.0,
+      "days_with_inbound": 8.7,
+      "ship_in_days": 0,
+      "ship_by": "2026-09-22",
+      "status": "now",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 40,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "brand": "8IN1",
+      "stock": 1,
+      "inbound": 45,
+      "available": 46,
+      "order_units_7d": 25,
+      "daily_orders": 3.571,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 54,
+      "ship_qty": 8,
+      "days_on_hand": 0.3,
+      "days_with_inbound": 12.9,
+      "ship_in_days": 0,
+      "ship_by": "2026-09-22",
+      "status": "now",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 45,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 4823918365,
+      "offer_id": "для кошек и собак 260 1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+      "brand": "8IN1",
+      "stock": 0,
+      "inbound": 30,
+      "available": 30,
+      "order_units_7d": 1,
+      "daily_orders": 0.143,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 3,
+      "ship_qty": 0,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 209.8,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 30,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 5516579647,
+      "offer_id": "для мелких 8в1",
+      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+      "brand": "8IN1",
+      "stock": 12,
+      "inbound": 45,
+      "available": 57,
+      "order_units_7d": 18,
+      "daily_orders": 2.571,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 39,
+      "ship_qty": 0,
+      "days_on_hand": 4.7,
+      "days_with_inbound": 22.2,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 45,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 4658698444,
+      "offer_id": "кальций",
+      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+      "brand": "8IN1",
+      "stock": 15,
+      "inbound": 40,
+      "available": 55,
+      "order_units_7d": 17,
+      "daily_orders": 2.429,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 37,
+      "ship_qty": 0,
+      "days_on_hand": 6.2,
+      "days_with_inbound": 22.6,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 40,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 3726888167,
+      "offer_id": "для пожилых собак1",
+      "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+      "brand": "8IN1",
+      "stock": 25,
+      "inbound": 40,
+      "available": 65,
+      "order_units_7d": 4,
+      "daily_orders": 0.571,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 9,
+      "ship_qty": 0,
+      "days_on_hand": 43.8,
+      "days_with_inbound": 113.8,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 40,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 3726892929,
+      "offer_id": "для взрослых собак1",
+      "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+      "brand": "8IN1",
+      "stock": 26,
+      "inbound": 30,
+      "available": 56,
+      "order_units_7d": 4,
+      "daily_orders": 0.571,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 9,
+      "ship_qty": 0,
+      "days_on_hand": 45.5,
+      "days_with_inbound": 98.1,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 30,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 3726858649,
+      "offer_id": "бреверсы для крупных",
+      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+      "brand": "8IN1",
+      "stock": 0,
+      "inbound": 30,
+      "available": 30,
+      "order_units_7d": 0,
+      "daily_orders": 0.0,
+      "window_days": 7,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 0,
+      "ship_qty": 0,
+      "days_on_hand": null,
+      "days_with_inbound": null,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 30,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 5803075530,
+      "offer_id": "шоколад элит 4 шт",
+      "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+      "brand": "",
+      "stock": 0,
+      "inbound": 70,
+      "available": 70,
+      "order_units_7d": 0,
+      "daily_orders": 0.0,
+      "window_days": 0,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 0,
+      "ship_qty": 0,
+      "days_on_hand": null,
+      "days_with_inbound": null,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 70,
+          "eta": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "sku": 5803370792,
+      "offer_id": "шоколад 70",
+      "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+      "brand": "",
+      "stock": 0,
+      "inbound": 72,
+      "available": 72,
+      "order_units_7d": 0,
+      "daily_orders": 0.0,
+      "window_days": 0,
+      "cover_days": 10,
+      "lead_days": 5,
+      "horizon_days": 15,
+      "target_stock": 0,
+      "ship_qty": 0,
+      "days_on_hand": null,
+      "days_with_inbound": null,
+      "ship_in_days": null,
+      "ship_by": null,
+      "status": "ok",
+      "inbound_orders": [
+        {
+          "order_number": "128789786-1",
+          "state": "В пути",
+          "qty": 72,
+          "eta": "2026-09-20"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "inbound_orders": 1,
+    "inbound_qty": 612,
+    "ship_now_skus": 6,
+    "ship_now_qty": 229,
+    "ship_soon_skus": 0,
+    "ship_total_qty": 229,
+    "critical_skus": 8,
+    "under_cover_skus": 9
+  }
+}
