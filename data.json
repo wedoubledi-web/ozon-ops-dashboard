@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T12:18:25.880135+00:00",
+  "generated_at": "2026-09-22T12:28:07.470114+00:00",
   "as_of": "2026-09-21",
   "expected_as_of": "2026-09-21",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -56715,7 +56715,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-09-22T12:18:10.888616+00:00",
+    "generated_at": "2026-09-22T12:27:51.413600+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -58842,11 +58842,11 @@
     "raw_rows": 141
   },
   "supplies": {
-    "generated_at": "2026-09-22T12:18:25.764835+00:00",
-    "method": "Заказы за 7 дн. → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
+    "generated_at": "2026-09-22T12:28:07.319782+00:00",
+    "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
-    "demand_window_days": 7,
+    "demand_window_days": 14,
     "horizon_days": 15,
     "inbound": [
       {
@@ -59214,29 +59214,6 @@
     ],
     "plan": [
       {
-        "sku": 5745079896,
-        "offer_id": "Меркурий201.7 (2026)",
-        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
-        "brand": "Инкотекс",
-        "stock": 0,
-        "inbound": 0,
-        "available": 0,
-        "order_units_7d": 25,
-        "daily_orders": 3.571,
-        "window_days": 7,
-        "cover_days": 10,
-        "lead_days": 5,
-        "horizon_days": 15,
-        "target_stock": 54,
-        "ship_qty": 54,
-        "days_on_hand": 0.0,
-        "days_with_inbound": 0.0,
-        "ship_in_days": 0,
-        "ship_by": "2026-09-22",
-        "status": "now",
-        "inbound_orders": []
-      },
-      {
         "sku": 4451480169,
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
@@ -59244,16 +59221,104 @@
         "stock": 1,
         "inbound": 100,
         "available": 101,
-        "order_units_7d": 70,
-        "daily_orders": 10.0,
-        "window_days": 7,
+        "order_units_7d": 166,
+        "order_units_used": 166,
+        "daily_orders": 11.857,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 10,
+            "cancelled": 0,
+            "net": 10
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 31,
+            "cancelled": 4,
+            "net": 27
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 15,
+            "cancelled": 0,
+            "net": 15
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 17,
+            "cancelled": 3,
+            "net": 14
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 11,
+            "cancelled": 0,
+            "net": 11
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 11,
+            "cancelled": 1,
+            "net": 10
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 11,
+            "cancelled": 0,
+            "net": 11
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 29,
+            "cancelled": 0,
+            "net": 29
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 8,
+            "cancelled": 0,
+            "net": 8
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 5,
+            "cancelled": 2,
+            "net": 3
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 7,
+            "cancelled": 0,
+            "net": 7
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 9,
+            "cancelled": 0,
+            "net": 9
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 8,
+            "cancelled": 0,
+            "net": 8
+          }
+        ],
+        "spike": null,
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
-        "target_stock": 150,
-        "ship_qty": 49,
+        "target_stock": 178,
+        "ship_qty": 77,
         "days_on_hand": 0.1,
-        "days_with_inbound": 10.1,
+        "days_with_inbound": 8.5,
         "ship_in_days": 0,
         "ship_by": "2026-09-22",
         "status": "now",
@@ -59267,6 +59332,240 @@
         ]
       },
       {
+        "sku": 4823627697,
+        "offer_id": "для кошек и собак 140",
+        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+        "brand": "8IN1",
+        "stock": 0,
+        "inbound": 40,
+        "available": 40,
+        "order_units_7d": 52,
+        "order_units_used": 52,
+        "daily_orders": 3.714,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 5,
+            "cancelled": 0,
+            "net": 5
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 2,
+            "cancelled": 1,
+            "net": 1
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 5,
+            "cancelled": 0,
+            "net": 5
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 8,
+            "cancelled": 0,
+            "net": 8
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 6,
+            "cancelled": 0,
+            "net": 6
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 8,
+            "cancelled": 0,
+            "net": 8
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 7,
+            "cancelled": 0,
+            "net": 7
+          }
+        ],
+        "spike": null,
+        "cover_days": 10,
+        "lead_days": 5,
+        "horizon_days": 15,
+        "target_stock": 56,
+        "ship_qty": 16,
+        "days_on_hand": 0.0,
+        "days_with_inbound": 10.8,
+        "ship_in_days": 0,
+        "ship_by": "2026-09-22",
+        "status": "now",
+        "inbound_orders": [
+          {
+            "order_number": "128789786-1",
+            "state": "В пути",
+            "qty": 40,
+            "eta": "2026-09-20"
+          }
+        ]
+      },
+      {
+        "sku": 5745079896,
+        "offer_id": "Меркурий201.7 (2026)",
+        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
+        "brand": "Инкотекс",
+        "stock": 0,
+        "inbound": 0,
+        "available": 0,
+        "order_units_7d": 23,
+        "order_units_used": 6,
+        "daily_orders": 0.462,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 19,
+            "cancelled": 2,
+            "net": 17,
+            "spike": true
+          }
+        ],
+        "spike": {
+          "date": "2026-09-21",
+          "orders": 19,
+          "net": 17
+        },
+        "cover_days": 10,
+        "lead_days": 5,
+        "horizon_days": 15,
+        "target_stock": 7,
+        "ship_qty": 7,
+        "days_on_hand": 0.0,
+        "days_with_inbound": 0.0,
+        "ship_in_days": 0,
+        "ship_by": "2026-09-22",
+        "status": "now",
+        "inbound_orders": []
+      },
+      {
         "sku": 5472775507,
         "offer_id": "для собак фекалии",
         "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
@@ -59274,16 +59573,109 @@
         "stock": 0,
         "inbound": 30,
         "available": 30,
-        "order_units_7d": 34,
-        "daily_orders": 4.857,
-        "window_days": 7,
+        "order_units_7d": 41,
+        "order_units_used": 29,
+        "daily_orders": 2.231,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 4,
+            "cancelled": 1,
+            "net": 3
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 7,
+            "cancelled": 1,
+            "net": 6
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 12,
+            "cancelled": 0,
+            "net": 12,
+            "spike": true
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 4,
+            "cancelled": 1,
+            "net": 3
+          }
+        ],
+        "spike": {
+          "date": "2026-09-17",
+          "orders": 12,
+          "net": 12
+        },
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
-        "target_stock": 73,
-        "ship_qty": 43,
+        "target_stock": 34,
+        "ship_qty": 4,
         "days_on_hand": 0.0,
-        "days_with_inbound": 6.2,
+        "days_with_inbound": 13.4,
         "ship_in_days": 0,
         "ship_by": "2026-09-22",
         "status": "now",
@@ -59297,113 +59689,111 @@
         ]
       },
       {
-        "sku": 4823627697,
-        "offer_id": "для кошек и собак 140",
-        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
-        "brand": "8IN1",
-        "stock": 0,
-        "inbound": 40,
-        "available": 40,
-        "order_units_7d": 38,
-        "daily_orders": 5.429,
-        "window_days": 7,
-        "cover_days": 10,
-        "lead_days": 5,
-        "horizon_days": 15,
-        "target_stock": 82,
-        "ship_qty": 42,
-        "days_on_hand": 0.0,
-        "days_with_inbound": 7.4,
-        "ship_in_days": 0,
-        "ship_by": "2026-09-22",
-        "status": "now",
-        "inbound_orders": [
-          {
-            "order_number": "128789786-1",
-            "state": "В пути",
-            "qty": 40,
-            "eta": "2026-09-20"
-          }
-        ]
-      },
-      {
-        "sku": 3726902147,
-        "offer_id": "глюкозамин 55 шт",
-        "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-        "brand": "8IN1",
-        "stock": 2,
-        "inbound": 40,
-        "available": 42,
-        "order_units_7d": 36,
-        "daily_orders": 5.143,
-        "window_days": 7,
-        "cover_days": 10,
-        "lead_days": 5,
-        "horizon_days": 15,
-        "target_stock": 78,
-        "ship_qty": 36,
-        "days_on_hand": 0.4,
-        "days_with_inbound": 8.2,
-        "ship_in_days": 0,
-        "ship_by": "2026-09-22",
-        "status": "now",
-        "inbound_orders": [
-          {
-            "order_number": "128789786-1",
-            "state": "В пути",
-            "qty": 40,
-            "eta": "2026-09-20"
-          }
-        ]
-      },
-      {
-        "sku": 5516649179,
-        "offer_id": "для щенков 8в1",
-        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-        "brand": "8IN1",
-        "stock": 1,
-        "inbound": 45,
-        "available": 46,
-        "order_units_7d": 25,
-        "daily_orders": 3.571,
-        "window_days": 7,
-        "cover_days": 10,
-        "lead_days": 5,
-        "horizon_days": 15,
-        "target_stock": 54,
-        "ship_qty": 8,
-        "days_on_hand": 0.3,
-        "days_with_inbound": 12.9,
-        "ship_in_days": 0,
-        "ship_by": "2026-09-22",
-        "status": "now",
-        "inbound_orders": [
-          {
-            "order_number": "128789786-1",
-            "state": "В пути",
-            "qty": 45,
-            "eta": "2026-09-20"
-          }
-        ]
-      },
-      {
-        "sku": 4823918365,
-        "offer_id": "для кошек и собак 260 1",
-        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+        "sku": 3726858649,
+        "offer_id": "бреверсы для крупных",
+        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
         "brand": "8IN1",
         "stock": 0,
         "inbound": 30,
         "available": 30,
-        "order_units_7d": 1,
-        "daily_orders": 0.143,
-        "window_days": 7,
+        "order_units_7d": 4,
+        "order_units_used": 4,
+        "daily_orders": 0.286,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          }
+        ],
+        "spike": null,
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
-        "target_stock": 3,
+        "target_stock": 5,
         "ship_qty": 0,
         "days_on_hand": 0.0,
-        "days_with_inbound": 209.8,
+        "days_with_inbound": 104.9,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -59417,6 +59807,247 @@
         ]
       },
       {
+        "sku": 5516649179,
+        "offer_id": "для щенков 8в1",
+        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+        "brand": "8IN1",
+        "stock": 1,
+        "inbound": 45,
+        "available": 46,
+        "order_units_7d": 41,
+        "order_units_used": 41,
+        "daily_orders": 2.929,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 3,
+            "cancelled": 1,
+            "net": 2
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 3,
+            "cancelled": 1,
+            "net": 2
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 5,
+            "cancelled": 0,
+            "net": 5
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 4,
+            "cancelled": 0,
+            "net": 4
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 2,
+            "cancelled": 1,
+            "net": 1
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 7,
+            "cancelled": 1,
+            "net": 6
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          }
+        ],
+        "spike": null,
+        "cover_days": 10,
+        "lead_days": 5,
+        "horizon_days": 15,
+        "target_stock": 44,
+        "ship_qty": 0,
+        "days_on_hand": 0.3,
+        "days_with_inbound": 15.7,
+        "ship_in_days": null,
+        "ship_by": null,
+        "status": "ok",
+        "inbound_orders": [
+          {
+            "order_number": "128789786-1",
+            "state": "В пути",
+            "qty": 45,
+            "eta": "2026-09-20"
+          }
+        ]
+      },
+      {
+        "sku": 3726902147,
+        "offer_id": "глюкозамин 55 шт",
+        "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+        "brand": "8IN1",
+        "stock": 2,
+        "inbound": 40,
+        "available": 42,
+        "order_units_7d": 37,
+        "order_units_used": 25,
+        "daily_orders": 1.923,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 13,
+            "cancelled": 1,
+            "net": 12,
+            "spike": true
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 7,
+            "cancelled": 0,
+            "net": 7
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 5,
+            "cancelled": 0,
+            "net": 5
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 6,
+            "cancelled": 0,
+            "net": 6
+          }
+        ],
+        "spike": {
+          "date": "2026-09-17",
+          "orders": 13,
+          "net": 12
+        },
+        "cover_days": 10,
+        "lead_days": 5,
+        "horizon_days": 15,
+        "target_stock": 29,
+        "ship_qty": 0,
+        "days_on_hand": 1.0,
+        "days_with_inbound": 21.8,
+        "ship_in_days": null,
+        "ship_by": null,
+        "status": "ok",
+        "inbound_orders": [
+          {
+            "order_number": "128789786-1",
+            "state": "В пути",
+            "qty": 40,
+            "eta": "2026-09-20"
+          }
+        ]
+      },
+      {
         "sku": 5516579647,
         "offer_id": "для мелких 8в1",
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -59424,16 +60055,109 @@
         "stock": 12,
         "inbound": 45,
         "available": 57,
-        "order_units_7d": 18,
-        "daily_orders": 2.571,
-        "window_days": 7,
+        "order_units_7d": 24,
+        "order_units_used": 19,
+        "daily_orders": 1.462,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 5,
+            "cancelled": 0,
+            "net": 5,
+            "spike": true
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 5,
+            "cancelled": 1,
+            "net": 4
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          }
+        ],
+        "spike": {
+          "date": "2026-09-17",
+          "orders": 5,
+          "net": 5
+        },
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
-        "target_stock": 39,
+        "target_stock": 22,
         "ship_qty": 0,
-        "days_on_hand": 4.7,
-        "days_with_inbound": 22.2,
+        "days_on_hand": 8.2,
+        "days_with_inbound": 39.0,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -59454,46 +60178,109 @@
         "stock": 15,
         "inbound": 40,
         "available": 55,
-        "order_units_7d": 17,
-        "daily_orders": 2.429,
-        "window_days": 7,
-        "cover_days": 10,
-        "lead_days": 5,
-        "horizon_days": 15,
-        "target_stock": 37,
-        "ship_qty": 0,
-        "days_on_hand": 6.2,
-        "days_with_inbound": 22.6,
-        "ship_in_days": null,
-        "ship_by": null,
-        "status": "ok",
-        "inbound_orders": [
+        "order_units_7d": 18,
+        "order_units_used": 9,
+        "daily_orders": 0.692,
+        "window_days": 14,
+        "daily_series": [
           {
-            "order_number": "128789786-1",
-            "state": "В пути",
-            "qty": 40,
-            "eta": "2026-09-20"
+            "date": "2026-09-08",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 9,
+            "cancelled": 0,
+            "net": 9,
+            "spike": true
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 5,
+            "cancelled": 1,
+            "net": 4
           }
-        ]
-      },
-      {
-        "sku": 3726888167,
-        "offer_id": "для пожилых собак1",
-        "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
-        "brand": "8IN1",
-        "stock": 25,
-        "inbound": 40,
-        "available": 65,
-        "order_units_7d": 4,
-        "daily_orders": 0.571,
-        "window_days": 7,
+        ],
+        "spike": {
+          "date": "2026-09-19",
+          "orders": 9,
+          "net": 9
+        },
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
-        "target_stock": 9,
+        "target_stock": 11,
         "ship_qty": 0,
-        "days_on_hand": 43.8,
-        "days_with_inbound": 113.8,
+        "days_on_hand": 21.7,
+        "days_with_inbound": 79.5,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -59514,16 +60301,104 @@
         "stock": 26,
         "inbound": 30,
         "available": 56,
-        "order_units_7d": 4,
-        "daily_orders": 0.571,
-        "window_days": 7,
+        "order_units_7d": 7,
+        "order_units_used": 7,
+        "daily_orders": 0.5,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 3,
+            "cancelled": 0,
+            "net": 3
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          }
+        ],
+        "spike": null,
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
-        "target_stock": 9,
+        "target_stock": 8,
         "ship_qty": 0,
-        "days_on_hand": 45.5,
-        "days_with_inbound": 98.1,
+        "days_on_hand": 52.0,
+        "days_with_inbound": 112.0,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -59537,16 +60412,333 @@
         ]
       },
       {
-        "sku": 3726858649,
-        "offer_id": "бреверсы для крупных",
-        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+        "sku": 3726888167,
+        "offer_id": "для пожилых собак1",
+        "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+        "brand": "8IN1",
+        "stock": 25,
+        "inbound": 40,
+        "available": 65,
+        "order_units_7d": 5,
+        "order_units_used": 5,
+        "daily_orders": 0.357,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 2,
+            "cancelled": 0,
+            "net": 2
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          }
+        ],
+        "spike": null,
+        "cover_days": 10,
+        "lead_days": 5,
+        "horizon_days": 15,
+        "target_stock": 6,
+        "ship_qty": 0,
+        "days_on_hand": 70.0,
+        "days_with_inbound": 182.1,
+        "ship_in_days": null,
+        "ship_by": null,
+        "status": "ok",
+        "inbound_orders": [
+          {
+            "order_number": "128789786-1",
+            "state": "В пути",
+            "qty": 40,
+            "eta": "2026-09-20"
+          }
+        ]
+      },
+      {
+        "sku": 3726897234,
+        "offer_id": "для мелких пород",
+        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+        "brand": "8IN1",
+        "stock": 0,
+        "inbound": 0,
+        "available": 0,
+        "order_units_7d": 1,
+        "order_units_used": 1,
+        "daily_orders": 0.0,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          }
+        ],
+        "spike": null,
+        "cover_days": 10,
+        "lead_days": 5,
+        "horizon_days": 15,
+        "target_stock": 0,
+        "ship_qty": 0,
+        "days_on_hand": null,
+        "days_with_inbound": null,
+        "ship_in_days": null,
+        "ship_by": null,
+        "status": "ok",
+        "inbound_orders": []
+      },
+      {
+        "sku": 4823918365,
+        "offer_id": "для кошек и собак 260 1",
+        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
         "brand": "8IN1",
         "stock": 0,
         "inbound": 30,
         "available": 30,
-        "order_units_7d": 0,
+        "order_units_7d": 2,
+        "order_units_used": 2,
         "daily_orders": 0.0,
-        "window_days": 7,
+        "window_days": 14,
+        "daily_series": [
+          {
+            "date": "2026-09-08",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-09",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-10",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-11",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-12",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-13",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-14",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-15",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-16",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-17",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-18",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-19",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          },
+          {
+            "date": "2026-09-20",
+            "orders": 1,
+            "cancelled": 0,
+            "net": 1
+          },
+          {
+            "date": "2026-09-21",
+            "orders": 0,
+            "cancelled": 0,
+            "net": 0
+          }
+        ],
+        "spike": null,
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
@@ -59575,8 +60767,11 @@
         "inbound": 70,
         "available": 70,
         "order_units_7d": 0,
+        "order_units_used": 0,
         "daily_orders": 0.0,
         "window_days": 0,
+        "daily_series": [],
+        "spike": null,
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
@@ -59605,8 +60800,11 @@
         "inbound": 72,
         "available": 72,
         "order_units_7d": 0,
+        "order_units_used": 0,
         "daily_orders": 0.0,
         "window_days": 0,
+        "daily_series": [],
+        "spike": null,
         "cover_days": 10,
         "lead_days": 5,
         "horizon_days": 15,
@@ -59630,12 +60828,12 @@
     "summary": {
       "inbound_orders": 1,
       "inbound_qty": 612,
-      "ship_now_skus": 6,
-      "ship_now_qty": 232,
+      "ship_now_skus": 4,
+      "ship_now_qty": 104,
       "ship_soon_skus": 0,
-      "ship_total_qty": 232,
-      "critical_skus": 8,
-      "under_cover_skus": 9
+      "ship_total_qty": 104,
+      "critical_skus": 7,
+      "under_cover_skus": 8
     }
   }
 }
