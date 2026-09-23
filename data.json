@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:27:17.476618+00:00",
+  "generated_at": "2026-09-23T14:48:57.415523+00:00",
   "as_of": "2026-09-22",
   "expected_as_of": "2026-09-22",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -55517,7 +55517,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 5
+            "delivering": 4,
+            "delivered": 1
           },
           "views": 1901,
           "clicks": 48,
@@ -56020,7 +56021,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-09-23T12:27:00.086295+00:00",
+    "generated_at": "2026-09-23T14:48:43.096408+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -58130,7 +58131,7 @@
     "raw_rows": 143
   },
   "supplies": {
-    "generated_at": "2026-09-23T12:27:17.275767+00:00",
+    "generated_at": "2026-09-23T14:48:57.193535+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
