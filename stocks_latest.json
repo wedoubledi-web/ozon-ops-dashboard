@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T08:58:57.999606+00:00",
+  "generated_at": "2026-09-23T12:27:00.086295+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -212,12 +212,12 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 6,
+      "stock": 5,
       "ads": 1.5625,
       "warehouses": [
         {
           "name": "НОГИНСК_РФЦ",
-          "stock": 6,
+          "stock": 5,
           "grade": "DEFICIT"
         },
         {
@@ -228,8 +228,8 @@
       ],
       "target_days": 30,
       "target_stock": 47,
-      "supply_qty": 41,
-      "days_left": 3.8,
+      "supply_qty": 42,
+      "days_left": 3.2,
       "confidence": "high"
     },
     {
@@ -240,6 +240,11 @@
       "stock": 0,
       "ads": 1.2352941176470589,
       "warehouses": [
+        {
+          "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
+          "stock": 0,
+          "grade": "WAS_DEFICIT"
+        },
         {
           "name": "СПБ_БУГРЫ_РФЦ",
           "stock": 0,
@@ -1896,11 +1901,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 18.43,
-      "stock": 13,
+      "stock": 12,
       "ads": 4.5,
-      "cost_capitalization": 7101.43,
-      "retail_capitalization": 37985.25,
-      "days_left": 2.9
+      "cost_capitalization": 6555.17,
+      "retail_capitalization": 35063.31,
+      "days_left": 2.7
     },
     {
       "sku": 5516579647,
@@ -2096,10 +2101,10 @@
     }
   ],
   "summary": {
-    "stock": 80,
-    "cost_capitalization": 56156.67,
-    "retail_capitalization": 271184.08,
+    "stock": 79,
+    "cost_capitalization": 55610.41,
+    "retail_capitalization": 268262.14,
     "fx_rub_per_byn": 27.828023
   },
-  "raw_rows": 141
+  "raw_rows": 143
 }
