@@ -1,0 +1,587 @@
+{
+  "generated_at": "2026-09-24T12:15:19.919734+00:00",
+  "as_of": "2026-09-23",
+  "geo": {
+    "city": "Москва",
+    "pvz": "Москва, ПВЗ (центр)",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "note": "Срок доставки как для пункта выдачи в Москве"
+  },
+  "fx_rub_per_byn": 27.788584,
+  "source": {
+    "ours": "Ежедневка Ozon: analytics заказы / выкупы по нашим SKU",
+    "theirs": "Карточка ozon.ru, гео Москва / ПВЗ. Продажи конкурента = дельта счётчика «купили», не отчёт кабинета."
+  },
+  "quality": {
+    "pairs": 13,
+    "cards_ok": 0,
+    "cards_error": 36
+  },
+  "pairs": [
+    {
+      "label": "щенки",
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "brand": "8IN1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 2,
+        "orders_7d": 18,
+        "units_7d": 20,
+        "price_byn": 100.0,
+        "price_rub": 2778.86,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 5516649179,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5516649179"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 1525580774,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1525580774",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 3119526172,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3119526172",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 2027958915,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/2027958915",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "фекалии 100",
+      "sku": 5472775507,
+      "offer_id": "для собак фекалии",
+      "brand": "8IN1",
+      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 4,
+        "orders_7d": 26,
+        "units_7d": 29,
+        "price_byn": 105.0,
+        "price_rub": 2917.8,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 5472775507,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5472775507"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 3089483395,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3089483395",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 2124804003,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/2124804003",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 617901284,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/617901284",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "взрослые",
+      "sku": 3726892929,
+      "offer_id": "для взрослых собак1",
+      "brand": "8IN1",
+      "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 2,
+        "orders_7d": 5,
+        "units_7d": 4,
+        "price_byn": 140.0,
+        "price_rub": 3890.4,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 3726892929,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3726892929"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 3119519685,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3119519685",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1525580812,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1525580812",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "Glucosamine 55",
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "brand": "8IN1",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 7,
+        "orders_7d": 39,
+        "units_7d": 27,
+        "price_byn": 145.0,
+        "price_rub": 4029.34,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 3726902147,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3726902147"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 5158537143,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5158537143",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "пожилые",
+      "sku": 3726888167,
+      "offer_id": "для пожилых собак1",
+      "brand": "8IN1",
+      "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 0,
+        "orders_7d": 5,
+        "units_7d": 4,
+        "price_byn": 130.0,
+        "price_rub": 3612.52,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 3726888167,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3726888167"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 3857433577,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3857433577",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1525577654,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1525577654",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 3000465269,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3000465269",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1695314824,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1695314824",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 2937173721,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/2937173721",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "Brewer's 260",
+      "sku": 4823918365,
+      "offer_id": "для кошек и собак 260 1",
+      "brand": "8IN1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 0,
+        "orders_7d": 1,
+        "units_7d": 1,
+        "price_byn": 100.0,
+        "price_rub": 2778.86,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 4823918365,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/4823918365"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 4129899256,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/4129899256",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 3507444925,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3507444925",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1502729451,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1502729451",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 948145842,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/948145842",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "Small Breed",
+      "sku": 5516579647,
+      "offer_id": "для мелких 8в1",
+      "brand": "8IN1",
+      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 5,
+        "orders_7d": 18,
+        "units_7d": 19,
+        "price_byn": 90.0,
+        "price_rub": 2500.97,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 5516579647,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5516579647"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 3089568805,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3089568805",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1525581832,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1525581832",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 5156931481,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5156931481",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1270248752,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1270248752",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "calcium 155",
+      "sku": 4658698444,
+      "offer_id": "кальций",
+      "brand": "8IN1",
+      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+      "our": {
+        "orders_today": 2,
+        "units_today": 5,
+        "orders_7d": 22,
+        "units_7d": 11,
+        "price_byn": 105.0,
+        "price_rub": 2917.8,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 4658698444,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/4658698444"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 3859101046,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3859101046",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 3386684168,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3386684168",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 5156529499,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5156529499",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "Brewer's 140",
+      "sku": 4823627697,
+      "offer_id": "для кошек и собак 140",
+      "brand": "8IN1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 4,
+        "orders_7d": 25,
+        "units_7d": 33,
+        "price_byn": 105.0,
+        "price_rub": 2917.8,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 4823627697,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/4823627697"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 3507446040,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3507446040",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 2615806960,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/2615806960",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1675762873,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1675762873",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "large breed 80",
+      "sku": 3726858649,
+      "offer_id": "бреверсы для крупных",
+      "brand": "8IN1",
+      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 0,
+        "orders_7d": 0,
+        "units_7d": 3,
+        "price_byn": 100.0,
+        "price_rub": 2778.86,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 3726858649,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3726858649"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 2615967487,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/2615967487",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "шоколад 70% набор",
+      "sku": 5803370792,
+      "offer_id": "шоколад 70",
+      "brand": "Спартак",
+      "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+      "our": {
+        "orders_today": 0,
+        "units_today": 0,
+        "orders_7d": 0,
+        "units_7d": 0,
+        "price_byn": 125.0,
+        "price_rub": 3473.57,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 5803370792,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5803370792"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 5238054535,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5238054535",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 3870188255,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3870188255",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "шоколад 90%",
+      "sku": 4451480169,
+      "offer_id": "шокол",
+      "brand": "Спартак",
+      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+      "our": {
+        "orders_today": 0,
+        "units_today": 9,
+        "orders_7d": 37,
+        "units_7d": 64,
+        "price_byn": 125.0,
+        "price_rub": 3473.57,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 4451480169,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/4451480169"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 5238054535,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5238054535",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 1976820129,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/1976820129",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 3736586962,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/3736586962",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    },
+    {
+      "label": "шоколад 97% набор",
+      "sku": 5803075530,
+      "offer_id": "шоколад элит 4 шт",
+      "brand": "Спартак",
+      "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+      "our": {
+        "orders_today": 0,
+        "units_today": 0,
+        "orders_7d": 0,
+        "units_7d": 0,
+        "price_byn": null,
+        "price_rub": null,
+        "delivery": "",
+        "delivery_days": null,
+        "card": {
+          "sku": 5803075530,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5803075530"
+        }
+      },
+      "competitors": [
+        {
+          "sku": 4896215520,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/4896215520",
+          "sold_today": null,
+          "sold_7d": null
+        },
+        {
+          "sku": 5355077283,
+          "error": "http_307",
+          "url": "https://www.ozon.ru/product/5355077283",
+          "sold_today": null,
+          "sold_7d": null
+        }
+      ]
+    }
+  ]
+}
