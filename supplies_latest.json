@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T13:47:43.922879+00:00",
+  "generated_at": "2026-09-24T14:46:36.300036+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1027,9 +1027,9 @@
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
       "brand": "8IN1",
-      "stock": 21,
+      "stock": 20,
       "inbound": 55,
-      "available": 76,
+      "available": 75,
       "order_units_7d": 42,
       "order_units_used": 30,
       "daily_orders": 2.308,
@@ -1131,8 +1131,8 @@
       "horizon_days": 15,
       "target_stock": 35,
       "ship_qty": 0,
-      "days_on_hand": 9.1,
-      "days_with_inbound": 32.9,
+      "days_on_hand": 8.7,
+      "days_with_inbound": 32.5,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1179,9 +1179,9 @@
         },
         {
           "cluster": "Красноярск",
-          "stock": 1,
+          "stock": 0,
           "ads": 5.154,
-          "days_left": 0.2,
+          "days_left": 0.0,
           "target_stock": 78,
           "ship_qty": 0
         },
@@ -2862,7 +2862,7 @@
       "cluster": "Красноярск",
       "ship_qty": 0,
       "skus": 0,
-      "stock": 3
+      "stock": 2
     },
     {
       "cluster": "Невинномысск",

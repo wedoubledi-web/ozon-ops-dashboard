@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T13:47:32.636112+00:00",
+  "generated_at": "2026-09-24T14:46:25.023564+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -1986,11 +1986,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 39.1,
-      "stock": 21,
+      "stock": 20,
       "ads": 5.153846153846154,
-      "cost_capitalization": 23517.48,
-      "retail_capitalization": 84616.24,
-      "days_left": 4.1
+      "cost_capitalization": 22397.6,
+      "retail_capitalization": 80586.89,
+      "days_left": 3.9
     },
     {
       "sku": 4823918365,
@@ -2122,9 +2122,9 @@
     }
   ],
   "summary": {
-    "stock": 347,
-    "cost_capitalization": 229540.1,
-    "retail_capitalization": 1135997.33,
+    "stock": 346,
+    "cost_capitalization": 228420.22,
+    "retail_capitalization": 1131967.99,
     "fx_rub_per_byn": 27.788584
   },
   "raw_rows": 155
