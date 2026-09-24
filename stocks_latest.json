@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T13:35:53.567023+00:00",
+  "generated_at": "2026-09-24T13:47:32.636112+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -7,7 +7,7 @@
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 13,
+      "stock": 12,
       "ads": 2.823529411764706,
       "warehouses": [
         {
@@ -22,14 +22,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 13,
+          "stock": 12,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 85,
-      "supply_qty": 72,
-      "days_left": 4.6,
+      "supply_qty": 73,
+      "days_left": 4.2,
       "confidence": "high"
     },
     {
@@ -2050,11 +2050,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 14.03,
-      "stock": 13,
+      "stock": 12,
       "ads": 6.470588235294118,
-      "cost_capitalization": 5501.86,
-      "retail_capitalization": 37931.42,
-      "days_left": 2.0
+      "cost_capitalization": 5078.64,
+      "retail_capitalization": 35013.62,
+      "days_left": 1.9
     },
     {
       "sku": 5745079896,
@@ -2122,9 +2122,9 @@
     }
   ],
   "summary": {
-    "stock": 348,
-    "cost_capitalization": 229963.32,
-    "retail_capitalization": 1138915.13,
+    "stock": 347,
+    "cost_capitalization": 229540.1,
+    "retail_capitalization": 1135997.33,
     "fx_rub_per_byn": 27.788584
   },
   "raw_rows": 155
