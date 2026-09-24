@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:54:43.991039+00:00",
+  "generated_at": "2026-09-24T09:35:20.848695+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -476,11 +476,6 @@
           "grade": "DEFICIT"
         },
         {
-          "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        },
-        {
           "name": "НИЖНИЙ_НОВГОРОД_2_РФЦ",
           "stock": 0,
           "grade": "DEFICIT"
@@ -562,6 +557,11 @@
       "warehouses": [
         {
           "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
+          "stock": 0,
+          "grade": "COLLECTING_DATA"
+        },
+        {
+          "name": "ПВЗ_1040708",
           "stock": 0,
           "grade": "COLLECTING_DATA"
         }
@@ -1789,11 +1789,6 @@
           "name": "СПБ_БУГРЫ_РФЦ",
           "stock": 8,
           "grade": "DEFICIT"
-        },
-        {
-          "name": "СПБ_КОЛПИНО_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
@@ -2064,5 +2059,5 @@
     "retail_capitalization": 1138081.48,
     "fx_rub_per_byn": 27.788584
   },
-  "raw_rows": 147
+  "raw_rows": 146
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:54:45.032434+00:00",
+  "generated_at": "2026-09-24T09:35:21.775239+00:00",
   "as_of": "2026-09-23",
   "expected_as_of": "2026-09-23",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -8,7 +8,8 @@
     "tax": "6% УСН РБ × цена продажи после скидок Ozon",
     "cogs": "(себестоимость BYN + 1.20 BYN ФФ) × официальный курс НБ РБ на дату продажи × выкупленные штуки",
     "net": "выплата Ozon − налог − себестоимость",
-    "margin": "чистая прибыль ÷ продажи по цене продавца"
+    "margin": "чистая прибыль ÷ продажи по цене продавца",
+    "spp": "СПП на Ozon = (цена продавца − цена после скидки Ozon) ÷ цена продавца"
   },
   "quality": {
     "status": "verified",
@@ -56034,6 +56035,7 @@
       "cogs": 25659.7,
       "net": 6717.12,
       "margin_pct": 13.98,
+      "spp_pct": 26.08,
       "units": 38,
       "avg_price": 1264.76,
       "fx_rub_per_byn": 27.788584,
@@ -56073,6 +56075,7 @@
           "cogs": 7839.16,
           "net": 1170.55,
           "margin_pct": 8.89,
+          "spp_pct": 30.09,
           "commission": -1646.51,
           "acquiring": 0.0,
           "logistics": -916.29,
@@ -56109,6 +56112,7 @@
           "cogs": 5277.05,
           "net": 1257.33,
           "margin_pct": 13.75,
+          "spp_pct": 23.57,
           "commission": -571.39,
           "acquiring": 21.89,
           "logistics": -861.16,
@@ -56145,6 +56149,7 @@
           "cogs": 3690.32,
           "net": 930.08,
           "margin_pct": 13.53,
+          "spp_pct": 23.35,
           "commission": -859.4,
           "acquiring": 0.0,
           "logistics": -425.38,
@@ -56181,6 +56186,7 @@
           "cogs": 2727.45,
           "net": 316.83,
           "margin_pct": 6.45,
+          "spp_pct": 29.22,
           "commission": -613.64,
           "acquiring": -22.97,
           "logistics": -552.91,
@@ -56220,6 +56226,7 @@
           "cogs": 1692.88,
           "net": 1073.65,
           "margin_pct": 25.35,
+          "spp_pct": 26.77,
           "commission": -529.39,
           "acquiring": 19.85,
           "logistics": -370.2,
@@ -56251,6 +56258,7 @@
           "cogs": 1476.13,
           "net": 983.33,
           "margin_pct": 27.17,
+          "spp_pct": 27.66,
           "commission": -452.38,
           "acquiring": 0.0,
           "logistics": -206.0,
@@ -56287,6 +56295,7 @@
           "cogs": 1652.86,
           "net": 541.11,
           "margin_pct": 15.64,
+          "spp_pct": 22.34,
           "commission": -432.39,
           "acquiring": 12.0,
           "logistics": -354.61,
@@ -56323,6 +56332,7 @@
           "cogs": 1303.84,
           "net": 444.23,
           "margin_pct": 16.76,
+          "spp_pct": 17.76,
           "commission": -331.26,
           "acquiring": 0.0,
           "logistics": -187.96,
@@ -56654,7 +56664,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-09-24T08:54:43.991039+00:00",
+    "generated_at": "2026-09-24T09:35:20.848695+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -57131,11 +57141,6 @@
             "grade": "DEFICIT"
           },
           {
-            "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
-            "stock": 0,
-            "grade": "DEFICIT"
-          },
-          {
             "name": "НИЖНИЙ_НОВГОРОД_2_РФЦ",
             "stock": 0,
             "grade": "DEFICIT"
@@ -57217,6 +57222,11 @@
         "warehouses": [
           {
             "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
+            "stock": 0,
+            "grade": "COLLECTING_DATA"
+          },
+          {
+            "name": "ПВЗ_1040708",
             "stock": 0,
             "grade": "COLLECTING_DATA"
           }
@@ -58444,11 +58454,6 @@
             "name": "СПБ_БУГРЫ_РФЦ",
             "stock": 8,
             "grade": "DEFICIT"
-          },
-          {
-            "name": "СПБ_КОЛПИНО_РФЦ",
-            "stock": 0,
-            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -58719,10 +58724,10 @@
       "retail_capitalization": 1138081.48,
       "fx_rub_per_byn": 27.788584
     },
-    "raw_rows": 147
+    "raw_rows": 146
   },
   "supplies": {
-    "generated_at": "2026-09-24T08:54:44.857235+00:00",
+    "generated_at": "2026-09-24T09:35:21.545250+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
