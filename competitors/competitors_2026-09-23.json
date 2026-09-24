@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T12:28:33.317646+00:00",
+  "generated_at": "2026-09-24T13:10:27.949040+00:00",
   "as_of": "2026-09-23",
   "geo": {
     "city": "Москва",
@@ -11,12 +11,12 @@
   "fx_rub_per_byn": 27.788584,
   "source": {
     "ours": "Ежедневка Ozon: analytics заказы / выкупы по нашим SKU",
-    "theirs": "Кабинет Аналитика → Товары, ввод артикула: заказы за 7 и 28 дней. Δ к вчера = окно сегодня минус окно вчерашнего снимка."
+    "theirs": "Кабинет Аналитика конкурентов → Товары на Ozon (seller.ozon.ru/app/analytics/competitors/ozon-bestsellers). 7 дней = soldCount weekly, 28 дней = soldCount monthly. Δ к вчера = окно сегодня минус окно вчерашнего снимка."
   },
   "quality": {
     "pairs": 13,
-    "cards_ok": 0,
-    "cards_error": 36
+    "cards_ok": 36,
+    "cards_error": 0
   },
   "pairs": [
     {
@@ -41,24 +41,36 @@
       "competitors": [
         {
           "sku": 1525580774,
+          "name": "8in1 Excel Multi Vitamin Puppy Кормовая добавка для щенков 100таб",
+          "orders_7d": 30,
+          "orders_28d": 116,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 3119526172,
+          "name": "Кормовая добавка для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+          "orders_7d": 85,
+          "orders_28d": 379,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 2027958915,
+          "name": "8in1 Excel Мультивитамины для щенков 100 таб.",
+          "orders_7d": null,
+          "orders_28d": 1,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -84,24 +96,36 @@
       "competitors": [
         {
           "sku": 3089483395,
+          "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+          "orders_7d": 62,
+          "orders_28d": 359,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 2124804003,
+          "name": "8in1 Excel Deter Coprophagia Кормовая добавка для лечения копрофагии 100таб",
+          "orders_7d": 54,
+          "orders_28d": 175,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 617901284,
+          "name": "8in1 Добавка к корму Excel Deter для отучения собак от поедания фекалий, 100 таблеток",
+          "orders_7d": 8,
+          "orders_28d": 16,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -127,17 +151,25 @@
       "competitors": [
         {
           "sku": 3119519685,
+          "name": "Витамины для взрослых собак всех пород 8in1 Excel Multi Vit Adult 70 шт",
+          "orders_7d": 80,
+          "orders_28d": 365,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1525580812,
+          "name": "8in1 Excel Multi Vitamin Adult Кормовая добавка для взрослых собак 70таб",
+          "orders_7d": 17,
+          "orders_28d": 83,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -163,10 +195,14 @@
       "competitors": [
         {
           "sku": 5158537143,
+          "name": "8in1 Excel Глюкозамин 55 таб.",
+          "orders_7d": null,
+          "orders_28d": 2,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -192,38 +228,58 @@
       "competitors": [
         {
           "sku": 3857433577,
+          "name": "Витамины 8in1 Excel Multi Vitamin Senior, для собак, 70 табл/уп 661737/108696",
+          "orders_7d": 37,
+          "orders_28d": 111,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1525577654,
+          "name": "8in1 Excel Multi Vitamin Senior Кормовая добавка для пожилых собак 70таб",
+          "orders_7d": 27,
+          "orders_28d": 59,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 3000465269,
+          "name": "Витамины для пожилых собак 8in1 Excel Multi Vitamin Senior 70 шт",
+          "orders_7d": 51,
+          "orders_28d": 285,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1695314824,
+          "name": "Мультивитамины 8in1 Excel Multi Vitamin Senior для пожилых собак, 70 таблеток",
+          "orders_7d": 1,
+          "orders_28d": 3,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 2937173721,
+          "name": "Витамины для пожилых собак 8in1 Excel Multi Vitamine Senior 70 таблеток",
+          "orders_7d": null,
+          "orders_28d": 1,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -249,31 +305,47 @@
       "competitors": [
         {
           "sku": 4129899256,
+          "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+          "orders_7d": 32,
+          "orders_28d": 175,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 3507444925,
+          "name": "Витамины 8in1 Excel Brewer's Yeast, для кошек и собак, 260 табл/уп 661734/108603",
+          "orders_7d": 25,
+          "orders_28d": 94,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1502729451,
+          "name": "8in1 Excel Brewer's Yeast Пивные дрожжи для кошек и собак 260таб",
+          "orders_7d": 67,
+          "orders_28d": 187,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 948145842,
+          "name": "8in1 Пивные дрожжи Excel Brewers Yeast для кошек и собак, 260 таблеток",
+          "orders_7d": 7,
+          "orders_28d": 23,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -299,31 +371,47 @@
       "competitors": [
         {
           "sku": 3089568805,
+          "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+          "orders_7d": 49,
+          "orders_28d": 204,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1525581832,
+          "name": "8in1 Excel Multi Vitamin Small Breed Кормовая добавка для собак малых пород 70таб",
+          "orders_7d": 27,
+          "orders_28d": 110,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 5156931481,
+          "name": "Excel Multi Vitamin Small Breed для собак мелких пород, 70 таблеток Мультивитаминный комплекс для здоровья и энергии",
+          "orders_7d": null,
+          "orders_28d": 2,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1270248752,
+          "name": "Мультивитаминный комплекс 8in1 Excel Multi Vitamin Small Breed для собак мелких пород, 70 таблеток",
+          "orders_7d": 1,
+          "orders_28d": 8,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -349,24 +437,36 @@
       "competitors": [
         {
           "sku": 3859101046,
+          "name": "Кормовая добавка кальций для собак 155 таб",
+          "orders_7d": 54,
+          "orders_28d": 255,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 3386684168,
+          "name": "8in1 Кальциевая добавка Excel Calcium для собак, 155 таблеток",
+          "orders_7d": 3,
+          "orders_28d": 24,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 5156529499,
+          "name": "Excel Calcium для собак 8in1, 155 таблеток, кальциевая добавка для укрепления зубов и костей",
+          "orders_7d": 1,
+          "orders_28d": 1,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -392,24 +492,36 @@
       "competitors": [
         {
           "sku": 3507446040,
+          "name": "Витамины 8in1 Excel Brewer's Yeast, для кошек и собак, 140 табл/уп 661738/109495",
+          "orders_7d": 67,
+          "orders_28d": 191,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 2615806960,
+          "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+          "orders_7d": 134,
+          "orders_28d": 613,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1675762873,
+          "name": "8in1 Пивные дрожжи Excel Brewers Yeast для кошек и собак, 140 таблеток",
+          "orders_7d": 2,
+          "orders_28d": 12,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -435,10 +547,14 @@
       "competitors": [
         {
           "sku": 2615967487,
+          "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+          "orders_7d": 33,
+          "orders_28d": 295,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -455,8 +571,8 @@
         "orders_28d": 0,
         "units_7d": 0,
         "units_28d": 0,
-        "price_byn": 125.0,
-        "price_rub": 3473.57,
+        "price_byn": 150.0,
+        "price_rub": 4168.29,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -464,17 +580,25 @@
       "competitors": [
         {
           "sku": 5238054535,
+          "name": "Горький шоколад 70% какао Спартак, Беларусь",
+          "orders_7d": 31,
+          "orders_28d": 121,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 3870188255,
+          "name": "Шоколад Спартак \"Горький-элитный\"",
+          "orders_7d": 62,
+          "orders_28d": 227,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -500,24 +624,36 @@
       "competitors": [
         {
           "sku": 5238054535,
+          "name": "Горький шоколад 70% какао Спартак, Беларусь",
+          "orders_7d": 31,
+          "orders_28d": 121,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 1976820129,
+          "name": "Шоколад горький 90% натуральный, Беларусь Спартак",
+          "orders_7d": 113,
+          "orders_28d": 803,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 3736586962,
+          "name": "Шоколад горький натуральный 90% какао Спартак",
+          "orders_7d": 143,
+          "orders_28d": 308,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     },
@@ -543,17 +679,25 @@
       "competitors": [
         {
           "sku": 4896215520,
+          "name": "Шоколад горький без сахара 97%, Беларусь, Спартак, 95 г х 2 шт.",
+          "orders_7d": 14,
+          "orders_28d": 35,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         },
         {
           "sku": 5355077283,
+          "name": "Спартак Шоколад горький 97% какао без сахара, 3 шт",
+          "orders_7d": 13,
+          "orders_28d": 38,
+          "source": "analytics_products",
+          "error": null,
           "orders_7d_delta": null,
           "orders_28d_delta": null,
-          "sold_today": null,
-          "error": "no_analytics"
+          "sold_today": null
         }
       ]
     }
