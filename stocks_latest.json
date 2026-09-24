@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:29:30.300350+00:00",
+  "generated_at": "2026-09-24T08:54:43.991039+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -1857,12 +1857,12 @@
       "offer_id": "шоколад 70",
       "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
       "image": "https://ir-20.ozone.ru/s3/multimedia-1-i/15236829234.jpg",
-      "price": 150.0,
+      "price": 125.0,
       "currency": "BYN",
       "stock": 40,
       "ads": 0.0,
       "cost_capitalization": 1333.85,
-      "retail_capitalization": 166731.51,
+      "retail_capitalization": 138942.92,
       "days_left": null
     },
     {
@@ -2061,7 +2061,7 @@
   "summary": {
     "stock": 348,
     "cost_capitalization": 209273.61,
-    "retail_capitalization": 1165870.06,
+    "retail_capitalization": 1138081.48,
     "fx_rub_per_byn": 27.788584
   },
   "raw_rows": 147
