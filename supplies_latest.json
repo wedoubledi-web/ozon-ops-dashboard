@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T09:15:32.929211+00:00",
+  "generated_at": "2026-09-25T12:26:17.825170+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -622,9 +622,9 @@
       "offer_id": "для кошек и собак 140",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
       "brand": "8IN1",
-      "stock": 27,
+      "stock": 28,
       "inbound": 50,
-      "available": 77,
+      "available": 78,
       "order_units_7d": 42,
       "order_units_used": 34,
       "daily_orders": 2.615,
@@ -726,8 +726,8 @@
       "horizon_days": 15,
       "target_stock": 40,
       "ship_qty": 0,
-      "days_on_hand": 10.3,
-      "days_with_inbound": 29.4,
+      "days_on_hand": 10.7,
+      "days_with_inbound": 29.8,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -806,9 +806,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 12,
+          "stock": 13,
           "ads": 6.5,
-          "days_left": 1.8,
+          "days_left": 2.0,
           "target_stock": 98,
           "ship_qty": 0
         },
@@ -2794,9 +2794,9 @@
       "offer_id": "шоколад 70",
       "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
       "brand": "Спартак",
-      "stock": 50,
+      "stock": 60,
       "inbound": 0,
-      "available": 50,
+      "available": 60,
       "order_units_7d": 0,
       "order_units_used": 0,
       "daily_orders": 0.0,
@@ -2918,7 +2918,7 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 10,
+          "stock": 20,
           "ads": 0.0,
           "days_left": null,
           "target_stock": 0,
@@ -2938,7 +2938,7 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 2,
       "skus": 1,
-      "stock": 191
+      "stock": 202
     },
     {
       "cluster": "Казань",
