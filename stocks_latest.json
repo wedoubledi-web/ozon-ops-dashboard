@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T14:15:45.426263+00:00",
+  "generated_at": "2026-09-26T17:41:19.772834+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -213,6 +213,31 @@
       "confidence": "high"
     },
     {
+      "sku": 4658698444,
+      "offer_id": "кальций",
+      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+      "cluster": "Москва, МО и Дальние регионы",
+      "stock": 21,
+      "ads": 1.4375,
+      "warehouses": [
+        {
+          "name": "НОГИНСК_РФЦ",
+          "stock": 4,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "ДОМОДЕДОВО_РФЦ",
+          "stock": 17,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 43,
+      "supply_qty": 22,
+      "days_left": 14.6,
+      "confidence": "high"
+    },
+    {
       "sku": 5516579647,
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -245,31 +270,6 @@
       "target_stock": 44,
       "supply_qty": 22,
       "days_left": 14.9,
-      "confidence": "high"
-    },
-    {
-      "sku": 4658698444,
-      "offer_id": "кальций",
-      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
-      "cluster": "Москва, МО и Дальние регионы",
-      "stock": 22,
-      "ads": 1.4375,
-      "warehouses": [
-        {
-          "name": "НОГИНСК_РФЦ",
-          "stock": 4,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 18,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 43,
-      "supply_qty": 21,
-      "days_left": 15.3,
       "confidence": "high"
     },
     {
@@ -468,36 +468,6 @@
       "confidence": "medium"
     },
     {
-      "sku": 4658698444,
-      "offer_id": "кальций",
-      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
-      "cluster": "Санкт-Петербург и СЗО",
-      "stock": 16,
-      "ads": 0.9375,
-      "warehouses": [
-        {
-          "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "СПБ_БУГРЫ_РФЦ",
-          "stock": 16,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "СПБ_КОЛПИНО_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 28,
-      "supply_qty": 12,
-      "days_left": 17.1,
-      "confidence": "high"
-    },
-    {
       "sku": 5516579647,
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -586,6 +556,36 @@
       "supply_qty": 11,
       "days_left": 0.0,
       "confidence": "medium"
+    },
+    {
+      "sku": 4658698444,
+      "offer_id": "кальций",
+      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+      "cluster": "Санкт-Петербург и СЗО",
+      "stock": 17,
+      "ads": 0.9375,
+      "warehouses": [
+        {
+          "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "СПБ_БУГРЫ_РФЦ",
+          "stock": 16,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "СПБ_КОЛПИНО_РФЦ",
+          "stock": 1,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 28,
+      "supply_qty": 11,
+      "days_left": 18.1,
+      "confidence": "high"
     },
     {
       "sku": 4658698444,
