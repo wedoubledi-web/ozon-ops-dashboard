@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T23:45:57.445039+00:00",
+  "generated_at": "2026-09-26T08:58:18.746703+00:00",
   "as_of": "2026-09-25",
   "geo": {
     "city": "Москва",
@@ -35,7 +35,7 @@
         "price_byn": 100.0,
         "price_rub": 972.19,
         "price_source": "ozon_bestsellers",
-        "stock": 36,
+        "stock": 46,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -129,7 +129,7 @@
         "price_byn": 105.0,
         "price_rub": 816.23,
         "price_source": "ozon_bestsellers",
-        "stock": 16,
+        "stock": 21,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -228,7 +228,7 @@
         "price_byn": 140.0,
         "price_rub": 1422.76,
         "price_source": "ozon_bestsellers",
-        "stock": 47,
+        "stock": 54,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -302,7 +302,7 @@
         "price_byn": 145.0,
         "price_rub": 1341.01,
         "price_source": "ozon_bestsellers",
-        "stock": 26,
+        "stock": 33,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -345,7 +345,7 @@
         "price_byn": 130.0,
         "price_rub": 1316.48,
         "price_source": "ozon_bestsellers",
-        "stock": 57,
+        "stock": 64,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -489,7 +489,7 @@
         "price_byn": 100.0,
         "price_rub": 918.81,
         "price_source": "ozon_bestsellers",
-        "stock": 21,
+        "stock": 28,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -613,7 +613,7 @@
         "price_byn": 90.0,
         "price_rub": 948.44,
         "price_source": "ozon_bestsellers",
-        "stock": 36,
+        "stock": 45,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -732,7 +732,7 @@
         "price_byn": 105.0,
         "price_rub": 737.29,
         "price_source": "ozon_bestsellers",
-        "stock": 42,
+        "stock": 49,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -831,7 +831,7 @@
         "price_byn": 105.0,
         "price_rub": 704.65,
         "price_source": "ozon_bestsellers",
-        "stock": 27,
+        "stock": 35,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -930,7 +930,7 @@
         "price_byn": 100.0,
         "price_rub": 845.29,
         "price_source": "ozon_bestsellers",
-        "stock": 23,
+        "stock": 27,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -979,7 +979,7 @@
         "price_byn": 125.0,
         "price_rub": null,
         "price_source": null,
-        "stock": 60,
+        "stock": 72,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1051,7 +1051,7 @@
         "price_byn": 125.0,
         "price_rub": 794.21,
         "price_source": "ozon_bestsellers",
-        "stock": 86,
+        "stock": 99,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1150,7 +1150,7 @@
         "price_byn": 130.0,
         "price_rub": null,
         "price_source": null,
-        "stock": 59,
+        "stock": 70,
         "delivery": "",
         "delivery_days": null,
         "card": {}
