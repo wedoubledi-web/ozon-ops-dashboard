@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T08:58:08.325945+00:00",
+  "generated_at": "2026-09-26T11:58:18.149577+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -7,7 +7,7 @@
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 5,
+      "stock": 4,
       "ads": 3.0,
       "warehouses": [
         {
@@ -22,14 +22,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 5,
+          "stock": 4,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 90,
-      "supply_qty": 85,
-      "days_left": 1.7,
+      "supply_qty": 86,
+      "days_left": 1.3,
       "confidence": "high"
     },
     {
@@ -217,7 +217,7 @@
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 23,
+      "stock": 22,
       "ads": 1.4761904761904763,
       "warehouses": [
         {
@@ -237,14 +237,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 22,
+          "stock": 21,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 44,
-      "supply_qty": 21,
-      "days_left": 15.6,
+      "supply_qty": 22,
+      "days_left": 14.9,
       "confidence": "high"
     },
     {
@@ -691,26 +691,6 @@
       "supply_qty": 8,
       "days_left": 14.9,
       "confidence": "high"
-    },
-    {
-      "sku": 3726902147,
-      "offer_id": "глюкозамин 55 шт",
-      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "cluster": "Дальний Восток",
-      "stock": 0,
-      "ads": 0.23076923076923078,
-      "warehouses": [
-        {
-          "name": "ХАБАРОВСК_2_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 7,
-      "supply_qty": 7,
-      "days_left": 0.0,
-      "confidence": "medium"
     },
     {
       "sku": 4823627697,
@@ -1553,6 +1533,36 @@
       "confidence": "medium"
     },
     {
+      "sku": 3726858649,
+      "offer_id": "бреверсы для крупных",
+      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+      "cluster": "Москва, МО и Дальние регионы",
+      "stock": 11,
+      "ads": 0.4,
+      "warehouses": [
+        {
+          "name": "ПУШКИНО_2_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "СОФЬИНО_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "ДОМОДЕДОВО_РФЦ",
+          "stock": 11,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 12,
+      "supply_qty": 1,
+      "days_left": 27.5,
+      "confidence": "medium"
+    },
+    {
       "sku": 3726892929,
       "offer_id": "для взрослых собак1",
       "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
@@ -1736,11 +1746,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 45,
+      "stock": 44,
       "ads": 4.333333333333333,
-      "cost_capitalization": 33345.42,
-      "retail_capitalization": 112992.77,
-      "days_left": 10.4
+      "cost_capitalization": 32604.41,
+      "retail_capitalization": 110481.82,
+      "days_left": 10.2
     },
     {
       "sku": 4823627697,
@@ -1800,11 +1810,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 23.1,
-      "stock": 27,
+      "stock": 26,
       "ads": 1.2,
-      "cost_capitalization": 18304.83,
-      "retail_capitalization": 75328.52,
-      "days_left": 22.5
+      "cost_capitalization": 17626.87,
+      "retail_capitalization": 72538.57,
+      "days_left": 21.7
     },
     {
       "sku": 5472775507,
@@ -1816,11 +1826,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 14.03,
-      "stock": 21,
+      "stock": 20,
       "ads": 6.352941176470588,
-      "cost_capitalization": 8923.08,
-      "retail_capitalization": 61518.29,
-      "days_left": 3.3
+      "cost_capitalization": 8498.17,
+      "retail_capitalization": 58588.85,
+      "days_left": 3.1
     },
     {
       "sku": 5745079896,
@@ -1888,10 +1898,10 @@
     }
   ],
   "summary": {
-    "stock": 645,
-    "cost_capitalization": 422722.15,
-    "retail_capitalization": 2135842.42,
+    "stock": 642,
+    "cost_capitalization": 420878.27,
+    "retail_capitalization": 2127612.09,
     "fx_rub_per_byn": 27.89945
   },
-  "raw_rows": 154
+  "raw_rows": 153
 }
