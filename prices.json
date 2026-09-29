@@ -1,0 +1,752 @@
+{
+  "generated_at": "2026-09-29T14:38:47.710478+00:00",
+  "hour": "2026-09-29T17",
+  "source": "Кабинет Аналитика конкурентов → Товары на Ozon, окно 7 дней",
+  "url": "https://wedoubledi-web.github.io/ozon-ops-dashboard/prices.html",
+  "quality": {
+    "pairs": 13,
+    "with_price": 47,
+    "they_cheaper": 11,
+    "they_dearer": 22,
+    "no_price": 3
+  },
+  "pairs": [
+    {
+      "label": "щенки",
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "brand": "8IN1",
+      "our_price": 1050.02,
+      "market_min": 969.4,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 1525580774,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Multi Vitamin Puppy Кормовая добавка для щенков 100таб",
+          "price": 969.4,
+          "delta": -80.62,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 5516649179,
+          "seller": "МЫ",
+          "name": "для щенков 8в1",
+          "price": 1050.02,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3119526172,
+          "seller": "БелТовар",
+          "name": "Кормовая добавка для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+          "price": 1115.53,
+          "delta": 65.51,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 2027958915,
+          "seller": "PRO-KORM",
+          "name": "8in1 Excel Мультивитамины для щенков 100 таб.",
+          "price": 1237.14,
+          "delta": 187.12,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "фекалии 100",
+      "sku": 5472775507,
+      "offer_id": "для собак фекалии",
+      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+      "brand": "8IN1",
+      "our_price": 754.76,
+      "market_min": 754.76,
+      "rows": [
+        {
+          "who": "МЫ",
+          "sku": 5472775507,
+          "seller": "МЫ",
+          "name": "для собак фекалии",
+          "price": 754.76,
+          "delta": 0,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 2124804003,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Deter Coprophagia Кормовая добавка для лечения копрофагии 100таб",
+          "price": 764.99,
+          "delta": 10.23,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3089483395,
+          "seller": "БелТовар",
+          "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+          "price": 839.81,
+          "delta": 85.05,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 617901284,
+          "seller": "Zoo Gavrik",
+          "name": "8in1 Добавка к корму Excel Deter для отучения собак от поедания фекалий, 100 таблеток",
+          "price": 1011.43,
+          "delta": 256.67,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "взрослые",
+      "sku": 3726892929,
+      "offer_id": "для взрослых собак1",
+      "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+      "brand": "8IN1",
+      "our_price": 1283.44,
+      "market_min": 1108.35,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 1525580812,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Multi Vitamin Adult Кормовая добавка для взрослых собак 70таб",
+          "price": 1108.35,
+          "delta": -175.09,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 3726892929,
+          "seller": "МЫ",
+          "name": "для взрослых собак1",
+          "price": 1283.44,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3119519685,
+          "seller": "БелТовар",
+          "name": "Витамины для взрослых собак всех пород 8in1 Excel Multi Vit Adult 70 шт",
+          "price": 1288.35,
+          "delta": 4.91,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "Glucosamine 55",
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "brand": "8IN1",
+      "our_price": 1528.58,
+      "market_min": 1498.42,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 3522754754,
+          "seller": "Гарфилд",
+          "name": "Витамины 8in1 Excel Glucosamine+MSM, для собак, 55 табл/уп 661751/124290",
+          "price": 1498.42,
+          "delta": -30.16,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 3726902147,
+          "seller": "МЫ",
+          "name": "глюкозамин 55 шт",
+          "price": 1528.58,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1525577804,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Glucosamine Кормовая добавка для собак глюкозамин 55таб",
+          "price": 1533.69,
+          "delta": 5.11,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 5158537143,
+          "seller": "ЛучшийДруг№1",
+          "name": "8in1 Excel Глюкозамин 55 таб.",
+          "price": 3126.89,
+          "delta": 1598.31,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "пожилые",
+      "sku": 3726888167,
+      "offer_id": "для пожилых собак1",
+      "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
+      "brand": "8IN1",
+      "our_price": 1273.05,
+      "market_min": 993.47,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 3857433577,
+          "seller": "Гарфилд",
+          "name": "Витамины 8in1 Excel Multi Vitamin Senior, для собак, 70 табл/уп 661737/108696",
+          "price": 993.47,
+          "delta": -279.58,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1525577654,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Multi Vitamin Senior Кормовая добавка для пожилых собак 70таб",
+          "price": 1095.44,
+          "delta": -177.61,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 3726888167,
+          "seller": "МЫ",
+          "name": "для пожилых собак1",
+          "price": 1273.05,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3000465269,
+          "seller": "БелТовар",
+          "name": "Витамины для пожилых собак 8in1 Excel Multi Vitamin Senior 70 шт",
+          "price": 1275.18,
+          "delta": 2.13,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1695314824,
+          "seller": "Zoo Gavrik",
+          "name": "Мультивитамины 8in1 Excel Multi Vitamin Senior для пожилых собак, 70 таблеток",
+          "price": 1658.1,
+          "delta": 385.05,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 2937173721,
+          "seller": "PRO-KORM",
+          "name": "Витамины для пожилых собак 8in1 Excel Multi Vitamine Senior 70 таблеток",
+          "price": 1848.57,
+          "delta": 575.52,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "Brewer's 260",
+      "sku": 4823918365,
+      "offer_id": "для кошек и собак 260 1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+      "brand": "8IN1",
+      "our_price": 1211.7,
+      "market_min": 931.13,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 3507444925,
+          "seller": "Гарфилд",
+          "name": "Витамины 8in1 Excel Brewer's Yeast, для кошек и собак, 260 табл/уп 661734/108603",
+          "price": 931.13,
+          "delta": -280.57,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1502729451,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Brewer's Yeast Пивные дрожжи для кошек и собак 260таб",
+          "price": 965.58,
+          "delta": -246.12,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 4129899256,
+          "seller": "БелТовар",
+          "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+          "price": 1114.7,
+          "delta": -97.0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 4823918365,
+          "seller": "МЫ",
+          "name": "для кошек и собак 260 1",
+          "price": 1211.7,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 948145842,
+          "seller": "Zoo Gavrik",
+          "name": "8in1 Пивные дрожжи Excel Brewers Yeast для кошек и собак, 260 таблеток",
+          "price": 1219.31,
+          "delta": 7.61,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "Small Breed",
+      "sku": 5516579647,
+      "offer_id": "для мелких 8в1",
+      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+      "brand": "8IN1",
+      "our_price": 1308.23,
+      "market_min": 1109.44,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 1525581832,
+          "seller": "L-ZOO",
+          "name": "8in1 Excel Multi Vitamin Small Breed Кормовая добавка для собак малых пород 70таб",
+          "price": 1109.44,
+          "delta": -198.79,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3089568805,
+          "seller": "БелТовар",
+          "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+          "price": 1148.38,
+          "delta": -159.85,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 5516579647,
+          "seller": "МЫ",
+          "name": "для мелких 8в1",
+          "price": 1308.23,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1270248752,
+          "seller": "ZOO Crazy Cat",
+          "name": "Мультивитаминный комплекс 8in1 Excel Multi Vitamin Small Breed для собак мелких пород, 70 таблеток",
+          "price": 1539.05,
+          "delta": 230.82,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 5156931481,
+          "seller": "ЛучшийДруг№1",
+          "name": "Excel Multi Vitamin Small Breed для собак мелких пород, 70 таблеток Мультивитаминный комплекс для здоровья и энергии",
+          "price": 1574.475,
+          "delta": 266.24,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "calcium 155",
+      "sku": 4658698444,
+      "offer_id": "кальций",
+      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+      "brand": "8IN1",
+      "our_price": 776.59,
+      "market_min": 776.59,
+      "rows": [
+        {
+          "who": "МЫ",
+          "sku": 4658698444,
+          "seller": "МЫ",
+          "name": "кальций",
+          "price": 776.59,
+          "delta": 0,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3859101046,
+          "seller": "БелТовар",
+          "name": "Кормовая добавка кальций для собак 155 таб",
+          "price": 934.46,
+          "delta": 157.87,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3386684168,
+          "seller": "Zoo Gavrik",
+          "name": "8in1 Кальциевая добавка Excel Calcium для собак, 155 таблеток",
+          "price": 1072.88,
+          "delta": 296.29,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 5156529499,
+          "seller": "ЛучшийДруг№1",
+          "name": "Excel Calcium для собак 8in1, 155 таблеток, кальциевая добавка для укрепления зубов и костей",
+          "price": 1506.16,
+          "delta": 729.57,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "Brewer's 140",
+      "sku": 4823627697,
+      "offer_id": "для кошек и собак 140",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+      "brand": "8IN1",
+      "our_price": 666.25,
+      "market_min": 666.25,
+      "rows": [
+        {
+          "who": "МЫ",
+          "sku": 4823627697,
+          "seller": "МЫ",
+          "name": "для кошек и собак 140",
+          "price": 666.25,
+          "delta": 0,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 3507446040,
+          "seller": "Гарфилд",
+          "name": "Витамины 8in1 Excel Brewer's Yeast, для кошек и собак, 140 табл/уп 661738/109495",
+          "price": 675.85,
+          "delta": 9.6,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 2615806960,
+          "seller": "БелТовар",
+          "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+          "price": 825.88,
+          "delta": 159.63,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1675762873,
+          "seller": "Zoo Gavrik",
+          "name": "8in1 Пивные дрожжи Excel Brewers Yeast для кошек и собак, 140 таблеток",
+          "price": 866.73,
+          "delta": 200.48,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "large breed 80",
+      "sku": 3726858649,
+      "offer_id": "бреверсы для крупных",
+      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+      "brand": "8IN1",
+      "our_price": 1083.71,
+      "market_min": 1083.71,
+      "rows": [
+        {
+          "who": "МЫ",
+          "sku": 3726858649,
+          "seller": "МЫ",
+          "name": "бреверсы для крупных",
+          "price": 1083.71,
+          "delta": 0,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 2615967487,
+          "seller": "БелТовар",
+          "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+          "price": 1192.14,
+          "delta": 108.43,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "шоколад 70% набор",
+      "sku": 5803370792,
+      "offer_id": "шоколад 70",
+      "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+      "brand": "Спартак",
+      "our_price": null,
+      "market_min": 569.49,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 3870188255,
+          "seller": "Бусел",
+          "name": "Шоколад Спартак \"Горький-элитный\"",
+          "price": 569.49,
+          "delta": null,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 5803370792,
+          "seller": "МЫ",
+          "name": "шоколад 70",
+          "price": null,
+          "delta": null,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "шоколад 90%",
+      "sku": 4451480169,
+      "offer_id": "шокол",
+      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+      "brand": "Спартак",
+      "our_price": 858.72,
+      "market_min": 753.07,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 3736586962,
+          "seller": "Бусел",
+          "name": "Шоколад горький натуральный 90% какао Спартак",
+          "price": 753.07,
+          "delta": -105.65,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 4451480169,
+          "seller": "МЫ",
+          "name": "шокол",
+          "price": 858.72,
+          "delta": 0,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 1976820129,
+          "seller": "БелТовар",
+          "name": "Шоколад горький 90% натуральный, Беларусь Спартак",
+          "price": 943.8,
+          "delta": 85.08,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    },
+    {
+      "label": "шоколад 97% набор",
+      "sku": 5803075530,
+      "offer_id": "шоколад элит 4 шт",
+      "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+      "brand": "Спартак",
+      "our_price": null,
+      "market_min": 528.1,
+      "rows": [
+        {
+          "who": "ОНИ",
+          "sku": 4896215520,
+          "seller": "АРФЛИН",
+          "name": "Шоколад горький без сахара 97%, Беларусь, Спартак, 95 г х 2 шт.",
+          "price": 528.1,
+          "delta": null,
+          "prev": null,
+          "cheapest": true,
+          "changed": null
+        },
+        {
+          "who": "ОНИ",
+          "sku": 5355077283,
+          "seller": "Белорусские продукты",
+          "name": "Спартак Шоколад горький 97% какао без сахара, 3 шт",
+          "price": 715.03,
+          "delta": null,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        },
+        {
+          "who": "МЫ",
+          "sku": 5803075530,
+          "seller": "МЫ",
+          "name": "шоколад элит 4 шт",
+          "price": null,
+          "delta": null,
+          "prev": null,
+          "cheapest": false,
+          "changed": null
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "hour": "2026-09-29T17",
+      "ts": "2026-09-29T17:38:47.710478+03:00",
+      "prices": {
+        "5516649179": 1050.02,
+        "1525580774": 969.4,
+        "3119526172": 1115.53,
+        "2027958915": 1237.14,
+        "5472775507": 754.76,
+        "3089483395": 839.81,
+        "2124804003": 764.99,
+        "617901284": 1011.43,
+        "3726892929": 1283.44,
+        "3119519685": 1288.35,
+        "1525580812": 1108.35,
+        "3726902147": 1528.58,
+        "5158537143": 3126.89,
+        "3522754754": 1498.42,
+        "1525577804": 1533.69,
+        "3726888167": 1273.05,
+        "3857433577": 993.47,
+        "1525577654": 1095.44,
+        "3000465269": 1275.18,
+        "1695314824": 1658.1,
+        "2937173721": 1848.57,
+        "4823918365": 1211.7,
+        "4129899256": 1114.7,
+        "3507444925": 931.13,
+        "1502729451": 965.58,
+        "948145842": 1219.31,
+        "5516579647": 1308.23,
+        "3089568805": 1148.38,
+        "1525581832": 1109.44,
+        "5156931481": 1574.475,
+        "1270248752": 1539.05,
+        "4658698444": 776.59,
+        "3859101046": 934.46,
+        "3386684168": 1072.88,
+        "5156529499": 1506.16,
+        "4823627697": 666.25,
+        "3507446040": 675.85,
+        "2615806960": 825.88,
+        "1675762873": 866.73,
+        "3726858649": 1083.71,
+        "2615967487": 1192.14,
+        "3870188255": 569.49,
+        "4451480169": 858.72,
+        "1976820129": 943.8,
+        "3736586962": 753.07,
+        "4896215520": 528.1,
+        "5355077283": 715.03
+      }
+    }
+  ]
+}
