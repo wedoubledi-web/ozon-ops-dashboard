@@ -1,0 +1,33 @@
+{
+  "window_days": 7,
+  "status": [
+    {"id": "strong", "min": 10, "label": "СИЛЬНЕЕ", "tone": "strong"},
+    {"id": "even", "min": -10, "label": "СОПОСТАВИМО", "tone": "even"},
+    {"id": "mild", "min": -20, "label": "УМЕРЕННАЯ ПРОСАДКА", "tone": "mild"},
+    {"id": "heavy", "min": -35, "label": "СИЛЬНАЯ ПРОСАДКА", "tone": "heavy"},
+    {"id": "critical", "min": null, "label": "КРИТИЧЕСКАЯ ПРОСАДКА", "tone": "critical"}
+  ],
+  "sample_min": {
+    "ctr": 500,
+    "card_cart": 50,
+    "cart_order": 20,
+    "order_purchase": 10
+  },
+  "oos_warn_missing_days": 5,
+  "oos_period_days": 28,
+  "trend": {
+    "even_pp": 0.3
+  },
+  "change_types": [
+    "Главная",
+    "Инфографика",
+    "Цена",
+    "SEO",
+    "Реклама",
+    "Поставка",
+    "Отзывы",
+    "Rich content",
+    "Видео",
+    "Другое"
+  ]
+}
