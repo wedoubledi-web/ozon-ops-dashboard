@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T08:24:30.453462+00:00",
+  "generated_at": "2026-09-30T09:36:07.383567+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1003,9 +1003,9 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "brand": "8IN1",
-      "stock": 38,
+      "stock": 37,
       "inbound": 0,
-      "available": 38,
+      "available": 37,
       "order_units_7d": 37,
       "order_units_used": 28,
       "daily_orders": 2.154,
@@ -1107,8 +1107,8 @@
       "horizon_days": 15,
       "target_stock": 33,
       "ship_qty": 0,
-      "days_on_hand": 17.6,
-      "days_with_inbound": 17.6,
+      "days_on_hand": 17.2,
+      "days_with_inbound": 17.2,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1124,9 +1124,9 @@
         },
         {
           "cluster": "Екатеринбург",
-          "stock": 2,
+          "stock": 1,
           "ads": 3.812,
-          "days_left": 0.5,
+          "days_left": 0.3,
           "target_stock": 58,
           "ship_qty": 0
         },
@@ -1579,9 +1579,9 @@
       "offer_id": "для щенков 8в1",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
       "brand": "8IN1",
-      "stock": 43,
+      "stock": 42,
       "inbound": 55,
-      "available": 98,
+      "available": 97,
       "order_units_7d": 24,
       "order_units_used": 18,
       "daily_orders": 1.385,
@@ -1683,8 +1683,8 @@
       "horizon_days": 15,
       "target_stock": 21,
       "ship_qty": 0,
-      "days_on_hand": 31.0,
-      "days_with_inbound": 70.8,
+      "days_on_hand": 30.3,
+      "days_with_inbound": 70.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1715,9 +1715,9 @@
         },
         {
           "cluster": "Красноярск",
-          "stock": 1,
+          "stock": 0,
           "ads": 3.231,
-          "days_left": 0.3,
+          "days_left": 0.0,
           "target_stock": 49,
           "ship_qty": 0
         },
@@ -1910,14 +1910,6 @@
           "stock": 11,
           "ads": 0.917,
           "days_left": 12.0,
-          "target_stock": 14,
-          "ship_qty": 0
-        },
-        {
-          "cluster": "Невинномысск",
-          "stock": 0,
-          "ads": 0.917,
-          "days_left": 0.0,
           "target_stock": 14,
           "ship_qty": 0
         },
@@ -2804,7 +2796,7 @@
       "cluster": "Екатеринбург",
       "ship_qty": 0,
       "skus": 0,
-      "stock": 101
+      "stock": 100
     },
     {
       "cluster": "Калининград",
@@ -2822,7 +2814,7 @@
       "cluster": "Красноярск",
       "ship_qty": 0,
       "skus": 0,
-      "stock": 2
+      "stock": 1
     },
     {
       "cluster": "Невинномысск",
