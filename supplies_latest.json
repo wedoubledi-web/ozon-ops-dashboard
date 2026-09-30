@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T09:36:07.383567+00:00",
+  "generated_at": "2026-09-30T10:10:24.910614+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1760,9 +1760,9 @@
       "offer_id": "для кошек и собак 260 1",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
       "brand": "8IN1",
-      "stock": 26,
+      "stock": 25,
       "inbound": 20,
-      "available": 46,
+      "available": 45,
       "order_units_7d": 7,
       "order_units_used": 7,
       "daily_orders": 0.5,
@@ -1859,8 +1859,8 @@
       "horizon_days": 15,
       "target_stock": 8,
       "ship_qty": 0,
-      "days_on_hand": 52.0,
-      "days_with_inbound": 92.0,
+      "days_on_hand": 50.0,
+      "days_with_inbound": 90.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1931,9 +1931,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 7,
+          "stock": 6,
           "ads": 0.917,
-          "days_left": 7.6,
+          "days_left": 6.5,
           "target_stock": 14,
           "ship_qty": 0
         }
@@ -2778,7 +2778,7 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 3,
       "skus": 1,
-      "stock": 191
+      "stock": 190
     },
     {
       "cluster": "Воронеж",
