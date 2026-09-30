@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T13:12:24.251091+00:00",
+  "generated_at": "2026-09-30T16:20:20.306161+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -9,8 +9,8 @@
     {
       "order_id": 130635189,
       "order_number": "130117451-1",
-      "state": "IN_TRANSIT",
-      "state_label": "В пути",
+      "state": "ACCEPTANCE_AT_STORAGE_WAREHOUSE",
+      "state_label": "Приёмка на складе Ozon",
       "created_date": "2026-09-24",
       "timeslot_from": "2026-09-28",
       "timeslot_to": "2026-09-28",
@@ -99,7 +99,7 @@
         },
         {
           "supply_id": 2000067896977,
-          "state": "IN_TRANSIT",
+          "state": "ACCEPTANCE_AT_STORAGE_WAREHOUSE",
           "warehouse": "",
           "items": [
             {
@@ -561,7 +561,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 36,
           "eta": "2026-09-28"
         }
@@ -734,7 +734,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 55,
           "eta": "2026-09-28"
         }
@@ -918,7 +918,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 50,
           "eta": "2026-09-28"
         }
@@ -1297,7 +1297,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 100,
           "eta": "2026-09-28"
         }
@@ -1502,7 +1502,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 50,
           "eta": "2026-09-28"
         }
@@ -1691,7 +1691,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 55,
           "eta": "2026-09-28"
         }
@@ -1760,9 +1760,9 @@
       "offer_id": "для кошек и собак 260 1",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
       "brand": "8IN1",
-      "stock": 25,
+      "stock": 24,
       "inbound": 20,
-      "available": 45,
+      "available": 44,
       "order_units_7d": 7,
       "order_units_used": 7,
       "daily_orders": 0.5,
@@ -1859,15 +1859,15 @@
       "horizon_days": 15,
       "target_stock": 8,
       "ship_qty": 0,
-      "days_on_hand": 50.0,
-      "days_with_inbound": 90.0,
+      "days_on_hand": 48.0,
+      "days_with_inbound": 88.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 20,
           "eta": "2026-09-28"
         }
@@ -1883,9 +1883,9 @@
         },
         {
           "cluster": "Екатеринбург",
-          "stock": 7,
+          "stock": 6,
           "ads": 0.917,
-          "days_left": 7.6,
+          "days_left": 6.5,
           "target_stock": 14,
           "ship_qty": 0
         },
@@ -2056,7 +2056,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 30,
           "eta": "2026-09-28"
         }
@@ -2224,7 +2224,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 28,
           "eta": "2026-09-28"
         }
@@ -2424,7 +2424,7 @@
       "inbound_orders": [
         {
           "order_number": "130117451-1",
-          "state": "В пути",
+          "state": "Приёмка на складе Ozon",
           "qty": 24,
           "eta": "2026-09-28"
         }
@@ -2796,7 +2796,7 @@
       "cluster": "Екатеринбург",
       "ship_qty": 0,
       "skus": 0,
-      "stock": 100
+      "stock": 99
     },
     {
       "cluster": "Калининград",
