@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T09:06:29.268350+00:00",
+  "generated_at": "2026-10-01T08:07:29.468781+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1152,10 +1152,26 @@
           "ship_qty": 0
         },
         {
+          "cluster": "Пермь",
+          "stock": 0,
+          "ads": 3.188,
+          "days_left": 0.0,
+          "target_stock": 48,
+          "ship_qty": 0
+        },
+        {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 17,
           "ads": 3.188,
           "days_left": 5.3,
+          "target_stock": 48,
+          "ship_qty": 0
+        },
+        {
+          "cluster": "Тюмень",
+          "stock": 0,
+          "ads": 3.188,
+          "days_left": 0.0,
           "target_stock": 48,
           "ship_qty": 0
         },
@@ -2817,6 +2833,12 @@
       "ship_qty": 0,
       "skus": 0,
       "stock": 1
+    },
+    {
+      "cluster": "Пермь",
+      "ship_qty": 0,
+      "skus": 0,
+      "stock": 0
     },
     {
       "cluster": "Ростов",
