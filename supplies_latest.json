@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:13:02.464486+00:00",
+  "generated_at": "2026-10-02T13:22:48.630432+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -320,9 +320,9 @@
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
       "brand": "8IN1",
-      "stock": 73,
+      "stock": 72,
       "inbound": 0,
-      "available": 73,
+      "available": 72,
       "order_units_7d": 48,
       "order_units_used": 48,
       "daily_orders": 3.429,
@@ -419,8 +419,8 @@
       "horizon_days": 15,
       "target_stock": 52,
       "ship_qty": 0,
-      "days_on_hand": 21.3,
-      "days_with_inbound": 21.3,
+      "days_on_hand": 21.0,
+      "days_with_inbound": 21.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -428,9 +428,9 @@
       "clusters": [
         {
           "cluster": "Екатеринбург",
-          "stock": 7,
+          "stock": 6,
           "ads": 3.765,
-          "days_left": 1.9,
+          "days_left": 1.6,
           "target_stock": 57,
           "ship_qty": 0
         },
@@ -853,9 +853,9 @@
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
       "brand": "8IN1",
-      "stock": 78,
+      "stock": 77,
       "inbound": 0,
-      "available": 78,
+      "available": 77,
       "order_units_7d": 27,
       "order_units_used": 19,
       "daily_orders": 1.462,
@@ -957,8 +957,8 @@
       "horizon_days": 15,
       "target_stock": 22,
       "ship_qty": 0,
-      "days_on_hand": 53.4,
-      "days_with_inbound": 53.4,
+      "days_on_hand": 52.7,
+      "days_with_inbound": 52.7,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -998,9 +998,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 42,
+          "stock": 41,
           "ads": 2.045,
-          "days_left": 20.5,
+          "days_left": 20.0,
           "target_stock": 31,
           "ship_qty": 0
         },
@@ -1035,9 +1035,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 180,
+      "stock": 178,
       "inbound": 0,
-      "available": 180,
+      "available": 178,
       "order_units_7d": 46,
       "order_units_used": 37,
       "daily_orders": 2.846,
@@ -1139,8 +1139,8 @@
       "horizon_days": 15,
       "target_stock": 43,
       "ship_qty": 0,
-      "days_on_hand": 63.2,
-      "days_with_inbound": 63.2,
+      "days_on_hand": 62.5,
+      "days_with_inbound": 62.5,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1212,9 +1212,9 @@
         },
         {
           "cluster": "Ростов",
-          "stock": 19,
+          "stock": 17,
           "ads": 8.107,
-          "days_left": 2.3,
+          "days_left": 2.1,
           "target_stock": 122,
           "ship_qty": 0
         },
@@ -1758,9 +1758,9 @@
       "offer_id": "для взрослых собак1",
       "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
       "brand": "8IN1",
-      "stock": 74,
+      "stock": 76,
       "inbound": 0,
-      "available": 74,
+      "available": 76,
       "order_units_7d": 11,
       "order_units_used": 11,
       "daily_orders": 0.786,
@@ -1857,8 +1857,8 @@
       "horizon_days": 15,
       "target_stock": 12,
       "ship_qty": 0,
-      "days_on_hand": 94.1,
-      "days_with_inbound": 94.1,
+      "days_on_hand": 96.7,
+      "days_with_inbound": 96.7,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1898,9 +1898,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 35,
+          "stock": 37,
           "ads": 1.762,
-          "days_left": 19.9,
+          "days_left": 21.0,
           "target_stock": 27,
           "ship_qty": 0
         },
@@ -2393,7 +2393,7 @@
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 4,
       "skus": 2,
-      "stock": 415
+      "stock": 416
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
@@ -2417,7 +2417,7 @@
       "cluster": "Екатеринбург",
       "ship_qty": 2,
       "skus": 1,
-      "stock": 79
+      "stock": 78
     },
     {
       "cluster": "Воронеж",
@@ -2465,7 +2465,7 @@
       "cluster": "Ростов",
       "ship_qty": 0,
       "skus": 0,
-      "stock": 83
+      "stock": 81
     },
     {
       "cluster": "Саратов",
