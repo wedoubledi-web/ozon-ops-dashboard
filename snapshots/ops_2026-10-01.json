@@ -165,7 +165,7 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivering": 1
+        "delivered": 1
       },
       "views": 653,
       "clicks": 38,
@@ -356,8 +356,7 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivered": 1,
-        "delivering": 1
+        "delivered": 2
       }
     },
     {
@@ -469,7 +468,7 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "awaiting_deliver": 1
+        "delivering": 1
       }
     },
     {
