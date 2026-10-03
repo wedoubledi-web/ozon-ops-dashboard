@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T17:51:13.118342+00:00",
+  "generated_at": "2026-10-03T23:29:47.368389+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -12,20 +12,14 @@
       "offer_id": "Меркурий201.7 (2026)",
       "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
       "brand": "Инкотекс",
-      "stock": 1,
+      "stock": 2,
       "inbound": 0,
-      "available": 1,
-      "order_units_7d": 25,
-      "order_units_used": 8,
-      "daily_orders": 0.615,
+      "available": 2,
+      "order_units_7d": 24,
+      "order_units_used": 7,
+      "daily_orders": 0.538,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 1,
-          "cancelled": 0,
-          "net": 1
-        },
         {
           "date": "2026-09-20",
           "orders": 1,
@@ -104,6 +98,12 @@
           "orders": 1,
           "cancelled": 0,
           "net": 1
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": {
@@ -114,25 +114,17 @@
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 10,
-      "ship_qty": 9,
-      "days_on_hand": 1.6,
-      "days_with_inbound": 1.6,
+      "target_stock": 9,
+      "ship_qty": 7,
+      "days_on_hand": 3.7,
+      "days_with_inbound": 3.7,
       "ship_in_days": 0,
-      "ship_by": "2026-10-03",
+      "ship_by": "2026-10-04",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
         {
           "cluster": "Беларусь",
-          "stock": 0,
-          "ads": 1.647,
-          "days_left": 0.0,
-          "target_stock": 25,
-          "ship_qty": 3
-        },
-        {
-          "cluster": "Казань",
           "stock": 1,
           "ads": 1.647,
           "days_left": 0.6,
@@ -154,6 +146,14 @@
           "days_left": 0.0,
           "target_stock": 25,
           "ship_qty": 2
+        },
+        {
+          "cluster": "Казань",
+          "stock": 1,
+          "ads": 1.647,
+          "days_left": 0.6,
+          "target_stock": 25,
+          "ship_qty": 1
         }
       ]
     },
@@ -165,18 +165,11 @@
       "stock": 25,
       "inbound": 0,
       "available": 25,
-      "order_units_7d": 44,
-      "order_units_used": 35,
-      "daily_orders": 2.692,
+      "order_units_7d": 41,
+      "order_units_used": 41,
+      "daily_orders": 2.929,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 9,
-          "cancelled": 0,
-          "net": 9,
-          "spike": true
-        },
         {
           "date": "2026-09-20",
           "orders": 2,
@@ -254,27 +247,37 @@
           "orders": 1,
           "cancelled": 0,
           "net": 1
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 7,
+          "cancelled": 1,
+          "net": 6
         }
       ],
-      "spike": {
-        "date": "2026-09-19",
-        "orders": 9,
-        "net": 9
-      },
+      "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 41,
-      "ship_qty": 16,
-      "days_on_hand": 9.3,
-      "days_with_inbound": 9.3,
-      "ship_in_days": 4,
+      "target_stock": 44,
+      "ship_qty": 19,
+      "days_on_hand": 8.5,
+      "days_with_inbound": 8.5,
+      "ship_in_days": 3,
       "ship_by": "2026-10-07",
       "status": "soon",
       "inbound_orders": [],
       "clusters": [
         {
           "cluster": "Дальний Восток",
+          "stock": 0,
+          "ads": 2.5,
+          "days_left": 0.0,
+          "target_stock": 38,
+          "ship_qty": 5
+        },
+        {
+          "cluster": "Екатеринбург",
           "stock": 0,
           "ads": 2.5,
           "days_left": 0.0,
@@ -288,14 +291,6 @@
           "days_left": 0.0,
           "target_stock": 38,
           "ship_qty": 4
-        },
-        {
-          "cluster": "Екатеринбург",
-          "stock": 0,
-          "ads": 2.5,
-          "days_left": 0.0,
-          "target_stock": 38,
-          "ship_qty": 3
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
@@ -311,7 +306,7 @@
           "ads": 2.5,
           "days_left": 6.4,
           "target_stock": 38,
-          "ship_qty": 2
+          "ship_qty": 3
         }
       ]
     },
@@ -320,20 +315,14 @@
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
       "brand": "8IN1",
-      "stock": 39,
+      "stock": 37,
       "inbound": 0,
-      "available": 39,
-      "order_units_7d": 34,
-      "order_units_used": 34,
-      "daily_orders": 2.429,
+      "available": 37,
+      "order_units_7d": 36,
+      "order_units_used": 36,
+      "daily_orders": 2.571,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 4,
-          "cancelled": 0,
-          "net": 4
-        },
         {
           "date": "2026-09-20",
           "orders": 2,
@@ -411,21 +400,43 @@
           "orders": 6,
           "cancelled": 0,
           "net": 6
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 6,
+          "cancelled": 0,
+          "net": 6
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 37,
-      "ship_qty": 0,
-      "days_on_hand": 16.1,
-      "days_with_inbound": 16.1,
-      "ship_in_days": null,
-      "ship_by": null,
-      "status": "ok",
+      "target_stock": 39,
+      "ship_qty": 2,
+      "days_on_hand": 14.4,
+      "days_with_inbound": 14.4,
+      "ship_in_days": 9,
+      "ship_by": "2026-10-13",
+      "status": "later",
       "inbound_orders": [],
       "clusters": [
+        {
+          "cluster": "Казань",
+          "stock": 0,
+          "ads": 3.667,
+          "days_left": 0.0,
+          "target_stock": 55,
+          "ship_qty": 1
+        },
+        {
+          "cluster": "Красноярск",
+          "stock": 0,
+          "ads": 3.667,
+          "days_left": 0.0,
+          "target_stock": 55,
+          "ship_qty": 1
+        },
         {
           "cluster": "Екатеринбург",
           "stock": 5,
@@ -435,26 +446,10 @@
           "ship_qty": 0
         },
         {
-          "cluster": "Казань",
-          "stock": 0,
-          "ads": 3.667,
-          "days_left": 0.0,
-          "target_stock": 55,
-          "ship_qty": 0
-        },
-        {
-          "cluster": "Красноярск",
-          "stock": 0,
-          "ads": 3.667,
-          "days_left": 0.0,
-          "target_stock": 55,
-          "ship_qty": 0
-        },
-        {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 12,
+          "stock": 11,
           "ads": 3.667,
-          "days_left": 3.3,
+          "days_left": 3.0,
           "target_stock": 55,
           "ship_qty": 0
         },
@@ -468,9 +463,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 15,
+          "stock": 14,
           "ads": 3.667,
-          "days_left": 4.1,
+          "days_left": 3.8,
           "target_stock": 55,
           "ship_qty": 0
         }
@@ -481,20 +476,14 @@
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
       "brand": "8IN1",
-      "stock": 67,
+      "stock": 65,
       "inbound": 0,
-      "available": 67,
-      "order_units_7d": 49,
-      "order_units_used": 49,
-      "daily_orders": 3.5,
+      "available": 65,
+      "order_units_7d": 48,
+      "order_units_used": 48,
+      "daily_orders": 3.429,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 5,
-          "cancelled": 0,
-          "net": 5
-        },
         {
           "date": "2026-09-20",
           "orders": 3,
@@ -572,16 +561,22 @@
           "orders": 8,
           "cancelled": 0,
           "net": 8
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 4,
+          "cancelled": 0,
+          "net": 4
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 53,
+      "target_stock": 52,
       "ship_qty": 0,
-      "days_on_hand": 19.1,
-      "days_with_inbound": 19.1,
+      "days_on_hand": 19.0,
+      "days_with_inbound": 19.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -645,9 +640,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 27,
+          "stock": 25,
           "ads": 3.944,
-          "days_left": 6.8,
+          "days_left": 6.3,
           "target_stock": 60,
           "ship_qty": 0
         }
@@ -661,17 +656,11 @@
       "stock": 73,
       "inbound": 0,
       "available": 73,
-      "order_units_7d": 33,
-      "order_units_used": 25,
-      "daily_orders": 1.923,
+      "order_units_7d": 32,
+      "order_units_used": 24,
+      "daily_orders": 1.846,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 5,
-          "cancelled": 1,
-          "net": 4
-        },
         {
           "date": "2026-09-20",
           "orders": 2,
@@ -750,6 +739,12 @@
           "orders": 7,
           "cancelled": 0,
           "net": 7
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 3,
+          "cancelled": 0,
+          "net": 3
         }
       ],
       "spike": {
@@ -760,10 +755,10 @@
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 29,
+      "target_stock": 28,
       "ship_qty": 0,
-      "days_on_hand": 38.0,
-      "days_with_inbound": 38.0,
+      "days_on_hand": 39.5,
+      "days_with_inbound": 39.5,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -849,12 +844,6 @@
       "window_days": 14,
       "daily_series": [
         {
-          "date": "2026-09-19",
-          "orders": 1,
-          "cancelled": 0,
-          "net": 1
-        },
-        {
           "date": "2026-09-20",
           "orders": 3,
           "cancelled": 0,
@@ -929,6 +918,12 @@
         },
         {
           "date": "2026-10-02",
+          "orders": 1,
+          "cancelled": 0,
+          "net": 1
+        },
+        {
+          "date": "2026-10-03",
           "orders": 1,
           "cancelled": 0,
           "net": 1
@@ -1030,20 +1025,14 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 173,
+      "stock": 172,
       "inbound": 0,
-      "available": 173,
-      "order_units_7d": 51,
-      "order_units_used": 51,
-      "daily_orders": 3.643,
+      "available": 172,
+      "order_units_7d": 49,
+      "order_units_used": 49,
+      "daily_orders": 3.5,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 7,
-          "cancelled": 0,
-          "net": 7
-        },
         {
           "date": "2026-09-20",
           "orders": 9,
@@ -1121,16 +1110,22 @@
           "orders": 8,
           "cancelled": 0,
           "net": 8
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 5,
+          "cancelled": 0,
+          "net": 5
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 55,
+      "target_stock": 53,
       "ship_qty": 0,
-      "days_on_hand": 47.5,
-      "days_with_inbound": 47.5,
+      "days_on_hand": 49.1,
+      "days_with_inbound": 49.1,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1162,9 +1157,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 39,
+          "stock": 38,
           "ads": 7.964,
-          "days_left": 4.9,
+          "days_left": 4.8,
           "target_stock": 120,
           "ship_qty": 0
         },
@@ -1231,12 +1226,6 @@
       "daily_orders": 0.643,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-09-20",
           "orders": 1,
@@ -1311,6 +1300,12 @@
         },
         {
           "date": "2026-10-02",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
+        },
+        {
+          "date": "2026-10-03",
           "orders": 0,
           "cancelled": 0,
           "net": 0
@@ -1403,17 +1398,11 @@
       "stock": 79,
       "inbound": 0,
       "available": 79,
-      "order_units_7d": 17,
-      "order_units_used": 12,
-      "daily_orders": 0.923,
+      "order_units_7d": 19,
+      "order_units_used": 14,
+      "daily_orders": 1.077,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-09-20",
           "orders": 2,
@@ -1492,6 +1481,12 @@
           "orders": 1,
           "cancelled": 0,
           "net": 1
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 2,
+          "cancelled": 0,
+          "net": 2
         }
       ],
       "spike": {
@@ -1502,10 +1497,10 @@
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 14,
+      "target_stock": 17,
       "ship_qty": 0,
-      "days_on_hand": 85.6,
-      "days_with_inbound": 85.6,
+      "days_on_hand": 73.4,
+      "days_with_inbound": 73.4,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1574,21 +1569,14 @@
       "offer_id": "для щенков 8в1",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
       "brand": "8IN1",
-      "stock": 93,
+      "stock": 92,
       "inbound": 0,
-      "available": 93,
-      "order_units_7d": 20,
-      "order_units_used": 14,
-      "daily_orders": 1.077,
+      "available": 92,
+      "order_units_7d": 15,
+      "order_units_used": 15,
+      "daily_orders": 1.071,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 7,
-          "cancelled": 1,
-          "net": 6,
-          "spike": true
-        },
         {
           "date": "2026-09-20",
           "orders": 3,
@@ -1666,20 +1654,22 @@
           "orders": 2,
           "cancelled": 0,
           "net": 2
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 1,
+          "cancelled": 0,
+          "net": 1
         }
       ],
-      "spike": {
-        "date": "2026-09-19",
-        "orders": 7,
-        "net": 6
-      },
+      "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 17,
       "ship_qty": 0,
-      "days_on_hand": 86.4,
-      "days_with_inbound": 86.4,
+      "days_on_hand": 85.9,
+      "days_with_inbound": 85.9,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1687,9 +1677,9 @@
       "clusters": [
         {
           "cluster": "Екатеринбург",
-          "stock": 9,
+          "stock": 8,
           "ads": 2.885,
-          "days_left": 3.1,
+          "days_left": 2.8,
           "target_stock": 44,
           "ship_qty": 0
         },
@@ -1756,12 +1746,6 @@
       "daily_orders": 0.786,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-09-20",
           "orders": 1,
@@ -1839,6 +1823,12 @@
           "orders": 1,
           "cancelled": 0,
           "net": 1
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": null,
@@ -1936,17 +1926,11 @@
       "stock": 48,
       "inbound": 0,
       "available": 48,
-      "order_units_7d": 5,
-      "order_units_used": 5,
-      "daily_orders": 0.357,
+      "order_units_7d": 7,
+      "order_units_used": 7,
+      "daily_orders": 0.5,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-09-20",
           "orders": 0,
@@ -2022,18 +2006,24 @@
         {
           "date": "2026-10-02",
           "orders": 0,
-          "cancelled": 0,
+          "cancelled": 1,
           "net": 0
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 2,
+          "cancelled": 0,
+          "net": 2
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 6,
+      "target_stock": 8,
       "ship_qty": 0,
-      "days_on_hand": 134.5,
-      "days_with_inbound": 134.5,
+      "days_on_hand": 96.0,
+      "days_with_inbound": 96.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -2097,17 +2087,11 @@
       "stock": 67,
       "inbound": 0,
       "available": 67,
-      "order_units_7d": 2,
-      "order_units_used": 2,
-      "daily_orders": 0.0,
+      "order_units_7d": 3,
+      "order_units_used": 3,
+      "daily_orders": 0.214,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-09-20",
           "orders": 0,
@@ -2185,16 +2169,22 @@
           "orders": 2,
           "cancelled": 0,
           "net": 2
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 1,
+          "cancelled": 0,
+          "net": 1
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 0,
+      "target_stock": 4,
       "ship_qty": 0,
-      "days_on_hand": null,
-      "days_with_inbound": null,
+      "days_on_hand": 313.1,
+      "days_with_inbound": 313.1,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -2239,12 +2229,6 @@
       "daily_orders": 0.0,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-09-19",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-09-20",
           "orders": 0,
@@ -2322,6 +2306,12 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-03",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": null,
@@ -2368,38 +2358,44 @@
     {
       "cluster": "Казань",
       "ship_qty": 6,
-      "skus": 2,
-      "stock": 52
+      "skus": 3,
+      "stock": 51
+    },
+    {
+      "cluster": "Дальний Восток",
+      "ship_qty": 5,
+      "skus": 1,
+      "stock": 1
     },
     {
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 5,
       "skus": 2,
-      "stock": 397
+      "stock": 396
     },
     {
-      "cluster": "Дальний Восток",
+      "cluster": "Санкт-Петербург и СЗО",
+      "ship_qty": 5,
+      "skus": 2,
+      "stock": 324
+    },
+    {
+      "cluster": "Екатеринбург",
       "ship_qty": 4,
+      "skus": 1,
+      "stock": 72
+    },
+    {
+      "cluster": "Беларусь",
+      "ship_qty": 2,
       "skus": 1,
       "stock": 1
     },
     {
-      "cluster": "Санкт-Петербург и СЗО",
-      "ship_qty": 4,
-      "skus": 2,
-      "stock": 327
-    },
-    {
-      "cluster": "Беларусь",
-      "ship_qty": 3,
+      "cluster": "Красноярск",
+      "ship_qty": 1,
       "skus": 1,
-      "stock": 0
-    },
-    {
-      "cluster": "Екатеринбург",
-      "ship_qty": 3,
-      "skus": 1,
-      "stock": 73
+      "stock": 2
     },
     {
       "cluster": "Воронеж",
@@ -2418,12 +2414,6 @@
       "ship_qty": 0,
       "skus": 0,
       "stock": 0
-    },
-    {
-      "cluster": "Красноярск",
-      "ship_qty": 0,
-      "skus": 0,
-      "stock": 2
     },
     {
       "cluster": "Невинномысск",
@@ -2472,10 +2462,10 @@
     "inbound_orders": 0,
     "inbound_qty": 0,
     "ship_now_skus": 1,
-    "ship_now_qty": 9,
+    "ship_now_qty": 7,
     "ship_soon_skus": 1,
-    "ship_total_qty": 25,
-    "cluster_count": 6,
+    "ship_total_qty": 28,
+    "cluster_count": 7,
     "critical_skus": 1,
     "under_cover_skus": 2
   }
