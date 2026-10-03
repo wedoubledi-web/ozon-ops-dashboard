@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T09:34:46.269678+00:00",
+  "generated_at": "2026-10-03T12:08:56.660405+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -87,7 +87,7 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 11,
+      "stock": 10,
       "ads": 0.8888888888888888,
       "warehouses": [
         {
@@ -97,14 +97,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 10,
+          "stock": 9,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 27,
-      "supply_qty": 16,
-      "days_left": 12.4,
+      "supply_qty": 17,
+      "days_left": 11.2,
       "confidence": "high"
     },
     {
@@ -1001,11 +1001,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 80,
+      "stock": 79,
       "ads": 1.1764705882352942,
-      "cost_capitalization": 58824.51,
-      "retail_capitalization": 287921.15,
-      "days_left": 68.0
+      "cost_capitalization": 58089.2,
+      "retail_capitalization": 284322.14,
+      "days_left": 67.1
     },
     {
       "sku": 3726892929,
@@ -1161,11 +1161,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 18.43,
-      "stock": 27,
+      "stock": 26,
       "ads": 2.5,
-      "cost_capitalization": 14673.18,
-      "retail_capitalization": 78486.2,
-      "days_left": 10.8
+      "cost_capitalization": 14129.73,
+      "retail_capitalization": 75579.3,
+      "days_left": 10.4
     },
     {
       "sku": 5745079896,
@@ -1217,9 +1217,9 @@
     }
   ],
   "summary": {
-    "stock": 940,
-    "cost_capitalization": 616289.64,
-    "retail_capitalization": 3062207.58,
+    "stock": 938,
+    "cost_capitalization": 615010.88,
+    "retail_capitalization": 3055701.67,
     "fx_rub_per_byn": 27.684726
   },
   "raw_rows": 133
