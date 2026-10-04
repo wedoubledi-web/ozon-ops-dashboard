@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T15:12:16.072283+00:00",
+  "generated_at": "2026-10-04T18:03:55.456095+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -315,9 +315,9 @@
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
       "brand": "8IN1",
-      "stock": 32,
+      "stock": 31,
       "inbound": 0,
-      "available": 32,
+      "available": 31,
       "order_units_7d": 36,
       "order_units_used": 36,
       "daily_orders": 2.571,
@@ -413,9 +413,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 39,
-      "ship_qty": 7,
-      "days_on_hand": 12.4,
-      "days_with_inbound": 12.4,
+      "ship_qty": 8,
+      "days_on_hand": 12.1,
+      "days_with_inbound": 12.1,
       "ship_in_days": 7,
       "ship_by": "2026-10-11",
       "status": "later",
@@ -430,18 +430,18 @@
           "ship_qty": 2
         },
         {
-          "cluster": "Екатеринбург",
-          "stock": 3,
-          "ads": 3.789,
-          "days_left": 0.8,
-          "target_stock": 57,
-          "ship_qty": 1
-        },
-        {
           "cluster": "Красноярск",
           "stock": 0,
           "ads": 3.789,
           "days_left": 0.0,
+          "target_stock": 57,
+          "ship_qty": 2
+        },
+        {
+          "cluster": "Екатеринбург",
+          "stock": 2,
+          "ads": 3.789,
+          "days_left": 0.5,
           "target_stock": 57,
           "ship_qty": 1
         },
@@ -1025,9 +1025,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 170,
+      "stock": 169,
       "inbound": 0,
-      "available": 170,
+      "available": 169,
       "order_units_7d": 49,
       "order_units_used": 49,
       "daily_orders": 3.5,
@@ -1124,8 +1124,8 @@
       "horizon_days": 15,
       "target_stock": 53,
       "ship_qty": 0,
-      "days_on_hand": 48.6,
-      "days_with_inbound": 48.6,
+      "days_on_hand": 48.3,
+      "days_with_inbound": 48.3,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1205,9 +1205,17 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 73,
+          "stock": 72,
           "ads": 7.857,
-          "days_left": 9.3,
+          "days_left": 9.2,
+          "target_stock": 118,
+          "ship_qty": 0
+        },
+        {
+          "cluster": "Саратов",
+          "stock": 0,
+          "ads": 7.857,
+          "days_left": 0.0,
           "target_stock": 118,
           "ship_qty": 0
         }
@@ -1516,9 +1524,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 5,
+          "stock": 6,
           "ads": 1.222,
-          "days_left": 4.1,
+          "days_left": 4.9,
           "target_stock": 19,
           "ship_qty": 0
         },
@@ -1532,9 +1540,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 35,
+          "stock": 34,
           "ads": 1.222,
-          "days_left": 28.6,
+          "days_left": 27.8,
           "target_stock": 19,
           "ship_qty": 0
         },
@@ -2359,13 +2367,13 @@
       "cluster": "Казань",
       "ship_qty": 8,
       "skus": 3,
-      "stock": 50
+      "stock": 51
     },
     {
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 8,
       "skus": 3,
-      "stock": 379
+      "stock": 378
     },
     {
       "cluster": "Дальний Восток",
@@ -2377,13 +2385,13 @@
       "cluster": "Екатеринбург",
       "ship_qty": 6,
       "skus": 2,
-      "stock": 68
+      "stock": 67
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 6,
       "skus": 3,
-      "stock": 324
+      "stock": 323
     },
     {
       "cluster": "Беларусь",
@@ -2393,7 +2401,7 @@
     },
     {
       "cluster": "Красноярск",
-      "ship_qty": 1,
+      "ship_qty": 2,
       "skus": 1,
       "stock": 1
     },
@@ -2464,7 +2472,7 @@
     "ship_now_skus": 1,
     "ship_now_qty": 7,
     "ship_soon_skus": 1,
-    "ship_total_qty": 38,
+    "ship_total_qty": 39,
     "cluster_count": 8,
     "critical_skus": 1,
     "under_cover_skus": 2

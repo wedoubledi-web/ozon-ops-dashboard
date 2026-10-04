@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T15:12:16.351917+00:00",
+  "generated_at": "2026-10-04T18:03:55.619900+00:00",
   "as_of": "2026-10-03",
   "expected_as_of": "2026-10-03",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -63095,8 +63095,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 4,
-            "delivered": 1
+            "delivering": 3,
+            "delivered": 2
           },
           "views": 10420,
           "clicks": 605,
@@ -63247,8 +63247,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "awaiting_deliver": 1,
-            "delivering": 1
+            "delivering": 2
           },
           "views": 374,
           "clicks": 23,
@@ -63287,7 +63286,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 1
+            "delivered": 1
           },
           "views": 686,
           "clicks": 27,
@@ -63779,7 +63778,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-04T15:12:15.090513+00:00",
+    "generated_at": "2026-10-04T18:03:54.485988+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -64031,6 +64030,26 @@
         "sku": 4451480169,
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+        "cluster": "Саратов",
+        "stock": 0,
+        "ads": 0.2857142857142857,
+        "warehouses": [
+          {
+            "name": "ВОЛГОГРАД_РФЦ",
+            "stock": 0,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 9,
+        "supply_qty": 9,
+        "days_left": 0.0,
+        "confidence": "medium"
+      },
+      {
+        "sku": 4451480169,
+        "offer_id": "шокол",
+        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Екатеринбург",
         "stock": 8,
         "ads": 0.5,
@@ -64198,6 +64217,26 @@
         "confidence": "medium"
       },
       {
+        "sku": 5472775507,
+        "offer_id": "для собак фекалии",
+        "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+        "cluster": "Екатеринбург",
+        "stock": 2,
+        "ads": 0.21052631578947367,
+        "warehouses": [
+          {
+            "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
+            "stock": 2,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 6,
+        "supply_qty": 4,
+        "days_left": 9.5,
+        "confidence": "medium"
+      },
+      {
         "sku": 5516579647,
         "offer_id": "для мелких 8в1",
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -64285,26 +64324,6 @@
         "target_stock": 6,
         "supply_qty": 3,
         "days_left": 15.6,
-        "confidence": "medium"
-      },
-      {
-        "sku": 5472775507,
-        "offer_id": "для собак фекалии",
-        "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
-        "cluster": "Екатеринбург",
-        "stock": 3,
-        "ads": 0.21052631578947367,
-        "warehouses": [
-          {
-            "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-            "stock": 3,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 6,
-        "supply_qty": 3,
-        "days_left": 14.2,
         "confidence": "medium"
       },
       {
@@ -64849,11 +64868,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 19.9,
-        "stock": 170,
+        "stock": 169,
         "ads": 7.857142857142857,
-        "cost_capitalization": 99305.11,
-        "retail_capitalization": 588300.43,
-        "days_left": 21.6
+        "cost_capitalization": 98720.97,
+        "retail_capitalization": 584839.84,
+        "days_left": 21.5
       },
       {
         "sku": 5516649179,
@@ -65025,11 +65044,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 14.03,
-        "stock": 32,
+        "stock": 31,
         "ads": 3.789473684210526,
-        "cost_capitalization": 13492.43,
-        "retail_capitalization": 93020.68,
-        "days_left": 8.4
+        "cost_capitalization": 13070.79,
+        "retail_capitalization": 90113.78,
+        "days_left": 8.2
       },
       {
         "sku": 4658698444,
@@ -65097,15 +65116,15 @@
       }
     ],
     "summary": {
-      "stock": 898,
-      "cost_capitalization": 589087.84,
-      "retail_capitalization": 2928905.62,
+      "stock": 896,
+      "cost_capitalization": 588082.06,
+      "retail_capitalization": 2922538.14,
       "fx_rub_per_byn": 27.684726
     },
-    "raw_rows": 135
+    "raw_rows": 136
   },
   "supplies": {
-    "generated_at": "2026-10-04T15:12:16.072283+00:00",
+    "generated_at": "2026-10-04T18:03:55.456095+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -65421,9 +65440,9 @@
         "offer_id": "для собак фекалии",
         "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
         "brand": "8IN1",
-        "stock": 32,
+        "stock": 31,
         "inbound": 0,
-        "available": 32,
+        "available": 31,
         "order_units_7d": 36,
         "order_units_used": 36,
         "daily_orders": 2.571,
@@ -65519,9 +65538,9 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 39,
-        "ship_qty": 7,
-        "days_on_hand": 12.4,
-        "days_with_inbound": 12.4,
+        "ship_qty": 8,
+        "days_on_hand": 12.1,
+        "days_with_inbound": 12.1,
         "ship_in_days": 7,
         "ship_by": "2026-10-11",
         "status": "later",
@@ -65536,18 +65555,18 @@
             "ship_qty": 2
           },
           {
-            "cluster": "Екатеринбург",
-            "stock": 3,
-            "ads": 3.789,
-            "days_left": 0.8,
-            "target_stock": 57,
-            "ship_qty": 1
-          },
-          {
             "cluster": "Красноярск",
             "stock": 0,
             "ads": 3.789,
             "days_left": 0.0,
+            "target_stock": 57,
+            "ship_qty": 2
+          },
+          {
+            "cluster": "Екатеринбург",
+            "stock": 2,
+            "ads": 3.789,
+            "days_left": 0.5,
             "target_stock": 57,
             "ship_qty": 1
           },
@@ -66131,9 +66150,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 170,
+        "stock": 169,
         "inbound": 0,
-        "available": 170,
+        "available": 169,
         "order_units_7d": 49,
         "order_units_used": 49,
         "daily_orders": 3.5,
@@ -66230,8 +66249,8 @@
         "horizon_days": 15,
         "target_stock": 53,
         "ship_qty": 0,
-        "days_on_hand": 48.6,
-        "days_with_inbound": 48.6,
+        "days_on_hand": 48.3,
+        "days_with_inbound": 48.3,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -66311,9 +66330,17 @@
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
-            "stock": 73,
+            "stock": 72,
             "ads": 7.857,
-            "days_left": 9.3,
+            "days_left": 9.2,
+            "target_stock": 118,
+            "ship_qty": 0
+          },
+          {
+            "cluster": "Саратов",
+            "stock": 0,
+            "ads": 7.857,
+            "days_left": 0.0,
             "target_stock": 118,
             "ship_qty": 0
           }
@@ -66622,9 +66649,9 @@
           },
           {
             "cluster": "Казань",
-            "stock": 5,
+            "stock": 6,
             "ads": 1.222,
-            "days_left": 4.1,
+            "days_left": 4.9,
             "target_stock": 19,
             "ship_qty": 0
           },
@@ -66638,9 +66665,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 35,
+            "stock": 34,
             "ads": 1.222,
-            "days_left": 28.6,
+            "days_left": 27.8,
             "target_stock": 19,
             "ship_qty": 0
           },
@@ -67465,13 +67492,13 @@
         "cluster": "Казань",
         "ship_qty": 8,
         "skus": 3,
-        "stock": 50
+        "stock": 51
       },
       {
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 8,
         "skus": 3,
-        "stock": 379
+        "stock": 378
       },
       {
         "cluster": "Дальний Восток",
@@ -67483,13 +67510,13 @@
         "cluster": "Екатеринбург",
         "ship_qty": 6,
         "skus": 2,
-        "stock": 68
+        "stock": 67
       },
       {
         "cluster": "Санкт-Петербург и СЗО",
         "ship_qty": 6,
         "skus": 3,
-        "stock": 324
+        "stock": 323
       },
       {
         "cluster": "Беларусь",
@@ -67499,7 +67526,7 @@
       },
       {
         "cluster": "Красноярск",
-        "ship_qty": 1,
+        "ship_qty": 2,
         "skus": 1,
         "stock": 1
       },
@@ -67570,14 +67597,14 @@
       "ship_now_skus": 1,
       "ship_now_qty": 7,
       "ship_soon_skus": 1,
-      "ship_total_qty": 38,
+      "ship_total_qty": 39,
       "cluster_count": 8,
       "critical_skus": 1,
       "under_cover_skus": 2
     }
   },
   "competitors": {
-    "generated_at": "2026-10-04T15:12:16.103830+00:00",
+    "generated_at": "2026-10-04T18:03:55.475561+00:00",
     "as_of": "2026-10-03",
     "geo": {
       "city": "Москва",
@@ -67767,7 +67794,7 @@
           "price_byn": 105.0,
           "price_rub": 1232.4,
           "price_source": "ozon_bestsellers",
-          "stock": 32,
+          "stock": 31,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -69441,7 +69468,7 @@
           "price_byn": 125.0,
           "price_rub": 1057.41,
           "price_source": "ozon_bestsellers",
-          "stock": 170,
+          "stock": 169,
           "delivery": "",
           "delivery_days": null,
           "card": {},
