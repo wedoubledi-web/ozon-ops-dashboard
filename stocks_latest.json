@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T18:03:54.485988+00:00",
+  "generated_at": "2026-10-04T23:47:28.565894+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -7,12 +7,12 @@
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 8,
+      "stock": 7,
       "ads": 1.9473684210526316,
       "warehouses": [
         {
           "name": "СОФЬИНО_РФЦ",
-          "stock": 8,
+          "stock": 7,
           "grade": "DEFICIT"
         },
         {
@@ -28,8 +28,8 @@
       ],
       "target_days": 30,
       "target_stock": 58,
-      "supply_qty": 50,
-      "days_left": 4.1,
+      "supply_qty": 51,
+      "days_left": 3.6,
       "confidence": "high"
     },
     {
@@ -438,6 +438,26 @@
       "confidence": "medium"
     },
     {
+      "sku": 4823627697,
+      "offer_id": "для кошек и собак 140",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+      "cluster": "Екатеринбург",
+      "stock": 2,
+      "ads": 0.19230769230769232,
+      "warehouses": [
+        {
+          "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
+          "stock": 2,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 6,
+      "supply_qty": 4,
+      "days_left": 10.4,
+      "confidence": "medium"
+    },
+    {
       "sku": 5472775507,
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
@@ -525,26 +545,6 @@
       "target_stock": 12,
       "supply_qty": 4,
       "days_left": 20.8,
-      "confidence": "medium"
-    },
-    {
-      "sku": 4823627697,
-      "offer_id": "для кошек и собак 140",
-      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
-      "cluster": "Екатеринбург",
-      "stock": 3,
-      "ads": 0.19230769230769232,
-      "warehouses": [
-        {
-          "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-          "stock": 3,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 6,
-      "supply_qty": 3,
-      "days_left": 15.6,
       "confidence": "medium"
     },
     {
@@ -1089,11 +1089,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 169,
+      "stock": 168,
       "ads": 7.857142857142857,
-      "cost_capitalization": 98720.97,
-      "retail_capitalization": 584839.84,
-      "days_left": 21.5
+      "cost_capitalization": 98136.82,
+      "retail_capitalization": 581379.25,
+      "days_left": 21.4
     },
     {
       "sku": 5516649179,
@@ -1153,27 +1153,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 72,
-      "ads": 2.1666666666666665,
-      "cost_capitalization": 52942.06,
-      "retail_capitalization": 179397.03,
-      "days_left": 33.2
-    },
-    {
-      "sku": 4823627697,
-      "offer_id": "для кошек и собак 140",
-      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-4/12282410020.jpg",
-      "price": 105.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 13.67,
       "stock": 71,
-      "ads": 3.3461538461538463,
-      "cost_capitalization": 29228.7,
-      "retail_capitalization": 206389.63,
-      "days_left": 21.2
+      "ads": 2.1666666666666665,
+      "cost_capitalization": 52206.75,
+      "retail_capitalization": 176905.4,
+      "days_left": 32.8
     },
     {
       "sku": 5803370792,
@@ -1185,11 +1169,27 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 17.64,
-      "stock": 71,
+      "stock": 70,
       "ads": 0.0,
-      "cost_capitalization": 37032.2,
-      "retail_capitalization": 245701.95,
+      "cost_capitalization": 36510.62,
+      "retail_capitalization": 242241.36,
       "days_left": null
+    },
+    {
+      "sku": 4823627697,
+      "offer_id": "для кошек и собак 140",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-4/12282410020.jpg",
+      "price": 105.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 13.67,
+      "stock": 69,
+      "ads": 3.3461538461538463,
+      "cost_capitalization": 28405.36,
+      "retail_capitalization": 200575.84,
+      "days_left": 20.6
     },
     {
       "sku": 5803075530,
@@ -1265,11 +1265,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 14.03,
-      "stock": 31,
+      "stock": 30,
       "ads": 3.789473684210526,
-      "cost_capitalization": 13070.79,
-      "retail_capitalization": 90113.78,
-      "days_left": 8.2
+      "cost_capitalization": 12649.15,
+      "retail_capitalization": 87206.89,
+      "days_left": 7.9
     },
     {
       "sku": 4658698444,
@@ -1337,9 +1337,9 @@
     }
   ],
   "summary": {
-    "stock": 896,
-    "cost_capitalization": 588082.06,
-    "retail_capitalization": 2922538.14,
+    "stock": 890,
+    "cost_capitalization": 584996.04,
+    "retail_capitalization": 2904404.64,
     "fx_rub_per_byn": 27.684726
   },
   "raw_rows": 136
