@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:20:29.220606+00:00",
+  "generated_at": "2026-10-04T12:57:25.543714+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -162,9 +162,9 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "brand": "8IN1",
-      "stock": 22,
+      "stock": 21,
       "inbound": 0,
-      "available": 22,
+      "available": 21,
       "order_units_7d": 41,
       "order_units_used": 41,
       "daily_orders": 2.929,
@@ -260,9 +260,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 44,
-      "ship_qty": 22,
-      "days_on_hand": 7.5,
-      "days_with_inbound": 7.5,
+      "ship_qty": 23,
+      "days_on_hand": 7.2,
+      "days_with_inbound": 7.2,
       "ship_in_days": 2,
       "ship_by": "2026-10-06",
       "status": "soon",
@@ -294,11 +294,11 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 6,
+          "stock": 5,
           "ads": 2.632,
-          "days_left": 2.3,
+          "days_left": 1.9,
           "target_stock": 40,
-          "ship_qty": 4
+          "ship_qty": 5
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
@@ -835,9 +835,9 @@
       "offer_id": "для кошек и собак 140",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
       "brand": "8IN1",
-      "stock": 72,
+      "stock": 71,
       "inbound": 0,
-      "available": 72,
+      "available": 71,
       "order_units_7d": 30,
       "order_units_used": 23,
       "daily_orders": 1.769,
@@ -939,8 +939,8 @@
       "horizon_days": 15,
       "target_stock": 27,
       "ship_qty": 0,
-      "days_on_hand": 40.7,
-      "days_with_inbound": 40.7,
+      "days_on_hand": 40.1,
+      "days_with_inbound": 40.1,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -980,9 +980,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 36,
+          "stock": 35,
           "ads": 3.346,
-          "days_left": 10.8,
+          "days_left": 10.5,
           "target_stock": 51,
           "ship_qty": 0
         },
@@ -1025,9 +1025,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 172,
+      "stock": 171,
       "inbound": 0,
-      "available": 172,
+      "available": 171,
       "order_units_7d": 49,
       "order_units_used": 49,
       "daily_orders": 3.5,
@@ -1124,8 +1124,8 @@
       "horizon_days": 15,
       "target_stock": 53,
       "ship_qty": 0,
-      "days_on_hand": 49.1,
-      "days_with_inbound": 49.1,
+      "days_on_hand": 48.9,
+      "days_with_inbound": 48.9,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1141,9 +1141,9 @@
         },
         {
           "cluster": "Дальний Восток",
-          "stock": 1,
+          "stock": 0,
           "ads": 7.857,
-          "days_left": 0.1,
+          "days_left": 0.0,
           "target_stock": 118,
           "ship_qty": 0
         },
@@ -2356,16 +2356,16 @@
   ],
   "clusters": [
     {
+      "cluster": "Москва, МО и Дальние регионы",
+      "ship_qty": 8,
+      "skus": 3,
+      "stock": 383
+    },
+    {
       "cluster": "Казань",
       "ship_qty": 7,
       "skus": 3,
       "stock": 50
-    },
-    {
-      "cluster": "Москва, МО и Дальние регионы",
-      "ship_qty": 7,
-      "skus": 3,
-      "stock": 385
     },
     {
       "cluster": "Екатеринбург",
@@ -2377,7 +2377,7 @@
       "cluster": "Дальний Восток",
       "ship_qty": 5,
       "skus": 1,
-      "stock": 1
+      "stock": 0
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
@@ -2464,7 +2464,7 @@
     "ship_now_skus": 1,
     "ship_now_qty": 7,
     "ship_soon_skus": 1,
-    "ship_total_qty": 34,
+    "ship_total_qty": 35,
     "cluster_count": 8,
     "critical_skus": 1,
     "under_cover_skus": 2
