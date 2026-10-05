@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T23:47:29.495138+00:00",
+  "generated_at": "2026-10-05T15:25:24.386447+00:00",
   "as_of": "2026-10-04",
   "geo": {
     "city": "Москва",
@@ -35,7 +35,7 @@
         "price_byn": 100.0,
         "price_rub": 1132.2,
         "price_source": "ozon_bestsellers",
-        "stock": 89,
+        "stock": 88,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -129,7 +129,7 @@
         "price_byn": 105.0,
         "price_rub": 1232.4,
         "price_source": "ozon_bestsellers",
-        "stock": 30,
+        "stock": 29,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -669,7 +669,7 @@
         "price_byn": 90.0,
         "price_rub": 1219.45,
         "price_source": "ozon_bestsellers",
-        "stock": 71,
+        "stock": 69,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -986,7 +986,7 @@
         "price_byn": 100.0,
         "price_rub": 1083.71,
         "price_source": "ozon_bestsellers",
-        "stock": 47,
+        "stock": 46,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1035,7 +1035,7 @@
         "price_byn": 125.0,
         "price_rub": null,
         "price_source": null,
-        "stock": 70,
+        "stock": 69,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1083,7 +1083,7 @@
         "price_byn": 125.0,
         "price_rub": 1057.41,
         "price_source": "ozon_bestsellers",
-        "stock": 168,
+        "stock": 163,
         "delivery": "",
         "delivery_days": null,
         "card": {}
