@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T15:25:24.367211+00:00",
+  "generated_at": "2026-10-05T19:09:20.133973+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -162,9 +162,9 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "brand": "8IN1",
-      "stock": 20,
+      "stock": 19,
       "inbound": 0,
-      "available": 20,
+      "available": 19,
       "order_units_7d": 43,
       "order_units_used": 43,
       "daily_orders": 3.071,
@@ -260,9 +260,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 47,
-      "ship_qty": 27,
-      "days_on_hand": 6.5,
-      "days_with_inbound": 6.5,
+      "ship_qty": 28,
+      "days_on_hand": 6.2,
+      "days_with_inbound": 6.2,
       "ship_in_days": 1,
       "ship_by": "2026-10-06",
       "status": "soon",
@@ -294,11 +294,11 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 4,
+          "stock": 3,
           "ads": 2.75,
-          "days_left": 1.5,
+          "days_left": 1.1,
           "target_stock": 42,
-          "ship_qty": 5
+          "ship_qty": 6
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
@@ -650,9 +650,9 @@
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
       "brand": "8IN1",
-      "stock": 69,
+      "stock": 68,
       "inbound": 0,
-      "available": 69,
+      "available": 68,
       "order_units_7d": 32,
       "order_units_used": 24,
       "daily_orders": 1.846,
@@ -754,8 +754,8 @@
       "horizon_days": 15,
       "target_stock": 28,
       "ship_qty": 0,
-      "days_on_hand": 37.4,
-      "days_with_inbound": 37.4,
+      "days_on_hand": 36.8,
+      "days_with_inbound": 36.8,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -811,9 +811,9 @@
         },
         {
           "cluster": "Ростов",
-          "stock": 7,
+          "stock": 6,
           "ads": 2.25,
-          "days_left": 3.1,
+          "days_left": 2.7,
           "target_stock": 34,
           "ship_qty": 0
         },
@@ -985,9 +985,9 @@
         },
         {
           "cluster": "Ростов",
-          "stock": 8,
+          "stock": 7,
           "ads": 3.308,
-          "days_left": 2.4,
+          "days_left": 2.1,
           "target_stock": 50,
           "ship_qty": 0
         },
@@ -1009,9 +1009,9 @@
         },
         {
           "cluster": "Ярославль",
-          "stock": 0,
+          "stock": 1,
           "ads": 3.308,
-          "days_left": 0.0,
+          "days_left": 0.3,
           "target_stock": 50,
           "ship_qty": 0
         }
@@ -1022,9 +1022,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 163,
+      "stock": 162,
       "inbound": 0,
-      "available": 163,
+      "available": 162,
       "order_units_7d": 44,
       "order_units_used": 44,
       "daily_orders": 3.143,
@@ -1121,8 +1121,8 @@
       "horizon_days": 15,
       "target_stock": 48,
       "ship_qty": 0,
-      "days_on_hand": 51.9,
-      "days_with_inbound": 51.9,
+      "days_on_hand": 51.5,
+      "days_with_inbound": 51.5,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1178,9 +1178,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 35,
+          "stock": 34,
           "ads": 7.714,
-          "days_left": 4.5,
+          "days_left": 4.4,
           "target_stock": 116,
           "ship_qty": 0
         },
@@ -2367,16 +2367,16 @@
       "stock": 49
     },
     {
+      "cluster": "Москва, МО и Дальние регионы",
+      "ship_qty": 9,
+      "skus": 3,
+      "stock": 373
+    },
+    {
       "cluster": "Екатеринбург",
       "ship_qty": 8,
       "skus": 2,
       "stock": 62
-    },
-    {
-      "cluster": "Москва, МО и Дальние регионы",
-      "ship_qty": 8,
-      "skus": 3,
-      "stock": 375
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
@@ -2400,7 +2400,7 @@
       "cluster": "Ростов",
       "ship_qty": 2,
       "skus": 1,
-      "stock": 71
+      "stock": 69
     },
     {
       "cluster": "Беларусь",
@@ -2460,7 +2460,7 @@
       "cluster": "Ярославль",
       "ship_qty": 0,
       "skus": 0,
-      "stock": 0
+      "stock": 1
     }
   ],
   "summary": {
@@ -2469,7 +2469,7 @@
     "ship_now_skus": 1,
     "ship_now_qty": 5,
     "ship_soon_skus": 1,
-    "ship_total_qty": 43,
+    "ship_total_qty": 44,
     "cluster_count": 8,
     "critical_skus": 1,
     "under_cover_skus": 2
