@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T21:26:02.153737+00:00",
+  "generated_at": "2026-10-06T01:38:34.340043+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1730,9 +1730,9 @@
       "offer_id": "для щенков 8в1",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
       "brand": "8IN1",
-      "stock": 88,
+      "stock": 87,
       "inbound": 0,
-      "available": 88,
+      "available": 87,
       "order_units_7d": 15,
       "order_units_used": 15,
       "daily_orders": 1.071,
@@ -1829,8 +1829,8 @@
       "horizon_days": 15,
       "target_stock": 17,
       "ship_qty": 0,
-      "days_on_hand": 82.2,
-      "days_with_inbound": 82.2,
+      "days_on_hand": 81.2,
+      "days_with_inbound": 81.2,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1886,9 +1886,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 29,
+          "stock": 28,
           "ads": 2.769,
-          "days_left": 10.5,
+          "days_left": 10.1,
           "target_stock": 42,
           "ship_qty": 0
         }
@@ -2383,7 +2383,7 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 6,
       "skus": 3,
-      "stock": 320
+      "stock": 319
     },
     {
       "cluster": "Беларусь",
