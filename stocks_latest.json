@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:36:26.140332+00:00",
+  "generated_at": "2026-10-06T19:22:58.627272+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -37,7 +37,7 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 1,
+      "stock": 0,
       "ads": 1.0952380952380953,
       "warehouses": [
         {
@@ -47,14 +47,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 1,
+          "stock": 0,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 33,
-      "supply_qty": 32,
-      "days_left": 0.9,
+      "supply_qty": 33,
+      "days_left": 0.0,
       "confidence": "high"
     },
     {
@@ -82,7 +82,7 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 33,
+      "stock": 29,
       "ads": 1.7857142857142858,
       "warehouses": [
         {
@@ -92,14 +92,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 33,
+          "stock": 29,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 54,
-      "supply_qty": 21,
-      "days_left": 18.5,
+      "supply_qty": 25,
+      "days_left": 16.2,
       "confidence": "high"
     },
     {
@@ -1034,11 +1034,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 159,
+      "stock": 155,
       "ads": 7.678571428571429,
-      "cost_capitalization": 92869.2,
-      "retail_capitalization": 550173.01,
-      "days_left": 20.7
+      "cost_capitalization": 90532.87,
+      "retail_capitalization": 536332.18,
+      "days_left": 20.2
     },
     {
       "sku": 5516649179,
@@ -1146,11 +1146,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 24.336,
-      "stock": 67,
+      "stock": 66,
       "ads": 0.23076923076923078,
-      "cost_capitalization": 47360.89,
-      "retail_capitalization": 241107.27,
-      "days_left": 290.3
+      "cost_capitalization": 46654.01,
+      "retail_capitalization": 237508.65,
+      "days_left": 286.0
     },
     {
       "sku": 3726902147,
@@ -1226,11 +1226,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 18.43,
-      "stock": 17,
+      "stock": 16,
       "ads": 2.6666666666666665,
-      "cost_capitalization": 9237.65,
-      "retail_capitalization": 49411.76,
-      "days_left": 6.4
+      "cost_capitalization": 8694.26,
+      "retail_capitalization": 46505.19,
+      "days_left": 6.0
     },
     {
       "sku": 5745079896,
@@ -1282,9 +1282,9 @@
     }
   ],
   "summary": {
-    "stock": 868,
-    "cost_capitalization": 571453.62,
-    "retail_capitalization": 2834878.89,
+    "stock": 862,
+    "cost_capitalization": 567867.02,
+    "retail_capitalization": 2814532.87,
     "fx_rub_per_byn": 27.681661
   },
   "raw_rows": 130

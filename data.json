@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T16:36:27.194931+00:00",
+  "generated_at": "2026-10-06T19:22:59.545340+00:00",
   "as_of": "2026-10-05",
   "expected_as_of": "2026-10-05",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -65204,7 +65204,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-06T16:36:26.140332+00:00",
+    "generated_at": "2026-10-06T19:22:58.627272+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -65242,7 +65242,7 @@
         "offer_id": "кальций",
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
         "cluster": "Москва, МО и Дальние регионы",
-        "stock": 1,
+        "stock": 0,
         "ads": 1.0952380952380953,
         "warehouses": [
           {
@@ -65252,14 +65252,14 @@
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
-            "stock": 1,
+            "stock": 0,
             "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
         "target_stock": 33,
-        "supply_qty": 32,
-        "days_left": 0.9,
+        "supply_qty": 33,
+        "days_left": 0.0,
         "confidence": "high"
       },
       {
@@ -65287,7 +65287,7 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Москва, МО и Дальние регионы",
-        "stock": 33,
+        "stock": 29,
         "ads": 1.7857142857142858,
         "warehouses": [
           {
@@ -65297,14 +65297,14 @@
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
-            "stock": 33,
+            "stock": 29,
             "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
         "target_stock": 54,
-        "supply_qty": 21,
-        "days_left": 18.5,
+        "supply_qty": 25,
+        "days_left": 16.2,
         "confidence": "high"
       },
       {
@@ -66239,11 +66239,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 19.9,
-        "stock": 159,
+        "stock": 155,
         "ads": 7.678571428571429,
-        "cost_capitalization": 92869.2,
-        "retail_capitalization": 550173.01,
-        "days_left": 20.7
+        "cost_capitalization": 90532.87,
+        "retail_capitalization": 536332.18,
+        "days_left": 20.2
       },
       {
         "sku": 5516649179,
@@ -66351,11 +66351,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 24.336,
-        "stock": 67,
+        "stock": 66,
         "ads": 0.23076923076923078,
-        "cost_capitalization": 47360.89,
-        "retail_capitalization": 241107.27,
-        "days_left": 290.3
+        "cost_capitalization": 46654.01,
+        "retail_capitalization": 237508.65,
+        "days_left": 286.0
       },
       {
         "sku": 3726902147,
@@ -66431,11 +66431,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 18.43,
-        "stock": 17,
+        "stock": 16,
         "ads": 2.6666666666666665,
-        "cost_capitalization": 9237.65,
-        "retail_capitalization": 49411.76,
-        "days_left": 6.4
+        "cost_capitalization": 8694.26,
+        "retail_capitalization": 46505.19,
+        "days_left": 6.0
       },
       {
         "sku": 5745079896,
@@ -66487,15 +66487,15 @@
       }
     ],
     "summary": {
-      "stock": 868,
-      "cost_capitalization": 571453.62,
-      "retail_capitalization": 2834878.89,
+      "stock": 862,
+      "cost_capitalization": 567867.02,
+      "retail_capitalization": 2814532.87,
       "fx_rub_per_byn": 27.681661
     },
     "raw_rows": 130
   },
   "supplies": {
-    "generated_at": "2026-10-06T16:36:26.926313+00:00",
+    "generated_at": "2026-10-06T19:22:59.272951+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -66653,9 +66653,9 @@
         "offer_id": "кальций",
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
         "brand": "8IN1",
-        "stock": 17,
+        "stock": 16,
         "inbound": 0,
-        "available": 17,
+        "available": 16,
         "order_units_7d": 42,
         "order_units_used": 42,
         "daily_orders": 3.0,
@@ -66751,9 +66751,9 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 45,
-        "ship_qty": 28,
-        "days_on_hand": 5.7,
-        "days_with_inbound": 5.7,
+        "ship_qty": 29,
+        "days_on_hand": 5.3,
+        "days_with_inbound": 5.3,
         "ship_in_days": 0,
         "ship_by": "2026-10-06",
         "status": "soon",
@@ -66765,7 +66765,7 @@
             "ads": 2.667,
             "days_left": 0.0,
             "target_stock": 40,
-            "ship_qty": 6
+            "ship_qty": 7
           },
           {
             "cluster": "Екатеринбург",
@@ -66785,9 +66785,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 1,
+            "stock": 0,
             "ads": 2.667,
-            "days_left": 0.4,
+            "days_left": 0.0,
             "target_stock": 40,
             "ship_qty": 6
           },
@@ -67505,9 +67505,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 159,
+        "stock": 155,
         "inbound": 0,
-        "available": 159,
+        "available": 155,
         "order_units_7d": 42,
         "order_units_used": 34,
         "daily_orders": 2.615,
@@ -67609,8 +67609,8 @@
         "horizon_days": 15,
         "target_stock": 40,
         "ship_qty": 0,
-        "days_on_hand": 60.8,
-        "days_with_inbound": 60.8,
+        "days_on_hand": 59.3,
+        "days_with_inbound": 59.3,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -67666,9 +67666,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 33,
+            "stock": 29,
             "ads": 7.679,
-            "days_left": 4.3,
+            "days_left": 3.8,
             "target_stock": 116,
             "ship_qty": 0
           },
@@ -68569,9 +68569,9 @@
         "offer_id": "шоколад элит 4 шт",
         "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
         "brand": "Спартак",
-        "stock": 67,
+        "stock": 66,
         "inbound": 0,
-        "available": 67,
+        "available": 66,
         "order_units_7d": 3,
         "order_units_used": 3,
         "daily_orders": 0.214,
@@ -68668,8 +68668,8 @@
         "horizon_days": 15,
         "target_stock": 4,
         "ship_qty": 0,
-        "days_on_hand": 313.1,
-        "days_with_inbound": 313.1,
+        "days_on_hand": 308.4,
+        "days_with_inbound": 308.4,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -68677,9 +68677,9 @@
         "clusters": [
           {
             "cluster": "Екатеринбург",
-            "stock": 11,
+            "stock": 10,
             "ads": 0.231,
-            "days_left": 47.7,
+            "days_left": 43.3,
             "target_stock": 4,
             "ship_qty": 0
           },
@@ -68850,25 +68850,25 @@
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 8,
         "skus": 3,
-        "stock": 370
+        "stock": 365
+      },
+      {
+        "cluster": "Дальний Восток",
+        "ship_qty": 7,
+        "skus": 1,
+        "stock": 0
       },
       {
         "cluster": "Екатеринбург",
         "ship_qty": 7,
         "skus": 2,
-        "stock": 62
+        "stock": 61
       },
       {
         "cluster": "Санкт-Петербург и СЗО",
         "ship_qty": 7,
         "skus": 3,
         "stock": 318
-      },
-      {
-        "cluster": "Дальний Восток",
-        "ship_qty": 6,
-        "skus": 1,
-        "stock": 0
       },
       {
         "cluster": "Беларусь",
@@ -68949,14 +68949,14 @@
       "ship_now_skus": 1,
       "ship_now_qty": 5,
       "ship_soon_skus": 1,
-      "ship_total_qty": 40,
+      "ship_total_qty": 41,
       "cluster_count": 8,
       "critical_skus": 1,
       "under_cover_skus": 2
     }
   },
   "competitors": {
-    "generated_at": "2026-10-06T16:36:26.956419+00:00",
+    "generated_at": "2026-10-06T19:22:59.302776+00:00",
     "as_of": "2026-10-05",
     "geo": {
       "city": "Москва",
@@ -70305,7 +70305,7 @@
           "price_byn": 105.0,
           "price_rub": 844.03,
           "price_source": "ozon_bestsellers",
-          "stock": 17,
+          "stock": 16,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -70820,7 +70820,7 @@
           "price_byn": 125.0,
           "price_rub": 1057.41,
           "price_source": "ozon_bestsellers",
-          "stock": 159,
+          "stock": 155,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -70954,7 +70954,7 @@
           "price_byn": 130.0,
           "price_rub": null,
           "price_source": null,
-          "stock": 67,
+          "stock": 66,
           "delivery": "",
           "delivery_days": null,
           "card": {}
