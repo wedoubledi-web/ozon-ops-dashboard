@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T13:47:47.160011+00:00",
+  "generated_at": "2026-10-06T16:36:26.926313+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1009,9 +1009,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 161,
+      "stock": 159,
       "inbound": 0,
-      "available": 161,
+      "available": 159,
       "order_units_7d": 42,
       "order_units_used": 34,
       "daily_orders": 2.615,
@@ -1113,8 +1113,8 @@
       "horizon_days": 15,
       "target_stock": 40,
       "ship_qty": 0,
-      "days_on_hand": 61.6,
-      "days_with_inbound": 61.6,
+      "days_on_hand": 60.8,
+      "days_with_inbound": 60.8,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1146,9 +1146,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 37,
+          "stock": 36,
           "ads": 7.679,
-          "days_left": 4.8,
+          "days_left": 4.7,
           "target_stock": 116,
           "ship_qty": 0
         },
@@ -1194,9 +1194,9 @@
         },
         {
           "cluster": "Ростов",
-          "stock": 14,
+          "stock": 13,
           "ads": 7.679,
-          "days_left": 1.8,
+          "days_left": 1.7,
           "target_stock": 116,
           "ship_qty": 0
         },
@@ -1223,9 +1223,9 @@
       "offer_id": "для пожилых собак1",
       "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
       "brand": "8IN1",
-      "stock": 78,
+      "stock": 77,
       "inbound": 0,
-      "available": 78,
+      "available": 77,
       "order_units_7d": 19,
       "order_units_used": 14,
       "daily_orders": 1.077,
@@ -1327,8 +1327,8 @@
       "horizon_days": 15,
       "target_stock": 17,
       "ship_qty": 0,
-      "days_on_hand": 72.4,
-      "days_with_inbound": 72.4,
+      "days_on_hand": 71.5,
+      "days_with_inbound": 71.5,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1376,9 +1376,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 28,
+          "stock": 27,
           "ads": 1.15,
-          "days_left": 24.3,
+          "days_left": 23.5,
           "target_stock": 18,
           "ship_qty": 0
         },
@@ -2348,7 +2348,7 @@
       "cluster": "Казань",
       "ship_qty": 9,
       "skus": 3,
-      "stock": 49
+      "stock": 48
     },
     {
       "cluster": "Москва, МО и Дальние регионы",
@@ -2366,7 +2366,7 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 7,
       "skus": 3,
-      "stock": 319
+      "stock": 318
     },
     {
       "cluster": "Дальний Восток",
@@ -2390,7 +2390,7 @@
       "cluster": "Ростов",
       "ship_qty": 1,
       "skus": 1,
-      "stock": 68
+      "stock": 67
     },
     {
       "cluster": "Воронеж",
