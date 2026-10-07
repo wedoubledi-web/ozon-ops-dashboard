@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T14:04:21.484221+00:00",
+  "generated_at": "2026-10-07T17:21:18.127057+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -327,7 +327,7 @@
       "offer_id": "Меркурий201.7 (2026)",
       "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
       "cluster": "Казань",
-      "stock": 2,
+      "stock": 1,
       "ads": 0.23809523809523808,
       "warehouses": [
         {
@@ -342,14 +342,14 @@
         },
         {
           "name": "НИЖНИЙ_НОВГОРОД_2_РФЦ",
-          "stock": 1,
+          "stock": 0,
           "grade": "COLLECTING_DATA"
         }
       ],
       "target_days": 30,
       "target_stock": 7,
-      "supply_qty": 5,
-      "days_left": 8.4,
+      "supply_qty": 6,
+      "days_left": 4.2,
       "confidence": "medium"
     },
     {
@@ -442,6 +442,26 @@
       "warehouses": [
         {
           "name": "КАЛИНИНГРАД_МРФЦ",
+          "stock": 0,
+          "grade": "POPULAR"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 4,
+      "supply_qty": 4,
+      "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "sku": 3726858649,
+      "offer_id": "бреверсы для крупных",
+      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+      "cluster": "Невинномысск",
+      "stock": 0,
+      "ads": 0.13333333333333333,
+      "warehouses": [
+        {
+          "name": "НЕВИННОМЫССК_РФЦ",
           "stock": 0,
           "grade": "POPULAR"
         }
@@ -635,26 +655,6 @@
       "target_stock": 3,
       "supply_qty": 3,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 3726858649,
-      "offer_id": "бреверсы для крупных",
-      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
-      "cluster": "Невинномысск",
-      "stock": 1,
-      "ads": 0.13333333333333333,
-      "warehouses": [
-        {
-          "name": "НЕВИННОМЫССК_РФЦ",
-          "stock": 1,
-          "grade": "POPULAR"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 4,
-      "supply_qty": 3,
-      "days_left": 7.5,
       "confidence": "medium"
     },
     {
@@ -1144,22 +1144,6 @@
       "days_left": 15.4
     },
     {
-      "sku": 4823918365,
-      "offer_id": "для кошек и собак 260 1",
-      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-g/12282479008.jpg",
-      "price": 100.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 22.22,
-      "stock": 44,
-      "ads": 0.5555555555555556,
-      "cost_capitalization": 28599.02,
-      "retail_capitalization": 122113.68,
-      "days_left": 79.2
-    },
-    {
       "sku": 3726858649,
       "offer_id": "бреверсы для крупных",
       "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
@@ -1169,11 +1153,27 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 23.1,
-      "stock": 43,
+      "stock": 42,
       "ads": 0.9333333333333333,
-      "cost_capitalization": 28999.22,
-      "retail_capitalization": 119338.37,
-      "days_left": 46.1
+      "cost_capitalization": 28324.82,
+      "retail_capitalization": 116563.06,
+      "days_left": 45.0
+    },
+    {
+      "sku": 4823918365,
+      "offer_id": "для кошек и собак 260 1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-g/12282479008.jpg",
+      "price": 100.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 22.22,
+      "stock": 41,
+      "ads": 0.5555555555555556,
+      "cost_capitalization": 26649.09,
+      "retail_capitalization": 113787.74,
+      "days_left": 73.8
     },
     {
       "sku": 5472775507,
@@ -1217,11 +1217,11 @@
       "brand": "Инкотекс",
       "group": "Электрика",
       "cost_byn": 31.99,
-      "stock": 3,
+      "stock": 2,
       "ads": 1.3333333333333333,
-      "cost_capitalization": 2763.38,
-      "retail_capitalization": 9991.12,
-      "days_left": 2.2
+      "cost_capitalization": 1842.25,
+      "retail_capitalization": 6660.75,
+      "days_left": 1.5
     },
     {
       "sku": 3664742731,
@@ -1257,9 +1257,9 @@
     }
   ],
   "summary": {
-    "stock": 848,
-    "cost_capitalization": 560222.52,
-    "retail_capitalization": 2777669.85,
+    "stock": 843,
+    "cost_capitalization": 556677.06,
+    "retail_capitalization": 2763238.23,
     "fx_rub_per_byn": 27.753108
   },
   "raw_rows": 129
