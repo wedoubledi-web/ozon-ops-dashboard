@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T17:21:18.850307+00:00",
+  "generated_at": "2026-10-07T19:50:03.550077+00:00",
   "as_of": "2026-10-06",
   "geo": {
     "city": "Москва",
@@ -401,7 +401,7 @@
         "price_byn": 130.0,
         "price_rub": 1270.37,
         "price_source": "ozon_bestsellers",
-        "stock": 77,
+        "stock": 76,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -545,7 +545,7 @@
         "price_byn": 100.0,
         "price_rub": 1210.6,
         "price_source": "ozon_bestsellers",
-        "stock": 41,
+        "stock": 40,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1035,7 +1035,7 @@
         "price_byn": 125.0,
         "price_rub": null,
         "price_source": null,
-        "stock": 69,
+        "stock": 68,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1083,7 +1083,7 @@
         "price_byn": 125.0,
         "price_rub": 1057.41,
         "price_source": "ozon_bestsellers",
-        "stock": 152,
+        "stock": 151,
         "delivery": "",
         "delivery_days": null,
         "card": {}
