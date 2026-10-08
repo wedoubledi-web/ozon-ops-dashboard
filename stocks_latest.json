@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T19:50:02.756941+00:00",
+  "generated_at": "2026-10-08T00:40:45.358547+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -278,31 +278,6 @@
       "confidence": "medium"
     },
     {
-      "sku": 3726902147,
-      "offer_id": "глюкозамин 55 шт",
-      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "cluster": "Ростов",
-      "stock": 10,
-      "ads": 0.5714285714285714,
-      "warehouses": [
-        {
-          "name": "РОСТОВ-НА-ДОНУ_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-          "stock": 10,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 17,
-      "supply_qty": 7,
-      "days_left": 17.5,
-      "confidence": "high"
-    },
-    {
       "sku": 4451480169,
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
@@ -351,6 +326,31 @@
       "supply_qty": 6,
       "days_left": 4.2,
       "confidence": "medium"
+    },
+    {
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "cluster": "Ростов",
+      "stock": 11,
+      "ads": 0.5714285714285714,
+      "warehouses": [
+        {
+          "name": "РОСТОВ-НА-ДОНУ_РФЦ",
+          "stock": 1,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+          "stock": 10,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 17,
+      "supply_qty": 6,
+      "days_left": 19.2,
+      "confidence": "high"
     },
     {
       "sku": 4451480169,
@@ -1011,8 +1011,8 @@
       "cost_byn": 19.9,
       "stock": 151,
       "ads": 7.5,
-      "cost_capitalization": 88424.18,
-      "retail_capitalization": 523839.92,
+      "cost_capitalization": 88823.53,
+      "retail_capitalization": 526205.74,
       "days_left": 20.1
     },
     {
@@ -1027,8 +1027,8 @@
       "cost_byn": 22.26,
       "stock": 85,
       "ads": 2.1538461538461537,
-      "cost_capitalization": 55342.47,
-      "retail_capitalization": 235901.42,
+      "cost_capitalization": 55592.42,
+      "retail_capitalization": 236966.82,
       "days_left": 39.5
     },
     {
@@ -1043,8 +1043,8 @@
       "cost_byn": 25.36,
       "stock": 76,
       "ads": 1.1428571428571428,
-      "cost_capitalization": 56021.31,
-      "retail_capitalization": 274200.71,
+      "cost_capitalization": 56274.32,
+      "retail_capitalization": 275439.09,
       "days_left": 66.5
     },
     {
@@ -1059,8 +1059,8 @@
       "cost_byn": 25.36,
       "stock": 75,
       "ads": 0.6363636363636364,
-      "cost_capitalization": 55284.19,
-      "retail_capitalization": 291407.64,
+      "cost_capitalization": 55533.87,
+      "retail_capitalization": 292723.72,
       "days_left": 117.9
     },
     {
@@ -1075,8 +1075,8 @@
       "cost_byn": 13.67,
       "stock": 69,
       "ads": 2.8076923076923075,
-      "cost_capitalization": 28475.52,
-      "retail_capitalization": 201071.27,
+      "cost_capitalization": 28604.13,
+      "retail_capitalization": 201979.37,
       "days_left": 24.6
     },
     {
@@ -1091,8 +1091,8 @@
       "cost_byn": 17.64,
       "stock": 68,
       "ads": 0.21428571428571427,
-      "cost_capitalization": 35555.06,
-      "retail_capitalization": 235901.42,
+      "cost_capitalization": 35715.64,
+      "retail_capitalization": 236966.82,
       "days_left": 317.3
     },
     {
@@ -1107,8 +1107,8 @@
       "cost_byn": 25.36,
       "stock": 67,
       "ads": 2.24,
-      "cost_capitalization": 49387.21,
-      "retail_capitalization": 167351.24,
+      "cost_capitalization": 49610.26,
+      "retail_capitalization": 168107.05,
       "days_left": 29.9
     },
     {
@@ -1123,8 +1123,8 @@
       "cost_byn": 24.336,
       "stock": 63,
       "ads": 0.35714285714285715,
-      "cost_capitalization": 44648.31,
-      "retail_capitalization": 227297.96,
+      "cost_capitalization": 44849.96,
+      "retail_capitalization": 228324.51,
       "days_left": 176.4
     },
     {
@@ -1137,11 +1137,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 39.1,
-      "stock": 58,
+      "stock": 59,
       "ads": 3.761904761904762,
-      "cost_capitalization": 64870.12,
-      "retail_capitalization": 233403.64,
-      "days_left": 15.4
+      "cost_capitalization": 66286.59,
+      "retail_capitalization": 238500.14,
+      "days_left": 15.7
     },
     {
       "sku": 3726858649,
@@ -1155,8 +1155,8 @@
       "cost_byn": 23.1,
       "stock": 42,
       "ads": 0.9333333333333333,
-      "cost_capitalization": 28324.82,
-      "retail_capitalization": 116563.06,
+      "cost_capitalization": 28452.75,
+      "retail_capitalization": 117089.49,
       "days_left": 45.0
     },
     {
@@ -1171,8 +1171,8 @@
       "cost_byn": 22.22,
       "stock": 40,
       "ads": 0.5555555555555556,
-      "cost_capitalization": 25999.11,
-      "retail_capitalization": 111012.43,
+      "cost_capitalization": 26116.53,
+      "retail_capitalization": 111513.8,
       "days_left": 72.0
     },
     {
@@ -1187,8 +1187,8 @@
       "cost_byn": 14.03,
       "stock": 28,
       "ads": 3.6818181818181817,
-      "cost_capitalization": 11835.04,
-      "retail_capitalization": 81594.14,
+      "cost_capitalization": 11888.49,
+      "retail_capitalization": 81962.64,
       "days_left": 7.6
     },
     {
@@ -1203,8 +1203,8 @@
       "cost_byn": 18.43,
       "stock": 15,
       "ads": 2.761904761904762,
-      "cost_capitalization": 8171.9,
-      "retail_capitalization": 43711.15,
+      "cost_capitalization": 8208.81,
+      "retail_capitalization": 43908.56,
       "days_left": 5.4
     },
     {
@@ -1219,8 +1219,8 @@
       "cost_byn": 31.99,
       "stock": 2,
       "ads": 1.3333333333333333,
-      "cost_capitalization": 1842.25,
-      "retail_capitalization": 6660.75,
+      "cost_capitalization": 1850.57,
+      "retail_capitalization": 6690.83,
       "days_left": 1.5
     },
     {
@@ -1257,10 +1257,10 @@
     }
   ],
   "summary": {
-    "stock": 839,
-    "cost_capitalization": 554181.51,
-    "retail_capitalization": 2749916.74,
-    "fx_rub_per_byn": 27.753108
+    "stock": 840,
+    "cost_capitalization": 557807.86,
+    "retail_capitalization": 2766378.59,
+    "fx_rub_per_byn": 27.87845
   },
   "raw_rows": 129
 }
