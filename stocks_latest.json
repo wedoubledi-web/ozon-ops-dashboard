@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:45:31.907470+00:00",
+  "generated_at": "2026-10-09T00:57:01.191937+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -197,19 +197,19 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "cluster": "Екатеринбург",
-      "stock": 5,
+      "stock": 4,
       "ads": 0.5,
       "warehouses": [
         {
           "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-          "stock": 5,
+          "stock": 4,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 15,
-      "supply_qty": 10,
-      "days_left": 10.0,
+      "supply_qty": 11,
+      "days_left": 8.0,
       "confidence": "high"
     },
     {
@@ -303,26 +303,6 @@
       "confidence": "medium"
     },
     {
-      "sku": 3726858649,
-      "offer_id": "бреверсы для крупных",
-      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
-      "cluster": "Невинномысск",
-      "stock": 0,
-      "ads": 0.1875,
-      "warehouses": [
-        {
-          "name": "НЕВИННОМЫССК_РФЦ",
-          "stock": 0,
-          "grade": "POPULAR"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 6,
-      "supply_qty": 6,
-      "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
       "sku": 3726902147,
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
@@ -385,6 +365,26 @@
       "target_stock": 5,
       "supply_qty": 5,
       "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "sku": 3726858649,
+      "offer_id": "бреверсы для крупных",
+      "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+      "cluster": "Невинномысск",
+      "stock": 1,
+      "ads": 0.1875,
+      "warehouses": [
+        {
+          "name": "НЕВИННОМЫССК_РФЦ",
+          "stock": 1,
+          "grade": "POPULAR"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 6,
+      "supply_qty": 5,
+      "days_left": 5.3,
       "confidence": "medium"
     },
     {
@@ -465,6 +465,26 @@
       "target_stock": 4,
       "supply_qty": 4,
       "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "sku": 5516579647,
+      "offer_id": "для мелких 8в1",
+      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+      "cluster": "Ростов",
+      "stock": 1,
+      "ads": 0.15384615384615385,
+      "warehouses": [
+        {
+          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+          "stock": 1,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 5,
+      "supply_qty": 4,
+      "days_left": 6.5,
       "confidence": "medium"
     },
     {
@@ -583,7 +603,7 @@
         {
           "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
           "stock": 0,
-          "grade": "POPULAR"
+          "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
@@ -655,26 +675,6 @@
       "target_stock": 3,
       "supply_qty": 3,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 5516579647,
-      "offer_id": "для мелких 8в1",
-      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-      "cluster": "Ростов",
-      "stock": 2,
-      "ads": 0.15384615384615385,
-      "warehouses": [
-        {
-          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-          "stock": 2,
-          "grade": "POPULAR"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 5,
-      "supply_qty": 3,
-      "days_left": 13.0,
       "confidence": "medium"
     },
     {
@@ -768,7 +768,7 @@
         {
           "name": "КАЛИНИНГРАД_МРФЦ",
           "stock": 1,
-          "grade": "POPULAR"
+          "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
@@ -878,7 +878,7 @@
         {
           "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
           "stock": 1,
-          "grade": "POPULAR"
+          "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
@@ -963,7 +963,7 @@
         {
           "name": "НОВОСИБИРСК_3_РФЦ",
           "stock": 0,
-          "grade": "POPULAR"
+          "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1043,23 +1043,23 @@
       "sku": 4451480169,
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-o/11183230464.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-o/11183230464.jpg",
       "price": 125.0,
       "currency": "BYN",
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 150,
+      "stock": 148,
       "ads": 6.785714285714286,
-      "cost_capitalization": 88235.29,
-      "retail_capitalization": 522720.94,
-      "days_left": 22.1
+      "cost_capitalization": 87056.4,
+      "retail_capitalization": 515736.95,
+      "days_left": 21.8
     },
     {
       "sku": 5516649179,
       "offer_id": "для щенков 8в1",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
       "price": 100.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1067,15 +1067,15 @@
       "cost_byn": 22.26,
       "stock": 83,
       "ads": 2.1153846153846154,
-      "cost_capitalization": 54284.36,
-      "retail_capitalization": 231391.13,
+      "cost_capitalization": 54282.85,
+      "retail_capitalization": 231384.68,
       "days_left": 39.2
     },
     {
       "sku": 3726888167,
       "offer_id": "для пожилых собак1",
       "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-t/13144043837.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-t/13144043837.jpg",
       "price": 130.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1083,47 +1083,31 @@
       "cost_byn": 25.36,
       "stock": 76,
       "ads": 1.1363636363636365,
-      "cost_capitalization": 56274.32,
-      "retail_capitalization": 275439.09,
+      "cost_capitalization": 56272.76,
+      "retail_capitalization": 275431.41,
       "days_left": 66.9
     },
     {
       "sku": 3726892929,
       "offer_id": "для взрослых собак1",
       "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-h/13144238153.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-h/13144238153.jpg",
       "price": 140.0,
       "currency": "BYN",
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 75,
+      "stock": 76,
       "ads": 0.6086956521739131,
-      "cost_capitalization": 55533.87,
-      "retail_capitalization": 292723.72,
-      "days_left": 123.2
-    },
-    {
-      "sku": 4823627697,
-      "offer_id": "для кошек и собак 140",
-      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-4/12282410020.jpg",
-      "price": 105.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 13.67,
-      "stock": 67,
-      "ads": 2.6538461538461537,
-      "cost_capitalization": 27775.02,
-      "retail_capitalization": 196124.9,
-      "days_left": 25.2
+      "cost_capitalization": 56272.76,
+      "retail_capitalization": 296618.44,
+      "days_left": 124.9
     },
     {
       "sku": 5803370792,
       "offer_id": "шоколад 70",
       "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-i/15236829234.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-i/15236829234.jpg",
       "price": 125.0,
       "currency": "BYN",
       "brand": "Спартак",
@@ -1131,47 +1115,63 @@
       "cost_byn": 17.64,
       "stock": 67,
       "ads": 0.26666666666666666,
-      "cost_capitalization": 35190.41,
-      "retail_capitalization": 233482.02,
+      "cost_capitalization": 35189.43,
+      "retail_capitalization": 233475.51,
       "days_left": 251.2
     },
     {
-      "sku": 5516579647,
-      "offer_id": "для мелких 8в1",
-      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-i/13127971770.jpg",
-      "price": 90.0,
+      "sku": 4823627697,
+      "offer_id": "для кошек и собак 140",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-4/12282410020.jpg",
+      "price": 105.0,
       "currency": "BYN",
       "brand": "8IN1",
       "group": "Витамины для животных",
-      "cost_byn": 25.36,
-      "stock": 64,
-      "ads": 2.1538461538461537,
-      "cost_capitalization": 47388.9,
-      "retail_capitalization": 160579.87,
-      "days_left": 29.7
+      "cost_byn": 13.67,
+      "stock": 66,
+      "ads": 2.6538461538461537,
+      "cost_capitalization": 27359.71,
+      "retail_capitalization": 193192.27,
+      "days_left": 24.9
     },
     {
       "sku": 5803075530,
       "offer_id": "шоколад элит 4 шт",
       "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-n/15461342339.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-n/15461342339.jpg",
       "price": 130.0,
       "currency": "BYN",
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 24.336,
-      "stock": 63,
+      "stock": 62,
       "ads": 0.4666666666666667,
-      "cost_capitalization": 44849.96,
-      "retail_capitalization": 228324.51,
-      "days_left": 135.0
+      "cost_capitalization": 44136.82,
+      "retail_capitalization": 224694.04,
+      "days_left": 132.9
+    },
+    {
+      "sku": 5516579647,
+      "offer_id": "для мелких 8в1",
+      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-i/13127971770.jpg",
+      "price": 90.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 25.36,
+      "stock": 61,
+      "ads": 2.1538461538461537,
+      "cost_capitalization": 45166.29,
+      "retail_capitalization": 153048.42,
+      "days_left": 28.3
     },
     {
       "sku": 3726902147,
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-f/11145177663.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-f/11145177663.jpg",
       "price": 145.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1179,47 +1179,47 @@
       "cost_byn": 39.1,
       "stock": 58,
       "ads": 3.6363636363636362,
-      "cost_capitalization": 65163.09,
-      "retail_capitalization": 234457.76,
+      "cost_capitalization": 65161.27,
+      "retail_capitalization": 234451.23,
       "days_left": 16.0
     },
     {
       "sku": 3726858649,
       "offer_id": "бреверсы для крупных",
       "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-c/11143909200.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-c/11143909200.jpg",
       "price": 100.0,
       "currency": "BYN",
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 23.1,
-      "stock": 39,
+      "stock": 40,
       "ads": 1.125,
-      "cost_capitalization": 26420.41,
-      "retail_capitalization": 108725.95,
-      "days_left": 34.7
+      "cost_capitalization": 27097.1,
+      "retail_capitalization": 111510.69,
+      "days_left": 35.6
     },
     {
       "sku": 4823918365,
       "offer_id": "для кошек и собак 260 1",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-g/12282479008.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-g/12282479008.jpg",
       "price": 100.0,
       "currency": "BYN",
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 22.22,
-      "stock": 39,
+      "stock": 38,
       "ads": 0.7777777777777778,
-      "cost_capitalization": 25463.62,
-      "retail_capitalization": 108725.95,
-      "days_left": 50.1
+      "cost_capitalization": 24810.01,
+      "retail_capitalization": 105935.16,
+      "days_left": 48.9
     },
     {
       "sku": 5472775507,
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-t/11280225125.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-t/11280225125.jpg",
       "price": 105.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1227,15 +1227,15 @@
       "cost_byn": 14.03,
       "stock": 25,
       "ads": 3.5217391304347827,
-      "cost_capitalization": 10614.72,
-      "retail_capitalization": 73180.93,
+      "cost_capitalization": 10614.42,
+      "retail_capitalization": 73178.89,
       "days_left": 7.1
     },
     {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-d/12283634173.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-d/12283634173.jpg",
       "price": 105.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1243,15 +1243,15 @@
       "cost_byn": 18.43,
       "stock": 12,
       "ads": 2.6363636363636362,
-      "cost_capitalization": 6567.05,
-      "retail_capitalization": 35126.85,
+      "cost_capitalization": 6566.86,
+      "retail_capitalization": 35125.87,
       "days_left": 4.6
     },
     {
       "sku": 5745079896,
       "offer_id": "Меркурий201.7 (2026)",
       "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
       "price": 120.0,
       "currency": "BYN",
       "brand": "Инкотекс",
@@ -1259,15 +1259,15 @@
       "cost_byn": 31.99,
       "stock": 3,
       "ads": 1.3181818181818181,
-      "cost_capitalization": 2775.86,
-      "retail_capitalization": 10036.24,
+      "cost_capitalization": 2775.78,
+      "retail_capitalization": 10035.96,
       "days_left": 2.3
     },
     {
       "sku": 3664742731,
       "offer_id": "Multi Vit Puppy",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
       "price": 93.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1283,7 +1283,7 @@
       "sku": 3726897234,
       "offer_id": "для мелких пород",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-      "image": "https://ir.ozone.ru/s3/multimedia-1-i/13127971770.jpg",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-i/13127971770.jpg",
       "price": 100.0,
       "currency": "BYN",
       "brand": "8IN1",
@@ -1297,10 +1297,10 @@
     }
   ],
   "summary": {
-    "stock": 821,
-    "cost_capitalization": 546536.88,
-    "retail_capitalization": 2711039.87,
-    "fx_rub_per_byn": 27.87845
+    "stock": 815,
+    "cost_capitalization": 542762.45,
+    "retail_capitalization": 2693819.52,
+    "fx_rub_per_byn": 27.877673
   },
   "raw_rows": 127
 }
