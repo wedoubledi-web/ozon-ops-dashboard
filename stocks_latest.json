@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T14:00:37.791078+00:00",
+  "generated_at": "2026-10-09T16:53:37.880861+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -238,6 +238,26 @@
       "confidence": "high"
     },
     {
+      "sku": 4451480169,
+      "offer_id": "шокол",
+      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+      "cluster": "Ростов",
+      "stock": 11,
+      "ads": 0.6785714285714286,
+      "warehouses": [
+        {
+          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+          "stock": 11,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 20,
+      "supply_qty": 9,
+      "days_left": 16.2,
+      "confidence": "high"
+    },
+    {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -276,26 +296,6 @@
       "supply_qty": 8,
       "days_left": 0.0,
       "confidence": "medium"
-    },
-    {
-      "sku": 4451480169,
-      "offer_id": "шокол",
-      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
-      "cluster": "Ростов",
-      "stock": 12,
-      "ads": 0.6785714285714286,
-      "warehouses": [
-        {
-          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-          "stock": 12,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 20,
-      "supply_qty": 8,
-      "days_left": 17.7,
-      "confidence": "high"
     },
     {
       "sku": 5745079896,
@@ -533,6 +533,31 @@
       "confidence": "medium"
     },
     {
+      "sku": 5472775507,
+      "offer_id": "для собак фекалии",
+      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+      "cluster": "Санкт-Петербург и СЗО",
+      "stock": 11,
+      "ads": 0.5,
+      "warehouses": [
+        {
+          "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "СПБ_БУГРЫ_РФЦ",
+          "stock": 11,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 15,
+      "supply_qty": 4,
+      "days_left": 22.0,
+      "confidence": "high"
+    },
+    {
       "sku": 4451480169,
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
@@ -631,31 +656,6 @@
       "supply_qty": 3,
       "days_left": 0.0,
       "confidence": "medium"
-    },
-    {
-      "sku": 5472775507,
-      "offer_id": "для собак фекалии",
-      "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
-      "cluster": "Санкт-Петербург и СЗО",
-      "stock": 12,
-      "ads": 0.5,
-      "warehouses": [
-        {
-          "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "СПБ_БУГРЫ_РФЦ",
-          "stock": 12,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 15,
-      "supply_qty": 3,
-      "days_left": 24.0,
-      "confidence": "high"
     },
     {
       "sku": 4823627697,
@@ -903,31 +903,6 @@
       "confidence": "medium"
     },
     {
-      "sku": 4658698444,
-      "offer_id": "кальций",
-      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
-      "cluster": "Казань",
-      "stock": 0,
-      "ads": 0.043478260869565216,
-      "warehouses": [
-        {
-          "name": "КАЗАНЬ_РФЦ_НОВЫЙ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 1,
-      "supply_qty": 1,
-      "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
       "sku": 3726902147,
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
@@ -1026,6 +1001,31 @@
       "supply_qty": 1,
       "days_left": 0.0,
       "confidence": "medium"
+    },
+    {
+      "sku": 4658698444,
+      "offer_id": "кальций",
+      "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+      "cluster": "Казань",
+      "stock": 1,
+      "ads": 0.043478260869565216,
+      "warehouses": [
+        {
+          "name": "КАЗАНЬ_РФЦ_НОВЫЙ",
+          "stock": 1,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 1,
+      "supply_qty": 0,
+      "days_left": 23.0,
+      "confidence": "medium"
     }
   ],
   "positions": [
@@ -1039,11 +1039,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 146,
+      "stock": 145,
       "ads": 6.357142857142857,
-      "cost_capitalization": 85879.96,
-      "retail_capitalization": 508767.53,
-      "days_left": 23.0
+      "cost_capitalization": 85291.74,
+      "retail_capitalization": 505282.82,
+      "days_left": 22.8
     },
     {
       "sku": 5516649179,
@@ -1215,11 +1215,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 14.03,
-      "stock": 21,
+      "stock": 18,
       "ads": 3.5416666666666665,
-      "cost_capitalization": 8916.12,
-      "retail_capitalization": 61470.27,
-      "days_left": 5.9
+      "cost_capitalization": 7642.39,
+      "retail_capitalization": 52688.8,
+      "days_left": 5.1
     },
     {
       "sku": 4658698444,
@@ -1231,11 +1231,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 18.43,
-      "stock": 10,
+      "stock": 11,
       "ads": 2.652173913043478,
-      "cost_capitalization": 5472.39,
-      "retail_capitalization": 29271.56,
-      "days_left": 3.8
+      "cost_capitalization": 6019.63,
+      "retail_capitalization": 32198.71,
+      "days_left": 4.1
     },
     {
       "sku": 5745079896,
@@ -1287,10 +1287,10 @@
     }
   ],
   "summary": {
-    "stock": 793,
-    "cost_capitalization": 527825.04,
-    "retail_capitalization": 2624543.5,
+    "stock": 790,
+    "cost_capitalization": 526510.33,
+    "retail_capitalization": 2615204.48,
     "fx_rub_per_byn": 27.877673
   },
-  "raw_rows": 125
+  "raw_rows": 126
 }
