@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T00:57:01.972846+00:00",
+  "generated_at": "2026-10-09T11:03:52.733282+00:00",
   "as_of": "2026-10-08",
   "geo": {
     "city": "Москва",
@@ -129,7 +129,7 @@
         "price_byn": 105.0,
         "price_rub": 1232.4,
         "price_source": "ozon_bestsellers",
-        "stock": 25,
+        "stock": 23,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -228,7 +228,7 @@
         "price_byn": 140.0,
         "price_rub": 1273.88,
         "price_source": "ozon_bestsellers",
-        "stock": 76,
+        "stock": 75,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -302,7 +302,7 @@
         "price_byn": 145.0,
         "price_rub": 1508.34,
         "price_source": "ozon_bestsellers",
-        "stock": 58,
+        "stock": 57,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -669,7 +669,7 @@
         "price_byn": 90.0,
         "price_rub": 1219.45,
         "price_source": "ozon_bestsellers",
-        "stock": 61,
+        "stock": 57,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -788,7 +788,7 @@
         "price_byn": 105.0,
         "price_rub": 844.03,
         "price_source": "ozon_bestsellers",
-        "stock": 12,
+        "stock": 11,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -887,7 +887,7 @@
         "price_byn": 105.0,
         "price_rub": 907.53,
         "price_source": "ozon_bestsellers",
-        "stock": 66,
+        "stock": 65,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -986,7 +986,7 @@
         "price_byn": 100.0,
         "price_rub": 1083.71,
         "price_source": "ozon_bestsellers",
-        "stock": 40,
+        "stock": 39,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1035,7 +1035,7 @@
         "price_byn": 125.0,
         "price_rub": null,
         "price_source": null,
-        "stock": 67,
+        "stock": 66,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -1083,7 +1083,7 @@
         "price_byn": 125.0,
         "price_rub": 1057.41,
         "price_source": "ozon_bestsellers",
-        "stock": 148,
+        "stock": 146,
         "delivery": "",
         "delivery_days": null,
         "card": {}
