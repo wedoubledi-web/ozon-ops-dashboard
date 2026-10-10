@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T00:27:42.433706+00:00",
+  "generated_at": "2026-10-10T10:20:45.951469+00:00",
   "as_of": "2026-10-09",
   "expected_as_of": "2026-10-09",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -67324,17 +67324,17 @@
     {
       "date": "2026-10-09",
       "status": "verified",
-      "accruals": 64,
+      "accruals": 73,
       "sales": 15386.62,
       "customer_sales": 11846.71,
       "marketplace_discount": 3539.91,
       "compensation_points": 3539.91,
       "seller_coinvestment": 71.68,
-      "payout": 9365.35,
+      "payout": 6580.79,
       "tax": 710.8,
       "cogs": 7161.01,
-      "net": 1493.54,
-      "margin_pct": 9.71,
+      "net": -1291.02,
+      "margin_pct": -8.39,
       "spp_pct": 23.01,
       "units": 12,
       "avg_price": 1282.22,
@@ -67342,7 +67342,7 @@
       "commission": -2803.74,
       "acquiring": -897.36,
       "logistics": -1450.87,
-      "ads": 0.0,
+      "ads": -2784.56,
       "storage": 0.0,
       "paid_acceptance": -764.0,
       "fines": 0.0,
@@ -67371,15 +67371,15 @@
           "units": 3,
           "revenue": 3581.0,
           "customer_revenue": 2947.78,
-          "payout": 2293.77,
+          "payout": 1645.7,
           "cogs": 2219.93,
-          "net": -103.03,
-          "margin_pct": -2.88,
+          "net": -751.1,
+          "margin_pct": -20.97,
           "spp_pct": 17.68,
           "commission": -447.64,
           "acquiring": -230.55,
           "logistics": -318.45,
-          "ads": 0.0,
+          "ads": -648.06,
           "storage": 0.0,
           "paid_acceptance": -177.81,
           "fines": 0.0,
@@ -67389,15 +67389,15 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 5,
-            "awaiting_packaging": 1,
-            "awaiting_deliver": 2
+            "delivering": 6,
+            "awaiting_deliver": 1,
+            "delivered": 1
           },
-          "views": 479,
-          "clicks": 38,
-          "perf_spend": 291.29,
-          "ctr": 7.93,
-          "cpc": 7.67
+          "views": 482,
+          "clicks": 39,
+          "perf_spend": 293.18,
+          "ctr": 8.09,
+          "cpc": 7.52
         },
         {
           "sku": 4658698444,
@@ -67412,15 +67412,15 @@
           "units": 3,
           "revenue": 3326.0,
           "customer_revenue": 2394.84,
-          "payout": 2333.29,
+          "payout": 1731.38,
           "cogs": 1640.71,
-          "net": 548.89,
-          "margin_pct": 16.5,
+          "net": -53.02,
+          "margin_pct": -1.59,
           "spp_pct": 28.0,
           "commission": -415.76,
           "acquiring": -49.58,
           "logistics": -422.2,
-          "ads": 0.0,
+          "ads": -601.92,
           "storage": 0.0,
           "paid_acceptance": -165.15,
           "fines": 0.0,
@@ -67430,13 +67430,13 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "awaiting_deliver": 2,
-            "delivering": 1
+            "delivering": 2,
+            "awaiting_deliver": 1
           },
-          "views": 634,
+          "views": 640,
           "clicks": 34,
           "perf_spend": 223.64,
-          "ctr": 5.36,
+          "ctr": 5.31,
           "cpc": 6.58
         },
         {
@@ -67452,15 +67452,15 @@
           "units": 1,
           "revenue": 2645.62,
           "customer_revenue": 1301.64,
-          "payout": 990.12,
+          "payout": 511.33,
           "cogs": 924.69,
-          "net": -12.67,
-          "margin_pct": -0.48,
+          "net": -491.46,
+          "margin_pct": -18.58,
           "spp_pct": 50.8,
           "commission": -1349.27,
           "acquiring": 0.0,
           "logistics": -118.0,
-          "ads": 0.0,
+          "ads": -478.79,
           "storage": 0.0,
           "paid_acceptance": -131.36,
           "fines": 0.0,
@@ -67484,15 +67484,15 @@
           "units": 2,
           "revenue": 2508.0,
           "customer_revenue": 2206.08,
-          "payout": 1670.95,
+          "payout": 1217.07,
           "cogs": 848.63,
-          "net": 689.95,
-          "margin_pct": 27.51,
+          "net": 236.07,
+          "margin_pct": 9.41,
           "spp_pct": 12.04,
           "commission": -313.5,
           "acquiring": -163.56,
           "logistics": -156.47,
-          "ads": 0.0,
+          "ads": -453.88,
           "storage": 0.0,
           "paid_acceptance": -124.53,
           "fines": 0.0,
@@ -67502,13 +67502,13 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 4,
-            "awaiting_deliver": 3
+            "delivering": 6,
+            "delivered": 1
           },
-          "views": 337,
+          "views": 342,
           "clicks": 49,
           "perf_spend": 256.43,
-          "ctr": 14.54,
+          "ctr": 14.33,
           "cpc": 5.23
         },
         {
@@ -67524,15 +67524,15 @@
           "units": 1,
           "revenue": 1157.0,
           "customer_revenue": 1099.65,
-          "payout": 806.24,
+          "payout": 596.86,
           "cogs": 587.86,
-          "net": 152.4,
-          "margin_pct": 13.17,
+          "net": -56.98,
+          "margin_pct": -4.92,
           "spp_pct": 4.96,
           "commission": -72.31,
           "acquiring": -105.39,
           "logistics": -256.74,
-          "ads": 0.0,
+          "ads": -209.39,
           "storage": 0.0,
           "paid_acceptance": -57.45,
           "fines": 0.0,
@@ -67542,10 +67542,9 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 4,
-            "awaiting_deliver": 2
+            "delivering": 6
           },
-          "views": 10443,
+          "views": 10444,
           "clicks": 540,
           "perf_spend": 1144.72,
           "ctr": 5.17,
@@ -67564,15 +67563,15 @@
           "units": 1,
           "revenue": 1115.0,
           "customer_revenue": 946.03,
-          "payout": 724.13,
+          "payout": 522.35,
           "cogs": 414.29,
-          "net": 253.08,
-          "margin_pct": 22.7,
+          "net": 51.3,
+          "margin_pct": 4.6,
           "spp_pct": 15.15,
           "commission": -139.38,
           "acquiring": -78.7,
           "logistics": -82.31,
-          "ads": 0.0,
+          "ads": -201.78,
           "storage": 0.0,
           "paid_acceptance": -55.36,
           "fines": 0.0,
@@ -67582,13 +67581,12 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 2,
-            "awaiting_packaging": 1
+            "delivering": 3
           },
-          "views": 636,
+          "views": 643,
           "clicks": 25,
           "perf_spend": 179.42,
-          "ctr": 3.93,
+          "ctr": 3.89,
           "cpc": 7.18
         },
         {
@@ -67604,15 +67602,15 @@
           "units": 1,
           "revenue": 1054.0,
           "customer_revenue": 950.69,
-          "payout": 795.09,
+          "payout": 604.34,
           "cogs": 524.89,
-          "net": 213.16,
-          "margin_pct": 20.22,
+          "net": 22.41,
+          "margin_pct": 2.13,
           "spp_pct": 9.8,
           "commission": -65.88,
           "acquiring": -21.34,
           "logistics": -96.7,
-          "ads": 0.0,
+          "ads": -190.75,
           "storage": 0.0,
           "paid_acceptance": -52.33,
           "fines": 0.0,
@@ -67624,11 +67622,11 @@
           "posting_statuses": {
             "delivering": 1
           },
-          "views": 925,
-          "clicks": 25,
-          "perf_spend": 126.67,
-          "ctr": 2.7,
-          "cpc": 5.07
+          "views": 937,
+          "clicks": 26,
+          "perf_spend": 129.63,
+          "ctr": 2.77,
+          "cpc": 4.99
         },
         {
           "sku": 3726902147,
@@ -67661,13 +67659,12 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 3,
-            "awaiting_deliver": 2
+            "delivering": 5
           },
-          "views": 578,
+          "views": 580,
           "clicks": 29,
           "perf_spend": 247.98,
-          "ctr": 5.02,
+          "ctr": 5.0,
           "cpc": 8.55
         },
         {
@@ -67701,13 +67698,12 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 1,
-            "awaiting_deliver": 1
+            "delivering": 2
           },
-          "views": 410,
+          "views": 413,
           "clicks": 19,
           "perf_spend": 129.34,
-          "ctr": 4.63,
+          "ctr": 4.6,
           "cpc": 6.81
         },
         {
@@ -67741,7 +67737,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "awaiting_deliver": 2
+            "delivering": 2
           }
         },
         {
@@ -68020,26 +68016,26 @@
           "cancelled_units": 0,
           "buyout_pct": null,
           "posting_statuses": {},
-          "views": 1101,
-          "clicks": 31,
-          "perf_spend": 169.94,
-          "ctr": 2.82,
-          "cpc": 5.48
+          "views": 1111,
+          "clicks": 32,
+          "perf_spend": 180.22,
+          "ctr": 2.88,
+          "cpc": 5.63
         }
       ],
       "orders": 39,
       "order_revenue": 55301.05,
       "cancelled_units": 0,
       "buyout_pct": 100.0,
-      "views": 15543,
-      "clicks": 790,
-      "perf_spend": 2769.43,
-      "ctr": 5.08,
+      "views": 15592,
+      "clicks": 793,
+      "perf_spend": 2784.56,
+      "ctr": 5.09,
       "cpc": 3.51
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-10T00:27:41.482481+00:00",
+    "generated_at": "2026-10-10T10:20:44.902787+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -68048,7 +68044,7 @@
         "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
         "cluster": "Москва, МО и Дальние регионы",
         "stock": 3,
-        "ads": 1.75,
+        "ads": 1.72,
         "warehouses": [
           {
             "name": "СОФЬИНО_РФЦ",
@@ -68078,7 +68074,7 @@
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
         "cluster": "Москва, МО и Дальние регионы",
         "stock": 0,
-        "ads": 1.0869565217391304,
+        "ads": 1.125,
         "warehouses": [
           {
             "name": "НОГИНСК_РФЦ",
@@ -68092,8 +68088,8 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 33,
-        "supply_qty": 33,
+        "target_stock": 34,
+        "supply_qty": 34,
         "days_left": 0.0,
         "confidence": "high"
       },
@@ -68103,7 +68099,7 @@
         "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
         "cluster": "Беларусь",
         "stock": 2,
-        "ads": 0.8260869565217391,
+        "ads": 0.7916666666666666,
         "warehouses": [
           {
             "name": "МИНСК_МПСЦ",
@@ -68112,9 +68108,9 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 25,
-        "supply_qty": 23,
-        "days_left": 2.4,
+        "target_stock": 24,
+        "supply_qty": 22,
+        "days_left": 2.5,
         "confidence": "high"
       },
       {
@@ -68123,7 +68119,7 @@
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Москва, МО и Дальние регионы",
         "stock": 25,
-        "ads": 1.3928571428571428,
+        "ads": 1.4285714285714286,
         "warehouses": [
           {
             "name": "ПУШКИНО_1_РФЦ",
@@ -68137,9 +68133,9 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 42,
-        "supply_qty": 17,
-        "days_left": 17.9,
+        "target_stock": 43,
+        "supply_qty": 18,
+        "days_left": 17.5,
         "confidence": "high"
       },
       {
@@ -68148,7 +68144,7 @@
         "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
         "cluster": "Москва, МО и Дальние регионы",
         "stock": 19,
-        "ads": 1.173913043478261,
+        "ads": 1.2083333333333333,
         "warehouses": [
           {
             "name": "СОФЬИНО_РФЦ",
@@ -68167,9 +68163,9 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 35,
-        "supply_qty": 16,
-        "days_left": 16.2,
+        "target_stock": 36,
+        "supply_qty": 17,
+        "days_left": 15.7,
         "confidence": "high"
       },
       {
@@ -68218,7 +68214,7 @@
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Екатеринбург",
         "stock": 4,
-        "ads": 0.5,
+        "ads": 0.5357142857142857,
         "warehouses": [
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
@@ -68227,9 +68223,9 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 15,
-        "supply_qty": 11,
-        "days_left": 8.0,
+        "target_stock": 16,
+        "supply_qty": 12,
+        "days_left": 7.5,
         "confidence": "high"
       },
       {
@@ -68238,7 +68234,7 @@
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Ростов",
         "stock": 9,
-        "ads": 0.6785714285714286,
+        "ads": 0.6071428571428571,
         "warehouses": [
           {
             "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
@@ -68247,10 +68243,30 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 20,
-        "supply_qty": 11,
-        "days_left": 13.3,
+        "target_stock": 18,
+        "supply_qty": 9,
+        "days_left": 14.8,
         "confidence": "high"
+      },
+      {
+        "sku": 4658698444,
+        "offer_id": "кальций",
+        "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
+        "cluster": "Дальний Восток",
+        "stock": 0,
+        "ads": 0.25,
+        "warehouses": [
+          {
+            "name": "ХАБАРОВСК_2_РФЦ",
+            "stock": 0,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 8,
+        "supply_qty": 8,
+        "days_left": 0.0,
+        "confidence": "medium"
       },
       {
         "sku": 4451480169,
@@ -68258,7 +68274,7 @@
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Новосибирск",
         "stock": 1,
-        "ads": 0.35714285714285715,
+        "ads": 0.2857142857142857,
         "warehouses": [
           {
             "name": "НОВОСИБИРСК_РФЦ_НОВЫЙ",
@@ -68267,9 +68283,34 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 11,
-        "supply_qty": 10,
-        "days_left": 2.8,
+        "target_stock": 9,
+        "supply_qty": 8,
+        "days_left": 3.5,
+        "confidence": "medium"
+      },
+      {
+        "sku": 3726858649,
+        "offer_id": "бреверсы для крупных",
+        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+        "cluster": "Ростов",
+        "stock": 0,
+        "ads": 0.2777777777777778,
+        "warehouses": [
+          {
+            "name": "РОСТОВ-НА-ДОНУ_РФЦ",
+            "stock": 0,
+            "grade": "POPULAR"
+          },
+          {
+            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+            "stock": 0,
+            "grade": "POPULAR"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 8,
+        "supply_qty": 8,
+        "days_left": 0.0,
         "confidence": "medium"
       },
       {
@@ -68278,7 +68319,7 @@
         "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
         "cluster": "Ростов",
         "stock": 8,
-        "ads": 0.5652173913043478,
+        "ads": 0.5416666666666666,
         "warehouses": [
           {
             "name": "РОСТОВ-НА-ДОНУ_РФЦ",
@@ -68292,21 +68333,21 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 17,
-        "supply_qty": 9,
-        "days_left": 14.2,
+        "target_stock": 16,
+        "supply_qty": 8,
+        "days_left": 14.8,
         "confidence": "high"
       },
       {
-        "sku": 4658698444,
-        "offer_id": "кальций",
-        "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
-        "cluster": "Дальний Восток",
+        "sku": 5516579647,
+        "offer_id": "для мелких 8в1",
+        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+        "cluster": "Ростов",
         "stock": 0,
-        "ads": 0.2608695652173913,
+        "ads": 0.25,
         "warehouses": [
           {
-            "name": "ХАБАРОВСК_2_РФЦ",
+            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
             "stock": 0,
             "grade": "DEFICIT"
           }
@@ -68323,7 +68364,7 @@
         "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
         "cluster": "Екатеринбург",
         "stock": 0,
-        "ads": 0.25,
+        "ads": 0.24,
         "warehouses": [
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
@@ -68332,10 +68373,35 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 8,
-        "supply_qty": 8,
+        "target_stock": 7,
+        "supply_qty": 7,
         "days_left": 0.0,
         "confidence": "medium"
+      },
+      {
+        "sku": 5472775507,
+        "offer_id": "для собак фекалии",
+        "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
+        "cluster": "Санкт-Петербург и СЗО",
+        "stock": 11,
+        "ads": 0.6,
+        "warehouses": [
+          {
+            "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
+            "stock": 0,
+            "grade": "DEFICIT"
+          },
+          {
+            "name": "СПБ_БУГРЫ_РФЦ",
+            "stock": 11,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 18,
+        "supply_qty": 7,
+        "days_left": 18.3,
+        "confidence": "high"
       },
       {
         "sku": 5745079896,
@@ -68343,7 +68409,7 @@
         "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
         "cluster": "Казань",
         "stock": 0,
-        "ads": 0.21739130434782608,
+        "ads": 0.20833333333333334,
         "warehouses": [
           {
             "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
@@ -68362,8 +68428,8 @@
           }
         ],
         "target_days": 30,
-        "target_stock": 7,
-        "supply_qty": 7,
+        "target_stock": 6,
+        "supply_qty": 6,
         "days_left": 0.0,
         "confidence": "medium"
       },
@@ -68385,26 +68451,6 @@
         "target_stock": 6,
         "supply_qty": 6,
         "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
-        "sku": 5516579647,
-        "offer_id": "для мелких 8в1",
-        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-        "cluster": "Ростов",
-        "stock": 1,
-        "ads": 0.2222222222222222,
-        "warehouses": [
-          {
-            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-            "stock": 1,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 7,
-        "supply_qty": 6,
-        "days_left": 4.5,
         "confidence": "medium"
       },
       {
@@ -68433,7 +68479,7 @@
         "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
         "cluster": "Красноярск",
         "stock": 0,
-        "ads": 0.16666666666666666,
+        "ads": 0.16,
         "warehouses": [
           {
             "name": "КРАСНОЯРСК_СТАРЦЕВО_РФЦ",
@@ -68453,7 +68499,7 @@
         "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
         "cluster": "Невинномысск",
         "stock": 0,
-        "ads": 0.17647058823529413,
+        "ads": 0.16666666666666666,
         "warehouses": [
           {
             "name": "НЕВИННОМЫССК_РФЦ",
@@ -68468,57 +68514,12 @@
         "confidence": "medium"
       },
       {
-        "sku": 3726858649,
-        "offer_id": "бреверсы для крупных",
-        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
-        "cluster": "Ростов",
-        "stock": 0,
-        "ads": 0.17647058823529413,
-        "warehouses": [
-          {
-            "name": "РОСТОВ-НА-ДОНУ_РФЦ",
-            "stock": 0,
-            "grade": "POPULAR"
-          },
-          {
-            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-            "stock": 0,
-            "grade": "POPULAR"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 5,
-        "supply_qty": 5,
-        "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
-        "sku": 5516649179,
-        "offer_id": "для щенков 8в1",
-        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-        "cluster": "Ростов",
-        "stock": 5,
-        "ads": 0.34615384615384615,
-        "warehouses": [
-          {
-            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-            "stock": 5,
-            "grade": "POPULAR"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 10,
-        "supply_qty": 5,
-        "days_left": 14.4,
-        "confidence": "medium"
-      },
-      {
         "sku": 4658698444,
         "offer_id": "кальций",
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
         "cluster": "Екатеринбург",
         "stock": 0,
-        "ads": 0.13043478260869565,
+        "ads": 0.125,
         "warehouses": [
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
@@ -68558,77 +68559,12 @@
         "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
         "cluster": "Москва, МО и Дальние регионы",
         "stock": 0,
-        "ads": 0.13043478260869565,
+        "ads": 0.125,
         "warehouses": [
           {
             "name": "НОГИНСК_РФЦ",
             "stock": 0,
             "grade": "COLLECTING_DATA"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 4,
-        "supply_qty": 4,
-        "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
-        "sku": 5472775507,
-        "offer_id": "для собак фекалии",
-        "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
-        "cluster": "Санкт-Петербург и СЗО",
-        "stock": 11,
-        "ads": 0.5,
-        "warehouses": [
-          {
-            "name": "САНКТ-ПЕТЕРБУРГ_РФЦ",
-            "stock": 0,
-            "grade": "DEFICIT"
-          },
-          {
-            "name": "СПБ_БУГРЫ_РФЦ",
-            "stock": 11,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 15,
-        "supply_qty": 4,
-        "days_left": 22.0,
-        "confidence": "high"
-      },
-      {
-        "sku": 4451480169,
-        "offer_id": "шокол",
-        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
-        "cluster": "Саратов",
-        "stock": 1,
-        "ads": 0.17857142857142858,
-        "warehouses": [
-          {
-            "name": "ВОЛГОГРАД_РФЦ",
-            "stock": 1,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 5,
-        "supply_qty": 4,
-        "days_left": 5.6,
-        "confidence": "medium"
-      },
-      {
-        "sku": 3726858649,
-        "offer_id": "бреверсы для крупных",
-        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
-        "cluster": "Тюмень",
-        "stock": 0,
-        "ads": 0.11764705882352941,
-        "warehouses": [
-          {
-            "name": "ТЮМЕНЬ_РФЦ",
-            "stock": 0,
-            "grade": "POPULAR"
           }
         ],
         "target_days": 30,
@@ -68658,17 +68594,17 @@
         "confidence": "medium"
       },
       {
-        "sku": 3726902147,
-        "offer_id": "глюкозамин 55 шт",
-        "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-        "cluster": "Казань",
+        "sku": 5516649179,
+        "offer_id": "для щенков 8в1",
+        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+        "cluster": "Омск",
         "stock": 0,
-        "ads": 0.08695652173913043,
+        "ads": 0.1111111111111111,
         "warehouses": [
           {
-            "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
+            "name": "ОМСК_РФЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "POPULAR"
           }
         ],
         "target_days": 30,
@@ -68681,12 +68617,52 @@
         "sku": 5516649179,
         "offer_id": "для щенков 8в1",
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-        "cluster": "Омск",
-        "stock": 0,
-        "ads": 0.11538461538461539,
+        "cluster": "Ростов",
+        "stock": 5,
+        "ads": 0.25925925925925924,
         "warehouses": [
           {
-            "name": "ОМСК_РФЦ",
+            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+            "stock": 5,
+            "grade": "POPULAR"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 8,
+        "supply_qty": 3,
+        "days_left": 19.3,
+        "confidence": "medium"
+      },
+      {
+        "sku": 4451480169,
+        "offer_id": "шокол",
+        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+        "cluster": "Саратов",
+        "stock": 1,
+        "ads": 0.14285714285714285,
+        "warehouses": [
+          {
+            "name": "ВОЛГОГРАД_РФЦ",
+            "stock": 1,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 4,
+        "supply_qty": 3,
+        "days_left": 7.0,
+        "confidence": "medium"
+      },
+      {
+        "sku": 3726858649,
+        "offer_id": "бреверсы для крупных",
+        "name": "Витамины для собак крупных пород 8in1 Excel Brewer's Yeast for large breed 80 шт",
+        "cluster": "Тюмень",
+        "stock": 0,
+        "ads": 0.1111111111111111,
+        "warehouses": [
+          {
+            "name": "ТЮМЕНЬ_РФЦ",
             "stock": 0,
             "grade": "POPULAR"
           }
@@ -68718,17 +68694,17 @@
         "confidence": "medium"
       },
       {
-        "sku": 4823918365,
-        "offer_id": "для кошек и собак 260 1",
-        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
-        "cluster": "Дальний Восток",
+        "sku": 3726902147,
+        "offer_id": "глюкозамин 55 шт",
+        "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+        "cluster": "Екатеринбург",
         "stock": 0,
-        "ads": 0.05555555555555555,
+        "ads": 0.08333333333333333,
         "warehouses": [
           {
-            "name": "ХАБАРОВСК_2_РФЦ",
+            "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
             "stock": 0,
-            "grade": "POPULAR"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -68741,20 +68717,20 @@
         "sku": 3726902147,
         "offer_id": "глюкозамин 55 шт",
         "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-        "cluster": "Екатеринбург",
-        "stock": 1,
-        "ads": 0.08695652173913043,
+        "cluster": "Казань",
+        "stock": 0,
+        "ads": 0.08333333333333333,
         "warehouses": [
           {
-            "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-            "stock": 1,
+            "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
+            "stock": 0,
             "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
-        "target_stock": 3,
+        "target_stock": 2,
         "supply_qty": 2,
-        "days_left": 11.5,
+        "days_left": 0.0,
         "confidence": "medium"
       },
       {
@@ -68783,7 +68759,7 @@
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
         "cluster": "Казань",
         "stock": 0,
-        "ads": 0.07407407407407407,
+        "ads": 0.07142857142857142,
         "warehouses": [
           {
             "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
@@ -68803,7 +68779,7 @@
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
         "cluster": "Казань",
         "stock": 0,
-        "ads": 0.07692307692307693,
+        "ads": 0.07407407407407407,
         "warehouses": [
           {
             "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
@@ -68823,7 +68799,7 @@
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
         "cluster": "Калининград",
         "stock": 1,
-        "ads": 0.1111111111111111,
+        "ads": 0.10714285714285714,
         "warehouses": [
           {
             "name": "КАЛИНИНГРАД_МРФЦ",
@@ -68834,7 +68810,7 @@
         "target_days": 30,
         "target_stock": 3,
         "supply_qty": 2,
-        "days_left": 9.0,
+        "days_left": 9.3,
         "confidence": "medium"
       },
       {
@@ -68863,7 +68839,7 @@
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
         "cluster": "Красноярск",
         "stock": 0,
-        "ads": 0.07692307692307693,
+        "ads": 0.07407407407407407,
         "warehouses": [
           {
             "name": "КРАСНОЯРСК_МРФЦ",
@@ -68903,32 +68879,12 @@
         "confidence": "medium"
       },
       {
-        "sku": 4823627697,
-        "offer_id": "для кошек и собак 140",
-        "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
-        "cluster": "Ростов",
-        "stock": 7,
-        "ads": 0.3076923076923077,
-        "warehouses": [
-          {
-            "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-            "stock": 7,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 9,
-        "supply_qty": 2,
-        "days_left": 22.8,
-        "confidence": "medium"
-      },
-      {
         "sku": 5516579647,
         "offer_id": "для мелких 8в1",
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
         "cluster": "Екатеринбург",
         "stock": 1,
-        "ads": 0.07407407407407407,
+        "ads": 0.07142857142857142,
         "warehouses": [
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
@@ -68939,7 +68895,7 @@
         "target_days": 30,
         "target_stock": 2,
         "supply_qty": 1,
-        "days_left": 13.5,
+        "days_left": 14.0,
         "confidence": "medium"
       },
       {
@@ -68948,7 +68904,7 @@
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
         "cluster": "Казань",
         "stock": 0,
-        "ads": 0.043478260869565216,
+        "ads": 0.041666666666666664,
         "warehouses": [
           {
             "name": "КАЗАНЬ_РФЦ_НОВЫЙ",
@@ -68973,7 +68929,7 @@
         "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
         "cluster": "Краснодар",
         "stock": 0,
-        "ads": 0.043478260869565216,
+        "ads": 0.041666666666666664,
         "warehouses": [
           {
             "name": "АДЫГЕЙСК_РФЦ",
@@ -68993,12 +68949,12 @@
         "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
         "cluster": "Красноярск",
         "stock": 0,
-        "ads": 0.041666666666666664,
+        "ads": 0.04,
         "warehouses": [
           {
             "name": "КРАСНОЯРСК_МРФЦ",
             "stock": 0,
-            "grade": "SURPLUS"
+            "grade": "ACTUAL"
           }
         ],
         "target_days": 30,
@@ -69013,7 +68969,7 @@
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
         "cluster": "Новосибирск",
         "stock": 0,
-        "ads": 0.037037037037037035,
+        "ads": 0.03571428571428571,
         "warehouses": [
           {
             "name": "НОВОСИБИРСК_3_РФЦ",
@@ -69033,7 +68989,7 @@
         "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
         "cluster": "Санкт-Петербург и СЗО",
         "stock": 0,
-        "ads": 0.043478260869565216,
+        "ads": 0.041666666666666664,
         "warehouses": [
           {
             "name": "СПБ_БУГРЫ_РФЦ",
@@ -69053,7 +69009,7 @@
         "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
         "cluster": "Ярославль",
         "stock": 0,
-        "ads": 0.043478260869565216,
+        "ads": 0.041666666666666664,
         "warehouses": [
           {
             "name": "ЯРОСЛАВЛЬ_РФЦ",
@@ -69080,10 +69036,10 @@
         "group": "Продукты",
         "cost_byn": 19.9,
         "stock": 141,
-        "ads": 6.357142857142857,
+        "ads": 6.071428571428571,
         "cost_capitalization": 82888.03,
         "retail_capitalization": 491042.82,
-        "days_left": 22.2
+        "days_left": 23.2
       },
       {
         "sku": 5516649179,
@@ -69095,11 +69051,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 22.26,
-        "stock": 83,
-        "ads": 2.0384615384615383,
-        "cost_capitalization": 54249.58,
-        "retail_capitalization": 231242.86,
-        "days_left": 40.7
+        "stock": 81,
+        "ads": 1.8518518518518519,
+        "cost_capitalization": 52942.36,
+        "retail_capitalization": 225670.74,
+        "days_left": 43.7
       },
       {
         "sku": 3726888167,
@@ -69112,10 +69068,10 @@
         "group": "Витамины для животных",
         "cost_byn": 25.36,
         "stock": 76,
-        "ads": 1.0434782608695652,
+        "ads": 1.0,
         "cost_capitalization": 56238.26,
         "retail_capitalization": 275262.59,
-        "days_left": 72.8
+        "days_left": 76.0
       },
       {
         "sku": 3726892929,
@@ -69128,10 +69084,10 @@
         "group": "Витамины для животных",
         "cost_byn": 25.36,
         "stock": 74,
-        "ads": 0.5833333333333334,
+        "ads": 0.64,
         "cost_capitalization": 54758.31,
         "retail_capitalization": 288635.67,
-        "days_left": 126.9
+        "days_left": 115.6
       },
       {
         "sku": 5803370792,
@@ -69144,10 +69100,10 @@
         "group": "Продукты",
         "cost_byn": 17.64,
         "stock": 66,
-        "ads": 0.3125,
+        "ads": 0.35294117647058826,
         "cost_capitalization": 34642.97,
         "retail_capitalization": 229849.83,
-        "days_left": 211.2
+        "days_left": 187.0
       },
       {
         "sku": 4823627697,
@@ -69160,10 +69116,10 @@
         "group": "Витамины для животных",
         "cost_byn": 13.67,
         "stock": 63,
-        "ads": 2.6538461538461537,
+        "ads": 2.6923076923076925,
         "cost_capitalization": 26100.08,
         "retail_capitalization": 184297.77,
-        "days_left": 23.7
+        "days_left": 23.4
       },
       {
         "sku": 5803075530,
@@ -69176,10 +69132,10 @@
         "group": "Продукты",
         "cost_byn": 24.336,
         "stock": 62,
-        "ads": 0.4375,
+        "ads": 0.47058823529411764,
         "cost_capitalization": 44109.77,
         "retail_capitalization": 224556.32,
-        "days_left": 141.7
+        "days_left": 131.8
       },
       {
         "sku": 3726902147,
@@ -69191,11 +69147,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 39.1,
-        "stock": 53,
-        "ads": 3.4782608695652173,
-        "cost_capitalization": 59507.42,
-        "retail_capitalization": 214108.6,
-        "days_left": 15.2
+        "stock": 52,
+        "ads": 3.5416666666666665,
+        "cost_capitalization": 58384.64,
+        "retail_capitalization": 210068.82,
+        "days_left": 14.7
       },
       {
         "sku": 5516579647,
@@ -69207,11 +69163,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 25.36,
-        "stock": 53,
-        "ads": 2.2222222222222223,
-        "cost_capitalization": 39218.79,
-        "retail_capitalization": 132894.99,
-        "days_left": 23.8
+        "stock": 52,
+        "ads": 2.4642857142857144,
+        "cost_capitalization": 38478.81,
+        "retail_capitalization": 130387.54,
+        "days_left": 21.1
       },
       {
         "sku": 3726858649,
@@ -69224,10 +69180,10 @@
         "group": "Витамины для животных",
         "cost_byn": 23.1,
         "stock": 38,
-        "ads": 1.2352941176470589,
+        "ads": 1.2777777777777777,
         "cost_capitalization": 25726.46,
         "retail_capitalization": 105870.23,
-        "days_left": 30.8
+        "days_left": 29.7
       },
       {
         "sku": 4823918365,
@@ -69240,10 +69196,10 @@
         "group": "Витамины для животных",
         "cost_byn": 22.22,
         "stock": 38,
-        "ads": 0.8888888888888888,
+        "ads": 0.8421052631578947,
         "cost_capitalization": 24794.81,
         "retail_capitalization": 105870.23,
-        "days_left": 42.8
+        "days_left": 45.1
       },
       {
         "sku": 5472775507,
@@ -69256,10 +69212,10 @@
         "group": "Витамины для животных",
         "cost_byn": 14.03,
         "stock": 18,
-        "ads": 3.5416666666666665,
+        "ads": 3.68,
         "cost_capitalization": 7637.7,
         "retail_capitalization": 52656.51,
-        "days_left": 5.1
+        "days_left": 4.9
       },
       {
         "sku": 4658698444,
@@ -69272,7 +69228,7 @@
         "group": "Витамины для животных",
         "cost_byn": 18.43,
         "stock": 10,
-        "ads": 2.652173913043478,
+        "ads": 2.6666666666666665,
         "cost_capitalization": 5469.03,
         "retail_capitalization": 29253.61,
         "days_left": 3.8
@@ -69288,10 +69244,10 @@
         "group": "Электрика",
         "cost_byn": 31.99,
         "stock": 2,
-        "ads": 1.2608695652173914,
+        "ads": 1.2083333333333333,
         "cost_capitalization": 1849.39,
         "retail_capitalization": 6686.54,
-        "days_left": 1.6
+        "days_left": 1.7
       },
       {
         "sku": 3664742731,
@@ -69327,15 +69283,15 @@
       }
     ],
     "summary": {
-      "stock": 777,
-      "cost_capitalization": 517190.59,
-      "retail_capitalization": 2572228.57,
+      "stock": 773,
+      "cost_capitalization": 514020.62,
+      "retail_capitalization": 2560109.21,
       "fx_rub_per_byn": 27.860586
     },
-    "raw_rows": 126
+    "raw_rows": 124
   },
   "supplies": {
-    "generated_at": "2026-10-10T00:27:42.261268+00:00",
+    "generated_at": "2026-10-10T10:20:45.669528+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -69457,7 +69413,7 @@
           {
             "cluster": "Дальний Восток",
             "stock": 0,
-            "ads": 2.652,
+            "ads": 2.667,
             "days_left": 0.0,
             "target_stock": 40,
             "ship_qty": 8
@@ -69465,7 +69421,7 @@
           {
             "cluster": "Екатеринбург",
             "stock": 0,
-            "ads": 2.652,
+            "ads": 2.667,
             "days_left": 0.0,
             "target_stock": 40,
             "ship_qty": 8
@@ -69473,7 +69429,7 @@
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 2.652,
+            "ads": 2.667,
             "days_left": 0.0,
             "target_stock": 40,
             "ship_qty": 8
@@ -69481,7 +69437,7 @@
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 0,
-            "ads": 2.652,
+            "ads": 2.667,
             "days_left": 0.0,
             "target_stock": 40,
             "ship_qty": 8
@@ -69489,7 +69445,7 @@
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 10,
-            "ads": 2.652,
+            "ads": 2.667,
             "days_left": 3.8,
             "target_stock": 40,
             "ship_qty": 6
@@ -69610,49 +69566,49 @@
           {
             "cluster": "Екатеринбург",
             "stock": 0,
-            "ads": 3.542,
+            "ads": 3.68,
             "days_left": 0.0,
-            "target_stock": 54,
+            "target_stock": 56,
             "ship_qty": 5
           },
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 3.542,
+            "ads": 3.68,
             "days_left": 0.0,
-            "target_stock": 54,
+            "target_stock": 56,
             "ship_qty": 5
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 3.542,
+            "ads": 3.68,
             "days_left": 0.0,
-            "target_stock": 54,
+            "target_stock": 56,
             "ship_qty": 5
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 3,
-            "ads": 3.542,
+            "ads": 3.68,
             "days_left": 0.8,
-            "target_stock": 54,
+            "target_stock": 56,
             "ship_qty": 5
           },
           {
             "cluster": "Ростов",
             "stock": 4,
-            "ads": 3.542,
+            "ads": 3.68,
             "days_left": 1.1,
-            "target_stock": 54,
+            "target_stock": 56,
             "ship_qty": 5
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 11,
-            "ads": 3.542,
-            "days_left": 3.1,
-            "target_stock": 54,
+            "ads": 3.68,
+            "days_left": 3.0,
+            "target_stock": 56,
             "ship_qty": 4
           }
         ]
@@ -69771,15 +69727,15 @@
           {
             "cluster": "Беларусь",
             "stock": 2,
-            "ads": 1.261,
-            "days_left": 1.6,
+            "ads": 1.208,
+            "days_left": 1.7,
             "target_stock": 19,
             "ship_qty": 1
           },
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 1.261,
+            "ads": 1.208,
             "days_left": 0.0,
             "target_stock": 19,
             "ship_qty": 1
@@ -69787,7 +69743,7 @@
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 0,
-            "ads": 1.261,
+            "ads": 1.208,
             "days_left": 0.0,
             "target_stock": 19,
             "ship_qty": 1
@@ -69795,7 +69751,7 @@
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 0,
-            "ads": 1.261,
+            "ads": 1.208,
             "days_left": 0.0,
             "target_stock": 19,
             "ship_qty": 1
@@ -69807,9 +69763,9 @@
         "offer_id": "для мелких 8в1",
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
         "brand": "8IN1",
-        "stock": 53,
+        "stock": 52,
         "inbound": 0,
-        "available": 53,
+        "available": 52,
         "order_units_7d": 42,
         "order_units_used": 33,
         "daily_orders": 2.538,
@@ -69911,8 +69867,8 @@
         "horizon_days": 15,
         "target_stock": 39,
         "ship_qty": 0,
-        "days_on_hand": 20.9,
-        "days_with_inbound": 20.9,
+        "days_on_hand": 20.5,
+        "days_with_inbound": 20.5,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -69921,65 +69877,65 @@
           {
             "cluster": "Екатеринбург",
             "stock": 1,
-            "ads": 2.222,
+            "ads": 2.464,
             "days_left": 0.4,
-            "target_stock": 34,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 2.222,
+            "ads": 2.464,
             "days_left": 0.0,
-            "target_stock": 34,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Калининград",
             "stock": 1,
-            "ads": 2.222,
+            "ads": 2.464,
             "days_left": 0.4,
-            "target_stock": 34,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 2.222,
+            "ads": 2.464,
             "days_left": 0.0,
-            "target_stock": 34,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 32,
-            "ads": 2.222,
-            "days_left": 14.4,
-            "target_stock": 34,
+            "ads": 2.464,
+            "days_left": 13.0,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Новосибирск",
             "stock": 0,
-            "ads": 2.222,
+            "ads": 2.464,
             "days_left": 0.0,
-            "target_stock": 34,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
-            "stock": 1,
-            "ads": 2.222,
-            "days_left": 0.4,
-            "target_stock": 34,
+            "stock": 0,
+            "ads": 2.464,
+            "days_left": 0.0,
+            "target_stock": 37,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 18,
-            "ads": 2.222,
-            "days_left": 8.1,
-            "target_stock": 34,
+            "ads": 2.464,
+            "days_left": 7.3,
+            "target_stock": 37,
             "ship_qty": 0
           }
         ]
@@ -69989,9 +69945,9 @@
         "offer_id": "глюкозамин 55 шт",
         "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
         "brand": "8IN1",
-        "stock": 53,
+        "stock": 52,
         "inbound": 0,
-        "available": 53,
+        "available": 52,
         "order_units_7d": 36,
         "order_units_used": 28,
         "daily_orders": 2.154,
@@ -70093,8 +70049,8 @@
         "horizon_days": 15,
         "target_stock": 33,
         "ship_qty": 0,
-        "days_on_hand": 24.6,
-        "days_with_inbound": 24.6,
+        "days_on_hand": 24.1,
+        "days_with_inbound": 24.1,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -70102,58 +70058,58 @@
         "clusters": [
           {
             "cluster": "Екатеринбург",
-            "stock": 1,
-            "ads": 3.478,
-            "days_left": 0.3,
-            "target_stock": 53,
+            "stock": 0,
+            "ads": 3.542,
+            "days_left": 0.0,
+            "target_stock": 54,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 3.478,
+            "ads": 3.542,
             "days_left": 0.0,
-            "target_stock": 53,
+            "target_stock": 54,
             "ship_qty": 0
           },
           {
             "cluster": "Краснодар",
             "stock": 0,
-            "ads": 3.478,
+            "ads": 3.542,
             "days_left": 0.0,
-            "target_stock": 53,
+            "target_stock": 54,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 3.478,
+            "ads": 3.542,
             "days_left": 0.0,
-            "target_stock": 53,
+            "target_stock": 54,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 19,
-            "ads": 3.478,
-            "days_left": 5.5,
-            "target_stock": 53,
+            "ads": 3.542,
+            "days_left": 5.4,
+            "target_stock": 54,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 8,
-            "ads": 3.478,
+            "ads": 3.542,
             "days_left": 2.3,
-            "target_stock": 53,
+            "target_stock": 54,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 25,
-            "ads": 3.478,
-            "days_left": 7.2,
-            "target_stock": 53,
+            "ads": 3.542,
+            "days_left": 7.1,
+            "target_stock": 54,
             "ship_qty": 0
           }
         ]
@@ -70272,65 +70228,65 @@
           {
             "cluster": "Дальний Восток",
             "stock": 0,
-            "ads": 2.654,
+            "ads": 2.692,
             "days_left": 0.0,
-            "target_stock": 40,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Екатеринбург",
             "stock": 1,
-            "ads": 2.654,
+            "ads": 2.692,
             "days_left": 0.4,
-            "target_stock": 40,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 2.654,
+            "ads": 2.692,
             "days_left": 0.0,
-            "target_stock": 40,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 2.654,
+            "ads": 2.692,
             "days_left": 0.0,
-            "target_stock": 40,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 32,
-            "ads": 2.654,
-            "days_left": 12.1,
-            "target_stock": 40,
+            "ads": 2.692,
+            "days_left": 11.9,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 7,
-            "ads": 2.654,
+            "ads": 2.692,
             "days_left": 2.6,
-            "target_stock": 40,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 22,
-            "ads": 2.654,
-            "days_left": 8.3,
-            "target_stock": 40,
+            "ads": 2.692,
+            "days_left": 8.2,
+            "target_stock": 41,
             "ship_qty": 0
           },
           {
             "cluster": "Ярославль",
             "stock": 1,
-            "ads": 2.654,
+            "ads": 2.692,
             "days_left": 0.4,
-            "target_stock": 40,
+            "target_stock": 41,
             "ship_qty": 0
           }
         ]
@@ -70449,97 +70405,97 @@
           {
             "cluster": "Воронеж",
             "stock": 0,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.0,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Дальний Восток",
             "stock": 0,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.0,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Екатеринбург",
             "stock": 4,
-            "ads": 6.357,
-            "days_left": 0.6,
-            "target_stock": 96,
+            "ads": 6.071,
+            "days_left": 0.7,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 32,
-            "ads": 6.357,
-            "days_left": 5.0,
-            "target_stock": 96,
+            "ads": 6.071,
+            "days_left": 5.3,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Краснодар",
             "stock": 0,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.0,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.0,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 25,
-            "ads": 6.357,
-            "days_left": 3.9,
-            "target_stock": 96,
+            "ads": 6.071,
+            "days_left": 4.1,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Новосибирск",
             "stock": 1,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.2,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Омск",
             "stock": 0,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.0,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 9,
-            "ads": 6.357,
-            "days_left": 1.4,
-            "target_stock": 96,
+            "ads": 6.071,
+            "days_left": 1.5,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 69,
-            "ads": 6.357,
-            "days_left": 10.9,
-            "target_stock": 96,
+            "ads": 6.071,
+            "days_left": 11.4,
+            "target_stock": 92,
             "ship_qty": 0
           },
           {
             "cluster": "Саратов",
             "stock": 1,
-            "ads": 6.357,
+            "ads": 6.071,
             "days_left": 0.2,
-            "target_stock": 96,
+            "target_stock": 92,
             "ship_qty": 0
           }
         ]
@@ -70658,57 +70614,57 @@
           {
             "cluster": "Екатеринбург",
             "stock": 2,
-            "ads": 1.235,
+            "ads": 1.278,
             "days_left": 1.6,
-            "target_stock": 19,
+            "target_stock": 20,
             "ship_qty": 0
           },
           {
             "cluster": "Краснодар",
             "stock": 0,
-            "ads": 1.235,
+            "ads": 1.278,
             "days_left": 0.0,
-            "target_stock": 19,
+            "target_stock": 20,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 18,
-            "ads": 1.235,
-            "days_left": 14.6,
-            "target_stock": 19,
+            "ads": 1.278,
+            "days_left": 14.1,
+            "target_stock": 20,
             "ship_qty": 0
           },
           {
             "cluster": "Невинномысск",
             "stock": 0,
-            "ads": 1.235,
+            "ads": 1.278,
             "days_left": 0.0,
-            "target_stock": 19,
+            "target_stock": 20,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 0,
-            "ads": 1.235,
+            "ads": 1.278,
             "days_left": 0.0,
-            "target_stock": 19,
+            "target_stock": 20,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 18,
-            "ads": 1.235,
-            "days_left": 14.6,
-            "target_stock": 19,
+            "ads": 1.278,
+            "days_left": 14.1,
+            "target_stock": 20,
             "ship_qty": 0
           },
           {
             "cluster": "Тюмень",
             "stock": 0,
-            "ads": 1.235,
+            "ads": 1.278,
             "days_left": 0.0,
-            "target_stock": 19,
+            "target_stock": 20,
             "ship_qty": 0
           }
         ]
@@ -70825,59 +70781,51 @@
         "inbound_orders": [],
         "clusters": [
           {
-            "cluster": "Дальний Восток",
-            "stock": 0,
-            "ads": 0.889,
-            "days_left": 0.0,
-            "target_stock": 14,
-            "ship_qty": 0
-          },
-          {
             "cluster": "Екатеринбург",
             "stock": 3,
-            "ads": 0.889,
-            "days_left": 3.4,
-            "target_stock": 14,
+            "ads": 0.842,
+            "days_left": 3.6,
+            "target_stock": 13,
             "ship_qty": 0
           },
           {
             "cluster": "Краснодар",
             "stock": 0,
-            "ads": 0.889,
+            "ads": 0.842,
             "days_left": 0.0,
-            "target_stock": 14,
+            "target_stock": 13,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 1,
-            "ads": 0.889,
-            "days_left": 1.1,
-            "target_stock": 14,
+            "ads": 0.842,
+            "days_left": 1.2,
+            "target_stock": 13,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 20,
-            "ads": 0.889,
-            "days_left": 22.5,
-            "target_stock": 14,
+            "ads": 0.842,
+            "days_left": 23.8,
+            "target_stock": 13,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 4,
-            "ads": 0.889,
-            "days_left": 4.5,
-            "target_stock": 14,
+            "ads": 0.842,
+            "days_left": 4.8,
+            "target_stock": 13,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 10,
-            "ads": 0.889,
-            "days_left": 11.2,
-            "target_stock": 14,
+            "ads": 0.842,
+            "days_left": 11.9,
+            "target_stock": 13,
             "ship_qty": 0
           }
         ]
@@ -70887,9 +70835,9 @@
         "offer_id": "для щенков 8в1",
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
         "brand": "8IN1",
-        "stock": 83,
+        "stock": 81,
         "inbound": 0,
-        "available": 83,
+        "available": 81,
         "order_units_7d": 17,
         "order_units_used": 17,
         "daily_orders": 1.214,
@@ -70986,8 +70934,8 @@
         "horizon_days": 15,
         "target_stock": 19,
         "ship_qty": 0,
-        "days_on_hand": 68.4,
-        "days_with_inbound": 68.4,
+        "days_on_hand": 66.7,
+        "days_with_inbound": 66.7,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -70995,58 +70943,58 @@
         "clusters": [
           {
             "cluster": "Екатеринбург",
-            "stock": 8,
-            "ads": 2.038,
-            "days_left": 3.9,
-            "target_stock": 31,
+            "stock": 6,
+            "ads": 1.852,
+            "days_left": 3.2,
+            "target_stock": 28,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 0,
-            "ads": 2.038,
+            "ads": 1.852,
             "days_left": 0.0,
-            "target_stock": 31,
+            "target_stock": 28,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 2.038,
+            "ads": 1.852,
             "days_left": 0.0,
-            "target_stock": 31,
+            "target_stock": 28,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 44,
-            "ads": 2.038,
-            "days_left": 21.6,
-            "target_stock": 31,
+            "ads": 1.852,
+            "days_left": 23.8,
+            "target_stock": 28,
             "ship_qty": 0
           },
           {
             "cluster": "Омск",
             "stock": 0,
-            "ads": 2.038,
+            "ads": 1.852,
             "days_left": 0.0,
-            "target_stock": 31,
+            "target_stock": 28,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 5,
-            "ads": 2.038,
-            "days_left": 2.5,
-            "target_stock": 31,
+            "ads": 1.852,
+            "days_left": 2.7,
+            "target_stock": 28,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 26,
-            "ads": 2.038,
-            "days_left": 12.8,
-            "target_stock": 31,
+            "ads": 1.852,
+            "days_left": 14.0,
+            "target_stock": 28,
             "ship_qty": 0
           }
         ]
@@ -71170,57 +71118,57 @@
           {
             "cluster": "Екатеринбург",
             "stock": 5,
-            "ads": 1.043,
-            "days_left": 4.8,
-            "target_stock": 16,
+            "ads": 1.0,
+            "days_left": 5.0,
+            "target_stock": 15,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 5,
-            "ads": 1.043,
-            "days_left": 4.8,
-            "target_stock": 16,
+            "ads": 1.0,
+            "days_left": 5.0,
+            "target_stock": 15,
             "ship_qty": 0
           },
           {
             "cluster": "Краснодар",
             "stock": 0,
-            "ads": 1.043,
+            "ads": 1.0,
             "days_left": 0.0,
-            "target_stock": 16,
+            "target_stock": 15,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 34,
-            "ads": 1.043,
-            "days_left": 32.6,
-            "target_stock": 16,
+            "ads": 1.0,
+            "days_left": 34.0,
+            "target_stock": 15,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 5,
-            "ads": 1.043,
-            "days_left": 4.8,
-            "target_stock": 16,
+            "ads": 1.0,
+            "days_left": 5.0,
+            "target_stock": 15,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 27,
-            "ads": 1.043,
-            "days_left": 25.9,
-            "target_stock": 16,
+            "ads": 1.0,
+            "days_left": 27.0,
+            "target_stock": 15,
             "ship_qty": 0
           },
           {
             "cluster": "Ярославль",
             "stock": 0,
-            "ads": 1.043,
+            "ads": 1.0,
             "days_left": 0.0,
-            "target_stock": 16,
+            "target_stock": 15,
             "ship_qty": 0
           }
         ]
@@ -71339,25 +71287,25 @@
           {
             "cluster": "Екатеринбург",
             "stock": 9,
-            "ads": 0.438,
-            "days_left": 20.6,
-            "target_stock": 7,
+            "ads": 0.471,
+            "days_left": 19.1,
+            "target_stock": 8,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 33,
-            "ads": 0.438,
-            "days_left": 75.4,
-            "target_stock": 7,
+            "ads": 0.471,
+            "days_left": 70.1,
+            "target_stock": 8,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 20,
-            "ads": 0.438,
-            "days_left": 45.7,
-            "target_stock": 7,
+            "ads": 0.471,
+            "days_left": 42.5,
+            "target_stock": 8,
             "ship_qty": 0
           }
         ]
@@ -71476,49 +71424,49 @@
           {
             "cluster": "Екатеринбург",
             "stock": 4,
-            "ads": 0.583,
-            "days_left": 6.9,
-            "target_stock": 9,
+            "ads": 0.64,
+            "days_left": 6.2,
+            "target_stock": 10,
             "ship_qty": 0
           },
           {
             "cluster": "Казань",
             "stock": 5,
-            "ads": 0.583,
-            "days_left": 8.6,
-            "target_stock": 9,
+            "ads": 0.64,
+            "days_left": 7.8,
+            "target_stock": 10,
             "ship_qty": 0
           },
           {
             "cluster": "Красноярск",
             "stock": 0,
-            "ads": 0.583,
+            "ads": 0.64,
             "days_left": 0.0,
-            "target_stock": 9,
+            "target_stock": 10,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 36,
-            "ads": 0.583,
-            "days_left": 61.7,
-            "target_stock": 9,
+            "ads": 0.64,
+            "days_left": 56.2,
+            "target_stock": 10,
             "ship_qty": 0
           },
           {
             "cluster": "Ростов",
             "stock": 5,
-            "ads": 0.583,
-            "days_left": 8.6,
-            "target_stock": 9,
+            "ads": 0.64,
+            "days_left": 7.8,
+            "target_stock": 10,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 24,
-            "ads": 0.583,
-            "days_left": 41.1,
-            "target_stock": 9,
+            "ads": 0.64,
+            "days_left": 37.5,
+            "target_stock": 10,
             "ship_qty": 0
           }
         ]
@@ -71637,25 +71585,25 @@
           {
             "cluster": "Екатеринбург",
             "stock": 8,
-            "ads": 0.312,
-            "days_left": 25.6,
-            "target_stock": 5,
+            "ads": 0.353,
+            "days_left": 22.7,
+            "target_stock": 6,
             "ship_qty": 0
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
             "stock": 38,
-            "ads": 0.312,
-            "days_left": 121.6,
-            "target_stock": 5,
+            "ads": 0.353,
+            "days_left": 107.7,
+            "target_stock": 6,
             "ship_qty": 0
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
             "stock": 20,
-            "ads": 0.312,
-            "days_left": 64.0,
-            "target_stock": 5,
+            "ads": 0.353,
+            "days_left": 56.7,
+            "target_stock": 6,
             "ship_qty": 0
           }
         ]
@@ -71678,7 +71626,7 @@
         "cluster": "Екатеринбург",
         "ship_qty": 13,
         "skus": 2,
-        "stock": 46
+        "stock": 43
       },
       {
         "cluster": "Санкт-Петербург и СЗО",
@@ -71702,7 +71650,7 @@
         "cluster": "Ростов",
         "ship_qty": 5,
         "skus": 1,
-        "stock": 48
+        "stock": 47
       },
       {
         "cluster": "Беларусь",
@@ -71778,7 +71726,7 @@
     }
   },
   "competitors": {
-    "generated_at": "2026-10-10T00:27:42.280758+00:00",
+    "generated_at": "2026-10-10T10:20:45.702052+00:00",
     "as_of": "2026-10-09",
     "geo": {
       "city": "Москва",
@@ -71814,7 +71762,7 @@
           "price_byn": 100.0,
           "price_rub": 1132.2,
           "price_source": "ozon_bestsellers",
-          "stock": 83,
+          "stock": 81,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -72281,7 +72229,7 @@
           "price_byn": 145.0,
           "price_rub": 1508.34,
           "price_source": "ozon_bestsellers",
-          "stock": 53,
+          "stock": 52,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -72928,7 +72876,7 @@
           "price_byn": 90.0,
           "price_rub": 1219.45,
           "price_source": "ozon_bestsellers",
-          "stock": 53,
+          "stock": 52,
           "delivery": "",
           "delivery_days": null,
           "card": {},
