@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T10:20:45.951469+00:00",
+  "generated_at": "2026-10-10T13:09:59.299246+00:00",
   "as_of": "2026-10-09",
   "expected_as_of": "2026-10-09",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -67389,8 +67389,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 6,
-            "awaiting_deliver": 1,
+            "delivering": 7,
             "delivered": 1
           },
           "views": 482,
@@ -68035,7 +68034,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-10T10:20:44.902787+00:00",
+    "generated_at": "2026-10-10T13:09:58.388061+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -69227,11 +69226,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 18.43,
-        "stock": 10,
+        "stock": 9,
         "ads": 2.6666666666666665,
-        "cost_capitalization": 5469.03,
-        "retail_capitalization": 29253.61,
-        "days_left": 3.8
+        "cost_capitalization": 4922.13,
+        "retail_capitalization": 26328.25,
+        "days_left": 3.4
       },
       {
         "sku": 5745079896,
@@ -69283,15 +69282,15 @@
       }
     ],
     "summary": {
-      "stock": 773,
-      "cost_capitalization": 514020.62,
-      "retail_capitalization": 2560109.21,
+      "stock": 772,
+      "cost_capitalization": 513473.71,
+      "retail_capitalization": 2557183.85,
       "fx_rub_per_byn": 27.860586
     },
     "raw_rows": 124
   },
   "supplies": {
-    "generated_at": "2026-10-10T10:20:45.669528+00:00",
+    "generated_at": "2026-10-10T13:09:59.019894+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -69304,9 +69303,9 @@
         "offer_id": "кальций",
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
         "brand": "8IN1",
-        "stock": 10,
+        "stock": 9,
         "inbound": 0,
-        "available": 10,
+        "available": 9,
         "order_units_7d": 44,
         "order_units_used": 44,
         "daily_orders": 3.143,
@@ -69402,9 +69401,9 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 48,
-        "ship_qty": 38,
-        "days_on_hand": 3.2,
-        "days_with_inbound": 3.2,
+        "ship_qty": 39,
+        "days_on_hand": 2.9,
+        "days_with_inbound": 2.9,
         "ship_in_days": 0,
         "ship_by": "2026-10-10",
         "status": "now",
@@ -69444,11 +69443,11 @@
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
-            "stock": 10,
+            "stock": 9,
             "ads": 2.667,
-            "days_left": 3.8,
+            "days_left": 3.4,
             "target_stock": 40,
-            "ship_qty": 6
+            "ship_qty": 7
           }
         ]
       },
@@ -71630,9 +71629,9 @@
       },
       {
         "cluster": "Санкт-Петербург и СЗО",
-        "ship_qty": 11,
+        "ship_qty": 12,
         "skus": 3,
-        "stock": 300
+        "stock": 299
       },
       {
         "cluster": "Дальний Восток",
@@ -71717,16 +71716,16 @@
       "inbound_orders": 0,
       "inbound_qty": 0,
       "ship_now_skus": 1,
-      "ship_now_qty": 38,
+      "ship_now_qty": 39,
       "ship_soon_skus": 2,
-      "ship_total_qty": 71,
+      "ship_total_qty": 72,
       "cluster_count": 8,
       "critical_skus": 1,
       "under_cover_skus": 3
     }
   },
   "competitors": {
-    "generated_at": "2026-10-10T10:20:45.702052+00:00",
+    "generated_at": "2026-10-10T13:09:59.053306+00:00",
     "as_of": "2026-10-09",
     "geo": {
       "city": "Москва",
@@ -73075,7 +73074,7 @@
           "price_byn": 105.0,
           "price_rub": 844.03,
           "price_source": "ozon_bestsellers",
-          "stock": 10,
+          "stock": 9,
           "delivery": "",
           "delivery_days": null,
           "card": {},

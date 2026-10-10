@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T10:20:45.669528+00:00",
+  "generated_at": "2026-10-10T13:09:59.019894+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -12,9 +12,9 @@
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
       "brand": "8IN1",
-      "stock": 10,
+      "stock": 9,
       "inbound": 0,
-      "available": 10,
+      "available": 9,
       "order_units_7d": 44,
       "order_units_used": 44,
       "daily_orders": 3.143,
@@ -110,9 +110,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 48,
-      "ship_qty": 38,
-      "days_on_hand": 3.2,
-      "days_with_inbound": 3.2,
+      "ship_qty": 39,
+      "days_on_hand": 2.9,
+      "days_with_inbound": 2.9,
       "ship_in_days": 0,
       "ship_by": "2026-10-10",
       "status": "now",
@@ -152,11 +152,11 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 10,
+          "stock": 9,
           "ads": 2.667,
-          "days_left": 3.8,
+          "days_left": 3.4,
           "target_stock": 40,
-          "ship_qty": 6
+          "ship_qty": 7
         }
       ]
     },
@@ -2338,9 +2338,9 @@
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
-      "ship_qty": 11,
+      "ship_qty": 12,
       "skus": 3,
-      "stock": 300
+      "stock": 299
     },
     {
       "cluster": "Дальний Восток",
@@ -2425,9 +2425,9 @@
     "inbound_orders": 0,
     "inbound_qty": 0,
     "ship_now_skus": 1,
-    "ship_now_qty": 38,
+    "ship_now_qty": 39,
     "ship_soon_skus": 2,
-    "ship_total_qty": 71,
+    "ship_total_qty": 72,
     "cluster_count": 8,
     "critical_skus": 1,
     "under_cover_skus": 3
