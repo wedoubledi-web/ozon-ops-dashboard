@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T16:12:15.476874+00:00",
+  "generated_at": "2026-10-11T18:43:53.952637+00:00",
   "as_of": "2026-10-10",
   "expected_as_of": "2026-10-10",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -68102,7 +68102,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 5
+            "delivering": 4,
+            "delivered": 1
           },
           "views": 525,
           "clicks": 42,
@@ -68462,7 +68463,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 3
+            "delivering": 2,
+            "delivered": 1
           }
         },
         {
@@ -68496,7 +68498,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 7
+            "delivering": 6,
+            "delivered": 1
           },
           "views": 509,
           "clicks": 27,
@@ -68748,7 +68751,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-11T16:12:14.572690+00:00",
+    "generated_at": "2026-10-11T18:43:52.948781+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -68861,7 +68864,7 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Москва, МО и Дальние регионы",
-        "stock": 24,
+        "stock": 22,
         "ads": 1.3214285714285714,
         "warehouses": [
           {
@@ -68871,14 +68874,14 @@
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
-            "stock": 24,
+            "stock": 22,
             "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
         "target_stock": 40,
-        "supply_qty": 16,
-        "days_left": 18.2,
+        "supply_qty": 18,
+        "days_left": 16.6,
         "confidence": "high"
       },
       {
@@ -69813,11 +69816,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 19.9,
-        "stock": 138,
+        "stock": 136,
         "ads": 5.642857142857143,
-        "cost_capitalization": 81124.45,
-        "retail_capitalization": 480595.1,
-        "days_left": 24.5
+        "cost_capitalization": 79948.74,
+        "retail_capitalization": 473629.96,
+        "days_left": 24.1
       },
       {
         "sku": 5516649179,
@@ -69893,11 +69896,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 13.67,
-        "stock": 63,
+        "stock": 62,
         "ads": 2.6923076923076925,
-        "cost_capitalization": 26100.08,
-        "retail_capitalization": 184297.77,
-        "days_left": 23.4
+        "cost_capitalization": 25685.79,
+        "retail_capitalization": 181372.41,
+        "days_left": 23.0
       },
       {
         "sku": 5803075530,
@@ -69909,11 +69912,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 24.336,
-        "stock": 60,
+        "stock": 59,
         "ads": 0.5,
-        "cost_capitalization": 42686.87,
-        "retail_capitalization": 217312.57,
-        "days_left": 120.0
+        "cost_capitalization": 41975.43,
+        "retail_capitalization": 213690.69,
+        "days_left": 118.0
       },
       {
         "sku": 5516579647,
@@ -70045,15 +70048,15 @@
       }
     ],
     "summary": {
-      "stock": 747,
-      "cost_capitalization": 496521.33,
-      "retail_capitalization": 2474716.52,
+      "stock": 743,
+      "cost_capitalization": 494219.88,
+      "retail_capitalization": 2461204.13,
       "fx_rub_per_byn": 27.860586
     },
     "raw_rows": 124
   },
   "supplies": {
-    "generated_at": "2026-10-11T16:12:15.268006+00:00",
+    "generated_at": "2026-10-11T18:43:53.673623+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -70886,9 +70889,9 @@
         "offer_id": "для кошек и собак 140",
         "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
         "brand": "8IN1",
-        "stock": 63,
+        "stock": 62,
         "inbound": 0,
-        "available": 63,
+        "available": 62,
         "order_units_7d": 29,
         "order_units_used": 29,
         "daily_orders": 2.071,
@@ -70985,8 +70988,8 @@
         "horizon_days": 15,
         "target_stock": 32,
         "ship_qty": 0,
-        "days_on_hand": 30.4,
-        "days_with_inbound": 30.4,
+        "days_on_hand": 29.9,
+        "days_with_inbound": 29.9,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -71042,9 +71045,9 @@
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
-            "stock": 22,
+            "stock": 21,
             "ads": 2.692,
-            "days_left": 8.2,
+            "days_left": 7.8,
             "target_stock": 41,
             "ship_qty": 0
           },
@@ -71063,9 +71066,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 138,
+        "stock": 136,
         "inbound": 0,
-        "available": 138,
+        "available": 136,
         "order_units_7d": 61,
         "order_units_used": 61,
         "daily_orders": 4.357,
@@ -71162,8 +71165,8 @@
         "horizon_days": 15,
         "target_stock": 66,
         "ship_qty": 0,
-        "days_on_hand": 31.7,
-        "days_with_inbound": 31.7,
+        "days_on_hand": 31.2,
+        "days_with_inbound": 31.2,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -71219,9 +71222,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 24,
+            "stock": 22,
             "ads": 5.643,
-            "days_left": 4.3,
+            "days_left": 3.9,
             "target_stock": 85,
             "ship_qty": 0
           },
@@ -72114,9 +72117,9 @@
         "offer_id": "шоколад элит 4 шт",
         "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
         "brand": "Спартак",
-        "stock": 60,
+        "stock": 59,
         "inbound": 0,
-        "available": 60,
+        "available": 59,
         "order_units_7d": 9,
         "order_units_used": 9,
         "daily_orders": 0.643,
@@ -72213,8 +72216,8 @@
         "horizon_days": 15,
         "target_stock": 10,
         "ship_qty": 0,
-        "days_on_hand": 93.3,
-        "days_with_inbound": 93.3,
+        "days_on_hand": 91.8,
+        "days_with_inbound": 91.8,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -72230,9 +72233,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 31,
+            "stock": 30,
             "ads": 0.5,
-            "days_left": 62.0,
+            "days_left": 60.0,
             "target_stock": 8,
             "ship_qty": 0
           },
@@ -72395,13 +72398,13 @@
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 15,
         "skus": 3,
-        "stock": 325
+        "stock": 322
       },
       {
         "cluster": "Санкт-Петербург и СЗО",
         "ship_qty": 15,
         "skus": 3,
-        "stock": 288
+        "stock": 287
       },
       {
         "cluster": "Екатеринбург",
@@ -72501,7 +72504,7 @@
     }
   },
   "competitors": {
-    "generated_at": "2026-10-11T16:12:15.292350+00:00",
+    "generated_at": "2026-10-11T18:43:53.706291+00:00",
     "as_of": "2026-10-10",
     "geo": {
       "city": "Москва",
@@ -74029,7 +74032,7 @@
           "price_byn": 105.0,
           "price_rub": 907.53,
           "price_source": "ozon_bestsellers",
-          "stock": 63,
+          "stock": 62,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -74365,7 +74368,7 @@
           "price_byn": 125.0,
           "price_rub": 1057.41,
           "price_source": "ozon_bestsellers",
-          "stock": 138,
+          "stock": 136,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -74499,7 +74502,7 @@
           "price_byn": 130.0,
           "price_rub": null,
           "price_source": null,
-          "stock": 60,
+          "stock": 59,
           "delivery": "",
           "delivery_days": null,
           "card": {}
