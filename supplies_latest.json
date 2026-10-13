@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T11:19:39.896621+00:00",
+  "generated_at": "2026-10-13T14:41:57.233843+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1854,9 +1854,9 @@
       "offer_id": "для взрослых собак1",
       "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
       "brand": "8IN1",
-      "stock": 67,
+      "stock": 66,
       "inbound": 0,
-      "available": 67,
+      "available": 66,
       "order_units_7d": 11,
       "order_units_used": 11,
       "daily_orders": 0.786,
@@ -1953,8 +1953,8 @@
       "horizon_days": 15,
       "target_stock": 12,
       "ship_qty": 0,
-      "days_on_hand": 85.2,
-      "days_with_inbound": 85.2,
+      "days_on_hand": 84.0,
+      "days_with_inbound": 84.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -2002,9 +2002,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 22,
+          "stock": 21,
           "ads": 0.778,
-          "days_left": 28.3,
+          "days_left": 27.0,
           "target_stock": 12,
           "ship_qty": 0
         }
@@ -2340,7 +2340,7 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 13,
       "skus": 3,
-      "stock": 285
+      "stock": 284
     },
     {
       "cluster": "Дальний Восток",

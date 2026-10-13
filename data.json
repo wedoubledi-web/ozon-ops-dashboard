@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T11:19:40.184644+00:00",
+  "generated_at": "2026-10-13T14:41:57.440310+00:00",
   "as_of": "2026-10-12",
   "expected_as_of": "2026-10-12",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -69771,8 +69771,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "awaiting_deliver": 1,
-            "delivering": 2
+            "delivering": 3
           }
         },
         {
@@ -69843,7 +69842,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 3
+            "delivering": 2,
+            "delivered": 1
           },
           "views": 542,
           "clicks": 41,
@@ -69882,7 +69882,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 2,
+            "delivering": 1,
+            "delivered": 1,
             "awaiting_deliver": 1
           },
           "views": 10753,
@@ -70066,8 +70067,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "awaiting_deliver": 1,
-            "delivering": 1
+            "delivering": 2
           },
           "views": 837,
           "clicks": 43,
@@ -70302,7 +70302,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-13T11:19:39.167867+00:00",
+    "generated_at": "2026-10-13T14:41:56.426489+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -71450,11 +71450,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 25.36,
-        "stock": 67,
+        "stock": 66,
         "ads": 0.7777777777777778,
-        "cost_capitalization": 49570.18,
-        "retail_capitalization": 261288.62,
-        "days_left": 86.1
+        "cost_capitalization": 48830.33,
+        "retail_capitalization": 257388.79,
+        "days_left": 84.9
       },
       {
         "sku": 5803370792,
@@ -71634,15 +71634,15 @@
       }
     ],
     "summary": {
-      "stock": 716,
-      "cost_capitalization": 475964.01,
-      "retail_capitalization": 2370539.57,
+      "stock": 715,
+      "cost_capitalization": 475224.16,
+      "retail_capitalization": 2366639.74,
       "fx_rub_per_byn": 27.855929
     },
     "raw_rows": 124
   },
   "supplies": {
-    "generated_at": "2026-10-13T11:19:39.896621+00:00",
+    "generated_at": "2026-10-13T14:41:57.233843+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -73497,9 +73497,9 @@
         "offer_id": "для взрослых собак1",
         "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
         "brand": "8IN1",
-        "stock": 67,
+        "stock": 66,
         "inbound": 0,
-        "available": 67,
+        "available": 66,
         "order_units_7d": 11,
         "order_units_used": 11,
         "daily_orders": 0.786,
@@ -73596,8 +73596,8 @@
         "horizon_days": 15,
         "target_stock": 12,
         "ship_qty": 0,
-        "days_on_hand": 85.2,
-        "days_with_inbound": 85.2,
+        "days_on_hand": 84.0,
+        "days_with_inbound": 84.0,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -73645,9 +73645,9 @@
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
-            "stock": 22,
+            "stock": 21,
             "ads": 0.778,
-            "days_left": 28.3,
+            "days_left": 27.0,
             "target_stock": 12,
             "ship_qty": 0
           }
@@ -73983,7 +73983,7 @@
         "cluster": "Санкт-Петербург и СЗО",
         "ship_qty": 13,
         "skus": 3,
-        "stock": 285
+        "stock": 284
       },
       {
         "cluster": "Дальний Восток",
@@ -74077,7 +74077,7 @@
     }
   },
   "competitors": {
-    "generated_at": "2026-10-13T11:19:39.930300+00:00",
+    "generated_at": "2026-10-13T14:41:57.258739+00:00",
     "as_of": "2026-10-12",
     "geo": {
       "city": "Москва",
@@ -74471,7 +74471,7 @@
           "price_byn": 140.0,
           "price_rub": 1312.02,
           "price_source": "ozon_bestsellers",
-          "stock": 67,
+          "stock": 66,
           "delivery": "",
           "delivery_days": null,
           "card": {},
