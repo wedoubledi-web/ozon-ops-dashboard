@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T12:34:11.280535+00:00",
+  "generated_at": "2026-10-14T14:57:24.026984+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -468,9 +468,9 @@
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
       "brand": "8IN1",
-      "stock": 49,
+      "stock": 48,
       "inbound": 0,
-      "available": 49,
+      "available": 48,
       "order_units_7d": 40,
       "order_units_used": 31,
       "daily_orders": 2.385,
@@ -572,8 +572,8 @@
       "horizon_days": 15,
       "target_stock": 36,
       "ship_qty": 0,
-      "days_on_hand": 20.5,
-      "days_with_inbound": 20.5,
+      "days_on_hand": 20.1,
+      "days_with_inbound": 20.1,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -613,9 +613,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 30,
+          "stock": 29,
           "ads": 2.357,
-          "days_left": 12.7,
+          "days_left": 12.3,
           "target_stock": 36,
           "ship_qty": 0
         },
@@ -1194,9 +1194,9 @@
       "offer_id": "для кошек и собак 140",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
       "brand": "8IN1",
-      "stock": 57,
+      "stock": 56,
       "inbound": 0,
-      "available": 57,
+      "available": 56,
       "order_units_7d": 24,
       "order_units_used": 24,
       "daily_orders": 1.714,
@@ -1293,8 +1293,8 @@
       "horizon_days": 15,
       "target_stock": 26,
       "ship_qty": 0,
-      "days_on_hand": 33.3,
-      "days_with_inbound": 33.3,
+      "days_on_hand": 32.7,
+      "days_with_inbound": 32.7,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1350,9 +1350,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 21,
+          "stock": 20,
           "ads": 2.615,
-          "days_left": 8.0,
+          "days_left": 7.6,
           "target_stock": 40,
           "ship_qty": 0
         },
@@ -2320,13 +2320,13 @@
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 13,
       "skus": 3,
-      "stock": 300
+      "stock": 299
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 13,
       "skus": 3,
-      "stock": 282
+      "stock": 281
     },
     {
       "cluster": "Екатеринбург",

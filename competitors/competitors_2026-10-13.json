@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T12:34:11.315772+00:00",
+  "generated_at": "2026-10-14T14:57:24.055041+00:00",
   "as_of": "2026-10-13",
   "geo": {
     "city": "Москва",
@@ -674,7 +674,7 @@
         "price_byn": 90.0,
         "price_rub": 1395.79,
         "price_source": "ozon_bestsellers",
-        "stock": 49,
+        "stock": 48,
         "delivery": "",
         "delivery_days": null,
         "card": {}
@@ -897,7 +897,7 @@
         "price_byn": 105.0,
         "price_rub": 931.5,
         "price_source": "ozon_bestsellers",
-        "stock": 57,
+        "stock": 56,
         "delivery": "",
         "delivery_days": null,
         "card": {}
