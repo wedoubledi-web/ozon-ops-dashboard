@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T08:44:30.783512+00:00",
+  "generated_at": "2026-10-15T12:18:37.262620+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -985,9 +985,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 124,
+      "stock": 123,
       "inbound": 0,
-      "available": 124,
+      "available": 123,
       "order_units_7d": 68,
       "order_units_used": 68,
       "daily_orders": 4.857,
@@ -1084,8 +1084,8 @@
       "horizon_days": 15,
       "target_stock": 73,
       "ship_qty": 0,
-      "days_on_hand": 25.5,
-      "days_with_inbound": 25.5,
+      "days_on_hand": 25.3,
+      "days_with_inbound": 25.3,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1124,14 +1124,6 @@
           "ship_qty": 0
         },
         {
-          "cluster": "Краснодар",
-          "stock": 0,
-          "ads": 4.321,
-          "days_left": 0.0,
-          "target_stock": 65,
-          "ship_qty": 0
-        },
-        {
           "cluster": "Красноярск",
           "stock": 0,
           "ads": 4.321,
@@ -1141,9 +1133,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 20,
+          "stock": 19,
           "ads": 4.321,
-          "days_left": 4.6,
+          "days_left": 4.4,
           "target_stock": 65,
           "ship_qty": 0
         },
@@ -1152,14 +1144,6 @@
           "stock": 1,
           "ads": 4.321,
           "days_left": 0.2,
-          "target_stock": 65,
-          "ship_qty": 0
-        },
-        {
-          "cluster": "Омск",
-          "stock": 0,
-          "ads": 4.321,
-          "days_left": 0.0,
           "target_stock": 65,
           "ship_qty": 0
         },
@@ -1194,9 +1178,9 @@
       "offer_id": "для кошек и собак 140",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
       "brand": "8IN1",
-      "stock": 55,
+      "stock": 54,
       "inbound": 0,
-      "available": 55,
+      "available": 54,
       "order_units_7d": 23,
       "order_units_used": 23,
       "daily_orders": 1.643,
@@ -1293,8 +1277,8 @@
       "horizon_days": 15,
       "target_stock": 25,
       "ship_qty": 0,
-      "days_on_hand": 33.5,
-      "days_with_inbound": 33.5,
+      "days_on_hand": 32.9,
+      "days_with_inbound": 32.9,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1325,14 +1309,6 @@
           "ship_qty": 0
         },
         {
-          "cluster": "Красноярск",
-          "stock": 0,
-          "ads": 2.423,
-          "days_left": 0.0,
-          "target_stock": 37,
-          "ship_qty": 0
-        },
-        {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 29,
           "ads": 2.423,
@@ -1350,9 +1326,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 19,
+          "stock": 18,
           "ads": 2.423,
-          "days_left": 7.8,
+          "days_left": 7.4,
           "target_stock": 37,
           "ship_qty": 0
         },
@@ -1371,9 +1347,9 @@
       "offer_id": "для щенков 8в1",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
       "brand": "8IN1",
-      "stock": 78,
+      "stock": 75,
       "inbound": 0,
-      "available": 78,
+      "available": 75,
       "order_units_7d": 20,
       "order_units_used": 20,
       "daily_orders": 1.429,
@@ -1470,8 +1446,8 @@
       "horizon_days": 15,
       "target_stock": 22,
       "ship_qty": 0,
-      "days_on_hand": 54.6,
-      "days_with_inbound": 54.6,
+      "days_on_hand": 52.5,
+      "days_with_inbound": 52.5,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1479,9 +1455,9 @@
       "clusters": [
         {
           "cluster": "Екатеринбург",
-          "stock": 5,
+          "stock": 4,
           "ads": 1.5,
-          "days_left": 3.3,
+          "days_left": 2.7,
           "target_stock": 23,
           "ship_qty": 0
         },
@@ -1519,9 +1495,9 @@
         },
         {
           "cluster": "Ростов",
-          "stock": 5,
+          "stock": 3,
           "ads": 1.5,
-          "days_left": 3.3,
+          "days_left": 2.0,
           "target_stock": 23,
           "ship_qty": 0
         },
@@ -1540,9 +1516,9 @@
       "offer_id": "для взрослых собак1",
       "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
       "brand": "8IN1",
-      "stock": 60,
+      "stock": 59,
       "inbound": 0,
-      "available": 60,
+      "available": 59,
       "order_units_7d": 19,
       "order_units_used": 14,
       "daily_orders": 1.077,
@@ -1644,8 +1620,8 @@
       "horizon_days": 15,
       "target_stock": 17,
       "ship_qty": 0,
-      "days_on_hand": 55.7,
-      "days_with_inbound": 55.7,
+      "days_on_hand": 54.8,
+      "days_with_inbound": 54.8,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1685,9 +1661,9 @@
         },
         {
           "cluster": "Ростов",
-          "stock": 3,
+          "stock": 2,
           "ads": 1.036,
-          "days_left": 2.9,
+          "days_left": 1.9,
           "target_stock": 16,
           "ship_qty": 0
         },
@@ -1843,9 +1819,9 @@
       "offer_id": "для кошек и собак 260 1",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
       "brand": "8IN1",
-      "stock": 39,
+      "stock": 38,
       "inbound": 0,
-      "available": 39,
+      "available": 38,
       "order_units_7d": 7,
       "order_units_used": 7,
       "daily_orders": 0.5,
@@ -1942,8 +1918,8 @@
       "horizon_days": 15,
       "target_stock": 8,
       "ship_qty": 0,
-      "days_on_hand": 78.0,
-      "days_with_inbound": 78.0,
+      "days_on_hand": 76.0,
+      "days_with_inbound": 76.0,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1975,9 +1951,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 20,
+          "stock": 19,
           "ads": 0.667,
-          "days_left": 30.0,
+          "days_left": 28.5,
           "target_stock": 10,
           "ship_qty": 0
         },
@@ -2325,19 +2301,19 @@
       "cluster": "Екатеринбург",
       "ship_qty": 12,
       "skus": 2,
-      "stock": 34
+      "stock": 33
     },
     {
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 12,
       "skus": 3,
-      "stock": 297
+      "stock": 295
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 12,
       "skus": 3,
-      "stock": 280
+      "stock": 279
     },
     {
       "cluster": "Дальний Восток",
@@ -2349,7 +2325,7 @@
       "cluster": "Ростов",
       "ship_qty": 3,
       "skus": 1,
-      "stock": 36
+      "stock": 33
     },
     {
       "cluster": "Беларусь",
