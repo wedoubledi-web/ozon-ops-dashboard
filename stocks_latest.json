@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T12:18:36.135306+00:00",
+  "generated_at": "2026-10-15T14:46:23.246459+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -923,6 +923,26 @@
       "confidence": "medium"
     },
     {
+      "sku": 5803370792,
+      "offer_id": "шоколад 70",
+      "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+      "cluster": "Пермь",
+      "stock": 0,
+      "ads": 0.045454545454545456,
+      "warehouses": [
+        {
+          "name": "ПЕРМЬ_РФЦ",
+          "stock": 0,
+          "grade": "COLLECTING_DATA"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 1,
+      "supply_qty": 1,
+      "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
       "sku": 5745079896,
       "offer_id": "Меркурий201.7 (2026)",
       "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
@@ -1091,11 +1111,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 22.26,
-      "stock": 75,
+      "stock": 73,
       "ads": 1.5,
-      "cost_capitalization": 48866.86,
-      "retail_capitalization": 208298.62,
-      "days_left": 50.0
+      "cost_capitalization": 47563.74,
+      "retail_capitalization": 202743.99,
+      "days_left": 48.7
     },
     {
       "sku": 5803370792,
@@ -1123,11 +1143,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 59,
+      "stock": 58,
       "ads": 1.0357142857142858,
-      "cost_capitalization": 43521.64,
-      "retail_capitalization": 229406.21,
-      "days_left": 57.0
+      "cost_capitalization": 42783.98,
+      "retail_capitalization": 225517.97,
+      "days_left": 56.0
     },
     {
       "sku": 5803075530,
@@ -1187,11 +1207,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 39.1,
-      "stock": 45,
+      "stock": 43,
       "ads": 3.3333333333333335,
-      "cost_capitalization": 50366.61,
-      "retail_capitalization": 181219.8,
-      "days_left": 13.5
+      "cost_capitalization": 48128.09,
+      "retail_capitalization": 173165.58,
+      "days_left": 12.9
     },
     {
       "sku": 4823918365,
@@ -1291,10 +1311,10 @@
     }
   ],
   "summary": {
-    "stock": 684,
-    "cost_capitalization": 453838.69,
-    "retail_capitalization": 2256984.95,
+    "stock": 679,
+    "cost_capitalization": 449559.41,
+    "retail_capitalization": 2239487.86,
     "fx_rub_per_byn": 27.773149
   },
-  "raw_rows": 119
+  "raw_rows": 120
 }
