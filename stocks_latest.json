@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T12:00:43.923255+00:00",
+  "generated_at": "2026-10-16T14:41:02.442179+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -173,6 +173,31 @@
       "confidence": "medium"
     },
     {
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "cluster": "Ростов",
+      "stock": 4,
+      "ads": 0.48148148148148145,
+      "warehouses": [
+        {
+          "name": "РОСТОВ-НА-ДОНУ_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+          "stock": 4,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 14,
+      "supply_qty": 10,
+      "days_left": 8.3,
+      "confidence": "medium"
+    },
+    {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -260,31 +285,6 @@
       "target_stock": 8,
       "supply_qty": 8,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 3726902147,
-      "offer_id": "глюкозамин 55 шт",
-      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "cluster": "Ростов",
-      "stock": 6,
-      "ads": 0.48148148148148145,
-      "warehouses": [
-        {
-          "name": "РОСТОВ-НА-ДОНУ_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-          "stock": 6,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 14,
-      "supply_qty": 8,
-      "days_left": 12.5,
       "confidence": "medium"
     },
     {
@@ -1124,11 +1124,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 120,
+      "stock": 119,
       "ads": 4.071428571428571,
-      "cost_capitalization": 70313.8,
-      "retail_capitalization": 416550.96,
-      "days_left": 29.5
+      "cost_capitalization": 69727.85,
+      "retail_capitalization": 413079.7,
+      "days_left": 29.2
     },
     {
       "sku": 3726888167,
@@ -1236,27 +1236,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 44,
+      "stock": 43,
       "ads": 2.25,
-      "cost_capitalization": 32453.21,
-      "retail_capitalization": 109969.45,
-      "days_left": 19.6
-    },
-    {
-      "sku": 3726902147,
-      "offer_id": "глюкозамин 55 шт",
-      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-f/11145177663.jpg",
-      "price": 145.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 39.1,
-      "stock": 40,
-      "ads": 3.111111111111111,
-      "cost_capitalization": 44765.34,
-      "retail_capitalization": 161066.37,
-      "days_left": 12.9
+      "cost_capitalization": 31715.63,
+      "retail_capitalization": 107470.15,
+      "days_left": 19.1
     },
     {
       "sku": 4823918365,
@@ -1273,6 +1257,22 @@
       "cost_capitalization": 24063.87,
       "retail_capitalization": 102749.24,
       "days_left": 51.4
+    },
+    {
+      "sku": 3726902147,
+      "offer_id": "глюкозамин 55 шт",
+      "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-f/11145177663.jpg",
+      "price": 145.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 39.1,
+      "stock": 36,
+      "ads": 3.111111111111111,
+      "cost_capitalization": 40288.81,
+      "retail_capitalization": 144959.73,
+      "days_left": 11.6
     },
     {
       "sku": 3726858649,
@@ -1356,9 +1356,9 @@
     }
   ],
   "summary": {
-    "stock": 645,
-    "cost_capitalization": 425602.89,
-    "retail_capitalization": 2125381.84,
+    "stock": 639,
+    "cost_capitalization": 419802.83,
+    "retail_capitalization": 2103304.64,
     "fx_rub_per_byn": 27.770064
   },
   "raw_rows": 121
