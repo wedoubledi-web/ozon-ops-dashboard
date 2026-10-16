@@ -102,11 +102,11 @@
       "other": -51.0,
       "order_revenue": 11820.36,
       "order_units": 8,
-      "cancelled_units": 0,
-      "buyout_pct": 100.0,
+      "cancelled_units": 1,
+      "buyout_pct": 87.5,
       "posting_statuses": {
-        "delivering": 6,
-        "awaiting_deliver": 2
+        "cancelled": 1,
+        "delivering": 7
       },
       "views": 1000,
       "clicks": 83,
@@ -299,7 +299,8 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivering": 2
+        "delivered": 1,
+        "delivering": 1
       },
       "views": 1413,
       "clicks": 60,
@@ -338,8 +339,8 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivered": 1,
-        "delivering": 6
+        "delivered": 3,
+        "delivering": 4
       }
     },
     {
@@ -689,8 +690,8 @@
   ],
   "orders": 28,
   "order_revenue": 38254.47,
-  "cancelled_units": 1,
-  "buyout_pct": 96.43,
+  "cancelled_units": 2,
+  "buyout_pct": 92.86,
   "views": 20077,
   "clicks": 1066,
   "perf_spend": 3379.81,

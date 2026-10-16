@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T14:41:02.442179+00:00",
+  "generated_at": "2026-10-16T17:55:04.662554+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -931,6 +931,11 @@
       "ads": 0.07142857142857142,
       "warehouses": [
         {
+          "name": "РОСТОВ-НА-ДОНУ_РФЦ",
+          "stock": 0,
+          "grade": "POPULAR"
+        },
+        {
           "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
           "stock": 1,
           "grade": "POPULAR"
@@ -1220,11 +1225,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 46,
+      "stock": 44,
       "ads": 1.25,
-      "cost_capitalization": 33928.35,
-      "retail_capitalization": 178839.21,
-      "days_left": 36.8
+      "cost_capitalization": 32453.21,
+      "retail_capitalization": 171063.59,
+      "days_left": 35.2
     },
     {
       "sku": 5516579647,
@@ -1236,27 +1241,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 43,
+      "stock": 42,
       "ads": 2.25,
-      "cost_capitalization": 31715.63,
-      "retail_capitalization": 107470.15,
-      "days_left": 19.1
-    },
-    {
-      "sku": 4823918365,
-      "offer_id": "для кошек и собак 260 1",
-      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-g/12282479008.jpg",
-      "price": 100.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 22.22,
-      "stock": 37,
-      "ads": 0.72,
-      "cost_capitalization": 24063.87,
-      "retail_capitalization": 102749.24,
-      "days_left": 51.4
+      "cost_capitalization": 30978.06,
+      "retail_capitalization": 104970.84,
+      "days_left": 18.7
     },
     {
       "sku": 3726902147,
@@ -1273,6 +1262,22 @@
       "cost_capitalization": 40288.81,
       "retail_capitalization": 144959.73,
       "days_left": 11.6
+    },
+    {
+      "sku": 4823918365,
+      "offer_id": "для кошек и собак 260 1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-g/12282479008.jpg",
+      "price": 100.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 22.22,
+      "stock": 35,
+      "ads": 0.72,
+      "cost_capitalization": 22763.12,
+      "retail_capitalization": 97195.22,
+      "days_left": 48.6
     },
     {
       "sku": 3726858649,
@@ -1356,10 +1361,10 @@
     }
   ],
   "summary": {
-    "stock": 639,
-    "cost_capitalization": 419802.83,
-    "retail_capitalization": 2103304.64,
+    "stock": 634,
+    "cost_capitalization": 416289.36,
+    "retail_capitalization": 2087475.7,
     "fx_rub_per_byn": 27.770064
   },
-  "raw_rows": 121
+  "raw_rows": 122
 }
