@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T12:24:39.463216+00:00",
+  "generated_at": "2026-10-20T14:51:43.856756+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -948,6 +948,26 @@
       "confidence": "medium"
     },
     {
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "cluster": "Екатеринбург",
+      "stock": 3,
+      "ads": 0.14285714285714285,
+      "warehouses": [
+        {
+          "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
+          "stock": 3,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 4,
+      "supply_qty": 1,
+      "days_left": 21.0,
+      "confidence": "medium"
+    },
+    {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -1085,26 +1105,6 @@
       "target_stock": 1,
       "supply_qty": 1,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 5516649179,
-      "offer_id": "для щенков 8в1",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "cluster": "Екатеринбург",
-      "stock": 4,
-      "ads": 0.14285714285714285,
-      "warehouses": [
-        {
-          "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-          "stock": 4,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 4,
-      "supply_qty": 0,
-      "days_left": 28.0,
       "confidence": "medium"
     },
     {
@@ -1287,11 +1287,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 24.336,
-      "stock": 56,
+      "stock": 54,
       "ads": 0.5555555555555556,
-      "cost_capitalization": 39678.58,
-      "retail_capitalization": 64950.06,
-      "days_left": 100.8
+      "cost_capitalization": 38261.49,
+      "retail_capitalization": 62630.41,
+      "days_left": 97.2
     },
     {
       "sku": 4823627697,
@@ -1319,11 +1319,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 22.26,
-      "stock": 38,
+      "stock": 37,
       "ads": 2.25,
-      "cost_capitalization": 24735.85,
-      "retail_capitalization": 45338.51,
-      "days_left": 16.9
+      "cost_capitalization": 24084.91,
+      "retail_capitalization": 44145.39,
+      "days_left": 16.4
     },
     {
       "sku": 4823918365,
@@ -1471,9 +1471,9 @@
     }
   ],
   "summary": {
-    "stock": 480,
-    "cost_capitalization": 297997.39,
-    "retail_capitalization": 593951.17,
+    "stock": 477,
+    "cost_capitalization": 295929.36,
+    "retail_capitalization": 590438.4,
     "fx_rub_per_byn": 27.746948
   },
   "raw_rows": 114

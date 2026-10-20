@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T12:24:40.527391+00:00",
+  "generated_at": "2026-10-20T14:51:44.870478+00:00",
   "as_of": "2026-10-19",
   "expected_as_of": "2026-10-19",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -74582,8 +74582,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 9,
-            "awaiting_deliver": 2
+            "delivering": 11
           },
           "views": 954,
           "clicks": 51,
@@ -74778,8 +74777,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 2,
-            "awaiting_deliver": 1,
+            "delivering": 3,
             "delivered": 1
           },
           "views": 743,
@@ -74819,8 +74817,9 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 8,
-            "awaiting_deliver": 1
+            "delivering": 7,
+            "awaiting_deliver": 1,
+            "delivered": 1
           },
           "views": 879,
           "clicks": 43,
@@ -74891,7 +74890,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 2
+            "delivered": 1,
+            "delivering": 1
           },
           "views": 848,
           "clicks": 16,
@@ -75229,7 +75229,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-20T12:24:39.463216+00:00",
+    "generated_at": "2026-10-20T14:51:43.856756+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -76178,6 +76178,26 @@
         "confidence": "medium"
       },
       {
+        "sku": 5516649179,
+        "offer_id": "для щенков 8в1",
+        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+        "cluster": "Екатеринбург",
+        "stock": 3,
+        "ads": 0.14285714285714285,
+        "warehouses": [
+          {
+            "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
+            "stock": 3,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 4,
+        "supply_qty": 1,
+        "days_left": 21.0,
+        "confidence": "medium"
+      },
+      {
         "sku": 4658698444,
         "offer_id": "кальций",
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -76315,26 +76335,6 @@
         "target_stock": 1,
         "supply_qty": 1,
         "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
-        "sku": 5516649179,
-        "offer_id": "для щенков 8в1",
-        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-        "cluster": "Екатеринбург",
-        "stock": 4,
-        "ads": 0.14285714285714285,
-        "warehouses": [
-          {
-            "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-            "stock": 4,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 4,
-        "supply_qty": 0,
-        "days_left": 28.0,
         "confidence": "medium"
       },
       {
@@ -76517,11 +76517,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 24.336,
-        "stock": 56,
+        "stock": 54,
         "ads": 0.5555555555555556,
-        "cost_capitalization": 39678.58,
-        "retail_capitalization": 64950.06,
-        "days_left": 100.8
+        "cost_capitalization": 38261.49,
+        "retail_capitalization": 62630.41,
+        "days_left": 97.2
       },
       {
         "sku": 4823627697,
@@ -76549,11 +76549,11 @@
         "brand": "8IN1",
         "group": "Витамины для животных",
         "cost_byn": 22.26,
-        "stock": 38,
+        "stock": 37,
         "ads": 2.25,
-        "cost_capitalization": 24735.85,
-        "retail_capitalization": 45338.51,
-        "days_left": 16.9
+        "cost_capitalization": 24084.91,
+        "retail_capitalization": 44145.39,
+        "days_left": 16.4
       },
       {
         "sku": 4823918365,
@@ -76701,15 +76701,15 @@
       }
     ],
     "summary": {
-      "stock": 480,
-      "cost_capitalization": 297997.39,
-      "retail_capitalization": 593951.17,
+      "stock": 477,
+      "cost_capitalization": 295929.36,
+      "retail_capitalization": 590438.4,
       "fx_rub_per_byn": 27.746948
     },
     "raw_rows": 114
   },
   "supplies": {
-    "generated_at": "2026-10-20T12:24:40.221684+00:00",
+    "generated_at": "2026-10-20T14:51:44.570271+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -77700,9 +77700,9 @@
         "offer_id": "для щенков 8в1",
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
         "brand": "8IN1",
-        "stock": 38,
+        "stock": 37,
         "inbound": 0,
-        "available": 38,
+        "available": 37,
         "order_units_7d": 50,
         "order_units_used": 39,
         "daily_orders": 3.0,
@@ -77803,9 +77803,9 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 45,
-        "ship_qty": 7,
-        "days_on_hand": 12.7,
-        "days_with_inbound": 12.7,
+        "ship_qty": 8,
+        "days_on_hand": 12.3,
+        "days_with_inbound": 12.3,
         "ship_in_days": 7,
         "ship_by": "2026-10-27",
         "status": "later",
@@ -77820,10 +77820,18 @@
             "ship_qty": 2
           },
           {
-            "cluster": "Екатеринбург",
-            "stock": 4,
+            "cluster": "Омск",
+            "stock": 0,
             "ads": 2.25,
-            "days_left": 1.8,
+            "days_left": 0.0,
+            "target_stock": 34,
+            "ship_qty": 2
+          },
+          {
+            "cluster": "Екатеринбург",
+            "stock": 3,
+            "ads": 2.25,
+            "days_left": 1.3,
             "target_stock": 34,
             "ship_qty": 1
           },
@@ -77832,14 +77840,6 @@
             "stock": 16,
             "ads": 2.25,
             "days_left": 7.1,
-            "target_stock": 34,
-            "ship_qty": 1
-          },
-          {
-            "cluster": "Омск",
-            "stock": 0,
-            "ads": 2.25,
-            "days_left": 0.0,
             "target_stock": 34,
             "ship_qty": 1
           },
@@ -78539,9 +78539,9 @@
         "offer_id": "шоколад элит 4 шт",
         "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
         "brand": "Спартак",
-        "stock": 56,
+        "stock": 54,
         "inbound": 0,
-        "available": 56,
+        "available": 54,
         "order_units_7d": 11,
         "order_units_used": 11,
         "daily_orders": 0.786,
@@ -78638,8 +78638,8 @@
         "horizon_days": 15,
         "target_stock": 12,
         "ship_qty": 0,
-        "days_on_hand": 71.2,
-        "days_with_inbound": 71.2,
+        "days_on_hand": 68.7,
+        "days_with_inbound": 68.7,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -78647,9 +78647,9 @@
         "clusters": [
           {
             "cluster": "Екатеринбург",
-            "stock": 7,
+            "stock": 5,
             "ads": 0.556,
-            "days_left": 12.6,
+            "days_left": 9.0,
             "target_stock": 9,
             "ship_qty": 0
           },
@@ -78991,7 +78991,7 @@
         "cluster": "Екатеринбург",
         "ship_qty": 27,
         "skus": 6,
-        "stock": 24
+        "stock": 21
       },
       {
         "cluster": "Москва, МО и Дальние регионы",
@@ -79061,7 +79061,7 @@
       },
       {
         "cluster": "Омск",
-        "ship_qty": 1,
+        "ship_qty": 2,
         "skus": 1,
         "stock": 0
       },
@@ -79102,14 +79102,14 @@
       "ship_now_skus": 5,
       "ship_now_qty": 134,
       "ship_soon_skus": 1,
-      "ship_total_qty": 167,
+      "ship_total_qty": 168,
       "cluster_count": 13,
       "critical_skus": 5,
       "under_cover_skus": 6
     }
   },
   "competitors": {
-    "generated_at": "2026-10-20T12:24:40.256990+00:00",
+    "generated_at": "2026-10-20T14:51:44.606201+00:00",
     "as_of": "2026-10-19",
     "geo": {
       "city": "Москва",
@@ -79145,7 +79145,7 @@
           "price_byn": 43.0,
           "price_rub": 1176.91,
           "price_source": "ozon_bestsellers",
-          "stock": 38,
+          "stock": 37,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -81178,7 +81178,7 @@
           "price_byn": 41.8,
           "price_rub": 1076.15,
           "price_source": "ozon_bestsellers",
-          "stock": 56,
+          "stock": 54,
           "delivery": "",
           "delivery_days": null,
           "card": {},
