@@ -181,9 +181,7 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivering": 2,
-        "awaiting_deliver": 1,
-        "awaiting_packaging": 4
+        "delivering": 7
       },
       "views": 790,
       "clicks": 38,
@@ -222,8 +220,7 @@
       "cancelled_units": 0,
       "buyout_pct": 100.0,
       "posting_statuses": {
-        "delivering": 1,
-        "awaiting_deliver": 1
+        "delivering": 2
       },
       "views": 9626,
       "clicks": 549,
@@ -263,7 +260,8 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 4,
-        "awaiting_deliver": 3
+        "awaiting_deliver": 2,
+        "delivered": 1
       },
       "views": 1232,
       "clicks": 70,
