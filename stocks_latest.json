@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:38:21.849242+00:00",
+  "generated_at": "2026-10-22T14:59:17.778088+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -238,6 +238,31 @@
       "confidence": "high"
     },
     {
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "cluster": "Санкт-Петербург и СЗО",
+      "stock": 2,
+      "ads": 0.6428571428571429,
+      "warehouses": [
+        {
+          "name": "СПБ_БУГРЫ_РФЦ",
+          "stock": 2,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "СПБ_ШУШАРЫ_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 19,
+      "supply_qty": 17,
+      "days_left": 3.1,
+      "confidence": "high"
+    },
+    {
       "sku": 3726902147,
       "offer_id": "глюкозамин 55 шт",
       "name": "Витамины для собак для суставов 8in1 Excel Glucosamine 55 шт",
@@ -300,31 +325,6 @@
       "target_stock": 16,
       "supply_qty": 16,
       "days_left": 0.0,
-      "confidence": "high"
-    },
-    {
-      "sku": 5516649179,
-      "offer_id": "для щенков 8в1",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "cluster": "Санкт-Петербург и СЗО",
-      "stock": 4,
-      "ads": 0.6428571428571429,
-      "warehouses": [
-        {
-          "name": "СПБ_БУГРЫ_РФЦ",
-          "stock": 4,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "СПБ_ШУШАРЫ_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 19,
-      "supply_qty": 15,
-      "days_left": 6.2,
       "confidence": "high"
     },
     {
@@ -413,6 +413,26 @@
       "confidence": "medium"
     },
     {
+      "sku": 5516579647,
+      "offer_id": "для мелких 8в1",
+      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+      "cluster": "Санкт-Петербург и СЗО",
+      "stock": 0,
+      "ads": 0.32142857142857145,
+      "warehouses": [
+        {
+          "name": "СПБ_БУГРЫ_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 10,
+      "supply_qty": 10,
+      "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -430,26 +450,6 @@
       "target_stock": 9,
       "supply_qty": 9,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 5516579647,
-      "offer_id": "для мелких 8в1",
-      "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-      "cluster": "Санкт-Петербург и СЗО",
-      "stock": 1,
-      "ads": 0.32142857142857145,
-      "warehouses": [
-        {
-          "name": "СПБ_БУГРЫ_РФЦ",
-          "stock": 1,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 10,
-      "supply_qty": 9,
-      "days_left": 3.1,
       "confidence": "medium"
     },
     {
@@ -1443,22 +1443,6 @@
       "days_left": 1.2
     },
     {
-      "sku": 5516649179,
-      "offer_id": "для щенков 8в1",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
-      "price": 43.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 22.26,
-      "stock": 4,
-      "ads": 3.1785714285714284,
-      "cost_capitalization": 2596.78,
-      "retail_capitalization": 4759.66,
-      "days_left": 1.3
-    },
-    {
       "sku": 3726892929,
       "offer_id": "для взрослых собак1",
       "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
@@ -1475,6 +1459,22 @@
       "days_left": 0.7
     },
     {
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
+      "price": 43.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 22.26,
+      "stock": 2,
+      "ads": 3.1785714285714284,
+      "cost_capitalization": 1298.39,
+      "retail_capitalization": 2379.83,
+      "days_left": 0.6
+    },
+    {
       "sku": 5516579647,
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -1484,11 +1484,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 25.36,
-      "stock": 2,
+      "stock": 1,
       "ads": 3.392857142857143,
-      "cost_capitalization": 1469.96,
-      "retail_capitalization": 2258.07,
-      "days_left": 0.6
+      "cost_capitalization": 734.98,
+      "retail_capitalization": 1129.04,
+      "days_left": 0.3
     },
     {
       "sku": 5745079896,
@@ -1556,9 +1556,9 @@
     }
   ],
   "summary": {
-    "stock": 383,
-    "cost_capitalization": 230954.37,
-    "retail_capitalization": 469380.41,
+    "stock": 380,
+    "cost_capitalization": 228921.0,
+    "retail_capitalization": 465871.54,
     "fx_rub_per_byn": 27.672469
   },
   "raw_rows": 114
