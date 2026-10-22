@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T14:59:20.455787+00:00",
+  "generated_at": "2026-10-22T18:26:08.615566+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -342,9 +342,9 @@
       "offer_id": "для щенков 8в1",
       "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
       "brand": "8IN1",
-      "stock": 2,
+      "stock": 0,
       "inbound": 0,
-      "available": 2,
+      "available": 0,
       "order_units_7d": 78,
       "order_units_used": 54,
       "daily_orders": 4.154,
@@ -445,14 +445,22 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 63,
-      "ship_qty": 61,
-      "days_on_hand": 0.5,
-      "days_with_inbound": 0.5,
+      "ship_qty": 63,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 0.0,
       "ship_in_days": 0,
       "ship_by": "2026-10-22",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
+        {
+          "cluster": "Красноярск",
+          "stock": 0,
+          "ads": 3.179,
+          "days_left": 0.0,
+          "target_stock": 48,
+          "ship_qty": 11
+        },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
@@ -462,15 +470,15 @@
           "ship_qty": 11
         },
         {
-          "cluster": "Екатеринбург",
+          "cluster": "Санкт-Петербург и СЗО",
           "stock": 0,
           "ads": 3.179,
           "days_left": 0.0,
           "target_stock": 48,
-          "ship_qty": 10
+          "ship_qty": 11
         },
         {
-          "cluster": "Красноярск",
+          "cluster": "Екатеринбург",
           "stock": 0,
           "ads": 3.179,
           "days_left": 0.0,
@@ -490,14 +498,6 @@
           "stock": 0,
           "ads": 3.179,
           "days_left": 0.0,
-          "target_stock": 48,
-          "ship_qty": 10
-        },
-        {
-          "cluster": "Санкт-Петербург и СЗО",
-          "stock": 2,
-          "ads": 3.179,
-          "days_left": 0.6,
           "target_stock": 48,
           "ship_qty": 10
         }
@@ -1315,9 +1315,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 94,
+      "stock": 93,
       "inbound": 0,
-      "available": 94,
+      "available": 93,
       "order_units_7d": 58,
       "order_units_used": 58,
       "daily_orders": 4.143,
@@ -1414,8 +1414,8 @@
       "horizon_days": 15,
       "target_stock": 63,
       "ship_qty": 0,
-      "days_on_hand": 22.7,
-      "days_with_inbound": 22.7,
+      "days_on_hand": 22.4,
+      "days_with_inbound": 22.4,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1487,9 +1487,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 62,
+          "stock": 61,
           "ads": 3.929,
-          "days_left": 15.8,
+          "days_left": 15.5,
           "target_stock": 59,
           "ship_qty": 0
         },
@@ -2275,9 +2275,9 @@
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
-      "ship_qty": 50,
+      "ship_qty": 51,
       "skus": 6,
-      "stock": 168
+      "stock": 165
     },
     {
       "cluster": "Екатеринбург",
@@ -2293,7 +2293,7 @@
     },
     {
       "cluster": "Красноярск",
-      "ship_qty": 32,
+      "ship_qty": 33,
       "skus": 4,
       "stock": 0
     },
@@ -2386,9 +2386,9 @@
     "inbound_orders": 0,
     "inbound_qty": 0,
     "ship_now_skus": 7,
-    "ship_now_qty": 314,
+    "ship_now_qty": 316,
     "ship_soon_skus": 0,
-    "ship_total_qty": 320,
+    "ship_total_qty": 322,
     "cluster_count": 14,
     "critical_skus": 7,
     "under_cover_skus": 7

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T14:59:17.778088+00:00",
+  "generated_at": "2026-10-22T18:26:07.794228+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -103,22 +103,22 @@
         {
           "name": "ПУШКИНО_1_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         },
         {
           "name": "СОФЬИНО_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         },
         {
           "name": "НОГИНСК_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -213,6 +213,31 @@
       "confidence": "high"
     },
     {
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "cluster": "Санкт-Петербург и СЗО",
+      "stock": 0,
+      "ads": 0.6428571428571429,
+      "warehouses": [
+        {
+          "name": "СПБ_БУГРЫ_РФЦ",
+          "stock": 0,
+          "grade": "WAS_DEFICIT"
+        },
+        {
+          "name": "СПБ_ШУШАРЫ_РФЦ",
+          "stock": 0,
+          "grade": "WAS_DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 19,
+      "supply_qty": 19,
+      "days_left": 0.0,
+      "confidence": "high"
+    },
+    {
       "sku": 4451480169,
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
@@ -235,31 +260,6 @@
       "target_stock": 27,
       "supply_qty": 17,
       "days_left": 11.2,
-      "confidence": "high"
-    },
-    {
-      "sku": 5516649179,
-      "offer_id": "для щенков 8в1",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "cluster": "Санкт-Петербург и СЗО",
-      "stock": 2,
-      "ads": 0.6428571428571429,
-      "warehouses": [
-        {
-          "name": "СПБ_БУГРЫ_РФЦ",
-          "stock": 2,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "СПБ_ШУШАРЫ_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 19,
-      "supply_qty": 17,
-      "days_left": 3.1,
       "confidence": "high"
     },
     {
@@ -403,7 +403,7 @@
         {
           "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -573,7 +573,7 @@
         {
           "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1098,7 +1098,7 @@
         {
           "name": "КРАСНОЯРСК_МРФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1138,7 +1138,7 @@
         {
           "name": "ОМСК_РФЦ",
           "stock": 0,
-          "grade": "DEFICIT"
+          "grade": "WAS_DEFICIT"
         }
       ],
       "target_days": 30,
@@ -1324,11 +1324,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 94,
+      "stock": 93,
       "ads": 3.9285714285714284,
-      "cost_capitalization": 54885.57,
-      "retail_capitalization": 98325.82,
-      "days_left": 23.9
+      "cost_capitalization": 54301.69,
+      "retail_capitalization": 97279.8,
+      "days_left": 23.7
     },
     {
       "sku": 3726888167,
@@ -1459,22 +1459,6 @@
       "days_left": 0.7
     },
     {
-      "sku": 5516649179,
-      "offer_id": "для щенков 8в1",
-      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-      "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
-      "price": 43.0,
-      "currency": "BYN",
-      "brand": "8IN1",
-      "group": "Витамины для животных",
-      "cost_byn": 22.26,
-      "stock": 2,
-      "ads": 3.1785714285714284,
-      "cost_capitalization": 1298.39,
-      "retail_capitalization": 2379.83,
-      "days_left": 0.6
-    },
-    {
       "sku": 5516579647,
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -1553,12 +1537,28 @@
       "cost_capitalization": 0.0,
       "retail_capitalization": 0.0,
       "days_left": 0.0
+    },
+    {
+      "sku": 5516649179,
+      "offer_id": "для щенков 8в1",
+      "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+      "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
+      "price": 43.0,
+      "currency": "BYN",
+      "brand": "8IN1",
+      "group": "Витамины для животных",
+      "cost_byn": 22.26,
+      "stock": 0,
+      "ads": 3.1785714285714284,
+      "cost_capitalization": 0.0,
+      "retail_capitalization": 0.0,
+      "days_left": 0.0
     }
   ],
   "summary": {
-    "stock": 380,
-    "cost_capitalization": 228921.0,
-    "retail_capitalization": 465871.54,
+    "stock": 377,
+    "cost_capitalization": 227038.71,
+    "retail_capitalization": 462445.69,
     "fx_rub_per_byn": 27.672469
   },
   "raw_rows": 114
