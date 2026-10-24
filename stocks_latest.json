@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T13:54:34.232972+00:00",
+  "generated_at": "2026-10-24T17:17:44.907373+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -913,6 +913,26 @@
       "confidence": "medium"
     },
     {
+      "sku": 4823918365,
+      "offer_id": "для кошек и собак 260 1",
+      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
+      "cluster": "Ростов",
+      "stock": 0,
+      "ads": 0.10714285714285714,
+      "warehouses": [
+        {
+          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 3,
+      "supply_qty": 3,
+      "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
       "sku": 4451480169,
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
@@ -1050,26 +1070,6 @@
       "target_stock": 2,
       "supply_qty": 2,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 4823918365,
-      "offer_id": "для кошек и собак 260 1",
-      "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
-      "cluster": "Ростов",
-      "stock": 1,
-      "ads": 0.10714285714285714,
-      "warehouses": [
-        {
-          "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
-          "stock": 1,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 3,
-      "supply_qty": 2,
-      "days_left": 9.3,
       "confidence": "medium"
     },
     {
@@ -1354,11 +1354,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 85,
+      "stock": 84,
       "ads": 4.214285714285714,
-      "cost_capitalization": 49190.89,
-      "retail_capitalization": 88123.97,
-      "days_left": 20.2
+      "cost_capitalization": 48612.18,
+      "retail_capitalization": 87087.22,
+      "days_left": 19.9
     },
     {
       "sku": 3726888167,
@@ -1450,11 +1450,11 @@
       "brand": "8IN1",
       "group": "Витамины для животных",
       "cost_byn": 22.22,
-      "stock": 9,
+      "stock": 8,
       "ads": 1.3571428571428572,
-      "cost_capitalization": 5781.13,
-      "retail_capitalization": 11848.6,
-      "days_left": 6.6
+      "cost_capitalization": 5138.78,
+      "retail_capitalization": 10532.09,
+      "days_left": 5.9
     },
     {
       "sku": 3726902147,
@@ -1586,9 +1586,9 @@
     }
   ],
   "summary": {
-    "stock": 354,
-    "cost_capitalization": 209926.82,
-    "retail_capitalization": 425951.73,
+    "stock": 352,
+    "cost_capitalization": 208705.76,
+    "retail_capitalization": 423598.46,
     "fx_rub_per_byn": 27.427318
   },
   "raw_rows": 113
