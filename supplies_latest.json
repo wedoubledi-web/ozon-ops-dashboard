@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T23:44:00.773015+00:00",
+  "generated_at": "2026-10-24T08:32:45.173229+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -121,49 +121,49 @@
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 3.111,
+          "ads": 3.231,
           "days_left": 0.0,
-          "target_stock": 47,
+          "target_stock": 49,
           "ship_qty": 14
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 0,
-          "ads": 3.111,
+          "ads": 3.231,
           "days_left": 0.0,
-          "target_stock": 47,
+          "target_stock": 49,
           "ship_qty": 14
         },
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 3.111,
+          "ads": 3.231,
           "days_left": 0.0,
-          "target_stock": 47,
+          "target_stock": 49,
           "ship_qty": 13
         },
         {
           "cluster": "Казань",
           "stock": 0,
-          "ads": 3.111,
+          "ads": 3.231,
           "days_left": 0.0,
-          "target_stock": 47,
+          "target_stock": 49,
           "ship_qty": 13
         },
         {
           "cluster": "Красноярск",
           "stock": 0,
-          "ads": 3.111,
+          "ads": 3.231,
           "days_left": 0.0,
-          "target_stock": 47,
+          "target_stock": 49,
           "ship_qty": 13
         },
         {
           "cluster": "Ростов",
           "stock": 0,
-          "ads": 3.111,
+          "ads": 3.231,
           "days_left": 0.0,
-          "target_stock": 47,
+          "target_stock": 49,
           "ship_qty": 13
         }
       ]
@@ -287,57 +287,57 @@
         {
           "cluster": "Воронеж",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         },
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         },
         {
           "cluster": "Красноярск",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         },
         {
           "cluster": "Омск",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         },
         {
           "cluster": "Ростов",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 0,
-          "ads": 3.815,
+          "ads": 3.923,
           "days_left": 0.0,
-          "target_stock": 58,
+          "target_stock": 59,
           "ship_qty": 10
         }
       ]
@@ -347,9 +347,9 @@
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
       "brand": "8IN1",
-      "stock": 1,
+      "stock": 2,
       "inbound": 0,
-      "available": 1,
+      "available": 2,
       "order_units_7d": 60,
       "order_units_used": 60,
       "daily_orders": 4.286,
@@ -445,9 +445,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 65,
-      "ship_qty": 64,
-      "days_on_hand": 0.2,
-      "days_with_inbound": 0.2,
+      "ship_qty": 63,
+      "days_on_hand": 0.5,
+      "days_with_inbound": 0.5,
       "ship_in_days": 0,
       "ship_by": "2026-10-24",
       "status": "now",
@@ -455,16 +455,16 @@
       "clusters": [
         {
           "cluster": "Дальний Восток",
-          "stock": 0,
-          "ads": 3.786,
-          "days_left": 0.0,
+          "stock": 1,
+          "ads": 3.75,
+          "days_left": 0.3,
           "target_stock": 57,
-          "ship_qty": 10
+          "ship_qty": 9
         },
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 3.786,
+          "ads": 3.75,
           "days_left": 0.0,
           "target_stock": 57,
           "ship_qty": 9
@@ -472,7 +472,7 @@
         {
           "cluster": "Казань",
           "stock": 0,
-          "ads": 3.786,
+          "ads": 3.75,
           "days_left": 0.0,
           "target_stock": 57,
           "ship_qty": 9
@@ -480,7 +480,7 @@
         {
           "cluster": "Калининград",
           "stock": 1,
-          "ads": 3.786,
+          "ads": 3.75,
           "days_left": 0.3,
           "target_stock": 57,
           "ship_qty": 9
@@ -488,7 +488,7 @@
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 3.786,
+          "ads": 3.75,
           "days_left": 0.0,
           "target_stock": 57,
           "ship_qty": 9
@@ -496,7 +496,7 @@
         {
           "cluster": "Ростов",
           "stock": 0,
-          "ads": 3.786,
+          "ads": 3.75,
           "days_left": 0.0,
           "target_stock": 57,
           "ship_qty": 9
@@ -504,7 +504,7 @@
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 0,
-          "ads": 3.786,
+          "ads": 3.75,
           "days_left": 0.0,
           "target_stock": 57,
           "ship_qty": 9
@@ -625,57 +625,57 @@
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         },
         {
           "cluster": "Краснодар",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         },
         {
           "cluster": "Невинномысск",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         },
         {
           "cluster": "Ростов",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         },
         {
           "cluster": "Тюмень",
           "stock": 0,
-          "ads": 2.192,
+          "ads": 2.24,
           "days_left": 0.0,
-          "target_stock": 33,
+          "target_stock": 34,
           "ship_qty": 6
         }
       ]
@@ -799,49 +799,49 @@
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 3.321,
+          "ads": 3.143,
           "days_left": 0.0,
-          "target_stock": 50,
+          "target_stock": 48,
           "ship_qty": 7
         },
         {
           "cluster": "Краснодар",
           "stock": 0,
-          "ads": 3.321,
+          "ads": 3.143,
           "days_left": 0.0,
-          "target_stock": 50,
+          "target_stock": 48,
           "ship_qty": 7
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 3.321,
+          "ads": 3.143,
           "days_left": 0.0,
-          "target_stock": 50,
+          "target_stock": 48,
           "ship_qty": 7
         },
         {
           "cluster": "Новосибирск",
           "stock": 0,
-          "ads": 3.321,
+          "ads": 3.143,
           "days_left": 0.0,
-          "target_stock": 50,
+          "target_stock": 48,
           "ship_qty": 7
         },
         {
           "cluster": "Ростов",
           "stock": 0,
-          "ads": 3.321,
+          "ads": 3.143,
           "days_left": 0.0,
-          "target_stock": 50,
+          "target_stock": 48,
           "ship_qty": 7
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 3,
-          "ads": 3.321,
-          "days_left": 0.9,
-          "target_stock": 50,
+          "ads": 3.143,
+          "days_left": 1.0,
+          "target_stock": 48,
           "ship_qty": 6
         }
       ]
@@ -965,41 +965,41 @@
         {
           "cluster": "Дальний Восток",
           "stock": 0,
-          "ads": 3.053,
+          "ads": 3.111,
           "days_left": 0.0,
-          "target_stock": 46,
+          "target_stock": 47,
           "ship_qty": 2
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 0,
-          "ads": 3.053,
+          "ads": 3.111,
           "days_left": 0.0,
-          "target_stock": 46,
+          "target_stock": 47,
           "ship_qty": 2
         },
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 3.053,
+          "ads": 3.111,
           "days_left": 0.0,
-          "target_stock": 46,
+          "target_stock": 47,
           "ship_qty": 1
         },
         {
           "cluster": "Казань",
           "stock": 0,
-          "ads": 3.053,
+          "ads": 3.111,
           "days_left": 0.0,
-          "target_stock": 46,
+          "target_stock": 47,
           "ship_qty": 1
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 3.053,
+          "ads": 3.111,
           "days_left": 0.0,
-          "target_stock": 46,
+          "target_stock": 47,
           "ship_qty": 1
         }
       ]
@@ -1009,9 +1009,9 @@
       "offer_id": "Меркурий201.7 (2026)",
       "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
       "brand": "Инкотекс",
-      "stock": 1,
+      "stock": 0,
       "inbound": 0,
-      "available": 1,
+      "available": 0,
       "order_units_7d": 3,
       "order_units_used": 3,
       "daily_orders": 0.214,
@@ -1107,9 +1107,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 4,
-      "ship_qty": 3,
-      "days_on_hand": 4.7,
-      "days_with_inbound": 4.7,
+      "ship_qty": 4,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 0.0,
       "ship_in_days": 0,
       "ship_by": "2026-10-24",
       "status": "now",
@@ -1118,25 +1118,25 @@
         {
           "cluster": "Беларусь",
           "stock": 0,
-          "ads": 0.286,
+          "ads": 0.214,
           "days_left": 0.0,
-          "target_stock": 5,
-          "ship_qty": 1
+          "target_stock": 4,
+          "ship_qty": 2
         },
         {
           "cluster": "Казань",
-          "stock": 1,
-          "ads": 0.286,
-          "days_left": 3.5,
-          "target_stock": 5,
+          "stock": 0,
+          "ads": 0.214,
+          "days_left": 0.0,
+          "target_stock": 4,
           "ship_qty": 1
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 0,
-          "ads": 0.286,
+          "ads": 0.214,
           "days_left": 0.0,
-          "target_stock": 5,
+          "target_stock": 4,
           "ship_qty": 1
         }
       ]
@@ -1146,9 +1146,9 @@
       "offer_id": "для кошек и собак 260 1",
       "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 260 шт",
       "brand": "8IN1",
-      "stock": 13,
+      "stock": 11,
       "inbound": 0,
-      "available": 13,
+      "available": 11,
       "order_units_7d": 27,
       "order_units_used": 27,
       "daily_orders": 1.929,
@@ -1244,76 +1244,76 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 29,
-      "ship_qty": 16,
-      "days_on_hand": 6.7,
-      "days_with_inbound": 6.7,
-      "ship_in_days": 1,
-      "ship_by": "2026-10-25",
+      "ship_qty": 18,
+      "days_on_hand": 5.7,
+      "days_with_inbound": 5.7,
+      "ship_in_days": 0,
+      "ship_by": "2026-10-24",
       "status": "soon",
       "inbound_orders": [],
       "clusters": [
         {
+          "cluster": "Красноярск",
+          "stock": 0,
+          "ads": 1.357,
+          "days_left": 0.0,
+          "target_stock": 21,
+          "ship_qty": 3
+        },
+        {
+          "cluster": "Уфа",
+          "stock": 0,
+          "ads": 1.357,
+          "days_left": 0.0,
+          "target_stock": 21,
+          "ship_qty": 3
+        },
+        {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 1.321,
+          "ads": 1.357,
           "days_left": 0.0,
-          "target_stock": 20,
+          "target_stock": 21,
           "ship_qty": 2
         },
         {
           "cluster": "Краснодар",
           "stock": 0,
-          "ads": 1.321,
+          "ads": 1.357,
           "days_left": 0.0,
-          "target_stock": 20,
-          "ship_qty": 2
-        },
-        {
-          "cluster": "Красноярск",
-          "stock": 0,
-          "ads": 1.321,
-          "days_left": 0.0,
-          "target_stock": 20,
+          "target_stock": 21,
           "ship_qty": 2
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 9,
-          "ads": 1.321,
-          "days_left": 6.8,
-          "target_stock": 20,
+          "stock": 7,
+          "ads": 1.357,
+          "days_left": 5.2,
+          "target_stock": 21,
           "ship_qty": 2
         },
         {
           "cluster": "Ростов",
           "stock": 1,
-          "ads": 1.321,
-          "days_left": 0.8,
-          "target_stock": 20,
+          "ads": 1.357,
+          "days_left": 0.7,
+          "target_stock": 21,
           "ship_qty": 2
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 3,
-          "ads": 1.321,
-          "days_left": 2.3,
-          "target_stock": 20,
+          "ads": 1.357,
+          "days_left": 2.2,
+          "target_stock": 21,
           "ship_qty": 2
         },
         {
           "cluster": "Тюмень",
           "stock": 0,
-          "ads": 1.321,
+          "ads": 1.357,
           "days_left": 0.0,
-          "target_stock": 20,
-          "ship_qty": 2
-        },
-        {
-          "cluster": "Уфа",
-          "stock": 0,
-          "ads": 1.321,
-          "days_left": 0.0,
-          "target_stock": 20,
+          "target_stock": 21,
           "ship_qty": 2
         }
       ]
@@ -1323,9 +1323,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 88,
+      "stock": 85,
       "inbound": 0,
-      "available": 88,
+      "available": 85,
       "order_units_7d": 56,
       "order_units_used": 56,
       "daily_orders": 4.0,
@@ -1422,8 +1422,8 @@
       "horizon_days": 15,
       "target_stock": 60,
       "ship_qty": 0,
-      "days_on_hand": 22.0,
-      "days_with_inbound": 22.0,
+      "days_on_hand": 21.2,
+      "days_with_inbound": 21.2,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1432,81 +1432,81 @@
         {
           "cluster": "Воронеж",
           "stock": 0,
-          "ads": 4.071,
+          "ads": 4.214,
           "days_left": 0.0,
-          "target_stock": 62,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Дальний Восток",
           "stock": 0,
-          "ads": 4.071,
+          "ads": 4.214,
           "days_left": 0.0,
-          "target_stock": 62,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 4.071,
+          "ads": 4.214,
           "days_left": 0.0,
-          "target_stock": 62,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Казань",
-          "stock": 19,
-          "ads": 4.071,
-          "days_left": 4.7,
-          "target_stock": 62,
+          "stock": 18,
+          "ads": 4.214,
+          "days_left": 4.3,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Красноярск",
           "stock": 0,
-          "ads": 4.071,
+          "ads": 4.214,
           "days_left": 0.0,
-          "target_stock": 62,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 9,
-          "ads": 4.071,
-          "days_left": 2.2,
-          "target_stock": 62,
+          "stock": 8,
+          "ads": 4.214,
+          "days_left": 1.9,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Новосибирск",
           "stock": 0,
-          "ads": 4.071,
+          "ads": 4.214,
           "days_left": 0.0,
-          "target_stock": 62,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Ростов",
-          "stock": 1,
-          "ads": 4.071,
-          "days_left": 0.2,
-          "target_stock": 62,
+          "stock": 0,
+          "ads": 4.214,
+          "days_left": 0.0,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 59,
-          "ads": 4.071,
-          "days_left": 14.5,
-          "target_stock": 62,
+          "ads": 4.214,
+          "days_left": 14.0,
+          "target_stock": 64,
           "ship_qty": 0
         },
         {
           "cluster": "Саратов",
           "stock": 0,
-          "ads": 4.071,
+          "ads": 4.214,
           "days_left": 0.0,
-          "target_stock": 62,
+          "target_stock": 64,
           "ship_qty": 0
         }
       ]
@@ -1625,49 +1625,49 @@
         {
           "cluster": "Дальний Восток",
           "stock": 0,
-          "ads": 1.5,
+          "ads": 1.464,
           "days_left": 0.0,
-          "target_stock": 23,
+          "target_stock": 22,
           "ship_qty": 0
         },
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 1.5,
+          "ads": 1.464,
           "days_left": 0.0,
-          "target_stock": 23,
+          "target_stock": 22,
           "ship_qty": 0
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 27,
-          "ads": 1.5,
-          "days_left": 18.0,
-          "target_stock": 23,
+          "ads": 1.464,
+          "days_left": 18.4,
+          "target_stock": 22,
           "ship_qty": 0
         },
         {
           "cluster": "Ростов",
           "stock": 7,
-          "ads": 1.5,
-          "days_left": 4.7,
-          "target_stock": 23,
+          "ads": 1.464,
+          "days_left": 4.8,
+          "target_stock": 22,
           "ship_qty": 0
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 16,
-          "ads": 1.5,
-          "days_left": 10.7,
-          "target_stock": 23,
+          "ads": 1.464,
+          "days_left": 10.9,
+          "target_stock": 22,
           "ship_qty": 0
         },
         {
           "cluster": "Ярославль",
           "stock": 0,
-          "ads": 1.5,
+          "ads": 1.464,
           "days_left": 0.0,
-          "target_stock": 23,
+          "target_stock": 22,
           "ship_qty": 0
         }
       ]
@@ -1786,25 +1786,25 @@
         {
           "cluster": "Екатеринбург",
           "stock": 3,
-          "ads": 0.643,
-          "days_left": 4.7,
-          "target_stock": 10,
+          "ads": 0.679,
+          "days_left": 4.4,
+          "target_stock": 11,
           "ship_qty": 0
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 29,
-          "ads": 0.643,
-          "days_left": 45.1,
-          "target_stock": 10,
+          "ads": 0.679,
+          "days_left": 42.7,
+          "target_stock": 11,
           "ship_qty": 0
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 20,
-          "ads": 0.643,
-          "days_left": 31.1,
-          "target_stock": 10,
+          "ads": 0.679,
+          "days_left": 29.5,
+          "target_stock": 11,
           "ship_qty": 0
         }
       ]
@@ -1923,33 +1923,33 @@
         {
           "cluster": "Екатеринбург",
           "stock": 4,
-          "ads": 0.464,
-          "days_left": 8.6,
-          "target_stock": 7,
+          "ads": 0.5,
+          "days_left": 8.0,
+          "target_stock": 8,
           "ship_qty": 0
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 34,
-          "ads": 0.464,
-          "days_left": 73.2,
-          "target_stock": 7,
+          "ads": 0.5,
+          "days_left": 68.0,
+          "target_stock": 8,
           "ship_qty": 0
         },
         {
           "cluster": "Пермь",
           "stock": 1,
-          "ads": 0.464,
-          "days_left": 2.2,
-          "target_stock": 7,
+          "ads": 0.5,
+          "days_left": 2.0,
+          "target_stock": 8,
           "ship_qty": 0
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 20,
-          "ads": 0.464,
-          "days_left": 43.1,
-          "target_stock": 7,
+          "ads": 0.5,
+          "days_left": 40.0,
+          "target_stock": 8,
           "ship_qty": 0
         }
       ]
@@ -2237,33 +2237,33 @@
         {
           "cluster": "Екатеринбург",
           "stock": 0,
-          "ads": 1.786,
+          "ads": 1.607,
           "days_left": 0.0,
-          "target_stock": 27,
+          "target_stock": 25,
           "ship_qty": 0
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
           "stock": 3,
-          "ads": 1.786,
-          "days_left": 1.7,
-          "target_stock": 27,
+          "ads": 1.607,
+          "days_left": 1.9,
+          "target_stock": 25,
           "ship_qty": 0
         },
         {
           "cluster": "Ростов",
           "stock": 3,
-          "ads": 1.786,
-          "days_left": 1.7,
-          "target_stock": 27,
+          "ads": 1.607,
+          "days_left": 1.9,
+          "target_stock": 25,
           "ship_qty": 0
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
           "stock": 12,
-          "ads": 1.786,
-          "days_left": 6.7,
-          "target_stock": 27,
+          "ads": 1.607,
+          "days_left": 7.5,
+          "target_stock": 25,
           "ship_qty": 0
         }
       ]
@@ -2274,7 +2274,7 @@
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 50,
       "skus": 8,
-      "stock": 145
+      "stock": 142
     },
     {
       "cluster": "Санкт-Петербург и СЗО",
@@ -2292,11 +2292,11 @@
       "cluster": "Ростов",
       "ship_qty": 47,
       "skus": 6,
-      "stock": 17
+      "stock": 16
     },
     {
       "cluster": "Красноярск",
-      "ship_qty": 25,
+      "ship_qty": 26,
       "skus": 3,
       "stock": 0
     },
@@ -2304,7 +2304,7 @@
       "cluster": "Казань",
       "ship_qty": 24,
       "skus": 4,
-      "stock": 25
+      "stock": 23
     },
     {
       "cluster": "Краснодар",
@@ -2314,9 +2314,9 @@
     },
     {
       "cluster": "Дальний Восток",
-      "ship_qty": 12,
+      "ship_qty": 11,
       "skus": 2,
-      "stock": 0
+      "stock": 1
     },
     {
       "cluster": "Воронеж",
@@ -2356,13 +2356,13 @@
     },
     {
       "cluster": "Уфа",
-      "ship_qty": 2,
+      "ship_qty": 3,
       "skus": 1,
       "stock": 0
     },
     {
       "cluster": "Беларусь",
-      "ship_qty": 1,
+      "ship_qty": 2,
       "skus": 1,
       "stock": 0
     },
@@ -2391,7 +2391,7 @@
     "ship_now_skus": 7,
     "ship_now_qty": 307,
     "ship_soon_skus": 1,
-    "ship_total_qty": 323,
+    "ship_total_qty": 325,
     "cluster_count": 16,
     "critical_skus": 7,
     "under_cover_skus": 8
