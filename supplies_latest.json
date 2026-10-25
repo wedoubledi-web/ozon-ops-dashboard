@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:11:26.121110+00:00",
+  "generated_at": "2026-10-25T17:32:18.368755+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -173,9 +173,9 @@
       "offer_id": "для мелких 8в1",
       "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
       "brand": "8IN1",
-      "stock": 1,
+      "stock": 0,
       "inbound": 0,
-      "available": 1,
+      "available": 0,
       "order_units_7d": 61,
       "order_units_used": 61,
       "daily_orders": 4.357,
@@ -271,9 +271,9 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 66,
-      "ship_qty": 65,
-      "days_on_hand": 0.2,
-      "days_with_inbound": 0.2,
+      "ship_qty": 66,
+      "days_on_hand": 0.0,
+      "days_with_inbound": 0.0,
       "ship_in_days": 0,
       "ship_by": "2026-10-25",
       "status": "now",
@@ -281,6 +281,14 @@
       "clusters": [
         {
           "cluster": "Дальний Восток",
+          "stock": 0,
+          "ads": 3.714,
+          "days_left": 0.0,
+          "target_stock": 56,
+          "ship_qty": 10
+        },
+        {
+          "cluster": "Калининград",
           "stock": 0,
           "ads": 3.714,
           "days_left": 0.0,
@@ -308,14 +316,6 @@
           "stock": 0,
           "ads": 3.714,
           "days_left": 0.0,
-          "target_stock": 56,
-          "ship_qty": 9
-        },
-        {
-          "cluster": "Калининград",
-          "stock": 1,
-          "ads": 3.714,
-          "days_left": 0.3,
           "target_stock": 56,
           "ship_qty": 9
         },
@@ -2305,6 +2305,12 @@
       "stock": 0
     },
     {
+      "cluster": "Калининград",
+      "ship_qty": 10,
+      "skus": 1,
+      "stock": 0
+    },
+    {
       "cluster": "Краснодар",
       "ship_qty": 10,
       "skus": 2,
@@ -2315,12 +2321,6 @@
       "ship_qty": 10,
       "skus": 2,
       "stock": 0
-    },
-    {
-      "cluster": "Калининград",
-      "ship_qty": 9,
-      "skus": 1,
-      "stock": 1
     },
     {
       "cluster": "Воронеж",
@@ -2387,9 +2387,9 @@
     "inbound_orders": 0,
     "inbound_qty": 0,
     "ship_now_skus": 7,
-    "ship_now_qty": 322,
+    "ship_now_qty": 323,
     "ship_soon_skus": 0,
-    "ship_total_qty": 322,
+    "ship_total_qty": 323,
     "cluster_count": 16,
     "critical_skus": 7,
     "under_cover_skus": 7
