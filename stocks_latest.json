@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T13:45:21.350903+00:00",
+  "generated_at": "2026-10-26T16:40:53.317501+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -182,7 +182,7 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "cluster": "Москва, МО и Дальние регионы",
-      "stock": 8,
+      "stock": 7,
       "ads": 0.9285714285714286,
       "warehouses": [
         {
@@ -192,14 +192,14 @@
         },
         {
           "name": "ДОМОДЕДОВО_РФЦ",
-          "stock": 8,
+          "stock": 7,
           "grade": "DEFICIT"
         }
       ],
       "target_days": 30,
       "target_stock": 28,
-      "supply_qty": 20,
-      "days_left": 8.6,
+      "supply_qty": 21,
+      "days_left": 7.5,
       "confidence": "high"
     },
     {
@@ -1349,11 +1349,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 81,
+      "stock": 79,
       "ads": 4.285714285714286,
-      "cost_capitalization": 46876.03,
-      "retail_capitalization": 83976.96,
-      "days_left": 18.9
+      "cost_capitalization": 45718.6,
+      "retail_capitalization": 81903.46,
+      "days_left": 18.4
     },
     {
       "sku": 3726888167,
@@ -1581,9 +1581,9 @@
     }
   ],
   "summary": {
-    "stock": 341,
-    "cost_capitalization": 202543.23,
-    "retail_capitalization": 407114.65,
+    "stock": 339,
+    "cost_capitalization": 201385.79,
+    "retail_capitalization": 405041.14,
     "fx_rub_per_byn": 27.427318
   },
   "raw_rows": 114
