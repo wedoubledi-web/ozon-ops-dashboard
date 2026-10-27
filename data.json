@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T15:48:07.798918+00:00",
+  "generated_at": "2026-10-27T19:18:31.022809+00:00",
   "as_of": "2026-10-26",
   "expected_as_of": "2026-10-26",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -80100,7 +80100,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-27T15:48:06.738092+00:00",
+    "generated_at": "2026-10-27T19:18:30.008048+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -80114,17 +80114,17 @@
           {
             "name": "ПУШКИНО_1_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           },
           {
             "name": "СОФЬИНО_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80169,17 +80169,17 @@
           {
             "name": "СОФЬИНО_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           },
           {
             "name": "НОГИНСК_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80259,12 +80259,12 @@
           {
             "name": "СПБ_БУГРЫ_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           },
           {
             "name": "СПБ_ШУШАРЫ_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80278,7 +80278,7 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "cluster": "Москва, МО и Дальние регионы",
-        "stock": 7,
+        "stock": 5,
         "ads": 0.8928571428571429,
         "warehouses": [
           {
@@ -80288,14 +80288,14 @@
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
-            "stock": 7,
+            "stock": 5,
             "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
         "target_stock": 27,
-        "supply_qty": 20,
-        "days_left": 7.8,
+        "supply_qty": 22,
+        "days_left": 5.6,
         "confidence": "high"
       },
       {
@@ -80404,7 +80404,7 @@
           {
             "name": "СПБ_БУГРЫ_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80479,7 +80479,7 @@
           {
             "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80499,7 +80499,7 @@
           {
             "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80559,7 +80559,7 @@
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80709,26 +80709,6 @@
         "confidence": "medium"
       },
       {
-        "sku": 5516579647,
-        "offer_id": "для мелких 8в1",
-        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-        "cluster": "Воронеж",
-        "stock": 0,
-        "ads": 0.19230769230769232,
-        "warehouses": [
-          {
-            "name": "ВОРОНЕЖ_2_РФЦ",
-            "stock": 0,
-            "grade": "WAS_DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 6,
-        "supply_qty": 6,
-        "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
         "sku": 4658698444,
         "offer_id": "кальций",
         "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -80779,13 +80759,33 @@
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
         "target_stock": 6,
         "supply_qty": 6,
         "days_left": 0.0,
+        "confidence": "medium"
+      },
+      {
+        "sku": 5516579647,
+        "offer_id": "для мелких 8в1",
+        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+        "cluster": "Воронеж",
+        "stock": 1,
+        "ads": 0.19230769230769232,
+        "warehouses": [
+          {
+            "name": "ВОРОНЕЖ_2_РФЦ",
+            "stock": 1,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 6,
+        "supply_qty": 5,
+        "days_left": 5.2,
         "confidence": "medium"
       },
       {
@@ -80819,7 +80819,7 @@
           {
             "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80899,7 +80899,7 @@
           {
             "name": "МИНСК_МПСЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           }
         ],
         "target_days": 30,
@@ -80979,7 +80979,7 @@
           {
             "name": "ХАБАРОВСК_2_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -81099,37 +81099,12 @@
           {
             "name": "УФА_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
         "target_stock": 3,
         "supply_qty": 3,
-        "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
-        "sku": 5516649179,
-        "offer_id": "для щенков 8в1",
-        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-        "cluster": "Воронеж",
-        "stock": 0,
-        "ads": 0.08333333333333333,
-        "warehouses": [
-          {
-            "name": "ВОРОНЕЖ_РФЦ",
-            "stock": 0,
-            "grade": "WAS_DEFICIT"
-          },
-          {
-            "name": "ВОРОНЕЖ_2_РФЦ",
-            "stock": 0,
-            "grade": "WAS_DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 2,
-        "supply_qty": 2,
         "days_left": 0.0,
         "confidence": "medium"
       },
@@ -81254,6 +81229,31 @@
         "confidence": "medium"
       },
       {
+        "sku": 5516649179,
+        "offer_id": "для щенков 8в1",
+        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+        "cluster": "Воронеж",
+        "stock": 1,
+        "ads": 0.08333333333333333,
+        "warehouses": [
+          {
+            "name": "ВОРОНЕЖ_РФЦ",
+            "stock": 0,
+            "grade": "DEFICIT"
+          },
+          {
+            "name": "ВОРОНЕЖ_2_РФЦ",
+            "stock": 1,
+            "grade": "DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 2,
+        "supply_qty": 1,
+        "days_left": 12.0,
+        "confidence": "medium"
+      },
+      {
         "sku": 5516579647,
         "offer_id": "для мелких 8в1",
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
@@ -81264,7 +81264,7 @@
           {
             "name": "КАЛИНИНГРАД_МРФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -81304,7 +81304,7 @@
           {
             "name": "КРАСНОЯРСК_МРФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -81324,7 +81324,7 @@
           {
             "name": "ОМСК_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -81344,7 +81344,7 @@
           {
             "name": "ОРЕНБУРГ_РФЦ",
             "stock": 0,
-            "grade": "WAS_DEFICIT"
+            "grade": "DEFICIT"
           }
         ],
         "target_days": 30,
@@ -81436,22 +81436,6 @@
     ],
     "positions": [
       {
-        "sku": 4451480169,
-        "offer_id": "шокол",
-        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-o/11183230464.jpg",
-        "price": 37.8,
-        "currency": "BYN",
-        "brand": "Спартак",
-        "group": "Продукты",
-        "cost_byn": 19.9,
-        "stock": 78,
-        "ads": 4.428571428571429,
-        "cost_capitalization": 44970.9,
-        "retail_capitalization": 80563.98,
-        "days_left": 17.6
-      },
-      {
         "sku": 3726888167,
         "offer_id": "для пожилых собак1",
         "name": "Витамины для пожилых собак от 5 лет 8in1 Excel Multi Vitamin Senior 70 шт",
@@ -81466,6 +81450,22 @@
         "cost_capitalization": 55882.18,
         "retail_capitalization": 120769.46,
         "days_left": 239.6
+      },
+      {
+        "sku": 4451480169,
+        "offer_id": "шокол",
+        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-o/11183230464.jpg",
+        "price": 37.8,
+        "currency": "BYN",
+        "brand": "Спартак",
+        "group": "Продукты",
+        "cost_byn": 19.9,
+        "stock": 76,
+        "ads": 4.428571428571429,
+        "cost_capitalization": 43817.8,
+        "retail_capitalization": 78498.24,
+        "days_left": 17.2
       },
       {
         "sku": 5803370792,
@@ -81484,22 +81484,6 @@
         "days_left": 106.4
       },
       {
-        "sku": 5803075530,
-        "offer_id": "шоколад элит 4 шт",
-        "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-n/15461342339.jpg",
-        "price": 41.8,
-        "currency": "BYN",
-        "brand": "Спартак",
-        "group": "Продукты",
-        "cost_byn": 24.336,
-        "stock": 51,
-        "ads": 0.7142857142857143,
-        "cost_capitalization": 35585.87,
-        "retail_capitalization": 58250.68,
-        "days_left": 71.4
-      },
-      {
         "sku": 4823627697,
         "offer_id": "для кошек и собак 140",
         "name": "Витамины пивные дрожжи для собак и кошек 8in1 EXCEL Brewer's Yeast 140 шт",
@@ -81514,6 +81498,22 @@
         "cost_capitalization": 20315.87,
         "retail_capitalization": 54649.29,
         "days_left": 40.0
+      },
+      {
+        "sku": 5803075530,
+        "offer_id": "шоколад элит 4 шт",
+        "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-n/15461342339.jpg",
+        "price": 41.8,
+        "currency": "BYN",
+        "brand": "Спартак",
+        "group": "Продукты",
+        "cost_byn": 24.336,
+        "stock": 50,
+        "ads": 0.7142857142857143,
+        "cost_capitalization": 34888.11,
+        "retail_capitalization": 57108.51,
+        "days_left": 70.0
       },
       {
         "sku": 5472775507,
@@ -81532,20 +81532,36 @@
         "days_left": 12.6
       },
       {
-        "sku": 5745079896,
-        "offer_id": "Меркурий201.7 (2026)",
-        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
-        "price": 120.0,
+        "sku": 5516579647,
+        "offer_id": "для мелких 8в1",
+        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-i/13127971770.jpg",
+        "price": 40.8,
         "currency": "BYN",
-        "brand": "Инкотекс",
-        "group": "Электрика",
-        "cost_byn": 31.99,
+        "brand": "8IN1",
+        "group": "Витамины для животных",
+        "cost_byn": 25.36,
         "stock": 1,
-        "ads": 0.18518518518518517,
-        "cost_capitalization": 906.9,
-        "retail_capitalization": 3278.96,
-        "days_left": 5.4
+        "ads": 4.0,
+        "cost_capitalization": 725.74,
+        "retail_capitalization": 1114.85,
+        "days_left": 0.2
+      },
+      {
+        "sku": 5516649179,
+        "offer_id": "для щенков 8в1",
+        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
+        "price": 43.0,
+        "currency": "BYN",
+        "brand": "8IN1",
+        "group": "Витамины для животных",
+        "cost_byn": 22.26,
+        "stock": 1,
+        "ads": 4.166666666666667,
+        "cost_capitalization": 641.04,
+        "retail_capitalization": 1174.96,
+        "days_left": 0.2
       },
       {
         "sku": 3664742731,
@@ -81644,48 +81660,32 @@
         "days_left": 0.0
       },
       {
-        "sku": 5516579647,
-        "offer_id": "для мелких 8в1",
-        "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-i/13127971770.jpg",
-        "price": 40.8,
+        "sku": 5745079896,
+        "offer_id": "Меркурий201.7 (2026)",
+        "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-k/14852948888.jpg",
+        "price": 120.0,
         "currency": "BYN",
-        "brand": "8IN1",
-        "group": "Витамины для животных",
-        "cost_byn": 25.36,
+        "brand": "Инкотекс",
+        "group": "Электрика",
+        "cost_byn": 31.99,
         "stock": 0,
-        "ads": 4.0,
-        "cost_capitalization": 0.0,
-        "retail_capitalization": 0.0,
-        "days_left": 0.0
-      },
-      {
-        "sku": 5516649179,
-        "offer_id": "для щенков 8в1",
-        "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-2/10792062866.jpg",
-        "price": 43.0,
-        "currency": "BYN",
-        "brand": "8IN1",
-        "group": "Витамины для животных",
-        "cost_byn": 22.26,
-        "stock": 0,
-        "ads": 4.166666666666667,
+        "ads": 0.18518518518518517,
         "cost_capitalization": 0.0,
         "retail_capitalization": 0.0,
         "days_left": 0.0
       }
     ],
     "summary": {
-      "stock": 332,
-      "cost_capitalization": 194495.89,
-      "retail_capitalization": 392600.49,
+      "stock": 330,
+      "cost_capitalization": 193104.9,
+      "retail_capitalization": 388403.42,
       "fx_rub_per_byn": 27.324644
     },
     "raw_rows": 114
   },
   "supplies": {
-    "generated_at": "2026-10-27T15:48:07.493496+00:00",
+    "generated_at": "2026-10-27T19:18:30.714234+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -81698,9 +81698,9 @@
         "offer_id": "для мелких 8в1",
         "name": "Витамины для собак мелких пород Excel Multi Vitamin Small Breed 70 шт",
         "brand": "8IN1",
-        "stock": 0,
+        "stock": 1,
         "inbound": 0,
-        "available": 0,
+        "available": 1,
         "order_units_7d": 62,
         "order_units_used": 62,
         "daily_orders": 4.429,
@@ -81796,22 +81796,14 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 67,
-        "ship_qty": 67,
-        "days_on_hand": 0.0,
-        "days_with_inbound": 0.0,
+        "ship_qty": 66,
+        "days_on_hand": 0.2,
+        "days_with_inbound": 0.2,
         "ship_in_days": 0,
         "ship_by": "2026-10-27",
         "status": "now",
         "inbound_orders": [],
         "clusters": [
-          {
-            "cluster": "Воронеж",
-            "stock": 0,
-            "ads": 4.0,
-            "days_left": 0.0,
-            "target_stock": 60,
-            "ship_qty": 8
-          },
           {
             "cluster": "Дальний Восток",
             "stock": 0,
@@ -81835,6 +81827,14 @@
             "days_left": 0.0,
             "target_stock": 60,
             "ship_qty": 8
+          },
+          {
+            "cluster": "Воронеж",
+            "stock": 1,
+            "ads": 4.0,
+            "days_left": 0.2,
+            "target_stock": 60,
+            "ship_qty": 7
           },
           {
             "cluster": "Екатеринбург",
@@ -82041,9 +82041,9 @@
         "offer_id": "для щенков 8в1",
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
         "brand": "8IN1",
-        "stock": 0,
+        "stock": 1,
         "inbound": 0,
-        "available": 0,
+        "available": 1,
         "order_units_7d": 79,
         "order_units_used": 55,
         "daily_orders": 4.231,
@@ -82144,22 +82144,14 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 64,
-        "ship_qty": 64,
-        "days_on_hand": 0.0,
-        "days_with_inbound": 0.0,
+        "ship_qty": 63,
+        "days_on_hand": 0.2,
+        "days_with_inbound": 0.2,
         "ship_in_days": 0,
         "ship_by": "2026-10-27",
         "status": "now",
         "inbound_orders": [],
         "clusters": [
-          {
-            "cluster": "Воронеж",
-            "stock": 0,
-            "ads": 4.167,
-            "days_left": 0.0,
-            "target_stock": 63,
-            "ship_qty": 8
-          },
           {
             "cluster": "Екатеринбург",
             "stock": 0,
@@ -82215,6 +82207,14 @@
             "days_left": 0.0,
             "target_stock": 63,
             "ship_qty": 8
+          },
+          {
+            "cluster": "Воронеж",
+            "stock": 1,
+            "ads": 4.167,
+            "days_left": 0.2,
+            "target_stock": 63,
+            "ship_qty": 7
           }
         ]
       },
@@ -82727,9 +82727,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 78,
+        "stock": 76,
         "inbound": 0,
-        "available": 78,
+        "available": 76,
         "order_units_7d": 56,
         "order_units_used": 56,
         "daily_orders": 4.0,
@@ -82826,8 +82826,8 @@
         "horizon_days": 15,
         "target_stock": 60,
         "ship_qty": 0,
-        "days_on_hand": 19.5,
-        "days_with_inbound": 19.5,
+        "days_on_hand": 19.0,
+        "days_with_inbound": 19.0,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -82875,9 +82875,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 7,
+            "stock": 5,
             "ads": 4.429,
-            "days_left": 1.6,
+            "days_left": 1.1,
             "target_stock": 67,
             "ship_qty": 0
           },
@@ -83073,9 +83073,9 @@
         "offer_id": "шоколад элит 4 шт",
         "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
         "brand": "Спартак",
-        "stock": 51,
+        "stock": 50,
         "inbound": 0,
-        "available": 51,
+        "available": 50,
         "order_units_7d": 6,
         "order_units_used": 6,
         "daily_orders": 0.429,
@@ -83172,8 +83172,8 @@
         "horizon_days": 15,
         "target_stock": 7,
         "ship_qty": 0,
-        "days_on_hand": 118.9,
-        "days_with_inbound": 118.9,
+        "days_on_hand": 116.6,
+        "days_with_inbound": 116.6,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -83197,9 +83197,9 @@
           },
           {
             "cluster": "Санкт-Петербург и СЗО",
-            "stock": 20,
+            "stock": 19,
             "ads": 0.714,
-            "days_left": 28.0,
+            "days_left": 26.6,
             "target_stock": 11,
             "ship_qty": 0
           }
@@ -83822,9 +83822,9 @@
         "offer_id": "Меркурий201.7 (2026)",
         "name": "Счетчик Меркурий 201.7 однофазный однотарифный 5-60А Инкотекс 2026 г.",
         "brand": "Инкотекс",
-        "stock": 1,
+        "stock": 0,
         "inbound": 0,
-        "available": 1,
+        "available": 0,
         "order_units_7d": 1,
         "order_units_used": 1,
         "daily_orders": 0.0,
@@ -83938,9 +83938,9 @@
           },
           {
             "cluster": "Казань",
-            "stock": 1,
+            "stock": 0,
             "ads": 0.185,
-            "days_left": 5.4,
+            "days_left": 0.0,
             "target_stock": 3,
             "ship_qty": 0
           }
@@ -83952,13 +83952,13 @@
         "cluster": "Санкт-Петербург и СЗО",
         "ship_qty": 49,
         "skus": 6,
-        "stock": 150
+        "stock": 149
       },
       {
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 47,
         "skus": 6,
-        "stock": 134
+        "stock": 132
       },
       {
         "cluster": "Екатеринбург",
@@ -83976,13 +83976,13 @@
         "cluster": "Казань",
         "ship_qty": 20,
         "skus": 2,
-        "stock": 22
+        "stock": 21
       },
       {
         "cluster": "Воронеж",
-        "ship_qty": 16,
+        "ship_qty": 14,
         "skus": 2,
-        "stock": 0
+        "stock": 2
       },
       {
         "cluster": "Красноярск",
@@ -84073,16 +84073,16 @@
       "inbound_orders": 0,
       "inbound_qty": 0,
       "ship_now_skus": 6,
-      "ship_now_qty": 313,
+      "ship_now_qty": 311,
       "ship_soon_skus": 0,
-      "ship_total_qty": 313,
+      "ship_total_qty": 311,
       "cluster_count": 16,
       "critical_skus": 6,
       "under_cover_skus": 6
     }
   },
   "competitors": {
-    "generated_at": "2026-10-27T15:48:07.531367+00:00",
+    "generated_at": "2026-10-27T19:18:30.751493+00:00",
     "as_of": "2026-10-26",
     "geo": {
       "city": "Москва",
@@ -84118,7 +84118,7 @@
           "price_byn": 43.0,
           "price_rub": 1176.91,
           "price_source": "ozon_bestsellers",
-          "stock": 0,
+          "stock": 1,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -85257,7 +85257,7 @@
           "price_byn": 40.8,
           "price_rub": 1395.79,
           "price_source": "ozon_bestsellers",
-          "stock": 0,
+          "stock": 1,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -86017,7 +86017,7 @@
           "price_byn": 37.8,
           "price_rub": 989.52,
           "price_source": "ozon_bestsellers",
-          "stock": 78,
+          "stock": 76,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -86151,7 +86151,7 @@
           "price_byn": 41.8,
           "price_rub": 1076.15,
           "price_source": "ozon_bestsellers",
-          "stock": 51,
+          "stock": 50,
           "delivery": "",
           "delivery_days": null,
           "card": {},
