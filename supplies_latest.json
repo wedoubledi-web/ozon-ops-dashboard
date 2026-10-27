@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:52:13.070744+00:00",
+  "generated_at": "2026-10-27T15:48:07.493496+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1524,9 +1524,9 @@
       "offer_id": "шоколад 70",
       "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
       "brand": "Спартак",
-      "stock": 58,
+      "stock": 57,
       "inbound": 0,
-      "available": 58,
+      "available": 57,
       "order_units_7d": 5,
       "order_units_used": 5,
       "daily_orders": 0.357,
@@ -1623,8 +1623,8 @@
       "horizon_days": 15,
       "target_stock": 6,
       "ship_qty": 0,
-      "days_on_hand": 162.5,
-      "days_with_inbound": 162.5,
+      "days_on_hand": 159.7,
+      "days_with_inbound": 159.7,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1632,9 +1632,9 @@
       "clusters": [
         {
           "cluster": "Екатеринбург",
-          "stock": 3,
+          "stock": 2,
           "ads": 0.536,
-          "days_left": 5.6,
+          "days_left": 3.7,
           "target_stock": 9,
           "ship_qty": 0
         },
@@ -2278,7 +2278,7 @@
       "cluster": "Екатеринбург",
       "ship_qty": 46,
       "skus": 6,
-      "stock": 10
+      "stock": 9
     },
     {
       "cluster": "Ростов",
