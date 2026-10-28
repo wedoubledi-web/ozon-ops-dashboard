@@ -141,7 +141,7 @@
       "buyout_pct": 0.0,
       "posting_statuses": {
         "cancelled": 1,
-        "awaiting_deliver": 1
+        "delivering": 1
       }
     },
     {
