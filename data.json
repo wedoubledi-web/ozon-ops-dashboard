@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T13:40:42.264232+00:00",
+  "generated_at": "2026-10-28T16:30:35.514389+00:00",
   "as_of": "2026-10-27",
   "expected_as_of": "2026-10-27",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -80446,7 +80446,7 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 1
+            "delivered": 1
           },
           "views": 789,
           "clicks": 18,
@@ -80784,7 +80784,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-28T13:40:41.293151+00:00",
+    "generated_at": "2026-10-28T16:30:34.576133+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -82120,11 +82120,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 19.9,
-        "stock": 73,
+        "stock": 72,
         "ads": 4.214285714285714,
-        "cost_capitalization": 42098.5,
-        "retail_capitalization": 75418.17,
-        "days_left": 17.3
+        "cost_capitalization": 41521.81,
+        "retail_capitalization": 74385.04,
+        "days_left": 17.1
       },
       {
         "sku": 5803370792,
@@ -82168,11 +82168,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 24.336,
-        "stock": 50,
+        "stock": 48,
         "ads": 0.75,
-        "cost_capitalization": 34896.69,
-        "retail_capitalization": 57122.55,
-        "days_left": 66.7
+        "cost_capitalization": 33500.82,
+        "retail_capitalization": 54837.65,
+        "days_left": 64.0
       },
       {
         "sku": 5472775507,
@@ -82336,15 +82336,15 @@
       }
     ],
     "summary": {
-      "stock": 326,
-      "cost_capitalization": 190696.4,
-      "retail_capitalization": 384284.46,
+      "stock": 323,
+      "cost_capitalization": 188723.84,
+      "retail_capitalization": 380966.44,
       "fx_rub_per_byn": 27.331365
     },
     "raw_rows": 111
   },
   "supplies": {
-    "generated_at": "2026-10-28T13:40:41.996796+00:00",
+    "generated_at": "2026-10-28T16:30:35.212124+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -83378,9 +83378,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 73,
+        "stock": 72,
         "inbound": 0,
-        "available": 73,
+        "available": 72,
         "order_units_7d": 51,
         "order_units_used": 51,
         "daily_orders": 3.643,
@@ -83477,8 +83477,8 @@
         "horizon_days": 15,
         "target_stock": 55,
         "ship_qty": 0,
-        "days_on_hand": 20.0,
-        "days_with_inbound": 20.0,
+        "days_on_hand": 19.8,
+        "days_with_inbound": 19.8,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -83510,9 +83510,9 @@
           },
           {
             "cluster": "Казань",
-            "stock": 16,
+            "stock": 15,
             "ads": 4.214,
-            "days_left": 3.8,
+            "days_left": 3.6,
             "target_stock": 64,
             "ship_qty": 0
           },
@@ -83724,9 +83724,9 @@
         "offer_id": "шоколад элит 4 шт",
         "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
         "brand": "Спартак",
-        "stock": 50,
+        "stock": 48,
         "inbound": 0,
-        "available": 50,
+        "available": 48,
         "order_units_7d": 7,
         "order_units_used": 7,
         "daily_orders": 0.5,
@@ -83823,8 +83823,8 @@
         "horizon_days": 15,
         "target_stock": 8,
         "ship_qty": 0,
-        "days_on_hand": 100.0,
-        "days_with_inbound": 100.0,
+        "days_on_hand": 96.0,
+        "days_with_inbound": 96.0,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -83840,9 +83840,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 29,
+            "stock": 27,
             "ads": 0.75,
-            "days_left": 38.7,
+            "days_left": 36.0,
             "target_stock": 12,
             "ship_qty": 0
           },
@@ -84609,7 +84609,7 @@
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 47,
         "skus": 6,
-        "stock": 130
+        "stock": 128
       },
       {
         "cluster": "Екатеринбург",
@@ -84627,7 +84627,7 @@
         "cluster": "Казань",
         "ship_qty": 19,
         "skus": 2,
-        "stock": 21
+        "stock": 20
       },
       {
         "cluster": "Воронеж",
@@ -84733,7 +84733,7 @@
     }
   },
   "competitors": {
-    "generated_at": "2026-10-28T13:40:42.029760+00:00",
+    "generated_at": "2026-10-28T16:30:35.247929+00:00",
     "as_of": "2026-10-27",
     "geo": {
       "city": "Москва",
@@ -86668,7 +86668,7 @@
           "price_byn": 37.8,
           "price_rub": 989.52,
           "price_source": "ozon_bestsellers",
-          "stock": 73,
+          "stock": 72,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -86802,7 +86802,7 @@
           "price_byn": 41.8,
           "price_rub": 1076.15,
           "price_source": "ozon_bestsellers",
-          "stock": 50,
+          "stock": 48,
           "delivery": "",
           "delivery_days": null,
           "card": {},
