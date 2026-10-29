@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T19:24:55.138792+00:00",
+  "generated_at": "2026-10-29T00:34:10.151347+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -1321,8 +1321,8 @@
       "cost_byn": 25.36,
       "stock": 77,
       "ads": 0.32142857142857145,
-      "cost_capitalization": 55895.92,
-      "retail_capitalization": 120799.17,
+      "cost_capitalization": 55882.18,
+      "retail_capitalization": 120769.46,
       "days_left": 239.6
     },
     {
@@ -1337,8 +1337,8 @@
       "cost_byn": 19.9,
       "stock": 71,
       "ads": 4.214285714285714,
-      "cost_capitalization": 40945.12,
-      "retail_capitalization": 73351.92,
+      "cost_capitalization": 40935.05,
+      "retail_capitalization": 73333.88,
       "days_left": 16.8
     },
     {
@@ -1353,8 +1353,8 @@
       "cost_byn": 17.64,
       "stock": 57,
       "ads": 0.5714285714285714,
-      "cost_capitalization": 29350.61,
-      "retail_capitalization": 52968.19,
+      "cost_capitalization": 29343.39,
+      "retail_capitalization": 52955.16,
       "days_left": 99.8
     },
     {
@@ -1369,8 +1369,8 @@
       "cost_byn": 13.67,
       "stock": 50,
       "ads": 1.1071428571428572,
-      "cost_capitalization": 20320.87,
-      "retail_capitalization": 54662.73,
+      "cost_capitalization": 20315.87,
+      "retail_capitalization": 54649.29,
       "days_left": 45.2
     },
     {
@@ -1385,8 +1385,8 @@
       "cost_byn": 24.336,
       "stock": 48,
       "ads": 0.75,
-      "cost_capitalization": 33500.82,
-      "retail_capitalization": 54837.65,
+      "cost_capitalization": 33492.58,
+      "retail_capitalization": 54824.17,
       "days_left": 64.0
     },
     {
@@ -1401,8 +1401,8 @@
       "cost_byn": 14.03,
       "stock": 18,
       "ads": 1.3928571428571428,
-      "cost_capitalization": 7492.62,
-      "retail_capitalization": 22138.41,
+      "cost_capitalization": 7490.78,
+      "retail_capitalization": 22132.96,
       "days_left": 12.9
     },
     {
@@ -1552,9 +1552,9 @@
   ],
   "summary": {
     "stock": 321,
-    "cost_capitalization": 187505.96,
-    "retail_capitalization": 378758.06,
-    "fx_rub_per_byn": 27.331365
+    "cost_capitalization": 187459.85,
+    "retail_capitalization": 378664.92,
+    "fx_rub_per_byn": 27.324644
   },
   "raw_rows": 111
 }
