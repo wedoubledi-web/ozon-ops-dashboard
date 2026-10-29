@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T13:51:10.321301+00:00",
+  "generated_at": "2026-10-29T16:46:18.769943+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -1073,6 +1073,26 @@
       "confidence": "medium"
     },
     {
+      "sku": 5803370792,
+      "offer_id": "шоколад 70",
+      "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
+      "cluster": "Екатеринбург",
+      "stock": 0,
+      "ads": 0.07142857142857142,
+      "warehouses": [
+        {
+          "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
+          "stock": 0,
+          "grade": "ACTUAL"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 2,
+      "supply_qty": 2,
+      "days_left": 0.0,
+      "confidence": "medium"
+    },
+    {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -1130,26 +1150,6 @@
       "target_stock": 2,
       "supply_qty": 2,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 5803370792,
-      "offer_id": "шоколад 70",
-      "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
-      "cluster": "Екатеринбург",
-      "stock": 1,
-      "ads": 0.07142857142857142,
-      "warehouses": [
-        {
-          "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
-          "stock": 1,
-          "grade": "ACTUAL"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 2,
-      "supply_qty": 1,
-      "days_left": 14.0,
       "confidence": "medium"
     },
     {
@@ -1300,11 +1300,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 69,
+      "stock": 68,
       "ads": 4.392857142857143,
-      "cost_capitalization": 39781.95,
-      "retail_capitalization": 71268.14,
-      "days_left": 15.7
+      "cost_capitalization": 39205.4,
+      "retail_capitalization": 70235.27,
+      "days_left": 15.5
     },
     {
       "sku": 5803370792,
@@ -1316,11 +1316,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 17.64,
-      "stock": 56,
+      "stock": 55,
       "ads": 0.5714285714285714,
-      "cost_capitalization": 28828.59,
-      "retail_capitalization": 52026.12,
-      "days_left": 98.0
+      "cost_capitalization": 28313.8,
+      "retail_capitalization": 51097.08,
+      "days_left": 96.2
     },
     {
       "sku": 4823627697,
@@ -1516,9 +1516,9 @@
     }
   ],
   "summary": {
-    "stock": 316,
-    "cost_capitalization": 184396.43,
-    "retail_capitalization": 373385.8,
+    "stock": 314,
+    "cost_capitalization": 183305.08,
+    "retail_capitalization": 371423.89,
     "fx_rub_per_byn": 27.324644
   },
   "raw_rows": 108

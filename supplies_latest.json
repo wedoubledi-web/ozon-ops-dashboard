@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T13:51:11.117264+00:00",
+  "generated_at": "2026-10-29T16:46:19.383966+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1030,9 +1030,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 69,
+      "stock": 68,
       "inbound": 0,
-      "available": 69,
+      "available": 68,
       "order_units_7d": 55,
       "order_units_used": 55,
       "daily_orders": 3.929,
@@ -1129,8 +1129,8 @@
       "horizon_days": 15,
       "target_stock": 59,
       "ship_qty": 0,
-      "days_on_hand": 17.6,
-      "days_with_inbound": 17.6,
+      "days_on_hand": 17.3,
+      "days_with_inbound": 17.3,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1162,9 +1162,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 14,
+          "stock": 13,
           "ads": 4.393,
-          "days_left": 3.2,
+          "days_left": 3.0,
           "target_stock": 66,
           "ship_qty": 0
         },
@@ -1368,9 +1368,9 @@
       "offer_id": "шоколад 70",
       "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
       "brand": "Спартак",
-      "stock": 56,
+      "stock": 55,
       "inbound": 0,
-      "available": 56,
+      "available": 55,
       "order_units_7d": 6,
       "order_units_used": 6,
       "daily_orders": 0.429,
@@ -1467,8 +1467,8 @@
       "horizon_days": 15,
       "target_stock": 7,
       "ship_qty": 0,
-      "days_on_hand": 130.5,
-      "days_with_inbound": 130.5,
+      "days_on_hand": 128.2,
+      "days_with_inbound": 128.2,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1476,9 +1476,9 @@
       "clusters": [
         {
           "cluster": "Екатеринбург",
-          "stock": 1,
+          "stock": 0,
           "ads": 0.571,
-          "days_left": 1.8,
+          "days_left": 0.0,
           "target_stock": 9,
           "ship_qty": 0
         },
@@ -2275,7 +2275,7 @@
       "cluster": "Екатеринбург",
       "ship_qty": 45,
       "skus": 6,
-      "stock": 7
+      "stock": 6
     },
     {
       "cluster": "Ростов",
@@ -2287,7 +2287,7 @@
       "cluster": "Казань",
       "ship_qty": 18,
       "skus": 2,
-      "stock": 19
+      "stock": 18
     },
     {
       "cluster": "Воронеж",
