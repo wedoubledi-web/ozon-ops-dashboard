@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T16:46:18.769943+00:00",
+  "generated_at": "2026-10-29T19:30:14.398775+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -1348,11 +1348,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 24.336,
-      "stock": 46,
+      "stock": 45,
       "ads": 0.8214285714285714,
-      "cost_capitalization": 32097.06,
-      "retail_capitalization": 52539.83,
-      "days_left": 56.0
+      "cost_capitalization": 31399.3,
+      "retail_capitalization": 51397.66,
+      "days_left": 54.8
     },
     {
       "sku": 5472775507,
@@ -1516,9 +1516,9 @@
     }
   ],
   "summary": {
-    "stock": 314,
-    "cost_capitalization": 183305.08,
-    "retail_capitalization": 371423.89,
+    "stock": 313,
+    "cost_capitalization": 182607.32,
+    "retail_capitalization": 370281.72,
     "fx_rub_per_byn": 27.324644
   },
   "raw_rows": 108
