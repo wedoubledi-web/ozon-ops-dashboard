@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T10:39:57.267867+00:00",
+  "generated_at": "2026-10-30T13:43:25.787330+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1032,9 +1032,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 65,
+      "stock": 63,
       "inbound": 0,
-      "available": 65,
+      "available": 63,
       "order_units_7d": 60,
       "order_units_used": 60,
       "daily_orders": 4.286,
@@ -1130,12 +1130,12 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 65,
-      "ship_qty": 0,
-      "days_on_hand": 15.2,
-      "days_with_inbound": 15.2,
-      "ship_in_days": null,
-      "ship_by": null,
-      "status": "ok",
+      "ship_qty": 2,
+      "days_on_hand": 14.7,
+      "days_with_inbound": 14.7,
+      "ship_in_days": 9,
+      "ship_by": "2026-11-08",
+      "status": "later",
       "inbound_orders": [],
       "clusters": [
         {
@@ -1144,7 +1144,7 @@
           "ads": 4.429,
           "days_left": 0.0,
           "target_stock": 67,
-          "ship_qty": 0
+          "ship_qty": 1
         },
         {
           "cluster": "Дальний Восток",
@@ -1152,7 +1152,7 @@
           "ads": 4.429,
           "days_left": 0.0,
           "target_stock": 67,
-          "ship_qty": 0
+          "ship_qty": 1
         },
         {
           "cluster": "Екатеринбург",
@@ -1164,9 +1164,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 10,
+          "stock": 9,
           "ads": 4.429,
-          "days_left": 2.3,
+          "days_left": 2.0,
           "target_stock": 67,
           "ship_qty": 0
         },
@@ -1180,9 +1180,9 @@
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
-          "stock": 1,
+          "stock": 0,
           "ads": 4.429,
-          "days_left": 0.2,
+          "days_left": 0.0,
           "target_stock": 67,
           "ship_qty": 0
         },
@@ -1233,9 +1233,9 @@
       "offer_id": "шоколад элит 4 шт",
       "name": "Шоколад горький 97% натуральный, Беларусь Спартак, набор 4 шт",
       "brand": "Спартак",
-      "stock": 45,
+      "stock": 42,
       "inbound": 0,
-      "available": 45,
+      "available": 42,
       "order_units_7d": 11,
       "order_units_used": 11,
       "daily_orders": 0.786,
@@ -1332,8 +1332,8 @@
       "horizon_days": 15,
       "target_stock": 12,
       "ship_qty": 0,
-      "days_on_hand": 57.3,
-      "days_with_inbound": 57.3,
+      "days_on_hand": 53.4,
+      "days_with_inbound": 53.4,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1341,9 +1341,9 @@
       "clusters": [
         {
           "cluster": "Екатеринбург",
-          "stock": 1,
+          "stock": 0,
           "ads": 0.893,
-          "days_left": 1.1,
+          "days_left": 0.0,
           "target_stock": 14,
           "ship_qty": 0
         },
@@ -1357,9 +1357,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 18,
+          "stock": 16,
           "ads": 0.893,
-          "days_left": 20.2,
+          "days_left": 17.9,
           "target_stock": 14,
           "ship_qty": 0
         }
@@ -2265,19 +2265,19 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 42,
       "skus": 6,
-      "stock": 147
+      "stock": 145
     },
     {
       "cluster": "Екатеринбург",
       "ship_qty": 41,
       "skus": 6,
-      "stock": 6
+      "stock": 5
     },
     {
       "cluster": "Москва, МО и Дальние регионы",
       "ship_qty": 41,
       "skus": 6,
-      "stock": 125
+      "stock": 124
     },
     {
       "cluster": "Ростов",
@@ -2287,15 +2287,15 @@
     },
     {
       "cluster": "Воронеж",
-      "ship_qty": 16,
-      "skus": 2,
+      "ship_qty": 17,
+      "skus": 3,
       "stock": 0
     },
     {
       "cluster": "Казань",
       "ship_qty": 15,
       "skus": 2,
-      "stock": 15
+      "stock": 14
     },
     {
       "cluster": "Краснодар",
@@ -2317,8 +2317,8 @@
     },
     {
       "cluster": "Дальний Восток",
-      "ship_qty": 7,
-      "skus": 1,
+      "ship_qty": 8,
+      "skus": 2,
       "stock": 0
     },
     {
@@ -2382,7 +2382,7 @@
     "ship_now_skus": 6,
     "ship_now_qty": 256,
     "ship_soon_skus": 0,
-    "ship_total_qty": 256,
+    "ship_total_qty": 258,
     "cluster_count": 15,
     "critical_skus": 6,
     "under_cover_skus": 6
