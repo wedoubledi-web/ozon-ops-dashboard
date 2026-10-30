@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T19:30:15.647654+00:00",
+  "generated_at": "2026-10-30T00:33:17.352414+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -15,17 +15,11 @@
       "stock": 0,
       "inbound": 0,
       "available": 0,
-      "order_units_7d": 81,
-      "order_units_used": 57,
-      "daily_orders": 4.385,
+      "order_units_7d": 74,
+      "order_units_used": 50,
+      "daily_orders": 3.846,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 7,
-          "cancelled": 0,
-          "net": 7
-        },
         {
           "date": "2026-10-16",
           "orders": 4,
@@ -104,6 +98,12 @@
           "orders": 3,
           "cancelled": 1,
           "net": 2
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": {
@@ -114,12 +114,12 @@
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 66,
-      "ship_qty": 66,
+      "target_stock": 58,
+      "ship_qty": 58,
       "days_on_hand": 0.0,
       "days_with_inbound": 0.0,
       "ship_in_days": 0,
-      "ship_by": "2026-10-29",
+      "ship_by": "2026-10-30",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
@@ -129,15 +129,7 @@
           "ads": 4.391,
           "days_left": 0.0,
           "target_stock": 66,
-          "ship_qty": 10
-        },
-        {
-          "cluster": "Москва, МО и Дальние регионы",
-          "stock": 0,
-          "ads": 4.391,
-          "days_left": 0.0,
-          "target_stock": 66,
-          "ship_qty": 10
+          "ship_qty": 9
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
@@ -145,7 +137,7 @@
           "ads": 4.391,
           "days_left": 0.0,
           "target_stock": 66,
-          "ship_qty": 10
+          "ship_qty": 9
         },
         {
           "cluster": "Екатеринбург",
@@ -153,7 +145,15 @@
           "ads": 4.391,
           "days_left": 0.0,
           "target_stock": 66,
-          "ship_qty": 9
+          "ship_qty": 8
+        },
+        {
+          "cluster": "Москва, МО и Дальние регионы",
+          "stock": 0,
+          "ads": 4.391,
+          "days_left": 0.0,
+          "target_stock": 66,
+          "ship_qty": 8
         },
         {
           "cluster": "Омск",
@@ -161,7 +161,7 @@
           "ads": 4.391,
           "days_left": 0.0,
           "target_stock": 66,
-          "ship_qty": 9
+          "ship_qty": 8
         },
         {
           "cluster": "Оренбург",
@@ -169,7 +169,7 @@
           "ads": 4.391,
           "days_left": 0.0,
           "target_stock": 66,
-          "ship_qty": 9
+          "ship_qty": 8
         },
         {
           "cluster": "Ростов",
@@ -177,7 +177,7 @@
           "ads": 4.391,
           "days_left": 0.0,
           "target_stock": 66,
-          "ship_qty": 9
+          "ship_qty": 8
         }
       ]
     },
@@ -189,17 +189,11 @@
       "stock": 0,
       "inbound": 0,
       "available": 0,
-      "order_units_7d": 60,
-      "order_units_used": 60,
-      "daily_orders": 4.286,
+      "order_units_7d": 58,
+      "order_units_used": 47,
+      "daily_orders": 3.615,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 2,
-          "cancelled": 0,
-          "net": 2
-        },
         {
           "date": "2026-10-16",
           "orders": 6,
@@ -234,7 +228,8 @@
           "date": "2026-10-21",
           "orders": 12,
           "cancelled": 1,
-          "net": 11
+          "net": 11,
+          "spike": true
         },
         {
           "date": "2026-10-22",
@@ -277,18 +272,28 @@
           "orders": 1,
           "cancelled": 0,
           "net": 1
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
-      "spike": null,
+      "spike": {
+        "date": "2026-10-21",
+        "orders": 12,
+        "net": 11
+      },
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 65,
-      "ship_qty": 65,
+      "target_stock": 55,
+      "ship_qty": 55,
       "days_on_hand": 0.0,
       "days_with_inbound": 0.0,
       "ship_in_days": 0,
-      "ship_by": "2026-10-29",
+      "ship_by": "2026-10-30",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
@@ -298,15 +303,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 8
-        },
-        {
-          "cluster": "Калининград",
-          "stock": 0,
-          "ads": 4.12,
-          "days_left": 0.0,
-          "target_stock": 62,
-          "ship_qty": 8
+          "ship_qty": 7
         },
         {
           "cluster": "Воронеж",
@@ -314,7 +311,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
         },
         {
           "cluster": "Екатеринбург",
@@ -322,7 +319,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
         },
         {
           "cluster": "Казань",
@@ -330,7 +327,15 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
+        },
+        {
+          "cluster": "Калининград",
+          "stock": 0,
+          "ads": 4.12,
+          "days_left": 0.0,
+          "target_stock": 62,
+          "ship_qty": 6
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
@@ -338,7 +343,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
         },
         {
           "cluster": "Ростов",
@@ -346,7 +351,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
@@ -354,7 +359,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
         },
         {
           "cluster": "Уфа",
@@ -362,7 +367,7 @@
           "ads": 4.12,
           "days_left": 0.0,
           "target_stock": 62,
-          "ship_qty": 7
+          "ship_qty": 6
         }
       ]
     },
@@ -374,17 +379,11 @@
       "stock": 0,
       "inbound": 0,
       "available": 0,
-      "order_units_7d": 59,
-      "order_units_used": 46,
-      "daily_orders": 3.538,
+      "order_units_7d": 52,
+      "order_units_used": 39,
+      "daily_orders": 3.0,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 8,
-          "cancelled": 1,
-          "net": 7
-        },
         {
           "date": "2026-10-16",
           "orders": 14,
@@ -463,6 +462,12 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": {
@@ -473,12 +478,12 @@
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 54,
-      "ship_qty": 54,
+      "target_stock": 45,
+      "ship_qty": 45,
       "days_on_hand": 0.0,
       "days_with_inbound": 0.0,
       "ship_in_days": 0,
-      "ship_by": "2026-10-29",
+      "ship_by": "2026-10-30",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
@@ -488,7 +493,7 @@
           "ads": 3.762,
           "days_left": 0.0,
           "target_stock": 57,
-          "ship_qty": 11
+          "ship_qty": 9
         },
         {
           "cluster": "Казань",
@@ -496,7 +501,7 @@
           "ads": 3.762,
           "days_left": 0.0,
           "target_stock": 57,
-          "ship_qty": 11
+          "ship_qty": 9
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
@@ -504,15 +509,7 @@
           "ads": 3.762,
           "days_left": 0.0,
           "target_stock": 57,
-          "ship_qty": 11
-        },
-        {
-          "cluster": "Санкт-Петербург и СЗО",
-          "stock": 0,
-          "ads": 3.762,
-          "days_left": 0.0,
-          "target_stock": 57,
-          "ship_qty": 11
+          "ship_qty": 9
         },
         {
           "cluster": "Ростов",
@@ -520,7 +517,15 @@
           "ads": 3.762,
           "days_left": 0.0,
           "target_stock": 57,
-          "ship_qty": 10
+          "ship_qty": 9
+        },
+        {
+          "cluster": "Санкт-Петербург и СЗО",
+          "stock": 0,
+          "ads": 3.762,
+          "days_left": 0.0,
+          "target_stock": 57,
+          "ship_qty": 9
         }
       ]
     },
@@ -532,17 +537,11 @@
       "stock": 0,
       "inbound": 0,
       "available": 0,
-      "order_units_7d": 38,
-      "order_units_used": 38,
-      "daily_orders": 2.714,
+      "order_units_7d": 37,
+      "order_units_used": 30,
+      "daily_orders": 2.308,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 2,
-          "cancelled": 1,
-          "net": 1
-        },
         {
           "date": "2026-10-16",
           "orders": 3,
@@ -595,7 +594,8 @@
           "date": "2026-10-24",
           "orders": 7,
           "cancelled": 0,
-          "net": 7
+          "net": 7,
+          "spike": true
         },
         {
           "date": "2026-10-25",
@@ -620,18 +620,28 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
-      "spike": null,
+      "spike": {
+        "date": "2026-10-24",
+        "orders": 7,
+        "net": 7
+      },
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 41,
-      "ship_qty": 41,
+      "target_stock": 35,
+      "ship_qty": 35,
       "days_on_hand": 0.0,
       "days_with_inbound": 0.0,
       "ship_in_days": 0,
-      "ship_by": "2026-10-29",
+      "ship_by": "2026-10-30",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
@@ -641,7 +651,7 @@
           "ads": 1.808,
           "days_left": 0.0,
           "target_stock": 28,
-          "ship_qty": 6
+          "ship_qty": 5
         },
         {
           "cluster": "Краснодар",
@@ -649,7 +659,7 @@
           "ads": 1.808,
           "days_left": 0.0,
           "target_stock": 28,
-          "ship_qty": 6
+          "ship_qty": 5
         },
         {
           "cluster": "Красноярск",
@@ -657,7 +667,7 @@
           "ads": 1.808,
           "days_left": 0.0,
           "target_stock": 28,
-          "ship_qty": 6
+          "ship_qty": 5
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
@@ -665,7 +675,15 @@
           "ads": 1.808,
           "days_left": 0.0,
           "target_stock": 28,
-          "ship_qty": 6
+          "ship_qty": 5
+        },
+        {
+          "cluster": "Ростов",
+          "stock": 0,
+          "ads": 1.808,
+          "days_left": 0.0,
+          "target_stock": 28,
+          "ship_qty": 5
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
@@ -673,18 +691,10 @@
           "ads": 1.808,
           "days_left": 0.0,
           "target_stock": 28,
-          "ship_qty": 6
+          "ship_qty": 5
         },
         {
           "cluster": "Тюмень",
-          "stock": 0,
-          "ads": 1.808,
-          "days_left": 0.0,
-          "target_stock": 28,
-          "ship_qty": 6
-        },
-        {
-          "cluster": "Ростов",
           "stock": 0,
           "ads": 1.808,
           "days_left": 0.0,
@@ -701,17 +711,11 @@
       "stock": 0,
       "inbound": 0,
       "available": 0,
-      "order_units_7d": 47,
-      "order_units_used": 34,
-      "daily_orders": 2.615,
+      "order_units_7d": 42,
+      "order_units_used": 29,
+      "daily_orders": 2.231,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 5,
-          "cancelled": 0,
-          "net": 5
-        },
         {
           "date": "2026-10-16",
           "orders": 7,
@@ -790,6 +794,12 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": {
@@ -800,12 +810,12 @@
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 40,
-      "ship_qty": 40,
+      "target_stock": 34,
+      "ship_qty": 34,
       "days_on_hand": 0.0,
       "days_with_inbound": 0.0,
       "ship_in_days": 0,
-      "ship_by": "2026-10-29",
+      "ship_by": "2026-10-30",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
@@ -815,7 +825,7 @@
           "ads": 3.24,
           "days_left": 0.0,
           "target_stock": 49,
-          "ship_qty": 8
+          "ship_qty": 7
         },
         {
           "cluster": "Москва, МО и Дальние регионы",
@@ -823,7 +833,7 @@
           "ads": 3.24,
           "days_left": 0.0,
           "target_stock": 49,
-          "ship_qty": 8
+          "ship_qty": 7
         },
         {
           "cluster": "Новосибирск",
@@ -831,15 +841,7 @@
           "ads": 3.24,
           "days_left": 0.0,
           "target_stock": 49,
-          "ship_qty": 8
-        },
-        {
-          "cluster": "Ростов",
-          "stock": 0,
-          "ads": 3.24,
-          "days_left": 0.0,
-          "target_stock": 49,
-          "ship_qty": 8
+          "ship_qty": 7
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
@@ -847,7 +849,15 @@
           "ads": 3.24,
           "days_left": 0.0,
           "target_stock": 49,
-          "ship_qty": 8
+          "ship_qty": 7
+        },
+        {
+          "cluster": "Ростов",
+          "stock": 0,
+          "ads": 3.24,
+          "days_left": 0.0,
+          "target_stock": 49,
+          "ship_qty": 6
         }
       ]
     },
@@ -864,12 +874,6 @@
       "daily_orders": 1.923,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-10-16",
           "orders": 5,
@@ -948,6 +952,12 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": {
@@ -963,7 +973,7 @@
       "days_on_hand": 0.0,
       "days_with_inbound": 0.0,
       "ship_in_days": 0,
-      "ship_by": "2026-10-29",
+      "ship_by": "2026-10-30",
       "status": "now",
       "inbound_orders": [],
       "clusters": [
@@ -1030,20 +1040,14 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 68,
+      "stock": 65,
       "inbound": 0,
-      "available": 68,
-      "order_units_7d": 55,
-      "order_units_used": 55,
-      "daily_orders": 3.929,
+      "available": 65,
+      "order_units_7d": 60,
+      "order_units_used": 60,
+      "daily_orders": 4.286,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 1,
-          "cancelled": 0,
-          "net": 1
-        },
         {
           "date": "2026-10-16",
           "orders": 5,
@@ -1121,16 +1125,22 @@
           "orders": 5,
           "cancelled": 0,
           "net": 5
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 6,
+          "cancelled": 0,
+          "net": 6
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 59,
+      "target_stock": 65,
       "ship_qty": 0,
-      "days_on_hand": 17.3,
-      "days_with_inbound": 17.3,
+      "days_on_hand": 15.2,
+      "days_with_inbound": 15.2,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1162,9 +1172,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 13,
+          "stock": 10,
           "ads": 4.393,
-          "days_left": 3.0,
+          "days_left": 2.3,
           "target_stock": 66,
           "ship_qty": 0
         },
@@ -1234,17 +1244,11 @@
       "stock": 45,
       "inbound": 0,
       "available": 45,
-      "order_units_7d": 9,
-      "order_units_used": 9,
-      "daily_orders": 0.643,
+      "order_units_7d": 11,
+      "order_units_used": 11,
+      "daily_orders": 0.786,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 1,
-          "cancelled": 0,
-          "net": 1
-        },
         {
           "date": "2026-10-16",
           "orders": 0,
@@ -1322,16 +1326,22 @@
           "orders": 2,
           "cancelled": 0,
           "net": 2
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 3,
+          "cancelled": 0,
+          "net": 3
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 10,
+      "target_stock": 12,
       "ship_qty": 0,
-      "days_on_hand": 70.0,
-      "days_with_inbound": 70.0,
+      "days_on_hand": 57.3,
+      "days_with_inbound": 57.3,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1371,17 +1381,11 @@
       "stock": 55,
       "inbound": 0,
       "available": 55,
-      "order_units_7d": 6,
-      "order_units_used": 6,
-      "daily_orders": 0.429,
+      "order_units_7d": 8,
+      "order_units_used": 8,
+      "daily_orders": 0.571,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-10-16",
           "orders": 0,
@@ -1459,16 +1463,22 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 2,
+          "cancelled": 0,
+          "net": 2
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 7,
+      "target_stock": 9,
       "ship_qty": 0,
-      "days_on_hand": 128.2,
-      "days_with_inbound": 128.2,
+      "days_on_hand": 96.3,
+      "days_with_inbound": 96.3,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1516,17 +1526,11 @@
       "stock": 50,
       "inbound": 0,
       "available": 50,
-      "order_units_7d": 5,
-      "order_units_used": 5,
-      "daily_orders": 0.357,
+      "order_units_7d": 3,
+      "order_units_used": 3,
+      "daily_orders": 0.214,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 2,
-          "cancelled": 0,
-          "net": 2
-        },
         {
           "date": "2026-10-16",
           "orders": 3,
@@ -1604,16 +1608,22 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": null,
       "cover_days": 10,
       "lead_days": 5,
       "horizon_days": 15,
-      "target_stock": 6,
+      "target_stock": 4,
       "ship_qty": 0,
-      "days_on_hand": 140.1,
-      "days_with_inbound": 140.1,
+      "days_on_hand": 233.6,
+      "days_with_inbound": 233.6,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1675,12 +1685,6 @@
       "window_days": 14,
       "daily_series": [
         {
-          "date": "2026-10-15",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
-        {
           "date": "2026-10-16",
           "orders": 0,
           "cancelled": 0,
@@ -1754,6 +1758,12 @@
         },
         {
           "date": "2026-10-28",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
+        },
+        {
+          "date": "2026-10-29",
           "orders": 0,
           "cancelled": 0,
           "net": 0
@@ -1844,12 +1854,6 @@
       "window_days": 14,
       "daily_series": [
         {
-          "date": "2026-10-15",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
-        {
           "date": "2026-10-16",
           "orders": 0,
           "cancelled": 0,
@@ -1923,6 +1927,12 @@
         },
         {
           "date": "2026-10-28",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
+        },
+        {
+          "date": "2026-10-29",
           "orders": 0,
           "cancelled": 0,
           "net": 0
@@ -1997,12 +2007,6 @@
       "window_days": 14,
       "daily_series": [
         {
-          "date": "2026-10-15",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
-        {
           "date": "2026-10-16",
           "orders": 0,
           "cancelled": 0,
@@ -2079,6 +2083,12 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": null,
@@ -2141,12 +2151,6 @@
       "daily_orders": 0.0,
       "window_days": 14,
       "daily_series": [
-        {
-          "date": "2026-10-15",
-          "orders": 0,
-          "cancelled": 0,
-          "net": 0
-        },
         {
           "date": "2026-10-16",
           "orders": 0,
@@ -2224,6 +2228,12 @@
           "orders": 0,
           "cancelled": 0,
           "net": 0
+        },
+        {
+          "date": "2026-10-29",
+          "orders": 0,
+          "cancelled": 0,
+          "net": 0
         }
       ],
       "spike": null,
@@ -2261,91 +2271,91 @@
   "clusters": [
     {
       "cluster": "Санкт-Петербург и СЗО",
-      "ship_qty": 47,
+      "ship_qty": 41,
       "skus": 6,
       "stock": 147
     },
     {
-      "cluster": "Москва, МО и Дальние регионы",
-      "ship_qty": 46,
-      "skus": 6,
-      "stock": 125
-    },
-    {
       "cluster": "Екатеринбург",
-      "ship_qty": 45,
+      "ship_qty": 39,
       "skus": 6,
       "stock": 6
     },
     {
+      "cluster": "Москва, МО и Дальние регионы",
+      "ship_qty": 39,
+      "skus": 6,
+      "stock": 125
+    },
+    {
       "cluster": "Ростов",
-      "ship_qty": 43,
+      "ship_qty": 38,
       "skus": 6,
       "stock": 15
     },
     {
-      "cluster": "Казань",
-      "ship_qty": 18,
-      "skus": 2,
-      "stock": 18
-    },
-    {
       "cluster": "Воронеж",
-      "ship_qty": 17,
+      "ship_qty": 15,
       "skus": 2,
       "stock": 0
     },
     {
+      "cluster": "Казань",
+      "ship_qty": 15,
+      "skus": 2,
+      "stock": 15
+    },
+    {
       "cluster": "Краснодар",
-      "ship_qty": 10,
+      "ship_qty": 9,
       "skus": 2,
       "stock": 0
     },
     {
       "cluster": "Тюмень",
-      "ship_qty": 10,
+      "ship_qty": 9,
       "skus": 2,
       "stock": 0
     },
     {
       "cluster": "Омск",
-      "ship_qty": 9,
+      "ship_qty": 8,
       "skus": 1,
       "stock": 0
     },
     {
       "cluster": "Оренбург",
-      "ship_qty": 9,
+      "ship_qty": 8,
       "skus": 1,
       "stock": 0
     },
     {
       "cluster": "Дальний Восток",
-      "ship_qty": 8,
-      "skus": 1,
-      "stock": 0
-    },
-    {
-      "cluster": "Калининград",
-      "ship_qty": 8,
-      "skus": 1,
-      "stock": 0
-    },
-    {
-      "cluster": "Новосибирск",
-      "ship_qty": 8,
-      "skus": 1,
-      "stock": 0
-    },
-    {
-      "cluster": "Уфа",
       "ship_qty": 7,
       "skus": 1,
       "stock": 0
     },
     {
-      "cluster": "Красноярск",
+      "cluster": "Новосибирск",
+      "ship_qty": 7,
+      "skus": 1,
+      "stock": 0
+    },
+    {
+      "cluster": "Калининград",
       "ship_qty": 6,
+      "skus": 1,
+      "stock": 0
+    },
+    {
+      "cluster": "Уфа",
+      "ship_qty": 6,
+      "skus": 1,
+      "stock": 0
+    },
+    {
+      "cluster": "Красноярск",
+      "ship_qty": 5,
       "skus": 1,
       "stock": 0
     },
@@ -2384,9 +2394,9 @@
     "inbound_orders": 0,
     "inbound_qty": 0,
     "ship_now_skus": 6,
-    "ship_now_qty": 295,
+    "ship_now_qty": 256,
     "ship_soon_skus": 0,
-    "ship_total_qty": 295,
+    "ship_total_qty": 256,
     "cluster_count": 16,
     "critical_skus": 6,
     "under_cover_skus": 6
