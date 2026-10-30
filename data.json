@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T16:38:24.614539+00:00",
+  "generated_at": "2026-10-30T19:05:55.898286+00:00",
   "as_of": "2026-10-29",
   "expected_as_of": "2026-10-29",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -81665,7 +81665,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 3
+            "delivering": 2,
+            "delivered": 1
           },
           "views": 1414,
           "clicks": 45,
@@ -82094,7 +82095,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-30T16:38:23.548602+00:00",
+    "generated_at": "2026-10-30T19:05:54.787228+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -83594,7 +83595,7 @@
     "raw_rows": 105
   },
   "supplies": {
-    "generated_at": "2026-10-30T16:38:24.294501+00:00",
+    "generated_at": "2026-10-30T19:05:55.548449+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -85984,7 +85985,7 @@
     }
   },
   "competitors": {
-    "generated_at": "2026-10-30T16:38:24.331339+00:00",
+    "generated_at": "2026-10-30T19:05:55.591155+00:00",
     "as_of": "2026-10-29",
     "geo": {
       "city": "Москва",
