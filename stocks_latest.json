@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:06:12.552940+00:00",
+  "generated_at": "2026-10-31T13:12:49.059200+00:00",
   "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
   "recommendations": [
     {
@@ -1048,6 +1048,31 @@
       "confidence": "medium"
     },
     {
+      "sku": 4451480169,
+      "offer_id": "шокол",
+      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+      "cluster": "Казань",
+      "stock": 7,
+      "ads": 0.2857142857142857,
+      "warehouses": [
+        {
+          "name": "КАЗАНЬ_РФЦ_НОВЫЙ",
+          "stock": 7,
+          "grade": "DEFICIT"
+        },
+        {
+          "name": "НИЖНИЙ_НОВГОРОД_2_РФЦ",
+          "stock": 0,
+          "grade": "DEFICIT"
+        }
+      ],
+      "target_days": 30,
+      "target_stock": 9,
+      "supply_qty": 2,
+      "days_left": 24.5,
+      "confidence": "medium"
+    },
+    {
       "sku": 4658698444,
       "offer_id": "кальций",
       "name": "Витамины для щенков и собак кальций calcium 155 таблеток",
@@ -1125,31 +1150,6 @@
       "target_stock": 1,
       "supply_qty": 1,
       "days_left": 0.0,
-      "confidence": "medium"
-    },
-    {
-      "sku": 4451480169,
-      "offer_id": "шокол",
-      "name": "Шоколад горький 90% натуральный Беларусь Спартак",
-      "cluster": "Казань",
-      "stock": 8,
-      "ads": 0.2857142857142857,
-      "warehouses": [
-        {
-          "name": "КАЗАНЬ_РФЦ_НОВЫЙ",
-          "stock": 8,
-          "grade": "DEFICIT"
-        },
-        {
-          "name": "НИЖНИЙ_НОВГОРОД_2_РФЦ",
-          "stock": 0,
-          "grade": "DEFICIT"
-        }
-      ],
-      "target_days": 30,
-      "target_stock": 9,
-      "supply_qty": 1,
-      "days_left": 28.0,
       "confidence": "medium"
     },
     {
@@ -1300,11 +1300,11 @@
       "brand": "Спартак",
       "group": "Продукты",
       "cost_byn": 19.9,
-      "stock": 63,
+      "stock": 62,
       "ads": 4.178571428571429,
-      "cost_capitalization": 36295.87,
-      "retail_capitalization": 65022.94,
-      "days_left": 15.1
+      "cost_capitalization": 35719.75,
+      "retail_capitalization": 63990.83,
+      "days_left": 14.8
     },
     {
       "sku": 5803370792,
@@ -1516,9 +1516,9 @@
     }
   ],
   "summary": {
-    "stock": 303,
-    "cost_capitalization": 176471.49,
-    "retail_capitalization": 359567.5,
+    "stock": 302,
+    "cost_capitalization": 175895.37,
+    "retail_capitalization": 358535.39,
     "fx_rub_per_byn": 27.3045
   },
   "raw_rows": 105
