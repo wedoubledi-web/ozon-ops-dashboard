@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T13:12:50.203125+00:00",
+  "generated_at": "2026-10-31T15:39:10.849990+00:00",
   "as_of": "2026-10-30",
   "expected_as_of": "2026-10-30",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -82193,7 +82193,8 @@
           "cancelled_units": 0,
           "buyout_pct": 100.0,
           "posting_statuses": {
-            "delivering": 3
+            "delivering": 2,
+            "delivered": 1
           },
           "views": 1098,
           "clicks": 46,
@@ -82727,7 +82728,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-10-31T13:12:49.059200+00:00",
+    "generated_at": "2026-10-31T15:39:09.766198+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -84028,11 +84029,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 19.9,
-        "stock": 62,
+        "stock": 61,
         "ads": 4.178571428571429,
-        "cost_capitalization": 35719.75,
-        "retail_capitalization": 63990.83,
-        "days_left": 14.8
+        "cost_capitalization": 35143.62,
+        "retail_capitalization": 62958.72,
+        "days_left": 14.6
       },
       {
         "sku": 5803370792,
@@ -84244,15 +84245,15 @@
       }
     ],
     "summary": {
-      "stock": 302,
-      "cost_capitalization": 175895.37,
-      "retail_capitalization": 358535.39,
+      "stock": 301,
+      "cost_capitalization": 175319.24,
+      "retail_capitalization": 357503.28,
       "fx_rub_per_byn": 27.3045
     },
     "raw_rows": 105
   },
   "supplies": {
-    "generated_at": "2026-10-31T13:12:50.023556+00:00",
+    "generated_at": "2026-10-31T15:39:10.479274+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -85285,9 +85286,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 62,
+        "stock": 61,
         "inbound": 0,
-        "available": 62,
+        "available": 61,
         "order_units_7d": 56,
         "order_units_used": 56,
         "daily_orders": 4.0,
@@ -85384,8 +85385,8 @@
         "horizon_days": 15,
         "target_stock": 60,
         "ship_qty": 0,
-        "days_on_hand": 15.5,
-        "days_with_inbound": 15.5,
+        "days_on_hand": 15.2,
+        "days_with_inbound": 15.2,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -85441,9 +85442,9 @@
           },
           {
             "cluster": "Невинномысск",
-            "stock": 1,
+            "stock": 0,
             "ads": 4.179,
-            "days_left": 0.2,
+            "days_left": 0.0,
             "target_stock": 63,
             "ship_qty": 0
           },
@@ -86602,7 +86603,7 @@
         "cluster": "Невинномысск",
         "ship_qty": 3,
         "skus": 1,
-        "stock": 1
+        "stock": 0
       },
       {
         "cluster": "Беларусь",
@@ -86642,7 +86643,7 @@
     }
   },
   "competitors": {
-    "generated_at": "2026-10-31T13:12:50.045462+00:00",
+    "generated_at": "2026-10-31T15:39:10.507818+00:00",
     "as_of": "2026-10-30",
     "geo": {
       "city": "Москва",
@@ -88577,7 +88578,7 @@
           "price_byn": 37.8,
           "price_rub": 989.52,
           "price_source": "ozon_bestsellers",
-          "stock": 62,
+          "stock": 61,
           "delivery": "",
           "delivery_days": null,
           "card": {},

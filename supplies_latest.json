@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T13:12:50.023556+00:00",
+  "generated_at": "2026-10-31T15:39:10.479274+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1032,9 +1032,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 62,
+      "stock": 61,
       "inbound": 0,
-      "available": 62,
+      "available": 61,
       "order_units_7d": 56,
       "order_units_used": 56,
       "daily_orders": 4.0,
@@ -1131,8 +1131,8 @@
       "horizon_days": 15,
       "target_stock": 60,
       "ship_qty": 0,
-      "days_on_hand": 15.5,
-      "days_with_inbound": 15.5,
+      "days_on_hand": 15.2,
+      "days_with_inbound": 15.2,
       "ship_in_days": null,
       "ship_by": null,
       "status": "ok",
@@ -1188,9 +1188,9 @@
         },
         {
           "cluster": "Невинномысск",
-          "stock": 1,
+          "stock": 0,
           "ads": 4.179,
-          "days_left": 0.2,
+          "days_left": 0.0,
           "target_stock": 63,
           "ship_qty": 0
         },
@@ -2349,7 +2349,7 @@
       "cluster": "Невинномысск",
       "ship_qty": 3,
       "skus": 1,
-      "stock": 1
+      "stock": 0
     },
     {
       "cluster": "Беларусь",
