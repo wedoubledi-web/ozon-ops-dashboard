@@ -109,7 +109,7 @@
       "buyout_pct": 100.0,
       "posting_statuses": {
         "delivering": 3,
-        "awaiting_packaging": 1
+        "awaiting_deliver": 1
       },
       "views": 6443,
       "clicks": 459,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T10:56:41.760634+00:00",
+  "generated_at": "2026-11-01T13:55:52.608257+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1032,9 +1032,9 @@
       "offer_id": "шокол",
       "name": "Шоколад горький 90% натуральный Беларусь Спартак",
       "brand": "Спартак",
-      "stock": 61,
+      "stock": 57,
       "inbound": 0,
-      "available": 61,
+      "available": 57,
       "order_units_7d": 54,
       "order_units_used": 54,
       "daily_orders": 3.857,
@@ -1130,24 +1130,24 @@
       "lead_days": 5,
       "horizon_days": 15,
       "target_stock": 58,
-      "ship_qty": 0,
-      "days_on_hand": 15.8,
-      "days_with_inbound": 15.8,
-      "ship_in_days": null,
-      "ship_by": null,
-      "status": "ok",
+      "ship_qty": 1,
+      "days_on_hand": 14.8,
+      "days_with_inbound": 14.8,
+      "ship_in_days": 9,
+      "ship_by": "2026-11-10",
+      "status": "later",
       "inbound_orders": [],
       "clusters": [
         {
-          "cluster": "Воронеж",
+          "cluster": "Дальний Восток",
           "stock": 0,
           "ads": 4.143,
           "days_left": 0.0,
           "target_stock": 63,
-          "ship_qty": 0
+          "ship_qty": 1
         },
         {
-          "cluster": "Дальний Восток",
+          "cluster": "Воронеж",
           "stock": 0,
           "ads": 4.143,
           "days_left": 0.0,
@@ -1164,9 +1164,9 @@
         },
         {
           "cluster": "Казань",
-          "stock": 7,
+          "stock": 3,
           "ads": 4.143,
-          "days_left": 1.7,
+          "days_left": 0.7,
           "target_stock": 63,
           "ship_qty": 0
         },
@@ -2287,7 +2287,7 @@
       "cluster": "Казань",
       "ship_qty": 10,
       "skus": 2,
-      "stock": 12
+      "stock": 8
     },
     {
       "cluster": "Оренбург",
@@ -2302,15 +2302,15 @@
       "stock": 0
     },
     {
-      "cluster": "Краснодар",
+      "cluster": "Дальний Восток",
       "ship_qty": 6,
       "skus": 2,
       "stock": 0
     },
     {
-      "cluster": "Дальний Восток",
-      "ship_qty": 5,
-      "skus": 1,
+      "cluster": "Краснодар",
+      "ship_qty": 6,
+      "skus": 2,
       "stock": 0
     },
     {
@@ -2374,7 +2374,7 @@
     "ship_now_skus": 6,
     "ship_now_qty": 167,
     "ship_soon_skus": 0,
-    "ship_total_qty": 167,
+    "ship_total_qty": 168,
     "cluster_count": 15,
     "critical_skus": 6,
     "under_cover_skus": 6
