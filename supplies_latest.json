@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T16:42:00.421140+00:00",
+  "generated_at": "2026-11-02T20:06:56.256687+00:00",
   "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
   "cover_days": 10,
   "lead_days": 5,
@@ -1966,9 +1966,9 @@
       "offer_id": "для собак фекалии",
       "name": "Добавка против поедания фекалий для собак 8in1 Excel Deter Coprophagia 100 шт",
       "brand": "8IN1",
-      "stock": 18,
+      "stock": 19,
       "inbound": 0,
-      "available": 18,
+      "available": 19,
       "order_units_7d": 0,
       "order_units_used": 0,
       "daily_orders": 0.0,
@@ -2098,9 +2098,9 @@
         },
         {
           "cluster": "Санкт-Петербург и СЗО",
-          "stock": 12,
+          "stock": 13,
           "ads": 0.536,
-          "days_left": 22.4,
+          "days_left": 24.3,
           "target_stock": 9,
           "ship_qty": 0
         }
@@ -2247,7 +2247,7 @@
       "cluster": "Санкт-Петербург и СЗО",
       "ship_qty": 22,
       "skus": 6,
-      "stock": 139
+      "stock": 140
     },
     {
       "cluster": "Екатеринбург",
