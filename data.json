@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T11:54:47.587348+00:00",
+  "generated_at": "2026-11-02T16:42:00.664531+00:00",
   "as_of": "2026-11-01",
   "expected_as_of": "2026-11-01",
   "source": "Ozon Seller API /v1/finance/accrual/by-day",
@@ -84093,7 +84093,7 @@
     }
   ],
   "stocks": {
-    "generated_at": "2026-11-02T11:54:46.524251+00:00",
+    "generated_at": "2026-11-02T16:41:59.686513+00:00",
     "method": "Ozon /v1/analytics/stocks: спрос ads_cluster, доступный остаток; цель — 30 дней покрытия",
     "recommendations": [
       {
@@ -84172,17 +84172,17 @@
           {
             "name": "СОФЬИНО_РФЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           },
           {
             "name": "НОГИНСК_РФЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           },
           {
             "name": "ДОМОДЕДОВО_РФЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           }
         ],
         "target_days": 30,
@@ -84352,7 +84352,7 @@
           {
             "name": "СПБ_БУГРЫ_РФЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           }
         ],
         "target_days": 30,
@@ -84517,7 +84517,7 @@
           {
             "name": "РОСТОВ_НА_ДОНУ_2_РФЦ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           }
         ],
         "target_days": 30,
@@ -84707,7 +84707,7 @@
           {
             "name": "ЕКАТЕРИНБУРГ_РФЦ_НОВЫЙ",
             "stock": 0,
-            "grade": "DEFICIT"
+            "grade": "WAS_DEFICIT"
           }
         ],
         "target_days": 30,
@@ -85007,6 +85007,26 @@
         "confidence": "medium"
       },
       {
+        "sku": 3726892929,
+        "offer_id": "для взрослых собак1",
+        "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+        "cluster": "Казань",
+        "stock": 0,
+        "ads": 0.1111111111111111,
+        "warehouses": [
+          {
+            "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
+            "stock": 0,
+            "grade": "WAS_DEFICIT"
+          }
+        ],
+        "target_days": 30,
+        "target_stock": 3,
+        "supply_qty": 3,
+        "days_left": 0.0,
+        "confidence": "medium"
+      },
+      {
         "sku": 4451480169,
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
@@ -85104,26 +85124,6 @@
         "target_stock": 2,
         "supply_qty": 2,
         "days_left": 0.0,
-        "confidence": "medium"
-      },
-      {
-        "sku": 3726892929,
-        "offer_id": "для взрослых собак1",
-        "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
-        "cluster": "Казань",
-        "stock": 1,
-        "ads": 0.1111111111111111,
-        "warehouses": [
-          {
-            "name": "НИЖНИЙ_НОВГОРОД_РФЦ",
-            "stock": 1,
-            "grade": "DEFICIT"
-          }
-        ],
-        "target_days": 30,
-        "target_stock": 3,
-        "supply_qty": 2,
-        "days_left": 9.0,
         "confidence": "medium"
       },
       {
@@ -85339,27 +85339,11 @@
         "brand": "Спартак",
         "group": "Продукты",
         "cost_byn": 17.64,
-        "stock": 53,
+        "stock": 52,
         "ads": 0.6785714285714286,
-        "cost_capitalization": 27264.09,
-        "retail_capitalization": 49202.71,
-        "days_left": 78.1
-      },
-      {
-        "sku": 4451480169,
-        "offer_id": "шокол",
-        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-o/11183230464.jpg",
-        "price": 37.8,
-        "currency": "BYN",
-        "brand": "Спартак",
-        "group": "Продукты",
-        "cost_byn": 19.9,
-        "stock": 50,
-        "ads": 4.214285714285714,
-        "cost_capitalization": 28806.25,
-        "retail_capitalization": 51605.5,
-        "days_left": 11.9
+        "cost_capitalization": 26749.67,
+        "retail_capitalization": 48274.36,
+        "days_left": 76.6
       },
       {
         "sku": 4823627697,
@@ -85376,6 +85360,22 @@
         "cost_capitalization": 20300.9,
         "retail_capitalization": 54609.0,
         "days_left": 73.7
+      },
+      {
+        "sku": 4451480169,
+        "offer_id": "шокол",
+        "name": "Шоколад горький 90% натуральный Беларусь Спартак",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-o/11183230464.jpg",
+        "price": 37.8,
+        "currency": "BYN",
+        "brand": "Спартак",
+        "group": "Продукты",
+        "cost_byn": 19.9,
+        "stock": 49,
+        "ads": 4.214285714285714,
+        "cost_capitalization": 28230.12,
+        "retail_capitalization": 50573.39,
+        "days_left": 11.6
       },
       {
         "sku": 5803075530,
@@ -85410,22 +85410,6 @@
         "days_left": 33.6
       },
       {
-        "sku": 3726892929,
-        "offer_id": "для взрослых собак1",
-        "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
-        "image": "https://ir-20.ozone.ru/s3/multimedia-1-h/13144238153.jpg",
-        "price": 53.0,
-        "currency": "BYN",
-        "brand": "8IN1",
-        "group": "Витамины для животных",
-        "cost_byn": 25.36,
-        "stock": 1,
-        "ads": 4.277777777777778,
-        "cost_capitalization": 725.21,
-        "retail_capitalization": 1447.14,
-        "days_left": 0.2
-      },
-      {
         "sku": 3664742731,
         "offer_id": "Multi Vit Puppy",
         "name": "Витамины для щенков и растущих собак 8in1 Excel Multi Vit Puppy 100 шт",
@@ -85453,6 +85437,22 @@
         "cost_byn": 23.1,
         "stock": 0,
         "ads": 3.125,
+        "cost_capitalization": 0.0,
+        "retail_capitalization": 0.0,
+        "days_left": 0.0
+      },
+      {
+        "sku": 3726892929,
+        "offer_id": "для взрослых собак1",
+        "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
+        "image": "https://ir-20.ozone.ru/s3/multimedia-1-h/13144238153.jpg",
+        "price": 53.0,
+        "currency": "BYN",
+        "brand": "8IN1",
+        "group": "Витамины для животных",
+        "cost_byn": 25.36,
+        "stock": 0,
+        "ads": 4.277777777777778,
         "cost_capitalization": 0.0,
         "retail_capitalization": 0.0,
         "days_left": 0.0
@@ -85555,15 +85555,15 @@
       }
     ],
     "summary": {
-      "stock": 289,
-      "cost_capitalization": 168312.58,
-      "retail_capitalization": 345314.55,
+      "stock": 286,
+      "cost_capitalization": 166496.83,
+      "retail_capitalization": 341906.95,
       "fx_rub_per_byn": 27.3045
     },
     "raw_rows": 103
   },
   "supplies": {
-    "generated_at": "2026-11-02T11:54:47.270858+00:00",
+    "generated_at": "2026-11-02T16:42:00.421140+00:00",
     "method": "Заказы за 14 дн. минус отмены, без разового пика → покрытие 10 дн. + 5 дн. на отгрузку и дорогу",
     "cover_days": 10,
     "lead_days": 5,
@@ -86106,9 +86106,9 @@
         "offer_id": "для взрослых собак1",
         "name": "Витамины для взрослых собак 8in1 Excel Multi Vit Adult 70 шт",
         "brand": "8IN1",
-        "stock": 1,
+        "stock": 0,
         "inbound": 0,
-        "available": 1,
+        "available": 0,
         "order_units_7d": 26,
         "order_units_used": 16,
         "daily_orders": 1.231,
@@ -86209,9 +86209,9 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 19,
-        "ship_qty": 18,
-        "days_on_hand": 0.8,
-        "days_with_inbound": 0.8,
+        "ship_qty": 19,
+        "days_on_hand": 0.0,
+        "days_with_inbound": 0.0,
         "ship_in_days": 0,
         "ship_by": "2026-11-02",
         "status": "now",
@@ -86219,6 +86219,14 @@
         "clusters": [
           {
             "cluster": "Екатеринбург",
+            "stock": 0,
+            "ads": 4.278,
+            "days_left": 0.0,
+            "target_stock": 65,
+            "ship_qty": 4
+          },
+          {
+            "cluster": "Казань",
             "stock": 0,
             "ads": 4.278,
             "days_left": 0.0,
@@ -86240,14 +86248,6 @@
             "days_left": 0.0,
             "target_stock": 65,
             "ship_qty": 4
-          },
-          {
-            "cluster": "Казань",
-            "stock": 1,
-            "ads": 4.278,
-            "days_left": 0.2,
-            "target_stock": 65,
-            "ship_qty": 3
           },
           {
             "cluster": "Ростов",
@@ -86596,9 +86596,9 @@
         "offer_id": "шокол",
         "name": "Шоколад горький 90% натуральный Беларусь Спартак",
         "brand": "Спартак",
-        "stock": 50,
+        "stock": 49,
         "inbound": 0,
-        "available": 50,
+        "available": 49,
         "order_units_7d": 53,
         "order_units_used": 53,
         "daily_orders": 3.786,
@@ -86694,11 +86694,11 @@
         "lead_days": 5,
         "horizon_days": 15,
         "target_stock": 57,
-        "ship_qty": 7,
-        "days_on_hand": 13.2,
-        "days_with_inbound": 13.2,
-        "ship_in_days": 8,
-        "ship_by": "2026-11-10",
+        "ship_qty": 8,
+        "days_on_hand": 12.9,
+        "days_with_inbound": 12.9,
+        "ship_in_days": 7,
+        "ship_by": "2026-11-09",
         "status": "later",
         "inbound_orders": [],
         "clusters": [
@@ -86735,6 +86735,14 @@
             "ship_qty": 1
           },
           {
+            "cluster": "Невинномысск",
+            "stock": 0,
+            "ads": 4.214,
+            "days_left": 0.0,
+            "target_stock": 64,
+            "ship_qty": 1
+          },
+          {
             "cluster": "Новосибирск",
             "stock": 0,
             "ads": 4.214,
@@ -86759,18 +86767,10 @@
             "ship_qty": 1
           },
           {
-            "cluster": "Невинномысск",
-            "stock": 0,
-            "ads": 4.214,
-            "days_left": 0.0,
-            "target_stock": 64,
-            "ship_qty": 0
-          },
-          {
             "cluster": "Санкт-Петербург и СЗО",
-            "stock": 50,
+            "stock": 49,
             "ads": 4.214,
-            "days_left": 11.9,
+            "days_left": 11.6,
             "target_stock": 64,
             "ship_qty": 0
           }
@@ -86918,9 +86918,9 @@
         "offer_id": "шоколад 70",
         "name": "Горький шоколад 70% какао Спартак, Беларусь, набор из 5 штук",
         "brand": "Спартак",
-        "stock": 53,
+        "stock": 52,
         "inbound": 0,
-        "available": 53,
+        "available": 52,
         "order_units_7d": 10,
         "order_units_used": 10,
         "daily_orders": 0.714,
@@ -87017,8 +87017,8 @@
         "horizon_days": 15,
         "target_stock": 11,
         "ship_qty": 0,
-        "days_on_hand": 74.2,
-        "days_with_inbound": 74.2,
+        "days_on_hand": 72.8,
+        "days_with_inbound": 72.8,
         "ship_in_days": null,
         "ship_by": null,
         "status": "ok",
@@ -87034,9 +87034,9 @@
           },
           {
             "cluster": "Москва, МО и Дальние регионы",
-            "stock": 34,
+            "stock": 33,
             "ads": 0.679,
-            "days_left": 50.1,
+            "days_left": 48.6,
             "target_stock": 11,
             "ship_qty": 0
           },
@@ -87805,13 +87805,13 @@
         "cluster": "Москва, МО и Дальние регионы",
         "ship_qty": 23,
         "skus": 7,
-        "stock": 122
+        "stock": 121
       },
       {
         "cluster": "Санкт-Петербург и СЗО",
         "ship_qty": 22,
         "skus": 6,
-        "stock": 140
+        "stock": 139
       },
       {
         "cluster": "Екатеринбург",
@@ -87833,9 +87833,9 @@
       },
       {
         "cluster": "Казань",
-        "ship_qty": 7,
+        "ship_qty": 8,
         "skus": 3,
-        "stock": 6
+        "stock": 5
       },
       {
         "cluster": "Тюмень",
@@ -87887,8 +87887,8 @@
       },
       {
         "cluster": "Невинномысск",
-        "ship_qty": 1,
-        "skus": 1,
+        "ship_qty": 2,
+        "skus": 2,
         "stock": 0
       },
       {
@@ -87920,16 +87920,16 @@
       "inbound_orders": 0,
       "inbound_qty": 0,
       "ship_now_skus": 6,
-      "ship_now_qty": 129,
+      "ship_now_qty": 130,
       "ship_soon_skus": 0,
-      "ship_total_qty": 136,
+      "ship_total_qty": 138,
       "cluster_count": 16,
       "critical_skus": 6,
       "under_cover_skus": 6
     }
   },
   "competitors": {
-    "generated_at": "2026-11-02T11:54:47.310324+00:00",
+    "generated_at": "2026-11-02T16:42:00.449792+00:00",
     "as_of": "2026-11-01",
     "geo": {
       "city": "Москва",
@@ -88323,7 +88323,7 @@
           "price_byn": 53.0,
           "price_rub": 1312.02,
           "price_source": "ozon_bestsellers",
-          "stock": 1,
+          "stock": 0,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -89775,7 +89775,7 @@
           "price_byn": 34.0,
           "price_rub": 925.05,
           "price_source": "ozon_bestsellers",
-          "stock": 53,
+          "stock": 52,
           "delivery": "",
           "delivery_days": null,
           "card": {},
@@ -89864,7 +89864,7 @@
           "price_byn": 37.8,
           "price_rub": 989.52,
           "price_source": "ozon_bestsellers",
-          "stock": 50,
+          "stock": 49,
           "delivery": "",
           "delivery_days": null,
           "card": {},
